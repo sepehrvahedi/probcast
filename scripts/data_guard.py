@@ -20,7 +20,8 @@ def bad(path: str) -> str | None:
         return "only data/seed/ and data/fixtures/ may be committed"
     if path.endswith(".parquet"):
         return "parquet files are data, not code"
-    if path.split("/")[-1].startswith(".env") and not path.endswith(".env.example"):
+    # web/.env.production holds only the public API path ("/"), never a secret.
+    if path.split("/")[-1].startswith(".env") and not path.endswith(".env.example") and path != "web/.env.production":
         return "secrets file"
     return None
 
