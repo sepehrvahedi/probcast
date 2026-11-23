@@ -1,0 +1,189 @@
+{
+  "fixture": true,
+  "id": "IC-003",
+  "status": "leak_tested",
+  "registered": true,
+  "record": {
+    "author": "finch",
+    "content_hash": "9bf4f9ee392d93b107d0a65b783885c3d46365a34502be439b8bdfe46b296014",
+    "entered_by": "heron",
+    "hash": "4f01767cd51d3c97355aede1947e5ad9b487d9481239877e16bd6fcb49892c01",
+    "horizons": [21],
+    "id": "IC-003",
+    "path": "ideas/IC-003.yaml",
+    "report_section": "future",
+    "seq": 3,
+    "status": "leak_tested",
+    "success_criterion": "Beats the CAPM anchor on CRPS at 21 sessions with grade ≥ B.",
+    "title": "One-month reversal",
+    "ts": "2026-11-18T12:10:00Z"
+  },
+  "history": [
+    {
+      "seq": 3,
+      "at": "2026-11-18T12:10:00Z",
+      "status": "registered",
+      "by": "heron",
+      "hash": "4f01767cd51d3c97355aede1947e5ad9b487d9481239877e16bd6fcb49892c01",
+      "reason": null
+    },
+    {
+      "seq": 13,
+      "at": "2026-11-19T12:00:00Z",
+      "status": "triaged",
+      "by": "kestrel",
+      "hash": null,
+      "reason": null
+    },
+    {
+      "seq": 23,
+      "at": "2026-11-20T20:00:00Z",
+      "status": "implementing",
+      "by": "kestrel",
+      "hash": null,
+      "reason": null
+    },
+    {
+      "seq": 33,
+      "at": "2026-11-21T12:00:00Z",
+      "status": "leak_tested",
+      "by": "kestrel",
+      "hash": null,
+      "reason": null
+    }
+  ],
+  "card": {
+    "id": "IC-003",
+    "title": "One-month reversal",
+    "author": "finch",
+    "report_section": "future",
+    "course_concepts": ["EMH weak form"],
+    "hypothesis": "When the last month's return is in the top quintile, DEMO's 1M return is lower than its CAPM expectation.",
+    "rationale": "Short-term liquidity provision earns a premium that reverses. Counter-argument: momentum at longer horizons.",
+    "data_needed": ["prices — exchange_price (same_session_close): at each close"],
+    "rule": "Trailing 21-session log return, quintile from the past 10 years only.",
+    "parameters": {
+      "window": [21, 10, 42]
+    },
+    "horizons": [21],
+    "expected_direction": "lower; about −0.5% over a month",
+    "success_criterion": "Beats the CAPM anchor on CRPS at 21 sessions with grade ≥ B.",
+    "drop_if": "CRPSS 90% CI entirely below zero at 21 sessions.",
+    "references": [
+      "Jegadeesh, N. (1990) 'Evidence of predictable behavior of security returns', Journal of Finance, 45(3), pp. 881–898."
+    ],
+    "holdout_ack": true,
+    "created_at": "2026-11-18T12:10:00Z"
+  },
+  "path": "ideas/IC-003.yaml",
+  "integrity": {
+    "content_hash": "9bf4f9ee392d93b107d0a65b783885c3d46365a34502be439b8bdfe46b296014",
+    "recomputed": "9bf4f9ee392d93b107d0a65b783885c3d46365a34502be439b8bdfe46b296014",
+    "match": true,
+    "chain_ok": true,
+    "registry": "registry/ideas.jsonl"
+  },
+  "checks": [
+    {
+      "id": "hypothesis",
+      "status": "ok",
+      "text": "Hypothesis has a condition, a direction, a horizon and a comparison",
+      "detail": ""
+    },
+    {
+      "id": "data_rules",
+      "status": "ok",
+      "text": "Every data item has a timing rule (when it becomes public)",
+      "detail": "1 item(s)"
+    },
+    {
+      "id": "no_full_sample",
+      "status": "ok",
+      "text": "No full-sample statistics in the rule",
+      "detail": ""
+    },
+    {
+      "id": "parameters",
+      "status": "ok",
+      "text": "At most 3 alternatives per parameter",
+      "detail": ""
+    },
+    {
+      "id": "planned_trials",
+      "status": "ok",
+      "text": "Planned configurations 3 (soft budget 20)",
+      "detail": ""
+    },
+    {
+      "id": "horizons",
+      "status": "ok",
+      "text": "Horizons are on the contract grid (5, 21, 63, 126, 252 sessions)",
+      "detail": ""
+    },
+    {
+      "id": "mde",
+      "status": "warn",
+      "text": "Expected −0.5% is below the MDE at 21 sessions (±3.5%)",
+      "detail": "Likely undetectable on DEMO alone; consider descriptive-only."
+    },
+    {
+      "id": "references",
+      "status": "ok",
+      "text": "At least one reference",
+      "detail": "1 reference(s)"
+    },
+    {
+      "id": "holdout_ack",
+      "status": "ok",
+      "text": "Holdout confirmation ticked",
+      "detail": "Designed without looking at any ProbCast result for 2021 onwards."
+    },
+    {
+      "id": "licence",
+      "status": "info",
+      "text": "Licensed data (L3/L4) stays local-only",
+      "detail": "Licensed data: none"
+    }
+  ],
+  "analyzers": [
+    {
+      "id": "technical.rsi_reversal",
+      "name": "RSI reversal",
+      "version": "1.0.0+3f9c2a1",
+      "family": "technical.reversion",
+      "slot": 5,
+      "trials": {
+        "analyzer": 3,
+        "family": {
+          "id": "technical.reversion",
+          "n": 7
+        },
+        "team": 41
+      }
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "R-DEMO-05",
+      "analyzer": "technical.rsi_reversal",
+      "created_at": "2026-11-22T14:05:00Z",
+      "author": "finch",
+      "params_hash": "c278bb9e1dc2"
+    }
+  ],
+  "audit": [
+    {
+      "at": "2026-11-18T12:10:00Z",
+      "actor": "heron",
+      "action": "idea.register",
+      "reason": "One-month reversal"
+    }
+  ],
+  "immutable": true,
+  "amend_note": "Content is immutable after registration; an amendment is a new card and counts as a new trial.",
+  "provenance": {
+    "kind": "ledger",
+    "id": "registry/ideas.jsonl",
+    "key": "IC-003"
+  }
+}

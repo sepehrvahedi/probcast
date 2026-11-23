@@ -1,0 +1,24 @@
+# Per-ticker configuration (D-070): no ticker-specific values live in code.
+ticker: AAPL
+name: Apple Inc.
+exchange: XNYS            # trading calendar used for sessions (NASDAQ-listed; XNYS calendar is equivalent for sessions)
+cik: "0000320193"
+fiscal_year_end: "09-30"  # last Saturday of September; Q1 can have 14 weeks
+listing_date: "1980-12-12"
+ipo_offer_price: 22.00    # event fact, NOT a price bar (ADR-007, RT-05)
+benchmarks:
+  market: "^SP500TR"      # S&P 500 total return index (beta, event-study market model; RT-36)
+  market_price: "^GSPC"
+  nasdaq: "QQQ"
+  sector: "XLK"
+  broad: "SPY"
+peers:
+  platform: [MSFT, GOOGL, AMZN, META]
+  hardware: [DELL, HPQ, QCOM, CSCO]
+  hindsight: [NVDA]       # shown separately, never pooled (D-033)
+suppliers: [TSM]
+implied_vol_series: "FRED:VXAPLCLS"
+usd_series: "FRED:DTWEXBGS"
+real_yield_series: "FRED:DFII10"
+corporate_actions_seed: data/seed/aapl_corporate_actions.csv
+events_seed: data/seed/aapl_events.csv

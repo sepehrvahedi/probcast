@@ -1,0 +1,16 @@
+# Round-3 advanced method (D-102).
+id: IC-041
+title: An AI forecasting model (Chronos, by Amazon)
+author: probcast
+created_at: '2026-11-19T00:40:00Z'
+sample: true
+kind: advanced
+text: A large pretrained AI model, built to forecast any time series, reads the last eight years of the
+  stock's price and predicts where it goes next.
+analyzer: advanced.chronos_bolt
+implementation: Chronos-Bolt small (48M-parameter transformer; Ansari et al. 2024), pinned weights checked
+  by SHA-256, run on the CPU; input = last 2,048 days of the total-return index; signal = its median predicted
+  return over 1 week, 1 month and 3 months, calibrated by C3 (positive sign).
+note: 'Honest caveat: the model was pretrained on public time series before its release in November 2024
+  and may have seen some of this history. Results before then can be flattered; the ''Last year'' row
+  of the report card is a clean test.'

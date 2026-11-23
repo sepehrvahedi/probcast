@@ -1,0 +1,11 @@
+# Round-2 idea (researched, built and tested in round 2, D-101).
+id: IC-020
+title: Turbulent stocks don't pay for their extra risk
+author: probcast
+created_at: '2026-11-19T00:30:00Z'
+sample: true
+text: When a stock has been unusually turbulent lately compared with its past year, its returns don't
+  rise enough to pay for the extra risk.
+analyzer: volatility.vol_regime
+implementation: Log of past-month realised variance over past-year realised variance (Moreira & Muir 2017).
+  C3, negative sign; 1 and 3 months.

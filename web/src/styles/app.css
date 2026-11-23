@@ -1,0 +1,257 @@
+/* ProbCast app stylesheet. tokens.css (verbatim §2.8) supplies every colour, type, radius,
+   motion and layer token; this file only adds utilities that map the remaining §2.1–§2.3
+   tokens and the base styles the shell needs. No raw hex values here. */
+@import "./tokens.css";
+@import "tw-animate-css";
+
+@theme inline {
+  --color-o-border-input: var(--o-border-input);
+  --color-o-accent-hover: var(--o-accent-hover);
+  --color-o-on-accent: var(--o-on-accent);
+  --color-o-on-up: var(--o-on-up);
+  --color-o-on-down: var(--o-on-down);
+  --color-o-ink: var(--o-ink);
+  --color-o-ref: var(--o-ref);
+  --color-o-neutral-fill: var(--o-neutral-fill);
+  --color-o-hatch: var(--o-hatch);
+  --color-o-fan-50: var(--o-fan-50);
+  --color-o-fan-80: var(--o-fan-80);
+  --color-o-fan-95: var(--o-fan-95);
+  --color-o-scrim: var(--o-scrim);
+  --animate-shimmer: o-shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes o-shimmer {
+  0% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.55;
+  }
+}
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    border-color: var(--o-border);
+  }
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    background: var(--o-canvas);
+    color: var(--o-text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "cv11", "ss01";
+  }
+  .font-mono,
+  code,
+  kbd,
+  pre {
+    font-family: var(--font-mono);
+    font-variant-ligatures: none;
+  }
+  ::selection {
+    background: var(--o-accent-subtle);
+    color: var(--o-text);
+  }
+  /* Thin, token-coloured scrollbars (dense research tool). */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--o-border) transparent;
+  }
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
+/* Numbers that align: tabular figures and slashed zero (§2.4). */
+.num {
+  font-variant-numeric: tabular-nums slashed-zero;
+}
+
+/* Overline labels: panel kickers and KPI titles (§2.4). */
+.overline {
+  font-size: var(--text-2xs);
+  line-height: var(--text-2xs--line-height);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--o-text-3);
+}
+
+/* Hatched regions (§2.3): holdout 45°, insufficient evidence 135°. Always paired with a text label. */
+.hatch-holdout {
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--o-hatch) 0,
+    var(--o-hatch) 1px,
+    transparent 1px,
+    transparent 6px
+  );
+}
+.hatch-insufficient {
+  background-image: repeating-linear-gradient(
+    135deg,
+    var(--o-text-disabled) 0,
+    var(--o-text-disabled) 1px,
+    transparent 1px,
+    transparent 6px
+  );
+}
+
+/* Fixture-mode watermark on charts (§6.1, DEC-Q-19). */
+.illustrative-watermark {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1;
+}
+.illustrative-watermark > span {
+  transform: rotate(-18deg);
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: var(--o-text-3);
+  opacity: 0.08;
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* Motion: only opacity/transform; durations from tokens (0 under reduced motion). */
+.fade-in {
+  animation: o-fade var(--o-motion-base) cubic-bezier(0.2, 0, 0, 1) both;
+}
+@keyframes o-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-shimmer {
+    /* biome-ignore lint/complexity/noImportantStyles: reduced motion must override utility classes */
+    animation: none !important;
+  }
+  *,
+  ::before,
+  ::after {
+    /* biome-ignore lint/complexity/noImportantStyles: reduced motion must override utility classes */
+    transition-duration: 0ms !important;
+    /* biome-ignore lint/complexity/noImportantStyles: reduced motion must override utility classes */
+    scroll-behavior: auto !important;
+  }
+  .fade-in {
+    animation-duration: 120ms;
+  }
+}
+
+/* Prose for the About reading column (720 px measure, 16/26 body). */
+.prose-o {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: var(--o-text-2);
+}
+.prose-o h1 {
+  font-size: var(--text-lg);
+  line-height: var(--text-lg--line-height);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--o-text);
+  margin: 0 0 12px;
+}
+.prose-o h2 {
+  font-size: var(--text-md);
+  line-height: var(--text-md--line-height);
+  font-weight: 600;
+  color: var(--o-text);
+  margin: 32px 0 8px;
+  scroll-margin-top: 16px;
+}
+.prose-o h3 {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--o-text);
+  margin: 24px 0 6px;
+  scroll-margin-top: 16px;
+}
+.prose-o p,
+.prose-o ul,
+.prose-o ol {
+  margin: 0 0 14px;
+}
+.prose-o ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+.prose-o ol {
+  list-style: decimal;
+  padding-left: 20px;
+}
+.prose-o li {
+  margin: 4px 0;
+}
+.prose-o strong {
+  color: var(--o-text);
+  font-weight: 600;
+}
+.prose-o a {
+  color: var(--o-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.prose-o code {
+  font-size: 0.8125rem;
+  background: var(--o-sunken);
+  border: 1px solid var(--o-border-subtle);
+  border-radius: var(--radius-xs);
+  padding: 1px 4px;
+  color: var(--o-text);
+}
+.prose-o table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0 18px;
+  font-size: var(--text-sm);
+  line-height: var(--text-sm--line-height);
+}
+.prose-o th {
+  text-align: left;
+  font-weight: 500;
+  color: var(--o-text-3);
+  border-bottom: 1px solid var(--o-border);
+  padding: 6px 8px;
+}
+.prose-o td {
+  border-bottom: 1px solid var(--o-border-subtle);
+  padding: 6px 8px;
+  vertical-align: top;
+}
+.prose-o blockquote {
+  border-left: 2px solid var(--o-accent);
+  padding: 2px 0 2px 12px;
+  color: var(--o-text-2);
+  margin: 0 0 14px;
+}
+.prose-o .katex-display {
+  margin: 12px 0 16px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.prose-o .katex {
+  color: var(--o-text);
+}

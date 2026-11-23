@@ -1,0 +1,2242 @@
+{
+  "fixture": true,
+  "run_id": "R-DEMO-01",
+  "horizons": [
+    {
+      "h": 5,
+      "headline": "dev",
+      "grade_inputs": {
+        "n_eff": 311,
+        "crps_ci": { "lo": -0.006, "hi": 0.0499, "level": 0.9 },
+        "dm_p": 0.1969,
+        "bh_q": 0.315,
+        "cov80": 0.8163
+      },
+      "tilt": { "value": 0.0011, "unit": "pp/yr" },
+      "tdn": { "passed": true, "at": "2026-11-21T14:02:00Z" },
+      "calibration": {
+        "event": "P(price higher over the horizon)",
+        "reliability": [
+          {
+            "lo": 0,
+            "hi": 0.1,
+            "p_mean": 0.0485,
+            "freq": 0.009,
+            "n": 2,
+            "ci": { "lo": 0, "hi": 0.169, "level": 0.9 }
+          },
+          {
+            "lo": 0.1,
+            "hi": 0.2,
+            "p_mean": 0.1675,
+            "freq": 0.2591,
+            "n": 2,
+            "ci": { "lo": 0, "hi": 0.7818, "level": 0.9 }
+          },
+          {
+            "lo": 0.2,
+            "hi": 0.3,
+            "p_mean": 0.2441,
+            "freq": 0.0988,
+            "n": 2,
+            "ci": { "lo": 0, "hi": 0.4649, "level": 0.9 }
+          },
+          {
+            "lo": 0.3,
+            "hi": 0.4,
+            "p_mean": 0.3386,
+            "freq": 0.7157,
+            "n": 3,
+            "ci": { "lo": 0.2769, "hi": 1, "level": 0.9 }
+          },
+          {
+            "lo": 0.4,
+            "hi": 0.5,
+            "p_mean": 0.4577,
+            "freq": 0.4696,
+            "n": 36,
+            "ci": { "lo": 0.3301, "hi": 0.6091, "level": 0.9 }
+          },
+          {
+            "lo": 0.5,
+            "hi": 0.6,
+            "p_mean": 0.5579,
+            "freq": 0.5794,
+            "n": 109,
+            "ci": { "lo": 0.5, "hi": 0.6588, "level": 0.9 }
+          },
+          {
+            "lo": 0.6,
+            "hi": 0.7,
+            "p_mean": 0.666,
+            "freq": 0.7171,
+            "n": 82,
+            "ci": { "lo": 0.6333, "hi": 0.8009, "level": 0.9 }
+          },
+          {
+            "lo": 0.7,
+            "hi": 0.8,
+            "p_mean": 0.7525,
+            "freq": 0.7185,
+            "n": 16,
+            "ci": { "lo": 0.529, "hi": 0.908, "level": 0.9 }
+          },
+          {
+            "lo": 0.8,
+            "hi": 0.9,
+            "p_mean": 0.8404,
+            "freq": 0.9231,
+            "n": 2,
+            "ci": { "lo": 0.5921, "hi": 1, "level": 0.9 }
+          },
+          {
+            "lo": 0.9,
+            "hi": 1,
+            "p_mean": 0.961,
+            "freq": 0.8325,
+            "n": 2,
+            "ci": { "lo": 0.3828, "hi": 1, "level": 0.9 }
+          }
+        ],
+        "brier": 0.2387,
+        "pit": {
+          "bins": [
+            { "lo": 0, "hi": 0.1, "count": 40, "expected": 37.1 },
+            { "lo": 0.1, "hi": 0.2, "count": 41, "expected": 37.1 },
+            { "lo": 0.2, "hi": 0.3, "count": 34, "expected": 37.1 },
+            { "lo": 0.3, "hi": 0.4, "count": 36, "expected": 37.1 },
+            { "lo": 0.4, "hi": 0.5, "count": 33, "expected": 37.1 },
+            { "lo": 0.5, "hi": 0.6, "count": 40, "expected": 37.1 },
+            { "lo": 0.6, "hi": 0.7, "count": 44, "expected": 37.1 },
+            { "lo": 0.7, "hi": 0.8, "count": 34, "expected": 37.1 },
+            { "lo": 0.8, "hi": 0.9, "count": 34, "expected": 37.1 },
+            { "lo": 0.9, "hi": 1, "count": 36, "expected": 37.1 }
+          ],
+          "band": { "lo": 25.77, "hi": 48.43 },
+          "non_overlapping": false
+        },
+        "coverage": [
+          {
+            "nominal": 0.5,
+            "empirical": 0.5282,
+            "ci": { "lo": 0.4816, "hi": 0.5748, "level": 0.9 },
+            "n": 311
+          },
+          {
+            "nominal": 0.8,
+            "empirical": 0.8163,
+            "ci": { "lo": 0.7802, "hi": 0.8524, "level": 0.9 },
+            "n": 311
+          },
+          {
+            "nominal": 0.95,
+            "empirical": 0.9551,
+            "ci": { "lo": 0.9358, "hi": 0.9744, "level": 0.9 },
+            "n": 311
+          }
+        ],
+        "sharpness": { "width80": 0.04, "width80_capm": 0.0423 }
+      },
+      "decades": [
+        {
+          "label": "1990–2000",
+          "from": "1990-01-01",
+          "to": "2000-12-31",
+          "n_eff": 131,
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0261,
+            "ci": { "lo": -0.017, "hi": 0.0692, "level": 0.9 },
+            "n_eff": 131,
+            "grade": "C",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.0652,
+            "sample": "dev",
+            "dm_p": 0.3188,
+            "bh_q": 0.5101,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "decade.1990–2000.5",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          }
+        },
+        {
+          "label": "2001–2010",
+          "from": "2001-01-01",
+          "to": "2010-12-31",
+          "n_eff": 120,
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0315,
+            "ci": { "lo": -0.0136, "hi": 0.0765, "level": 0.9 },
+            "n_eff": 120,
+            "grade": "C",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.0681,
+            "sample": "dev",
+            "dm_p": 0.2506,
+            "bh_q": 0.401,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "decade.2001–2010.5",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          }
+        },
+        {
+          "label": "2011–2015",
+          "from": "2011-01-01",
+          "to": "2015-12-31",
+          "n_eff": 60,
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0188,
+            "ci": { "lo": -0.045, "hi": 0.0825, "level": 0.9 },
+            "n_eff": 60,
+            "grade": "C",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.0963,
+            "sample": "dev",
+            "dm_p": 0.6282,
+            "bh_q": 1,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "decade.2011–2015.5",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          }
+        },
+        {
+          "label": "2016–2020",
+          "from": "2016-01-01",
+          "to": "2020-12-31",
+          "n_eff": 60,
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.032,
+            "ci": { "lo": -0.0317, "hi": 0.0957, "level": 0.9 },
+            "n_eff": 60,
+            "grade": "C",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.0963,
+            "sample": "val",
+            "dm_p": 0.4081,
+            "bh_q": 0.653,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "decade.2016–2020.5",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          }
+        }
+      ],
+      "segments": {
+        "dev": {
+          "sample": "dev",
+          "window": { "from": "1990-01-31", "to": "2015-11-30" },
+          "n": 311,
+          "n_eff": 311,
+          "crps": {
+            "est": 0.01623,
+            "sample": "dev",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crps.5.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "crps_capm": { "est": 0.01659, "sample": "dev" },
+          "crps_hist": { "est": 0.01638, "sample": "dev" },
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.022,
+            "ci": { "lo": -0.006, "hi": 0.0499, "level": 0.9 },
+            "n_eff": 311,
+            "grade": "C",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.0423,
+            "sample": "dev",
+            "dm_p": 0.1969,
+            "bh_q": 0.315,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crpss_capm.5.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "crpss_hist": {
+            "metric": "crpss",
+            "reference": "hist_drift",
+            "est": 0.0096,
+            "ci": { "lo": -0.0184, "hi": 0.0375, "level": 0.9 },
+            "n_eff": 311,
+            "grade": "C",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.0423,
+            "sample": "dev",
+            "dm_p": 0.5743,
+            "bh_q": 0.9189,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crpss_hist.5.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "pinball": { "est": 0.00844, "sample": "dev" },
+          "brier": { "est": 0.2387, "sample": "dev" },
+          "hit_rate": {
+            "est": 0.5499,
+            "ci": { "lo": 0.5035, "hi": 0.5963, "level": 0.9 },
+            "n": 311,
+            "n_eff": 311,
+            "base_rate": 0.58,
+            "sample": "dev",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "hit_rate.5.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "cov50": {
+            "est": 0.5282,
+            "ci": { "lo": 0.4534, "hi": 0.5466, "level": 0.9 },
+            "n": 311,
+            "sample": "dev"
+          },
+          "cov80": {
+            "est": 0.8163,
+            "ci": { "lo": 0.7802, "hi": 0.8524, "level": 0.9 },
+            "n": 311,
+            "sample": "dev",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "cov80.5.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "cov95": {
+            "est": 0.9551,
+            "ci": { "lo": 0.9297, "hi": 0.9703, "level": 0.9 },
+            "n": 311,
+            "sample": "dev"
+          }
+        },
+        "val": {
+          "sample": "val",
+          "window": { "from": "2015-12-31", "to": "2020-11-30" },
+          "n": 60,
+          "n_eff": 60,
+          "crps": {
+            "est": 0.01636,
+            "sample": "val",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crps.5.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "crps_capm": { "est": 0.01659, "sample": "val" },
+          "crps_hist": { "est": 0.01638, "sample": "val" },
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0137,
+            "ci": { "lo": -0.05, "hi": 0.0774, "level": 0.9 },
+            "n_eff": 60,
+            "grade": "C",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.0963,
+            "sample": "val",
+            "dm_p": 0.7228,
+            "bh_q": 1,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crpss_capm.5.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "crpss_hist": {
+            "metric": "crpss",
+            "reference": "hist_drift",
+            "est": 0.0013,
+            "ci": { "lo": -0.0624, "hi": 0.0651, "level": 0.9 },
+            "n_eff": 60,
+            "grade": "C",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.0963,
+            "sample": "val",
+            "dm_p": 0.9724,
+            "bh_q": 1,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crpss_hist.5.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "pinball": { "est": 0.00851, "sample": "val" },
+          "brier": { "est": 0.2387, "sample": "val" },
+          "hit_rate": {
+            "est": 0.5856,
+            "ci": { "lo": 0.481, "hi": 0.6902, "level": 0.9 },
+            "n": 60,
+            "n_eff": 60,
+            "base_rate": 0.58,
+            "sample": "val",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "hit_rate.5.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "cov50": {
+            "est": 0.4764,
+            "ci": { "lo": 0.3938, "hi": 0.6062, "level": 0.9 },
+            "n": 60,
+            "sample": "val"
+          },
+          "cov80": {
+            "est": 0.7844,
+            "ci": { "lo": 0.6971, "hi": 0.8717, "level": 0.9 },
+            "n": 60,
+            "sample": "val",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "cov80.5.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "cov95": {
+            "est": 0.9266,
+            "ci": { "lo": 0.9037, "hi": 0.9963, "level": 0.9 },
+            "n": 60,
+            "sample": "val"
+          }
+        }
+      }
+    },
+    {
+      "h": 21,
+      "headline": "dev",
+      "grade_inputs": {
+        "n_eff": 311,
+        "crps_ci": { "lo": 0.0172, "hi": 0.0732, "level": 0.9 },
+        "dm_p": 0.0079,
+        "bh_q": 0.0126,
+        "cov80": 0.8093
+      },
+      "tilt": { "value": 0.0039, "unit": "pp/yr" },
+      "tdn": { "passed": true, "at": "2026-11-21T14:02:00Z" },
+      "calibration": {
+        "event": "P(price higher over the horizon)",
+        "reliability": [
+          {
+            "lo": 0,
+            "hi": 0.1,
+            "p_mean": 0.0614,
+            "freq": 0,
+            "n": 2,
+            "ci": { "lo": 0, "hi": 0.1163, "level": 0.9 }
+          },
+          {
+            "lo": 0.1,
+            "hi": 0.2,
+            "p_mean": 0.1668,
+            "freq": 0.1361,
+            "n": 2,
+            "ci": { "lo": 0, "hi": 0.5516, "level": 0.9 }
+          },
+          {
+            "lo": 0.2,
+            "hi": 0.3,
+            "p_mean": 0.2349,
+            "freq": 0.1895,
+            "n": 2,
+            "ci": { "lo": 0, "hi": 0.66, "level": 0.9 }
+          },
+          {
+            "lo": 0.3,
+            "hi": 0.4,
+            "p_mean": 0.3491,
+            "freq": 0.1433,
+            "n": 3,
+            "ci": { "lo": 0, "hi": 0.4894, "level": 0.9 }
+          },
+          {
+            "lo": 0.4,
+            "hi": 0.5,
+            "p_mean": 0.464,
+            "freq": 0.5219,
+            "n": 36,
+            "ci": { "lo": 0.3822, "hi": 0.6616, "level": 0.9 }
+          },
+          {
+            "lo": 0.5,
+            "hi": 0.6,
+            "p_mean": 0.5353,
+            "freq": 0.5735,
+            "n": 109,
+            "ci": { "lo": 0.494, "hi": 0.653, "level": 0.9 }
+          },
+          {
+            "lo": 0.6,
+            "hi": 0.7,
+            "p_mean": 0.6537,
+            "freq": 0.6508,
+            "n": 82,
+            "ci": { "lo": 0.5623, "hi": 0.7393, "level": 0.9 }
+          },
+          {
+            "lo": 0.7,
+            "hi": 0.8,
+            "p_mean": 0.7508,
+            "freq": 0.8631,
+            "n": 16,
+            "ci": { "lo": 0.7159, "hi": 1, "level": 0.9 }
+          },
+          {
+            "lo": 0.8,
+            "hi": 0.9,
+            "p_mean": 0.8649,
+            "freq": 1,
+            "n": 2,
+            "ci": { "lo": 0.8837, "hi": 1, "level": 0.9 }
+          },
+          {
+            "lo": 0.9,
+            "hi": 1,
+            "p_mean": 0.9328,
+            "freq": 0.5392,
+            "n": 2,
+            "ci": { "lo": 0, "hi": 1, "level": 0.9 }
+          }
+        ],
+        "brier": 0.2312,
+        "pit": {
+          "bins": [
+            { "lo": 0, "hi": 0.1, "count": 42, "expected": 37.1 },
+            { "lo": 0.1, "hi": 0.2, "count": 37, "expected": 37.1 },
+            { "lo": 0.2, "hi": 0.3, "count": 36, "expected": 37.1 },
+            { "lo": 0.3, "hi": 0.4, "count": 33, "expected": 37.1 },
+            { "lo": 0.4, "hi": 0.5, "count": 34, "expected": 37.1 },
+            { "lo": 0.5, "hi": 0.6, "count": 32, "expected": 37.1 },
+            { "lo": 0.6, "hi": 0.7, "count": 37, "expected": 37.1 },
+            { "lo": 0.7, "hi": 0.8, "count": 44, "expected": 37.1 },
+            { "lo": 0.8, "hi": 0.9, "count": 39, "expected": 37.1 },
+            { "lo": 0.9, "hi": 1, "count": 38, "expected": 37.1 }
+          ],
+          "band": { "lo": 25.77, "hi": 48.43 },
+          "non_overlapping": false
+        },
+        "coverage": [
+          {
+            "nominal": 0.5,
+            "empirical": 0.5068,
+            "ci": { "lo": 0.4602, "hi": 0.5534, "level": 0.9 },
+            "n": 311
+          },
+          {
+            "nominal": 0.8,
+            "empirical": 0.8093,
+            "ci": { "lo": 0.7727, "hi": 0.8459, "level": 0.9 },
+            "n": 311
+          },
+          {
+            "nominal": 0.95,
+            "empirical": 0.9501,
+            "ci": { "lo": 0.9298, "hi": 0.9704, "level": 0.9 },
+            "n": 311
+          }
+        ],
+        "sharpness": { "width80": 0.0799, "width80_capm": 0.0866 }
+      },
+      "decades": [
+        {
+          "label": "1990–2000",
+          "from": "1990-01-01",
+          "to": "2000-12-31",
+          "n_eff": 131,
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.047,
+            "ci": { "lo": 0.0039, "hi": 0.0901, "level": 0.9 },
+            "n_eff": 131,
+            "grade": "B",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.0652,
+            "sample": "dev",
+            "dm_p": 0.0731,
+            "bh_q": 0.117,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "decade.1990–2000.21",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          }
+        },
+        {
+          "label": "2001–2010",
+          "from": "2001-01-01",
+          "to": "2010-12-31",
+          "n_eff": 120,
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0689,
+            "ci": { "lo": 0.0239, "hi": 0.114, "level": 0.9 },
+            "n_eff": 120,
+            "grade": "A",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.0681,
+            "sample": "dev",
+            "dm_p": 0.0118,
+            "bh_q": 0.0189,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "decade.2001–2010.21",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          }
+        },
+        {
+          "label": "2011–2015",
+          "from": "2011-01-01",
+          "to": "2015-12-31",
+          "n_eff": 60,
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0501,
+            "ci": { "lo": -0.0137, "hi": 0.1138, "level": 0.9 },
+            "n_eff": 60,
+            "grade": "C",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.0963,
+            "sample": "dev",
+            "dm_p": 0.1962,
+            "bh_q": 0.3139,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "decade.2011–2015.21",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          }
+        },
+        {
+          "label": "2016–2020",
+          "from": "2016-01-01",
+          "to": "2020-12-31",
+          "n_eff": 60,
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0382,
+            "ci": { "lo": -0.0256, "hi": 0.1019, "level": 0.9 },
+            "n_eff": 60,
+            "grade": "C",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.0963,
+            "sample": "val",
+            "dm_p": 0.3246,
+            "bh_q": 0.5194,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "decade.2016–2020.21",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          }
+        }
+      ],
+      "segments": {
+        "dev": {
+          "sample": "dev",
+          "window": { "from": "1990-01-31", "to": "2015-11-30" },
+          "n": 311,
+          "n_eff": 311,
+          "crps": {
+            "est": 0.03246,
+            "sample": "dev",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crps.21.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "crps_capm": { "est": 0.034, "sample": "dev" },
+          "crps_hist": { "est": 0.03352, "sample": "dev" },
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0452,
+            "ci": { "lo": 0.0172, "hi": 0.0732, "level": 0.9 },
+            "n_eff": 311,
+            "grade": "A",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.0423,
+            "sample": "dev",
+            "dm_p": 0.0079,
+            "bh_q": 0.0126,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crpss_capm.21.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "crpss_hist": {
+            "metric": "crpss",
+            "reference": "hist_drift",
+            "est": 0.0315,
+            "ci": { "lo": 0.0035, "hi": 0.0595, "level": 0.9 },
+            "n_eff": 311,
+            "grade": "B",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.0423,
+            "sample": "dev",
+            "dm_p": 0.064,
+            "bh_q": 0.1024,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crpss_hist.21.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "pinball": { "est": 0.01688, "sample": "dev" },
+          "brier": { "est": 0.2312, "sample": "dev" },
+          "hit_rate": {
+            "est": 0.6044,
+            "ci": { "lo": 0.5588, "hi": 0.65, "level": 0.9 },
+            "n": 311,
+            "n_eff": 311,
+            "base_rate": 0.58,
+            "sample": "dev",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "hit_rate.21.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "cov50": {
+            "est": 0.5068,
+            "ci": { "lo": 0.4534, "hi": 0.5466, "level": 0.9 },
+            "n": 311,
+            "sample": "dev"
+          },
+          "cov80": {
+            "est": 0.8093,
+            "ci": { "lo": 0.7727, "hi": 0.8459, "level": 0.9 },
+            "n": 311,
+            "sample": "dev",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "cov80.21.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "cov95": {
+            "est": 0.9501,
+            "ci": { "lo": 0.9297, "hi": 0.9703, "level": 0.9 },
+            "n": 311,
+            "sample": "dev"
+          }
+        },
+        "val": {
+          "sample": "val",
+          "window": { "from": "2015-12-31", "to": "2020-11-30" },
+          "n": 60,
+          "n_eff": 60,
+          "crps": {
+            "est": 0.03312,
+            "sample": "val",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crps.21.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "crps_capm": { "est": 0.034, "sample": "val" },
+          "crps_hist": { "est": 0.03353, "sample": "val" },
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0259,
+            "ci": { "lo": -0.0378, "hi": 0.0896, "level": 0.9 },
+            "n_eff": 60,
+            "grade": "C",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.0963,
+            "sample": "val",
+            "dm_p": 0.5033,
+            "bh_q": 0.8053,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crpss_capm.21.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "crpss_hist": {
+            "metric": "crpss",
+            "reference": "hist_drift",
+            "est": 0.0123,
+            "ci": { "lo": -0.0515, "hi": 0.076, "level": 0.9 },
+            "n_eff": 60,
+            "grade": "C",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.0963,
+            "sample": "val",
+            "dm_p": 0.7517,
+            "bh_q": 1,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crpss_hist.21.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "pinball": { "est": 0.01722, "sample": "val" },
+          "brier": { "est": 0.2312, "sample": "val" },
+          "hit_rate": {
+            "est": 0.6174,
+            "ci": { "lo": 0.5142, "hi": 0.7206, "level": 0.9 },
+            "n": 60,
+            "n_eff": 60,
+            "base_rate": 0.58,
+            "sample": "val",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "hit_rate.21.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "cov50": {
+            "est": 0.5207,
+            "ci": { "lo": 0.3938, "hi": 0.6062, "level": 0.9 },
+            "n": 60,
+            "sample": "val"
+          },
+          "cov80": {
+            "est": 0.8083,
+            "ci": { "lo": 0.7248, "hi": 0.8919, "level": 0.9 },
+            "n": 60,
+            "sample": "val",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "cov80.21.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "cov95": {
+            "est": 0.9514,
+            "ci": { "lo": 0.9037, "hi": 0.9963, "level": 0.9 },
+            "n": 60,
+            "sample": "val"
+          }
+        }
+      }
+    },
+    {
+      "h": 63,
+      "headline": "dev",
+      "grade_inputs": {
+        "n_eff": 103,
+        "crps_ci": { "lo": -0.0336, "hi": 0.0637, "level": 0.9 },
+        "dm_p": 0.6104,
+        "bh_q": 0.9766,
+        "cov80": 0.8075
+      },
+      "tilt": { "value": 0.0018, "unit": "pp/yr" },
+      "tdn": { "passed": true, "at": "2026-11-21T14:02:00Z" },
+      "calibration": {
+        "event": "P(price higher over the horizon)",
+        "reliability": [
+          {
+            "lo": 0,
+            "hi": 0.1,
+            "p_mean": 0.0306,
+            "freq": 0.2645,
+            "n": 2,
+            "ci": { "lo": 0, "hi": 0.7906, "level": 0.9 }
+          },
+          {
+            "lo": 0.1,
+            "hi": 0.2,
+            "p_mean": 0.1586,
+            "freq": 0.0975,
+            "n": 2,
+            "ci": { "lo": 0, "hi": 0.4616, "level": 0.9 }
+          },
+          {
+            "lo": 0.2,
+            "hi": 0.3,
+            "p_mean": 0.2301,
+            "freq": 0.314,
+            "n": 2,
+            "ci": { "lo": 0, "hi": 0.8662, "level": 0.9 }
+          },
+          {
+            "lo": 0.3,
+            "hi": 0.4,
+            "p_mean": 0.3303,
+            "freq": 0.3295,
+            "n": 3,
+            "ci": { "lo": 0, "hi": 0.7859, "level": 0.9 }
+          },
+          {
+            "lo": 0.4,
+            "hi": 0.5,
+            "p_mean": 0.4366,
+            "freq": 0.4848,
+            "n": 36,
+            "ci": { "lo": 0.3451, "hi": 0.6245, "level": 0.9 }
+          },
+          {
+            "lo": 0.5,
+            "hi": 0.6,
+            "p_mean": 0.5306,
+            "freq": 0.5603,
+            "n": 108,
+            "ci": { "lo": 0.4802, "hi": 0.6404, "level": 0.9 }
+          },
+          {
+            "lo": 0.6,
+            "hi": 0.7,
+            "p_mean": 0.6386,
+            "freq": 0.6516,
+            "n": 82,
+            "ci": { "lo": 0.5632, "hi": 0.74, "level": 0.9 }
+          },
+          {
+            "lo": 0.7,
+            "hi": 0.8,
+            "p_mean": 0.7356,
+            "freq": 0.6909,
+            "n": 15,
+            "ci": { "lo": 0.4901, "hi": 0.8917, "level": 0.9 }
+          },
+          {
+            "lo": 0.8,
+            "hi": 0.9,
+            "p_mean": 0.8562,
+            "freq": 0.7009,
+            "n": 2,
+            "ci": { "lo": 0.1558, "hi": 1, "level": 0.9 }
+          },
+          {
+            "lo": 0.9,
+            "hi": 1,
+            "p_mean": 0.954,
+            "freq": 1,
+            "n": 2,
+            "ci": { "lo": 0.8837, "hi": 1, "level": 0.9 }
+          }
+        ],
+        "brier": 0.2396,
+        "pit": {
+          "bins": [
+            { "lo": 0, "hi": 0.1, "count": 43, "expected": 36.9 },
+            { "lo": 0.1, "hi": 0.2, "count": 39, "expected": 36.9 },
+            { "lo": 0.2, "hi": 0.3, "count": 37, "expected": 36.9 },
+            { "lo": 0.3, "hi": 0.4, "count": 36, "expected": 36.9 },
+            { "lo": 0.4, "hi": 0.5, "count": 35, "expected": 36.9 },
+            { "lo": 0.5, "hi": 0.6, "count": 32, "expected": 36.9 },
+            { "lo": 0.6, "hi": 0.7, "count": 37, "expected": 36.9 },
+            { "lo": 0.7, "hi": 0.8, "count": 29, "expected": 36.9 },
+            { "lo": 0.8, "hi": 0.9, "count": 36, "expected": 36.9 },
+            { "lo": 0.9, "hi": 1, "count": 39, "expected": 36.9 }
+          ],
+          "band": { "lo": 25.6, "hi": 48.2 },
+          "non_overlapping": false
+        },
+        "coverage": [
+          {
+            "nominal": 0.5,
+            "empirical": 0.4935,
+            "ci": { "lo": 0.4125, "hi": 0.5745, "level": 0.9 },
+            "n": 309
+          },
+          {
+            "nominal": 0.8,
+            "empirical": 0.8075,
+            "ci": { "lo": 0.7436, "hi": 0.8714, "level": 0.9 },
+            "n": 309
+          },
+          {
+            "nominal": 0.95,
+            "empirical": 0.9427,
+            "ci": { "lo": 0.905, "hi": 0.9804, "level": 0.9 },
+            "n": 309
+          }
+        ],
+        "sharpness": { "width80": 0.1424, "width80_capm": 0.15 }
+      },
+      "decades": [
+        {
+          "label": "1990–2000",
+          "from": "1990-01-01",
+          "to": "2000-12-31",
+          "n_eff": 43,
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0199,
+            "ci": { "lo": -0.0553, "hi": 0.0952, "level": 0.9 },
+            "n_eff": 43,
+            "grade": "C",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.1138,
+            "sample": "dev",
+            "dm_p": 0.663,
+            "bh_q": 1,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "decade.1990–2000.63",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          }
+        },
+        {
+          "label": "2001–2010",
+          "from": "2001-01-01",
+          "to": "2010-12-31",
+          "n_eff": 40,
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0198,
+            "ci": { "lo": -0.0583, "hi": 0.0978, "level": 0.9 },
+            "n_eff": 40,
+            "grade": "C",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.118,
+            "sample": "dev",
+            "dm_p": 0.6769,
+            "bh_q": 1,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "decade.2001–2010.63",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          }
+        },
+        {
+          "label": "2011–2015",
+          "from": "2011-01-01",
+          "to": "2015-12-31",
+          "n_eff": 20,
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0181,
+            "ci": { "lo": -0.0922, "hi": 0.1285, "level": 0.9 },
+            "n_eff": 20,
+            "grade": "C",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.1668,
+            "sample": "dev",
+            "dm_p": 0.7867,
+            "bh_q": 1,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "decade.2011–2015.63",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          }
+        },
+        {
+          "label": "2016–2020",
+          "from": "2016-01-01",
+          "to": "2020-12-31",
+          "n_eff": 20,
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0316,
+            "ci": { "lo": -0.0788, "hi": 0.1419, "level": 0.9 },
+            "n_eff": 20,
+            "grade": "C",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.1668,
+            "sample": "val",
+            "dm_p": 0.638,
+            "bh_q": 1,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "decade.2016–2020.63",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          }
+        }
+      ],
+      "segments": {
+        "dev": {
+          "sample": "dev",
+          "window": { "from": "1990-01-31", "to": "2015-09-30" },
+          "n": 309,
+          "n_eff": 103,
+          "crps": {
+            "est": 0.058,
+            "sample": "dev",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crps.63.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "crps_capm": { "est": 0.05889, "sample": "dev" },
+          "crps_hist": { "est": 0.05789, "sample": "dev" },
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0151,
+            "ci": { "lo": -0.0336, "hi": 0.0637, "level": 0.9 },
+            "n_eff": 103,
+            "grade": "C",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.0735,
+            "sample": "dev",
+            "dm_p": 0.6104,
+            "bh_q": 0.9766,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crpss_capm.63.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "crpss_hist": {
+            "metric": "crpss",
+            "reference": "hist_drift",
+            "est": -0.0019,
+            "ci": { "lo": -0.0506, "hi": 0.0467, "level": 0.9 },
+            "n_eff": 103,
+            "grade": "D",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.0735,
+            "sample": "dev",
+            "dm_p": 0.9477,
+            "bh_q": 1,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crpss_hist.63.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "pinball": { "est": 0.03016, "sample": "dev" },
+          "brier": { "est": 0.2396, "sample": "dev" },
+          "hit_rate": {
+            "est": 0.5708,
+            "ci": { "lo": 0.4906, "hi": 0.651, "level": 0.9 },
+            "n": 309,
+            "n_eff": 103,
+            "base_rate": 0.58,
+            "sample": "dev",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "hit_rate.63.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "cov50": {
+            "est": 0.4935,
+            "ci": { "lo": 0.419, "hi": 0.581, "level": 0.9 },
+            "n": 309,
+            "sample": "dev"
+          },
+          "cov80": {
+            "est": 0.8075,
+            "ci": { "lo": 0.7436, "hi": 0.8714, "level": 0.9 },
+            "n": 309,
+            "sample": "dev",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "cov80.63.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "cov95": {
+            "est": 0.9427,
+            "ci": { "lo": 0.9147, "hi": 0.9853, "level": 0.9 },
+            "n": 309,
+            "sample": "dev"
+          }
+        },
+        "val": {
+          "sample": "val",
+          "window": { "from": "2015-10-30", "to": "2020-09-30" },
+          "n": 60,
+          "n_eff": 20,
+          "crps": {
+            "est": 0.05823,
+            "sample": "val",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crps.63.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "crps_capm": { "est": 0.05889, "sample": "val" },
+          "crps_hist": { "est": 0.05789, "sample": "val" },
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0112,
+            "ci": { "lo": -0.0992, "hi": 0.1215, "level": 0.9 },
+            "n_eff": 20,
+            "grade": "C",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.1668,
+            "sample": "val",
+            "dm_p": 0.8678,
+            "bh_q": 1,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crpss_capm.63.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "crpss_hist": {
+            "metric": "crpss",
+            "reference": "hist_drift",
+            "est": -0.0058,
+            "ci": { "lo": -0.1162, "hi": 0.1045, "level": 0.9 },
+            "n_eff": 20,
+            "grade": "D",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.1668,
+            "sample": "val",
+            "dm_p": 0.9307,
+            "bh_q": 1,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crpss_hist.63.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "pinball": { "est": 0.03028, "sample": "val" },
+          "brier": { "est": 0.2396, "sample": "val" },
+          "hit_rate": {
+            "est": 0.5641,
+            "ci": { "lo": 0.3817, "hi": 0.7465, "level": 0.9 },
+            "n": 60,
+            "n_eff": 20,
+            "base_rate": 0.58,
+            "sample": "val",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "hit_rate.63.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "cov50": {
+            "est": 0.4789,
+            "ci": { "lo": 0.3161, "hi": 0.6839, "level": 0.9 },
+            "n": 60,
+            "sample": "val"
+          },
+          "cov80": {
+            "est": 0.7716,
+            "ci": { "lo": 0.6172, "hi": 0.926, "level": 0.9 },
+            "n": 60,
+            "sample": "val",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "cov80.63.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "cov95": {
+            "est": 0.9133,
+            "ci": { "lo": 0.8698, "hi": 1, "level": 0.9 },
+            "n": 60,
+            "sample": "val"
+          }
+        }
+      }
+    },
+    {
+      "h": 126,
+      "headline": "dev",
+      "grade_inputs": {
+        "n_eff": 51,
+        "crps_ci": { "lo": -0.0595, "hi": 0.0787, "level": 0.9 },
+        "dm_p": 0.8194,
+        "bh_q": 1,
+        "cov80": 0.8081
+      },
+      "tilt": { "value": 0.0007, "unit": "pp/yr" },
+      "tdn": { "passed": true, "at": "2026-11-21T14:02:00Z" },
+      "calibration": {
+        "event": "P(price higher over the horizon)",
+        "reliability": [
+          {
+            "lo": 0,
+            "hi": 0.1,
+            "p_mean": 0.0415,
+            "freq": 0.175,
+            "n": 2,
+            "ci": { "lo": 0, "hi": 0.632, "level": 0.9 }
+          },
+          {
+            "lo": 0.1,
+            "hi": 0.2,
+            "p_mean": 0.143,
+            "freq": 0.1803,
+            "n": 2,
+            "ci": { "lo": 0, "hi": 0.6424, "level": 0.9 }
+          },
+          {
+            "lo": 0.2,
+            "hi": 0.3,
+            "p_mean": 0.2459,
+            "freq": 0.2479,
+            "n": 2,
+            "ci": { "lo": 0, "hi": 0.7635, "level": 0.9 }
+          },
+          {
+            "lo": 0.3,
+            "hi": 0.4,
+            "p_mean": 0.3386,
+            "freq": 0.2682,
+            "n": 3,
+            "ci": { "lo": 0, "hi": 0.6995, "level": 0.9 }
+          },
+          {
+            "lo": 0.4,
+            "hi": 0.5,
+            "p_mean": 0.4391,
+            "freq": 0.4389,
+            "n": 35,
+            "ci": { "lo": 0.2981, "hi": 0.5797, "level": 0.9 }
+          },
+          {
+            "lo": 0.5,
+            "hi": 0.6,
+            "p_mean": 0.5379,
+            "freq": 0.5364,
+            "n": 107,
+            "ci": { "lo": 0.4555, "hi": 0.6173, "level": 0.9 }
+          },
+          {
+            "lo": 0.6,
+            "hi": 0.7,
+            "p_mean": 0.651,
+            "freq": 0.6396,
+            "n": 81,
+            "ci": { "lo": 0.55, "hi": 0.7292, "level": 0.9 }
+          },
+          {
+            "lo": 0.7,
+            "hi": 0.8,
+            "p_mean": 0.7691,
+            "freq": 0.7132,
+            "n": 15,
+            "ci": { "lo": 0.5165, "hi": 0.9099, "level": 0.9 }
+          },
+          {
+            "lo": 0.8,
+            "hi": 0.9,
+            "p_mean": 0.8315,
+            "freq": 0.5844,
+            "n": 2,
+            "ci": { "lo": 0, "hi": 1, "level": 0.9 }
+          },
+          {
+            "lo": 0.9,
+            "hi": 1,
+            "p_mean": 0.9573,
+            "freq": 0.9731,
+            "n": 2,
+            "ci": { "lo": 0.7519, "hi": 1, "level": 0.9 }
+          }
+        ],
+        "brier": 0.2423,
+        "pit": {
+          "bins": [
+            { "lo": 0, "hi": 0.1, "count": 37, "expected": 36.6 },
+            { "lo": 0.1, "hi": 0.2, "count": 37, "expected": 36.6 },
+            { "lo": 0.2, "hi": 0.3, "count": 33, "expected": 36.6 },
+            { "lo": 0.3, "hi": 0.4, "count": 36, "expected": 36.6 },
+            { "lo": 0.4, "hi": 0.5, "count": 39, "expected": 36.6 },
+            { "lo": 0.5, "hi": 0.6, "count": 39, "expected": 36.6 },
+            { "lo": 0.6, "hi": 0.7, "count": 38, "expected": 36.6 },
+            { "lo": 0.7, "hi": 0.8, "count": 40, "expected": 36.6 },
+            { "lo": 0.8, "hi": 0.9, "count": 41, "expected": 36.6 },
+            { "lo": 0.9, "hi": 1, "count": 37, "expected": 36.6 }
+          ],
+          "band": { "lo": 25.35, "hi": 47.85 },
+          "non_overlapping": false
+        },
+        "coverage": [
+          {
+            "nominal": 0.5,
+            "empirical": 0.5031,
+            "ci": { "lo": 0.3879, "hi": 0.6183, "level": 0.9 },
+            "n": 306
+          },
+          {
+            "nominal": 0.8,
+            "empirical": 0.8081,
+            "ci": { "lo": 0.7174, "hi": 0.8988, "level": 0.9 },
+            "n": 306
+          },
+          {
+            "nominal": 0.95,
+            "empirical": 0.9499,
+            "ci": { "lo": 0.8996, "hi": 1, "level": 0.9 },
+            "n": 306
+          }
+        ],
+        "sharpness": { "width80": 0.2032, "width80_capm": 0.2121 }
+      },
+      "decades": [
+        {
+          "label": "1990–2000",
+          "from": "1990-01-01",
+          "to": "2000-12-31",
+          "n_eff": 21,
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0122,
+            "ci": { "lo": -0.0955, "hi": 0.1199, "level": 0.9 },
+            "n_eff": 21,
+            "grade": "C",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.1628,
+            "sample": "dev",
+            "dm_p": 0.8525,
+            "bh_q": 1,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "decade.1990–2000.126",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          }
+        },
+        {
+          "label": "2001–2010",
+          "from": "2001-01-01",
+          "to": "2010-12-31",
+          "n_eff": 20,
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0053,
+            "ci": { "lo": -0.1051, "hi": 0.1156, "level": 0.9 },
+            "n_eff": 20,
+            "grade": "C",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.1668,
+            "sample": "dev",
+            "dm_p": 0.9373,
+            "bh_q": 1,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "decade.2001–2010.126",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          }
+        },
+        {
+          "label": "2011–2015",
+          "from": "2011-01-01",
+          "to": "2015-12-31",
+          "n_eff": 10,
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0131,
+            "ci": { "lo": -0.1429, "hi": 0.1692, "level": 0.9 },
+            "n_eff": 10,
+            "grade": "D",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.2359,
+            "sample": "dev",
+            "dm_p": null,
+            "bh_q": null,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "decade.2011–2015.126",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          }
+        },
+        {
+          "label": "2016–2020",
+          "from": "2016-01-01",
+          "to": "2020-12-31",
+          "n_eff": 10,
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0094,
+            "ci": { "lo": -0.1466, "hi": 0.1655, "level": 0.9 },
+            "n_eff": 10,
+            "grade": "D",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.2359,
+            "sample": "val",
+            "dm_p": null,
+            "bh_q": null,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "decade.2016–2020.126",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          }
+        }
+      ],
+      "segments": {
+        "dev": {
+          "sample": "dev",
+          "window": { "from": "1990-01-31", "to": "2015-06-30" },
+          "n": 306,
+          "n_eff": 51,
+          "crps": {
+            "est": 0.08248,
+            "sample": "dev",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crps.126.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "crps_capm": { "est": 0.08328, "sample": "dev" },
+          "crps_hist": { "est": 0.08147, "sample": "dev" },
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0096,
+            "ci": { "lo": -0.0595, "hi": 0.0787, "level": 0.9 },
+            "n_eff": 51,
+            "grade": "C",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.1045,
+            "sample": "dev",
+            "dm_p": 0.8194,
+            "bh_q": 1,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crpss_capm.126.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "crpss_hist": {
+            "metric": "crpss",
+            "reference": "hist_drift",
+            "est": -0.0124,
+            "ci": { "lo": -0.0815, "hi": 0.0567, "level": 0.9 },
+            "n_eff": 51,
+            "grade": "D",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.1045,
+            "sample": "dev",
+            "dm_p": 0.7677,
+            "bh_q": 1,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crpss_hist.126.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "pinball": { "est": 0.04289, "sample": "dev" },
+          "brier": { "est": 0.2423, "sample": "dev" },
+          "hit_rate": {
+            "est": 0.5685,
+            "ci": { "lo": 0.4544, "hi": 0.6826, "level": 0.9 },
+            "n": 306,
+            "n_eff": 51,
+            "base_rate": 0.58,
+            "sample": "dev",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "hit_rate.126.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "cov50": {
+            "est": 0.5031,
+            "ci": { "lo": 0.3848, "hi": 0.6152, "level": 0.9 },
+            "n": 306,
+            "sample": "dev"
+          },
+          "cov80": {
+            "est": 0.8081,
+            "ci": { "lo": 0.7174, "hi": 0.8988, "level": 0.9 },
+            "n": 306,
+            "sample": "dev",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "cov80.126.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "cov95": {
+            "est": 0.9499,
+            "ci": { "lo": 0.8998, "hi": 1, "level": 0.9 },
+            "n": 306,
+            "sample": "dev"
+          }
+        },
+        "val": {
+          "sample": "val",
+          "window": { "from": "2015-07-31", "to": "2020-06-30" },
+          "n": 60,
+          "n_eff": 10,
+          "crps": {
+            "est": 0.08284,
+            "sample": "val",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crps.126.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "crps_capm": { "est": 0.08328, "sample": "val" },
+          "crps_hist": { "est": 0.08148, "sample": "val" },
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0053,
+            "ci": { "lo": -0.1508, "hi": 0.1614, "level": 0.9 },
+            "n_eff": 10,
+            "grade": "D",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.2359,
+            "sample": "val",
+            "dm_p": null,
+            "bh_q": null,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crpss_capm.126.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "crpss_hist": {
+            "metric": "crpss",
+            "reference": "hist_drift",
+            "est": -0.0167,
+            "ci": { "lo": -0.1728, "hi": 0.1394, "level": 0.9 },
+            "n_eff": 10,
+            "grade": "D",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.2359,
+            "sample": "val",
+            "dm_p": null,
+            "bh_q": null,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crpss_hist.126.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "pinball": { "est": 0.04308, "sample": "val" },
+          "brier": { "est": 0.2423, "sample": "val" },
+          "hit_rate": {
+            "est": 0.5666,
+            "ci": { "lo": 0.3088, "hi": 0.8243, "level": 0.9 },
+            "n": 60,
+            "n_eff": 10,
+            "base_rate": 0.58,
+            "sample": "val",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "hit_rate.126.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "cov50": {
+            "est": 0.4951,
+            "ci": { "lo": 0.2399, "hi": 0.7601, "level": 0.9 },
+            "n": 60,
+            "sample": "val"
+          },
+          "cov80": {
+            "est": 0.7958,
+            "ci": { "lo": 0.5861, "hi": 1, "level": 0.9 },
+            "n": 60,
+            "sample": "val",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "cov80.126.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "cov95": {
+            "est": 0.9407,
+            "ci": { "lo": 0.8366, "hi": 1, "level": 0.9 },
+            "n": 60,
+            "sample": "val"
+          }
+        }
+      }
+    },
+    {
+      "h": 252,
+      "headline": "dev",
+      "grade_inputs": {
+        "n_eff": 25,
+        "crps_ci": { "lo": -0.0936, "hi": 0.1038, "level": 0.9 },
+        "dm_p": 0.9322,
+        "bh_q": 1,
+        "cov80": 0.8016
+      },
+      "tilt": { "value": -0.0004, "unit": "pp/yr" },
+      "tdn": { "passed": true, "at": "2026-11-21T14:02:00Z" },
+      "calibration": {
+        "event": "P(price higher over the horizon)",
+        "reliability": [
+          {
+            "lo": 0,
+            "hi": 0.1,
+            "p_mean": 0.0488,
+            "freq": 0.1185,
+            "n": 2,
+            "ci": { "lo": 0, "hi": 0.512, "level": 0.9 }
+          },
+          {
+            "lo": 0.1,
+            "hi": 0.2,
+            "p_mean": 0.137,
+            "freq": 0.4565,
+            "n": 2,
+            "ci": { "lo": 0, "hi": 1, "level": 0.9 }
+          },
+          {
+            "lo": 0.2,
+            "hi": 0.3,
+            "p_mean": 0.262,
+            "freq": 0.4591,
+            "n": 2,
+            "ci": { "lo": 0, "hi": 1, "level": 0.9 }
+          },
+          {
+            "lo": 0.3,
+            "hi": 0.4,
+            "p_mean": 0.3476,
+            "freq": 0.2257,
+            "n": 3,
+            "ci": { "lo": 0, "hi": 0.6339, "level": 0.9 }
+          },
+          {
+            "lo": 0.4,
+            "hi": 0.5,
+            "p_mean": 0.4525,
+            "freq": 0.4174,
+            "n": 35,
+            "ci": { "lo": 0.2775, "hi": 0.5573, "level": 0.9 }
+          },
+          {
+            "lo": 0.5,
+            "hi": 0.6,
+            "p_mean": 0.553,
+            "freq": 0.5562,
+            "n": 106,
+            "ci": { "lo": 0.4752, "hi": 0.6372, "level": 0.9 }
+          },
+          {
+            "lo": 0.6,
+            "hi": 0.7,
+            "p_mean": 0.6354,
+            "freq": 0.6625,
+            "n": 80,
+            "ci": { "lo": 0.5736, "hi": 0.7514, "level": 0.9 }
+          },
+          {
+            "lo": 0.7,
+            "hi": 0.8,
+            "p_mean": 0.7644,
+            "freq": 0.7364,
+            "n": 15,
+            "ci": { "lo": 0.5445, "hi": 0.9283, "level": 0.9 }
+          },
+          {
+            "lo": 0.8,
+            "hi": 0.9,
+            "p_mean": 0.8338,
+            "freq": 0.736,
+            "n": 2,
+            "ci": { "lo": 0.2102, "hi": 1, "level": 0.9 }
+          },
+          {
+            "lo": 0.9,
+            "hi": 1,
+            "p_mean": 0.9312,
+            "freq": 1,
+            "n": 2,
+            "ci": { "lo": 0.8837, "hi": 1, "level": 0.9 }
+          }
+        ],
+        "brier": 0.2438,
+        "pit": {
+          "bins": [
+            { "lo": 0, "hi": 0.1, "count": 2, "expected": 3 },
+            { "lo": 0.1, "hi": 0.2, "count": 3, "expected": 3 },
+            { "lo": 0.2, "hi": 0.3, "count": 4, "expected": 3 },
+            { "lo": 0.3, "hi": 0.4, "count": 4, "expected": 3 },
+            { "lo": 0.4, "hi": 0.5, "count": 1, "expected": 3 },
+            { "lo": 0.5, "hi": 0.6, "count": 4, "expected": 3 },
+            { "lo": 0.6, "hi": 0.7, "count": 1, "expected": 3 },
+            { "lo": 0.7, "hi": 0.8, "count": 3, "expected": 3 },
+            { "lo": 0.8, "hi": 0.9, "count": 2, "expected": 3 },
+            { "lo": 0.9, "hi": 1, "count": 3, "expected": 3 }
+          ],
+          "band": { "lo": -0.22, "hi": 6.22 },
+          "non_overlapping": true
+        },
+        "coverage": [
+          {
+            "nominal": 0.5,
+            "empirical": 0.5037,
+            "ci": { "lo": 0.3392, "hi": 0.6682, "level": 0.9 },
+            "n": 300
+          },
+          {
+            "nominal": 0.8,
+            "empirical": 0.8016,
+            "ci": { "lo": 0.6704, "hi": 0.9328, "level": 0.9 },
+            "n": 300
+          },
+          {
+            "nominal": 0.95,
+            "empirical": 0.9374,
+            "ci": { "lo": 0.8577, "hi": 1, "level": 0.9 },
+            "n": 300
+          }
+        ],
+        "sharpness": { "width80": 0.2888, "width80_capm": 0.3 }
+      },
+      "decades": [
+        {
+          "label": "1990–2000",
+          "from": "1990-01-01",
+          "to": "2000-12-31",
+          "n_eff": 10,
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0195,
+            "ci": { "lo": -0.1366, "hi": 0.1756, "level": 0.9 },
+            "n_eff": 10,
+            "grade": "D",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.2359,
+            "sample": "dev",
+            "dm_p": null,
+            "bh_q": null,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "decade.1990–2000.252",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          }
+        },
+        {
+          "label": "2001–2010",
+          "from": "2001-01-01",
+          "to": "2010-12-31",
+          "n_eff": 10,
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0105,
+            "ci": { "lo": -0.1456, "hi": 0.1665, "level": 0.9 },
+            "n_eff": 10,
+            "grade": "D",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.2359,
+            "sample": "dev",
+            "dm_p": null,
+            "bh_q": null,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "decade.2001–2010.252",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          }
+        },
+        {
+          "label": "2011–2015",
+          "from": "2011-01-01",
+          "to": "2015-12-31",
+          "n_eff": 5,
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0182,
+            "ci": { "lo": -0.2025, "hi": 0.2389, "level": 0.9 },
+            "n_eff": 5,
+            "grade": "D",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.3337,
+            "sample": "dev",
+            "dm_p": null,
+            "bh_q": null,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "decade.2011–2015.252",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          }
+        },
+        {
+          "label": "2016–2020",
+          "from": "2016-01-01",
+          "to": "2020-12-31",
+          "n_eff": 5,
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0151,
+            "ci": { "lo": -0.2056, "hi": 0.2358, "level": 0.9 },
+            "n_eff": 5,
+            "grade": "D",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.3337,
+            "sample": "val",
+            "dm_p": null,
+            "bh_q": null,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "decade.2016–2020.252",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          }
+        }
+      ],
+      "segments": {
+        "dev": {
+          "sample": "dev",
+          "window": { "from": "1990-01-31", "to": "2014-12-31" },
+          "n": 300,
+          "n_eff": 25,
+          "crps": {
+            "est": 0.11718,
+            "sample": "dev",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crps.252.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "crps_capm": { "est": 0.11778, "sample": "dev" },
+          "crps_hist": { "est": 0.11411, "sample": "dev" },
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0051,
+            "ci": { "lo": -0.0936, "hi": 0.1038, "level": 0.9 },
+            "n_eff": 25,
+            "grade": "C",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.1492,
+            "sample": "dev",
+            "dm_p": 0.9322,
+            "bh_q": 1,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crpss_capm.252.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "crpss_hist": {
+            "metric": "crpss",
+            "reference": "hist_drift",
+            "est": -0.0269,
+            "ci": { "lo": -0.1256, "hi": 0.0718, "level": 0.9 },
+            "n_eff": 25,
+            "grade": "D",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.1492,
+            "sample": "dev",
+            "dm_p": 0.654,
+            "bh_q": 1,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crpss_hist.252.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "pinball": { "est": 0.06093, "sample": "dev" },
+          "brier": { "est": 0.2438, "sample": "dev" },
+          "hit_rate": {
+            "est": 0.5609,
+            "ci": { "lo": 0.3976, "hi": 0.7241, "level": 0.9 },
+            "n": 300,
+            "n_eff": 25,
+            "base_rate": 0.58,
+            "sample": "dev",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "hit_rate.252.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "cov50": {
+            "est": 0.5037,
+            "ci": { "lo": 0.3355, "hi": 0.6645, "level": 0.9 },
+            "n": 300,
+            "sample": "dev"
+          },
+          "cov80": {
+            "est": 0.8016,
+            "ci": { "lo": 0.6704, "hi": 0.9328, "level": 0.9 },
+            "n": 300,
+            "sample": "dev",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "cov80.252.dev",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "cov95": {
+            "est": 0.9374,
+            "ci": { "lo": 0.8783, "hi": 1, "level": 0.9 },
+            "n": 300,
+            "sample": "dev"
+          }
+        },
+        "val": {
+          "sample": "val",
+          "window": { "from": "2015-01-30", "to": "2019-12-31" },
+          "n": 60,
+          "n_eff": 5,
+          "crps": {
+            "est": 0.11773,
+            "sample": "val",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crps.252.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "crps_capm": { "est": 0.11778, "sample": "val" },
+          "crps_hist": { "est": 0.11413, "sample": "val" },
+          "crpss_capm": {
+            "metric": "crpss",
+            "reference": "capm",
+            "est": 0.0004,
+            "ci": { "lo": -0.2203, "hi": 0.2211, "level": 0.9 },
+            "n_eff": 5,
+            "grade": "D",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.3337,
+            "sample": "val",
+            "dm_p": null,
+            "bh_q": null,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crpss_capm.252.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "crpss_hist": {
+            "metric": "crpss",
+            "reference": "hist_drift",
+            "est": -0.0316,
+            "ci": { "lo": -0.2523, "hi": 0.1891, "level": 0.9 },
+            "n_eff": 5,
+            "grade": "D",
+            "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+            "mde": 0.3337,
+            "sample": "val",
+            "dm_p": null,
+            "bh_q": null,
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "crpss_hist.252.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "pinball": { "est": 0.06122, "sample": "val" },
+          "brier": { "est": 0.2438, "sample": "val" },
+          "hit_rate": {
+            "est": 0.5379,
+            "ci": { "lo": 0.1711, "hi": 0.9046, "level": 0.9 },
+            "n": 60,
+            "n_eff": 5,
+            "base_rate": 0.58,
+            "sample": "val",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "hit_rate.252.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "cov50": {
+            "est": 0.4869,
+            "ci": { "lo": 0.1322, "hi": 0.8678, "level": 0.9 },
+            "n": 60,
+            "sample": "val"
+          },
+          "cov80": {
+            "est": 0.7916,
+            "ci": { "lo": 0.4928, "hi": 1, "level": 0.9 },
+            "n": 60,
+            "sample": "val",
+            "provenance": {
+              "kind": "run",
+              "id": "R-DEMO-01",
+              "key": "cov80.252.val",
+              "snapshot": "r1-dev",
+              "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+            }
+          },
+          "cov95": {
+            "est": 0.9291,
+            "ci": { "lo": 0.7897, "hi": 1, "level": 0.9 },
+            "n": 60,
+            "sample": "val"
+          }
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "kind": "run",
+    "id": "R-DEMO-01",
+    "snapshot": "r1-dev",
+    "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+  }
+}

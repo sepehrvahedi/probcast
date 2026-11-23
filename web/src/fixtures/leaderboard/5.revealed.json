@@ -1,0 +1,801 @@
+{
+  "fixture": true,
+  "h": 5,
+  "reference": "capm",
+  "snapshot": "r1-dev",
+  "rows": [
+    {
+      "analyzer": "events.earnings_drift",
+      "name": "Post-earnings drift",
+      "version": "1.0.0+3f9c2a",
+      "family": "events",
+      "section": "fundamental",
+      "author": "wren",
+      "slot": 1,
+      "crpss_capm": {
+        "metric": "crpss",
+        "reference": "capm",
+        "est": 0.022,
+        "ci": { "lo": -0.006, "hi": 0.0499, "level": 0.9 },
+        "n_eff": 311,
+        "grade": "C",
+        "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+        "mde": 0.0423,
+        "sample": "dev",
+        "dm_p": 0.1969,
+        "bh_q": 0.315,
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-01",
+          "key": "crpss_capm.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "crpss_hist": {
+        "metric": "crpss",
+        "reference": "hist_drift",
+        "est": 0.0096,
+        "ci": { "lo": -0.0184, "hi": 0.0375, "level": 0.9 },
+        "n_eff": 311,
+        "grade": "C",
+        "trials": { "analyzer": 2, "family": { "id": "events", "n": 3 }, "team": 41 },
+        "mde": 0.0423,
+        "sample": "dev",
+        "dm_p": 0.5743,
+        "bh_q": 0.9189,
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-01",
+          "key": "crpss_hist.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "cov80": {
+        "est": 0.8163,
+        "ci": { "lo": 0.7802, "hi": 0.8524, "level": 0.9 },
+        "n": 311,
+        "sample": "dev",
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-01",
+          "key": "cov80.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "leak_tested": true,
+      "in_committee": true,
+      "best_run_id": "R-DEMO-01"
+    },
+    {
+      "analyzer": "macro.usd_sensitivity",
+      "name": "USD sensitivity",
+      "version": "1.1.0+3fbb19",
+      "family": "macro.fx",
+      "section": "macro",
+      "author": "heron",
+      "slot": 2,
+      "crpss_capm": {
+        "metric": "crpss",
+        "reference": "capm",
+        "est": 0.0034,
+        "ci": { "lo": -0.0246, "hi": 0.0313, "level": 0.9 },
+        "n_eff": 311,
+        "grade": "C",
+        "trials": { "analyzer": 3, "family": { "id": "macro.fx", "n": 4 }, "team": 41 },
+        "mde": 0.0423,
+        "sample": "dev",
+        "dm_p": 0.8438,
+        "bh_q": 1,
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-02",
+          "key": "crpss_capm.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "crpss_hist": {
+        "metric": "crpss",
+        "reference": "hist_drift",
+        "est": -0.009,
+        "ci": { "lo": -0.037, "hi": 0.0189, "level": 0.9 },
+        "n_eff": 311,
+        "grade": "D",
+        "trials": { "analyzer": 3, "family": { "id": "macro.fx", "n": 4 }, "team": 41 },
+        "mde": 0.0423,
+        "sample": "dev",
+        "dm_p": 0.5949,
+        "bh_q": 0.9518,
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-02",
+          "key": "crpss_hist.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "cov80": {
+        "est": 0.7796,
+        "ci": { "lo": 0.7409, "hi": 0.8182, "level": 0.9 },
+        "n": 311,
+        "sample": "dev",
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-02",
+          "key": "cov80.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "leak_tested": true,
+      "in_committee": true,
+      "best_run_id": "R-DEMO-02"
+    },
+    {
+      "analyzer": "technical.momentum_12_1",
+      "name": "Momentum 12-1",
+      "version": "1.2.0+3fda08",
+      "family": "technical.trend",
+      "section": "intro",
+      "author": "finch",
+      "slot": 3,
+      "crpss_capm": {
+        "metric": "crpss",
+        "reference": "capm",
+        "est": -0.0058,
+        "ci": { "lo": -0.0343, "hi": 0.0228, "level": 0.9 },
+        "n_eff": 299,
+        "grade": "D",
+        "trials": { "analyzer": 4, "family": { "id": "technical.trend", "n": 15 }, "team": 41 },
+        "mde": 0.0431,
+        "sample": "dev",
+        "dm_p": 0.7386,
+        "bh_q": 1,
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-03",
+          "key": "crpss_capm.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "crpss_hist": {
+        "metric": "crpss",
+        "reference": "hist_drift",
+        "est": -0.0182,
+        "ci": { "lo": -0.0467, "hi": 0.0104, "level": 0.9 },
+        "n_eff": 299,
+        "grade": "D",
+        "trials": { "analyzer": 4, "family": { "id": "technical.trend", "n": 15 }, "team": 41 },
+        "mde": 0.0431,
+        "sample": "dev",
+        "dm_p": 0.2945,
+        "bh_q": 0.4712,
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-03",
+          "key": "crpss_hist.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "cov80": {
+        "est": 0.7595,
+        "ci": { "lo": 0.7189, "hi": 0.8002, "level": 0.9 },
+        "n": 299,
+        "sample": "dev",
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-03",
+          "key": "cov80.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "leak_tested": true,
+      "in_committee": true,
+      "best_run_id": "R-DEMO-03"
+    },
+    {
+      "analyzer": "valuation.fed_model_gap",
+      "name": "Fed-model gap",
+      "version": "1.0.0+3ff8f7",
+      "family": "valuation",
+      "section": "macro",
+      "author": "heron",
+      "slot": 4,
+      "crpss_capm": {
+        "metric": "crpss",
+        "reference": "capm",
+        "est": -0.0003,
+        "ci": { "lo": -0.036, "hi": 0.0354, "level": 0.9 },
+        "n_eff": 191,
+        "grade": "D",
+        "trials": { "analyzer": 2, "family": { "id": "valuation", "n": 5 }, "team": 41 },
+        "mde": 0.054,
+        "sample": "dev",
+        "dm_p": 0.9892,
+        "bh_q": 1,
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-04",
+          "key": "crpss_capm.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "crpss_hist": {
+        "metric": "crpss",
+        "reference": "hist_drift",
+        "est": -0.0127,
+        "ci": { "lo": -0.0484, "hi": 0.023, "level": 0.9 },
+        "n_eff": 191,
+        "grade": "D",
+        "trials": { "analyzer": 2, "family": { "id": "valuation", "n": 5 }, "team": 41 },
+        "mde": 0.054,
+        "sample": "dev",
+        "dm_p": 0.5588,
+        "bh_q": 0.8941,
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-04",
+          "key": "crpss_hist.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "cov80": {
+        "est": 0.7439,
+        "ci": { "lo": 0.6919, "hi": 0.7958, "level": 0.9 },
+        "n": 191,
+        "sample": "dev",
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-04",
+          "key": "cov80.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "leak_tested": true,
+      "in_committee": true,
+      "best_run_id": "R-DEMO-04"
+    },
+    {
+      "analyzer": "technical.rsi_reversal",
+      "name": "RSI reversal",
+      "version": "1.1.0+4017e6",
+      "family": "technical.reversion",
+      "section": "intro",
+      "author": "osprey",
+      "slot": 5,
+      "crpss_capm": {
+        "metric": "crpss",
+        "reference": "capm",
+        "est": -0.0319,
+        "ci": { "lo": -0.0599, "hi": -0.0039, "level": 0.9 },
+        "n_eff": 311,
+        "grade": "D",
+        "flag": "worse_than_anchor",
+        "trials": { "analyzer": 6, "family": { "id": "technical.reversion", "n": 12 }, "team": 41 },
+        "mde": 0.0423,
+        "sample": "dev",
+        "dm_p": 0.0609,
+        "bh_q": 0.0974,
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-05",
+          "key": "crpss_capm.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "crpss_hist": {
+        "metric": "crpss",
+        "reference": "hist_drift",
+        "est": -0.0443,
+        "ci": { "lo": -0.0723, "hi": -0.0163, "level": 0.9 },
+        "n_eff": 311,
+        "grade": "D",
+        "flag": "worse_than_anchor",
+        "trials": { "analyzer": 6, "family": { "id": "technical.reversion", "n": 12 }, "team": 41 },
+        "mde": 0.0423,
+        "sample": "dev",
+        "dm_p": 0.0092,
+        "bh_q": 0.0147,
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-05",
+          "key": "crpss_hist.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "cov80": {
+        "est": 0.7019,
+        "ci": { "lo": 0.6592, "hi": 0.7446, "level": 0.9 },
+        "n": 311,
+        "sample": "dev",
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-05",
+          "key": "cov80.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "leak_tested": true,
+      "in_committee": false,
+      "best_run_id": "R-DEMO-05"
+    },
+    {
+      "analyzer": "valuation.earnings_yield",
+      "name": "Earnings yield vs own history",
+      "version": "1.2.0+4036d5",
+      "family": "valuation",
+      "section": "fundamental",
+      "author": "wren",
+      "slot": 6,
+      "crpss_capm": {
+        "metric": "crpss",
+        "reference": "capm",
+        "est": -0.0014,
+        "ci": { "lo": -0.0576, "hi": 0.0548, "level": 0.9 },
+        "n_eff": 77,
+        "grade": "D",
+        "trials": { "analyzer": 1, "family": { "id": "valuation", "n": 5 }, "team": 41 },
+        "mde": 0.085,
+        "sample": "dev",
+        "dm_p": 0.9672,
+        "bh_q": 1,
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-06",
+          "key": "crpss_capm.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "crpss_hist": {
+        "metric": "crpss",
+        "reference": "hist_drift",
+        "est": -0.0138,
+        "ci": { "lo": -0.07, "hi": 0.0424, "level": 0.9 },
+        "n_eff": 77,
+        "grade": "D",
+        "trials": { "analyzer": 1, "family": { "id": "valuation", "n": 5 }, "team": 41 },
+        "mde": 0.085,
+        "sample": "dev",
+        "dm_p": 0.6864,
+        "bh_q": 1,
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-06",
+          "key": "crpss_hist.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "cov80": {
+        "est": 0.82,
+        "ci": { "lo": 0.7479, "hi": 0.892, "level": 0.9 },
+        "n": 77,
+        "sample": "dev",
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-06",
+          "key": "cov80.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "leak_tested": true,
+      "in_committee": true,
+      "best_run_id": "R-DEMO-06"
+    },
+    {
+      "analyzer": "technical.trend_200d",
+      "name": "200-day trend filter",
+      "version": "1.0.0+4055c4",
+      "family": "technical.trend",
+      "section": "intro",
+      "author": "finch",
+      "slot": 1,
+      "crpss_capm": {
+        "metric": "crpss",
+        "reference": "capm",
+        "est": 0.0018,
+        "ci": { "lo": -0.0267, "hi": 0.0303, "level": 0.9 },
+        "n_eff": 299,
+        "grade": "C",
+        "trials": { "analyzer": 3, "family": { "id": "technical.trend", "n": 15 }, "team": 41 },
+        "mde": 0.0431,
+        "sample": "dev",
+        "dm_p": 0.9175,
+        "bh_q": 1,
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-07",
+          "key": "crpss_capm.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "crpss_hist": {
+        "metric": "crpss",
+        "reference": "hist_drift",
+        "est": -0.0106,
+        "ci": { "lo": -0.0391, "hi": 0.0179, "level": 0.9 },
+        "n_eff": 299,
+        "grade": "D",
+        "trials": { "analyzer": 3, "family": { "id": "technical.trend", "n": 15 }, "team": 41 },
+        "mde": 0.0431,
+        "sample": "dev",
+        "dm_p": 0.5412,
+        "bh_q": 0.8659,
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-07",
+          "key": "crpss_hist.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "cov80": {
+        "est": 0.8036,
+        "ci": { "lo": 0.7659, "hi": 0.8414, "level": 0.9 },
+        "n": 299,
+        "sample": "dev",
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-07",
+          "key": "cov80.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "leak_tested": true,
+      "in_committee": true,
+      "best_run_id": "R-DEMO-07"
+    },
+    {
+      "analyzer": "technical.ma_cross",
+      "name": "Moving-average cross",
+      "version": "1.1.0+4074b3",
+      "family": "technical.trend",
+      "section": "intro",
+      "author": "osprey",
+      "slot": 2,
+      "crpss_capm": {
+        "metric": "crpss",
+        "reference": "capm",
+        "est": -0.0039,
+        "ci": { "lo": -0.0325, "hi": 0.0246, "level": 0.9 },
+        "n_eff": 299,
+        "grade": "D",
+        "trials": { "analyzer": 5, "family": { "id": "technical.trend", "n": 15 }, "team": 41 },
+        "mde": 0.0431,
+        "sample": "dev",
+        "dm_p": 0.8208,
+        "bh_q": 1,
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-08",
+          "key": "crpss_capm.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "crpss_hist": {
+        "metric": "crpss",
+        "reference": "hist_drift",
+        "est": -0.0163,
+        "ci": { "lo": -0.0449, "hi": 0.0122, "level": 0.9 },
+        "n_eff": 299,
+        "grade": "D",
+        "trials": { "analyzer": 5, "family": { "id": "technical.trend", "n": 15 }, "team": 41 },
+        "mde": 0.0431,
+        "sample": "dev",
+        "dm_p": 0.3467,
+        "bh_q": 0.5547,
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-08",
+          "key": "crpss_hist.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "cov80": {
+        "est": 0.7608,
+        "ci": { "lo": 0.7202, "hi": 0.8013, "level": 0.9 },
+        "n": 299,
+        "sample": "dev",
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-08",
+          "key": "cov80.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "leak_tested": true,
+      "in_committee": true,
+      "best_run_id": "R-DEMO-08"
+    },
+    {
+      "analyzer": "technical.bollinger_reversion",
+      "name": "Bollinger reversion",
+      "version": "1.2.0+4093a2",
+      "family": "technical.reversion",
+      "section": "intro",
+      "author": "finch",
+      "slot": 3,
+      "crpss_capm": {
+        "metric": "crpss",
+        "reference": "capm",
+        "est": 0.0057,
+        "ci": { "lo": -0.0223, "hi": 0.0337, "level": 0.9 },
+        "n_eff": 311,
+        "grade": "C",
+        "trials": { "analyzer": 4, "family": { "id": "technical.reversion", "n": 12 }, "team": 41 },
+        "mde": 0.0423,
+        "sample": "dev",
+        "dm_p": 0.7385,
+        "bh_q": 1,
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-09",
+          "key": "crpss_capm.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "crpss_hist": {
+        "metric": "crpss",
+        "reference": "hist_drift",
+        "est": -0.0067,
+        "ci": { "lo": -0.0347, "hi": 0.0213, "level": 0.9 },
+        "n_eff": 311,
+        "grade": "D",
+        "trials": { "analyzer": 4, "family": { "id": "technical.reversion", "n": 12 }, "team": 41 },
+        "mde": 0.0423,
+        "sample": "dev",
+        "dm_p": 0.6929,
+        "bh_q": 1,
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-09",
+          "key": "crpss_hist.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "cov80": {
+        "est": 0.7971,
+        "ci": { "lo": 0.7596, "hi": 0.8346, "level": 0.9 },
+        "n": 311,
+        "sample": "dev",
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-09",
+          "key": "cov80.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "leak_tested": true,
+      "in_committee": true,
+      "best_run_id": "R-DEMO-09"
+    },
+    {
+      "analyzer": "macro.term_spread",
+      "name": "Term-spread tilt",
+      "version": "1.0.0+40b291",
+      "family": "macro.rates",
+      "section": "macro",
+      "author": "osprey",
+      "slot": 4,
+      "crpss_capm": {
+        "metric": "crpss",
+        "reference": "capm",
+        "est": -0.0018,
+        "ci": { "lo": -0.0297, "hi": 0.0262, "level": 0.9 },
+        "n_eff": 311,
+        "grade": "D",
+        "trials": { "analyzer": 2, "family": { "id": "macro.rates", "n": 3 }, "team": 41 },
+        "mde": 0.0423,
+        "sample": "dev",
+        "dm_p": 0.9175,
+        "bh_q": 1,
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-10",
+          "key": "crpss_capm.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "crpss_hist": {
+        "metric": "crpss",
+        "reference": "hist_drift",
+        "est": -0.0142,
+        "ci": { "lo": -0.0421, "hi": 0.0138, "level": 0.9 },
+        "n_eff": 311,
+        "grade": "D",
+        "trials": { "analyzer": 2, "family": { "id": "macro.rates", "n": 3 }, "team": 41 },
+        "mde": 0.0423,
+        "sample": "dev",
+        "dm_p": 0.4052,
+        "bh_q": 0.6483,
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-10",
+          "key": "crpss_hist.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "cov80": {
+        "est": 0.8081,
+        "ci": { "lo": 0.7714, "hi": 0.8449, "level": 0.9 },
+        "n": 311,
+        "sample": "dev",
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-10",
+          "key": "cov80.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "leak_tested": true,
+      "in_committee": true,
+      "best_run_id": "R-DEMO-10"
+    },
+    {
+      "analyzer": "volatility.ewma_blend",
+      "name": "EWMA volatility blend",
+      "version": "1.1.0+40d180",
+      "family": "volatility",
+      "section": "intro",
+      "author": "kestrel",
+      "slot": 5,
+      "crpss_capm": {
+        "metric": "crpss",
+        "reference": "capm",
+        "est": 0.0352,
+        "ci": { "lo": 0.0073, "hi": 0.0632, "level": 0.9 },
+        "n_eff": 311,
+        "grade": "A",
+        "trials": { "analyzer": 1, "family": { "id": "volatility", "n": 4 }, "team": 41 },
+        "mde": 0.0423,
+        "sample": "dev",
+        "dm_p": 0.0383,
+        "bh_q": 0.0613,
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-11",
+          "key": "crpss_capm.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "crpss_hist": {
+        "metric": "crpss",
+        "reference": "hist_drift",
+        "est": 0.0228,
+        "ci": { "lo": -0.0051, "hi": 0.0508, "level": 0.9 },
+        "n_eff": 311,
+        "grade": "C",
+        "trials": { "analyzer": 1, "family": { "id": "volatility", "n": 4 }, "team": 41 },
+        "mde": 0.0423,
+        "sample": "dev",
+        "dm_p": 0.1793,
+        "bh_q": 0.2869,
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-11",
+          "key": "crpss_hist.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "cov80": {
+        "est": 0.7972,
+        "ci": { "lo": 0.7597, "hi": 0.8347, "level": 0.9 },
+        "n": 311,
+        "sample": "dev",
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-11",
+          "key": "cov80.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "leak_tested": true,
+      "in_committee": true,
+      "best_run_id": "R-DEMO-11"
+    },
+    {
+      "analyzer": "volatility.garch_t",
+      "name": "GARCH(1,1)-t",
+      "version": "1.2.0+40f06f",
+      "family": "volatility",
+      "section": "intro",
+      "author": "kestrel",
+      "slot": 6,
+      "crpss_capm": {
+        "metric": "crpss",
+        "reference": "capm",
+        "est": 0.0378,
+        "ci": { "lo": 0.0098, "hi": 0.0658, "level": 0.9 },
+        "n_eff": 311,
+        "grade": "A",
+        "trials": { "analyzer": 1, "family": { "id": "volatility", "n": 4 }, "team": 41 },
+        "mde": 0.0423,
+        "sample": "dev",
+        "dm_p": 0.0262,
+        "bh_q": 0.0419,
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-12",
+          "key": "crpss_capm.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "crpss_hist": {
+        "metric": "crpss",
+        "reference": "hist_drift",
+        "est": 0.0254,
+        "ci": { "lo": -0.0026, "hi": 0.0534, "level": 0.9 },
+        "n_eff": 311,
+        "grade": "C",
+        "trials": { "analyzer": 1, "family": { "id": "volatility", "n": 4 }, "team": 41 },
+        "mde": 0.0423,
+        "sample": "dev",
+        "dm_p": 0.1351,
+        "bh_q": 0.2162,
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-12",
+          "key": "crpss_hist.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "cov80": {
+        "est": 0.8116,
+        "ci": { "lo": 0.7752, "hi": 0.8481, "level": 0.9 },
+        "n": 311,
+        "sample": "dev",
+        "provenance": {
+          "kind": "run",
+          "id": "R-DEMO-12",
+          "key": "cov80.5.dev",
+          "snapshot": "r1-dev",
+          "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+        }
+      },
+      "leak_tested": true,
+      "in_committee": true,
+      "best_run_id": "R-DEMO-12"
+    }
+  ],
+  "hist_drift_vs_capm": {
+    "est": 0.0064,
+    "ci": { "lo": -0.0202, "hi": 0.031, "level": 0.9 },
+    "sample": "dev"
+  },
+  "provenance": {
+    "kind": "run",
+    "id": "leaderboard.5",
+    "snapshot": "r1-dev",
+    "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+  }
+}

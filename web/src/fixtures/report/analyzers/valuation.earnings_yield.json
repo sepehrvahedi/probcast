@@ -1,0 +1,231 @@
+{
+  "fixture": true,
+  "id": "valuation.earnings_yield",
+  "name": "Earnings yield vs own history (TTM diluted EPS / price)",
+  "version": "1.0.0+b1f680d",
+  "family": "valuation",
+  "author": "probcast",
+  "slot": 6,
+  "builtin": true,
+  "natural_horizon": 252,
+  "leak": {
+    "status": "passed",
+    "tests": {
+      "T1": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T2": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T3": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T5": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T7": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "TDN": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      }
+    }
+  },
+  "in_committee": false,
+  "category": "fundamental",
+  "report_section": "fundamental",
+  "horizons": [63, 126, 252],
+  "calibrator": "C1",
+  "hypothesis": "When the earnings yield is in the top third of its own history the stock is cheap relative to its past, and forward excess returns are higher.",
+  "references": ["ref:basu-1977", "ref:campbell-shiller-1988"],
+  "idea_card": null,
+  "manifest": {
+    "expected_direction": "positive",
+    "course_concepts": [
+      "valuation multiples (P/E)",
+      "mean reversion in valuation",
+      "EMH semi-strong form"
+    ],
+    "informs": ["location"],
+    "min_history_sessions": 756,
+    "data_dependencies": ["us-gaap:EarningsPerShareDiluted"],
+    "params": {
+      "terciles": 3
+    },
+    "param_grid_declared": {},
+    "manifest_version": "1.0.0",
+    "code_hash": "b1f680d6533cd98cd8defe9dc90356d6c86a6753c3b6807d4879129554033792"
+  },
+  "literature_prior": null,
+  "idea": null,
+  "dependencies": [
+    {
+      "id": "PX:close_base",
+      "name": "Close, base-share units",
+      "class": "exchange_price",
+      "rule": "same_session_close",
+      "strict_rule": "same_session_close",
+      "licence": "L2",
+      "source": "Yahoo Finance via yfinance"
+    },
+    {
+      "id": "us-gaap:EarningsPerShareDiluted",
+      "name": "us-gaap:EarningsPerShareDiluted",
+      "class": null,
+      "rule": null,
+      "strict_rule": null,
+      "licence": null,
+      "source": null
+    }
+  ],
+  "leak_details": {
+    "T1": "passed",
+    "T2": "passed",
+    "T3": "passed",
+    "T5": "passed",
+    "T7": "passed",
+    "T-DN": "passed"
+  },
+  "leak_at": "2026-11-20T14:00:00Z",
+  "status": "candidate",
+  "default_run_id": "20261118T154003-3fdb5248",
+  "anchor_run_id": "20261118T153935-9403903c",
+  "grades": {},
+  "nutrition": [
+    {
+      "h": 5,
+      "declared": false,
+      "n_eff_max": null,
+      "n_eff": null,
+      "mde": null,
+      "warmup_start": null,
+      "sample": null
+    },
+    {
+      "h": 21,
+      "declared": false,
+      "n_eff_max": null,
+      "n_eff": null,
+      "mde": null,
+      "warmup_start": null,
+      "sample": null
+    },
+    {
+      "h": 63,
+      "declared": true,
+      "n_eff_max": null,
+      "n_eff": null,
+      "mde": null,
+      "warmup_start": null,
+      "sample": null
+    },
+    {
+      "h": 126,
+      "declared": true,
+      "n_eff_max": null,
+      "n_eff": null,
+      "mde": null,
+      "warmup_start": null,
+      "sample": null
+    },
+    {
+      "h": 252,
+      "declared": true,
+      "n_eff_max": null,
+      "n_eff": null,
+      "mde": null,
+      "warmup_start": null,
+      "sample": null
+    }
+  ],
+  "latest": null,
+  "trials": {
+    "analyzer": 1,
+    "family": {
+      "id": "valuation",
+      "n": 1
+    },
+    "team": 11
+  },
+  "references_detail": [
+    {
+      "id": "ref:basu-1977",
+      "kind": "literature",
+      "authors": "Basu, S.",
+      "year": "1977",
+      "title": "Investment performance of common stocks in relation to their price-earnings ratios: a test of the efficient market hypothesis",
+      "container": "Journal of Finance",
+      "details": "32(3), pp. 663–682",
+      "url": null,
+      "medium": null,
+      "verification": "ai_recalled",
+      "used_by": [],
+      "accessed": null,
+      "text": "Basu, S. (1977) ‘Investment performance of common stocks in relation to their price-earnings ratios: a test of the efficient market hypothesis’, Journal of Finance, 32(3), pp. 663–682.",
+      "html": "Basu, S. (1977) ‘Investment performance of common stocks in relation to their price-earnings ratios: a test of the efficient market hypothesis’, <i>Journal of Finance</i>, 32(3), pp. 663–682.",
+      "in_text": "(Basu, 1977)",
+      "bibtex_key": "Basu1977",
+      "bibtex": "@article{Basu1977,\n  author = {Basu, S.},\n  year = {1977},\n  title = {{Investment performance of common stocks in relation to their price-earnings ratios: a test of the efficient market hypothesis}},\n  journal = {Journal of Finance},\n  note = {32(3), pp. 663–682}\n}",
+      "content_hash": "bcad08789f2b3405",
+      "in_bibliography": false
+    },
+    {
+      "id": "ref:campbell-shiller-1988",
+      "kind": "literature",
+      "authors": "Campbell, J.Y. and Shiller, R.J.",
+      "year": "1988",
+      "title": "Stock prices, earnings, and expected dividends",
+      "container": "Journal of Finance",
+      "details": "43(3), pp. 661–676",
+      "url": null,
+      "medium": null,
+      "verification": "ai_recalled",
+      "used_by": [],
+      "accessed": null,
+      "text": "Campbell, J.Y. and Shiller, R.J. (1988) ‘Stock prices, earnings, and expected dividends’, Journal of Finance, 43(3), pp. 661–676.",
+      "html": "Campbell, J.Y. and Shiller, R.J. (1988) ‘Stock prices, earnings, and expected dividends’, <i>Journal of Finance</i>, 43(3), pp. 661–676.",
+      "in_text": "(Campbell and Shiller, 1988)",
+      "bibtex_key": "CampbellShiller1988",
+      "bibtex": "@article{CampbellShiller1988,\n  author = {Campbell, J.Y. and Shiller, R.J.},\n  year = {1988},\n  title = {{Stock prices, earnings, and expected dividends}},\n  journal = {Journal of Finance},\n  note = {43(3), pp. 661–676}\n}",
+      "content_hash": "b791f20188f8b5b8",
+      "in_bibliography": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0.0+b1f680d",
+      "first_seen": "2026-11-18T15:40:03.011434+00:00",
+      "configs": 1,
+      "runs": ["20261118T154003-3fdb5248"],
+      "current": true
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "20261118T154003-3fdb5248",
+      "analyzer": "valuation.earnings_yield",
+      "name": "Earnings yield vs own history (TTM diluted EPS / price)",
+      "version": "1.0.0+b1f680d",
+      "family": "valuation",
+      "author": "probcast",
+      "slot": 6,
+      "status": "completed",
+      "completed_at": "2026-11-18T15:40:03.009414Z",
+      "grades": {},
+      "natural_horizon": 252,
+      "scored": false
+    }
+  ],
+  "provenance": {
+    "kind": "dataset",
+    "id": "analyzer:valuation.earnings_yield",
+    "snapshot": "fixture-7-+0.000",
+    "snapshot_hash": "fixture-v1-7-+0.000"
+  }
+}

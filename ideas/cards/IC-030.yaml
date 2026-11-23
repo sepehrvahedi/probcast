@@ -1,0 +1,12 @@
+# Round-2 idea (researched, built and tested in round 2, D-101).
+id: IC-030
+title: Oil-price jumps are priced in slowly
+author: probcast
+created_at: '2026-11-19T00:30:00Z'
+sample: true
+text: A big jump in oil prices hurts most companies' future profits and the stock market is slow to price
+  it in; oil producers are the exception.
+analyzer: macro.oil_shock
+implementation: 'Driesprong, Jacobsen & Maat (2008): 21-session change in log WTI oil price (EIA, real-time
+  release dates). C3 with a negative sign, except energy-sector stocks where the direction is learned;
+  1 and 3 months.'

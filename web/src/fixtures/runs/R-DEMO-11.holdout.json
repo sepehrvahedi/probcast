@@ -1,0 +1,214 @@
+{
+  "fixture": true,
+  "run_id": "R-DEMO-11",
+  "segments": [
+    {
+      "h": 21,
+      "segment": {
+        "sample": "holdout",
+        "window": { "from": "2020-12-31", "to": "2026-09-30" },
+        "n": 70,
+        "n_eff": 70,
+        "crps": {
+          "est": 0.03361,
+          "sample": "holdout",
+          "provenance": {
+            "kind": "run",
+            "id": "R-DEMO-11",
+            "key": "crps.21.holdout",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+          }
+        },
+        "crps_capm": { "est": 0.034, "sample": "holdout" },
+        "crps_hist": { "est": 0.03354, "sample": "holdout" },
+        "crpss_capm": {
+          "metric": "crpss",
+          "reference": "capm",
+          "est": 0.0113,
+          "ci": { "lo": -0.0476, "hi": 0.0703, "level": 0.9 },
+          "n_eff": 70,
+          "grade": "C",
+          "trials": { "analyzer": 1, "family": { "id": "volatility", "n": 4 }, "team": 41 },
+          "mde": 0.0892,
+          "sample": "holdout",
+          "dm_p": 0.7517,
+          "bh_q": 1,
+          "provenance": {
+            "kind": "run",
+            "id": "R-DEMO-11",
+            "key": "crpss_capm.21.holdout",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+          }
+        },
+        "crpss_hist": {
+          "metric": "crpss",
+          "reference": "hist_drift",
+          "est": -0.0023,
+          "ci": { "lo": -0.0613, "hi": 0.0567, "level": 0.9 },
+          "n_eff": 70,
+          "grade": "D",
+          "trials": { "analyzer": 1, "family": { "id": "volatility", "n": 4 }, "team": 41 },
+          "mde": 0.0892,
+          "sample": "holdout",
+          "dm_p": 0.9484,
+          "bh_q": 1,
+          "provenance": {
+            "kind": "run",
+            "id": "R-DEMO-11",
+            "key": "crpss_hist.21.holdout",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+          }
+        },
+        "pinball": { "est": 0.01748, "sample": "holdout" },
+        "brier": { "est": 0.2378, "sample": "holdout" },
+        "hit_rate": {
+          "est": 0.5934,
+          "ci": { "lo": 0.4968, "hi": 0.69, "level": 0.9 },
+          "n": 70,
+          "n_eff": 70,
+          "base_rate": 0.58,
+          "sample": "holdout",
+          "provenance": {
+            "kind": "run",
+            "id": "R-DEMO-11",
+            "key": "hit_rate.21.holdout",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+          }
+        },
+        "cov50": {
+          "est": 0.4773,
+          "ci": { "lo": 0.4017, "hi": 0.5983, "level": 0.9 },
+          "n": 70,
+          "sample": "holdout"
+        },
+        "cov80": {
+          "est": 0.7812,
+          "ci": { "lo": 0.7, "hi": 0.8625, "level": 0.9 },
+          "n": 70,
+          "sample": "holdout",
+          "provenance": {
+            "kind": "run",
+            "id": "R-DEMO-11",
+            "key": "cov80.21.holdout",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+          }
+        },
+        "cov95": {
+          "est": 0.9233,
+          "ci": { "lo": 0.9071, "hi": 0.9929, "level": 0.9 },
+          "n": 70,
+          "sample": "holdout"
+        }
+      }
+    },
+    {
+      "h": 63,
+      "segment": {
+        "sample": "holdout",
+        "window": { "from": "2020-10-30", "to": "2026-07-31" },
+        "n": 70,
+        "n_eff": 23.3,
+        "crps": {
+          "est": 0.05825,
+          "sample": "holdout",
+          "provenance": {
+            "kind": "run",
+            "id": "R-DEMO-11",
+            "key": "crps.63.holdout",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+          }
+        },
+        "crps_capm": { "est": 0.05889, "sample": "holdout" },
+        "crps_hist": { "est": 0.05789, "sample": "holdout" },
+        "crpss_capm": {
+          "metric": "crpss",
+          "reference": "capm",
+          "est": 0.0109,
+          "ci": { "lo": -0.0913, "hi": 0.113, "level": 0.9 },
+          "n_eff": 23.3,
+          "grade": "C",
+          "trials": { "analyzer": 1, "family": { "id": "volatility", "n": 4 }, "team": 41 },
+          "mde": 0.1545,
+          "sample": "holdout",
+          "dm_p": 0.8611,
+          "bh_q": 1,
+          "provenance": {
+            "kind": "run",
+            "id": "R-DEMO-11",
+            "key": "crpss_capm.63.holdout",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+          }
+        },
+        "crpss_hist": {
+          "metric": "crpss",
+          "reference": "hist_drift",
+          "est": -0.0061,
+          "ci": { "lo": -0.1083, "hi": 0.096, "level": 0.9 },
+          "n_eff": 23.3,
+          "grade": "D",
+          "trials": { "analyzer": 1, "family": { "id": "volatility", "n": 4 }, "team": 41 },
+          "mde": 0.1545,
+          "sample": "holdout",
+          "dm_p": 0.9214,
+          "bh_q": 1,
+          "provenance": {
+            "kind": "run",
+            "id": "R-DEMO-11",
+            "key": "crpss_hist.63.holdout",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+          }
+        },
+        "pinball": { "est": 0.03029, "sample": "holdout" },
+        "brier": { "est": 0.2402, "sample": "holdout" },
+        "hit_rate": {
+          "est": 0.5796,
+          "ci": { "lo": 0.4115, "hi": 0.7477, "level": 0.9 },
+          "n": 70,
+          "n_eff": 23.3,
+          "base_rate": 0.58,
+          "sample": "holdout",
+          "provenance": {
+            "kind": "run",
+            "id": "R-DEMO-11",
+            "key": "hit_rate.63.holdout",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+          }
+        },
+        "cov50": {
+          "est": 0.4831,
+          "ci": { "lo": 0.3297, "hi": 0.6703, "level": 0.9 },
+          "n": 70,
+          "sample": "holdout"
+        },
+        "cov80": {
+          "est": 0.7792,
+          "ci": { "lo": 0.6379, "hi": 0.9204, "level": 0.9 },
+          "n": 70,
+          "sample": "holdout",
+          "provenance": {
+            "kind": "run",
+            "id": "R-DEMO-11",
+            "key": "cov80.63.holdout",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+          }
+        },
+        "cov95": {
+          "est": 0.9112,
+          "ci": { "lo": 0.8758, "hi": 1, "level": 0.9 },
+          "n": 70,
+          "sample": "holdout"
+        }
+      }
+    }
+  ]
+}

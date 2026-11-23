@@ -1,0 +1,80 @@
+{
+  "fixture": true,
+  "analyzer": {
+    "id": "volatility.ewma_blend",
+    "name": "EWMA volatility blend",
+    "version": "1.1.0+40d180",
+    "family": "volatility",
+    "author": "kestrel",
+    "idea_card": null,
+    "slot": 5,
+    "horizons": [21, 63, 126, 252],
+    "calibrator": "C1",
+    "headline_horizon": 252
+  },
+  "protocol": {
+    "text": "Standard walk-forward: month-end origins from 1990; segments by outcome date (dev ≤ 2015, val 2016–20); holdout ≥ 2021 sealed.",
+    "seed": 7,
+    "origin_stride": 1,
+    "eval_start": "1990-01-01",
+    "dev_end": "2015-12-31",
+    "val_end": "2020-12-31",
+    "holdout_start": "2021-01-01"
+  },
+  "snapshot": {
+    "id": "r1-dev",
+    "hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+  },
+  "declared_grid": {},
+  "undeclared_keys": [],
+  "presets": [
+    {
+      "id": "default",
+      "kind": "default",
+      "label": "card default",
+      "description": "lam 0.94",
+      "params": {},
+      "full_params": {
+        "lam": 0.94
+      },
+      "params_hash": "d6d97260767b75ce15dbba70558939e70b014d3d82b5be22c266f23ef1b1d6f6",
+      "evaluated": true,
+      "run_id": "R-DEMO-11",
+      "cache_hit": true,
+      "trials": {
+        "before": {
+          "analyzer": 1,
+          "family": {
+            "id": "volatility",
+            "n": 4
+          },
+          "team": 41
+        },
+        "after": {
+          "analyzer": 1,
+          "family": {
+            "id": "volatility",
+            "n": 4
+          },
+          "team": 41
+        },
+        "adds": 0
+      },
+      "blocked": null,
+      "warnings": [],
+      "message": "This exact configuration was already evaluated: opening the existing run. No new trial."
+    }
+  ],
+  "truncated": false,
+  "budgets": {
+    "trial_budget": 20,
+    "grid_cap": 30
+  },
+  "free_parameters": false,
+  "provenance": {
+    "kind": "ledger",
+    "id": "registry/trials.jsonl",
+    "key": "volatility.ewma_blend",
+    "snapshot": "r1-dev"
+  }
+}

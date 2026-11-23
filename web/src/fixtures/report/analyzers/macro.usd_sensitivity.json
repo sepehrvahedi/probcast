@@ -1,0 +1,443 @@
+{
+  "fixture": true,
+  "id": "macro.usd_sensitivity",
+  "name": "USD strength (13-week change in the broad dollar index)",
+  "version": "1.0.0+5955991",
+  "family": "macro.fx",
+  "author": "probcast",
+  "slot": 2,
+  "builtin": true,
+  "natural_horizon": 252,
+  "leak": {
+    "status": "passed",
+    "tests": {
+      "T1": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T2": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T3": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T5": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T7": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "TDN": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      }
+    }
+  },
+  "in_committee": true,
+  "category": "macro",
+  "report_section": "macro",
+  "horizons": [21, 63, 126, 252],
+  "calibrator": "C3",
+  "hypothesis": "A stronger US dollar over the past quarter lowers a multinational's USD-reported foreign earnings and is followed by lower excess returns.",
+  "references": ["ref:jorion-1990", "ref:apple-10k-fx-risk"],
+  "idea_card": null,
+  "manifest": {
+    "expected_direction": "negative",
+    "course_concepts": ["FX exposure of multinationals", "transaction and translation exposure"],
+    "informs": ["location"],
+    "min_history_sessions": 756,
+    "data_dependencies": ["FRED:DTWEXBGS"],
+    "params": {
+      "weeks": 13
+    },
+    "param_grid_declared": {},
+    "manifest_version": "1.0.0",
+    "code_hash": "5955991a3244778a16f4f9ec3ebe87356b5347dcafd89ba06db005326f0a9cd1"
+  },
+  "literature_prior": null,
+  "idea": null,
+  "dependencies": [
+    {
+      "id": "PX:close_base",
+      "name": "Close, base-share units",
+      "class": "exchange_price",
+      "rule": "same_session_close",
+      "strict_rule": "same_session_close",
+      "licence": "L2",
+      "source": "Yahoo Finance via yfinance"
+    },
+    {
+      "id": "FRED:DTWEXBGS",
+      "name": "Nominal Broad U.S. Dollar Index",
+      "class": "constructed_weekly",
+      "rule": "alfred_realtime_start",
+      "strict_rule": "alfred_realtime_start",
+      "licence": "L0",
+      "source": "Federal Reserve Board H.10"
+    }
+  ],
+  "leak_details": {
+    "T1": "passed",
+    "T2": "passed",
+    "T3": "passed",
+    "T5": "passed",
+    "T7": "passed",
+    "T-DN": "passed"
+  },
+  "leak_at": "2026-11-20T14:00:00Z",
+  "status": "committee",
+  "default_run_id": "20261118T153948-0eaabbd4",
+  "anchor_run_id": "20261118T153935-9403903c",
+  "grades": {
+    "21": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": -0.0008812742231814052,
+      "ci": {
+        "lo": -0.003121594490252144,
+        "hi": 0.0013294043685662005,
+        "level": 0.9
+      },
+      "n_eff": 104.0,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "macro.fx",
+          "n": 1
+        },
+        "team": 11
+      },
+      "mde": 0.0038078600755327764,
+      "sample": "dev",
+      "dm_p": 0.5201923987362703,
+      "bh_q": 0.9208727086019657,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153948-0eaabbd4",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.21.dev"
+      },
+      "n": 104,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-11-30"
+      },
+      "cov80": {
+        "est": 0.7692307692307693,
+        "sample": "dev"
+      }
+    },
+    "63": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": -0.0022306534486569163,
+      "ci": {
+        "lo": -0.004042427673134052,
+        "hi": -0.0009089300350387574,
+        "level": 0.9
+      },
+      "n_eff": 34.333333333333336,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "macro.fx",
+          "n": 1
+        },
+        "team": 11
+      },
+      "mde": 0.002678035655586696,
+      "sample": "dev",
+      "dm_p": 0.024880557536130308,
+      "bh_q": 0.12440278768065154,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153948-0eaabbd4",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.63.dev"
+      },
+      "flag": "worse_than_anchor",
+      "n": 103,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-08-31"
+      },
+      "cov80": {
+        "est": 0.7766990291262136,
+        "sample": "dev"
+      }
+    },
+    "126": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": -0.0005654300044939387,
+      "ci": {
+        "lo": -0.0012268807560864125,
+        "hi": -2.744222508797021e-5,
+        "level": 0.9
+      },
+      "n_eff": 17.0,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "macro.fx",
+          "n": 1
+        },
+        "team": 11
+      },
+      "mde": 0.0011504051986948164,
+      "sample": "dev",
+      "dm_p": 0.19563072828229003,
+      "bh_q": 0.8114838653027168,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153948-0eaabbd4",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.126.dev"
+      },
+      "flag": "worse_than_anchor",
+      "n": 102,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-05-29"
+      },
+      "cov80": {
+        "est": 0.7450980392156863,
+        "sample": "dev"
+      }
+    },
+    "252": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 3.1241867139431e-5,
+      "ci": {
+        "lo": -0.00017616848640819027,
+        "hi": 0.00026388686097100777,
+        "level": 0.9
+      },
+      "n_eff": 8.333333333333334,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "macro.fx",
+          "n": 1
+        },
+        "team": 11
+      },
+      "mde": 0.0004199557861641976,
+      "sample": "dev",
+      "dm_p": 0.8540394417204408,
+      "bh_q": 0.8540394417204407,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153948-0eaabbd4",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.252.dev"
+      },
+      "n": 100,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2014-11-28"
+      },
+      "cov80": {
+        "est": 0.71,
+        "sample": "dev"
+      }
+    }
+  },
+  "nutrition": [
+    {
+      "h": 5,
+      "declared": false,
+      "n_eff_max": null,
+      "n_eff": null,
+      "mde": null,
+      "warmup_start": null,
+      "sample": null
+    },
+    {
+      "h": 21,
+      "declared": true,
+      "n_eff_max": 104.0,
+      "n_eff": 104.0,
+      "mde": 0.0038078600755327764,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 63,
+      "declared": true,
+      "n_eff_max": 34.333333333333336,
+      "n_eff": 34.333333333333336,
+      "mde": 0.002678035655586696,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 126,
+      "declared": true,
+      "n_eff_max": 17.0,
+      "n_eff": 17.0,
+      "mde": 0.0011504051986948164,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 252,
+      "declared": true,
+      "n_eff_max": 8.333333333333334,
+      "n_eff": 8.333333333333334,
+      "mde": 0.0004199557861641976,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    }
+  ],
+  "latest": {
+    "origin": "2026-11-30",
+    "h": 252,
+    "unit": "log_return",
+    "median": -0.03264306321437407,
+    "interval_80": {
+      "lo": -0.6036567504421966,
+      "hi": 0.5661199263791521,
+      "level": 0.8
+    },
+    "p_up": 0.4710208515653649,
+    "base_rate": {
+      "p": 0.68,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2014-11-28"
+      },
+      "sample": "dev"
+    },
+    "signal": 0.41833182271984515,
+    "calibration": {
+      "method": "C3",
+      "beta": 0.0,
+      "alpha_excess_drift_diagnostic": 0.52996665741377,
+      "sign_restricted": true,
+      "n_pairs": 9802,
+      "n_eff": 39,
+      "tilt_z": 0.0,
+      "sigma_h": 0.42972642935243177,
+      "anchor_median": -0.032643063230101056
+    },
+    "provenance": {
+      "kind": "run",
+      "id": "20261118T153948-0eaabbd4",
+      "snapshot": "fixture-7-+0.000",
+      "snapshot_hash": "fixture-v1-7-+0.000",
+      "key": "forecast.252.latest"
+    }
+  },
+  "trials": {
+    "analyzer": 1,
+    "family": {
+      "id": "macro.fx",
+      "n": 1
+    },
+    "team": 11
+  },
+  "references_detail": [
+    {
+      "id": "ref:jorion-1990",
+      "kind": "literature",
+      "authors": "Jorion, P.",
+      "year": "1990",
+      "title": "The exchange-rate exposure of U.S. multinationals",
+      "container": "Journal of Business",
+      "details": "63(3), pp. 331–345",
+      "url": null,
+      "medium": null,
+      "verification": "ai_recalled",
+      "used_by": ["F5", "T3"],
+      "accessed": null,
+      "text": "Jorion, P. (1990) ‘The exchange-rate exposure of U.S. multinationals’, Journal of Business, 63(3), pp. 331–345.",
+      "html": "Jorion, P. (1990) ‘The exchange-rate exposure of U.S. multinationals’, <i>Journal of Business</i>, 63(3), pp. 331–345.",
+      "in_text": "(Jorion, 1990)",
+      "bibtex_key": "Jorion1990",
+      "bibtex": "@article{Jorion1990,\n  author = {Jorion, P.},\n  year = {1990},\n  title = {{The exchange-rate exposure of U.S. multinationals}},\n  journal = {Journal of Business},\n  note = {63(3), pp. 331–345}\n}",
+      "content_hash": "0892bc7b2ce2dac3",
+      "in_bibliography": false
+    },
+    {
+      "id": "ref:apple-10k-fx-risk",
+      "kind": "literature",
+      "authors": "Reference key",
+      "year": "n.d.",
+      "title": "ref:apple-10k-fx-risk (not yet in the citation catalogue)",
+      "container": null,
+      "details": null,
+      "url": null,
+      "medium": null,
+      "verification": "unverified",
+      "used_by": ["F5", "T3"],
+      "accessed": null,
+      "text": "Reference key (n.d.) ref:apple-10k-fx-risk (not yet in the citation catalogue).",
+      "html": "Reference key (n.d.) <i>ref:apple-10k-fx-risk (not yet in the citation catalogue)</i>.",
+      "in_text": "(Reference key, n.d.)",
+      "bibtex_key": "Apple10KFxRisk",
+      "bibtex": "@misc{Apple10KFxRisk,\n  author = {Reference key},\n  year = {n.d.},\n  title = {{ref:apple-10k-fx-risk (not yet in the citation catalogue)}}\n}",
+      "content_hash": "7e065ae24b4f2a7e",
+      "in_bibliography": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0.0+5955991",
+      "first_seen": "2026-11-18T15:39:48.069245+00:00",
+      "configs": 1,
+      "runs": ["20261118T153948-0eaabbd4"],
+      "current": true
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "20261118T153948-0eaabbd4",
+      "analyzer": "macro.usd_sensitivity",
+      "name": "USD strength (13-week change in the broad dollar index)",
+      "version": "1.0.0+5955991",
+      "family": "macro.fx",
+      "author": "probcast",
+      "slot": 2,
+      "status": "completed",
+      "completed_at": "2026-11-18T15:39:48.066393Z",
+      "grades": {
+        "21": {
+          "grade": "D"
+        },
+        "63": {
+          "grade": "D",
+          "flag": "worse_than_anchor"
+        },
+        "126": {
+          "grade": "D",
+          "flag": "worse_than_anchor"
+        },
+        "252": {
+          "grade": "D"
+        }
+      },
+      "natural_horizon": 252,
+      "scored": true
+    }
+  ],
+  "provenance": {
+    "kind": "dataset",
+    "id": "analyzer:macro.usd_sensitivity",
+    "snapshot": "fixture-7-+0.000",
+    "snapshot_hash": "fixture-v1-7-+0.000"
+  }
+}

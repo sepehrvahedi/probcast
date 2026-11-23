@@ -1,0 +1,9 @@
+{
+  "_comment": "Trimmed older submissions page (filings.files). Acceptance time matches events seed row AAPL-EV-20100125-01 (16:27:45 ET).",
+  "accessionNumber": ["0001193125-10-012096"],
+  "filingDate": ["2010-01-25"],
+  "reportDate": ["2010-01-25"],
+  "acceptanceDateTime": ["2010-01-25T21:27:45.000Z"],
+  "form": ["8-K"],
+  "items": ["2.02,9.01"]
+}

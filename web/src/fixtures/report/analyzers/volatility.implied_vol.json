@@ -1,0 +1,464 @@
+{
+  "fixture": true,
+  "id": "volatility.implied_vol",
+  "name": "Implied-volatility scale (option-implied)",
+  "version": "1.0.0+fc76379",
+  "family": "volatility",
+  "author": "probcast",
+  "slot": 1,
+  "builtin": true,
+  "natural_horizon": 252,
+  "leak": {
+    "status": "passed",
+    "tests": {
+      "T1": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T2": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T3": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T5": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T7": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "TDN": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      }
+    }
+  },
+  "in_committee": true,
+  "category": "statistical",
+  "report_section": "future",
+  "horizons": [5, 21, 63, 126, 252],
+  "calibrator": "C5",
+  "hypothesis": "The option market's implied volatility forecasts realised volatility better than history alone; the location is the CAPM anchor.",
+  "references": ["ref:christensen-prabhala-1998", "ref:poon-granger-2003"],
+  "idea_card": null,
+  "manifest": {
+    "expected_direction": "scale",
+    "course_concepts": ["risk", "market efficiency (options)"],
+    "informs": ["scale"],
+    "min_history_sessions": 252,
+    "data_dependencies": [],
+    "params": {},
+    "param_grid_declared": {},
+    "manifest_version": "1.0.0",
+    "code_hash": "fc763795fc6a491d5c9cf29fe810f6ca2c559fb3ff4918c536db78c462481611"
+  },
+  "literature_prior": null,
+  "idea": null,
+  "dependencies": [
+    {
+      "id": "PX:close_base",
+      "name": "Close, base-share units",
+      "class": "exchange_price",
+      "rule": "same_session_close",
+      "strict_rule": "same_session_close",
+      "licence": "L2",
+      "source": "Yahoo Finance via yfinance"
+    }
+  ],
+  "leak_details": {
+    "T1": "passed",
+    "T2": "passed",
+    "T3": "passed",
+    "T5": "passed",
+    "T7": "passed",
+    "T-DN": "passed"
+  },
+  "leak_at": "2026-11-20T14:00:00Z",
+  "status": "committee",
+  "default_run_id": "20261118T153952-992cede8",
+  "anchor_run_id": "20261118T153935-9403903c",
+  "grades": {
+    "5": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.005241270831232936,
+      "ci": {
+        "lo": -0.009636835799715093,
+        "hi": 0.012426369704883833,
+        "level": 0.9
+      },
+      "n_eff": 22.0,
+      "grade": "C",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "volatility",
+          "n": 1
+        },
+        "team": 11
+      },
+      "mde": 0.019289694394252276,
+      "sample": "dev",
+      "dm_p": 0.4652824025777325,
+      "bh_q": 0.4652824025777325,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153952-992cede8",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.5.dev"
+      },
+      "n": 22,
+      "window": {
+        "from": "2010-08-31",
+        "to": "2015-11-30"
+      },
+      "cov80": {
+        "est": 0.7727272727272727,
+        "sample": "dev"
+      }
+    },
+    "21": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.003195346658427134,
+      "ci": {
+        "lo": -0.02298115894207545,
+        "hi": 0.017529056814079458,
+        "level": 0.9
+      },
+      "n_eff": 22.0,
+      "grade": "C",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "volatility",
+          "n": 1
+        },
+        "team": 11
+      },
+      "mde": 0.031326257418682744,
+      "sample": "dev",
+      "dm_p": 0.7828243978422127,
+      "bh_q": 0.9208727086019657,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153952-992cede8",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.21.dev"
+      },
+      "n": 22,
+      "window": {
+        "from": "2010-08-31",
+        "to": "2015-11-30"
+      },
+      "cov80": {
+        "est": 0.6818181818181818,
+        "sample": "dev"
+      }
+    },
+    "63": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": -0.011085806366749384,
+      "ci": {
+        "lo": -0.048935596185266717,
+        "hi": 0.01391195276612722,
+        "level": 0.9
+      },
+      "n_eff": 7.0,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "volatility",
+          "n": 1
+        },
+        "team": 11
+      },
+      "mde": 0.05248010178032757,
+      "sample": "dev",
+      "dm_p": 0.6079790137119967,
+      "bh_q": 0.7599737671399959,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153952-992cede8",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.63.dev"
+      },
+      "n": 21,
+      "window": {
+        "from": "2010-08-31",
+        "to": "2015-08-31"
+      },
+      "cov80": {
+        "est": 0.8571428571428571,
+        "sample": "dev"
+      }
+    },
+    "126": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.00010901019412667967,
+      "ci": {
+        "lo": -0.04458368793909081,
+        "hi": 0.02254093962168128,
+        "level": 0.9
+      },
+      "n_eff": 3.3333333333333335,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "volatility",
+          "n": 1
+        },
+        "team": 11
+      },
+      "mde": 0.05115023779680296,
+      "sample": "dev",
+      "dm_p": 0.9965933320168319,
+      "bh_q": 0.9965933320168319,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153952-992cede8",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.126.dev"
+      },
+      "n": 20,
+      "window": {
+        "from": "2010-08-31",
+        "to": "2015-05-29"
+      },
+      "cov80": {
+        "est": 0.75,
+        "sample": "dev"
+      }
+    },
+    "252": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.013726018383886096,
+      "ci": {
+        "lo": -0.01627790901129884,
+        "hi": 0.03470858322928411,
+        "level": 0.9
+      },
+      "n_eff": 1.5,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "volatility",
+          "n": 1
+        },
+        "team": 11
+      },
+      "mde": 0.043962986714709294,
+      "sample": "dev",
+      "dm_p": 0.7566478257869249,
+      "bh_q": 0.8540394417204407,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153952-992cede8",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.252.dev"
+      },
+      "n": 18,
+      "window": {
+        "from": "2010-08-31",
+        "to": "2014-11-28"
+      },
+      "cov80": {
+        "est": 0.7222222222222222,
+        "sample": "dev"
+      }
+    }
+  },
+  "nutrition": [
+    {
+      "h": 5,
+      "declared": true,
+      "n_eff_max": 104.0,
+      "n_eff": 22.0,
+      "mde": 0.019289694394252276,
+      "warmup_start": "2010-08-31",
+      "sample": "dev"
+    },
+    {
+      "h": 21,
+      "declared": true,
+      "n_eff_max": 104.0,
+      "n_eff": 22.0,
+      "mde": 0.031326257418682744,
+      "warmup_start": "2010-08-31",
+      "sample": "dev"
+    },
+    {
+      "h": 63,
+      "declared": true,
+      "n_eff_max": 34.333333333333336,
+      "n_eff": 7.0,
+      "mde": 0.05248010178032757,
+      "warmup_start": "2010-08-31",
+      "sample": "dev"
+    },
+    {
+      "h": 126,
+      "declared": true,
+      "n_eff_max": 17.0,
+      "n_eff": 3.3333333333333335,
+      "mde": 0.05115023779680296,
+      "warmup_start": "2010-08-31",
+      "sample": "dev"
+    },
+    {
+      "h": 252,
+      "declared": true,
+      "n_eff_max": 8.333333333333334,
+      "n_eff": 1.5,
+      "mde": 0.043962986714709294,
+      "warmup_start": "2010-08-31",
+      "sample": "dev"
+    }
+  ],
+  "latest": {
+    "origin": "2026-11-30",
+    "h": 252,
+    "unit": "log_return",
+    "median": -0.032643063223443146,
+    "interval_80": {
+      "lo": -0.8369092755537353,
+      "hi": 0.8107077223981383,
+      "level": 0.8
+    },
+    "p_up": 0.47942535673965747,
+    "base_rate": {
+      "p": 0.7222222222222222,
+      "window": {
+        "from": "2010-08-31",
+        "to": "2014-11-28"
+      },
+      "sample": "dev"
+    },
+    "signal": 0.6052647342942769,
+    "calibration": {
+      "method": "C5",
+      "implied_vol": 0.6052647342942769
+    },
+    "provenance": {
+      "kind": "run",
+      "id": "20261118T153952-992cede8",
+      "snapshot": "fixture-7-+0.000",
+      "snapshot_hash": "fixture-v1-7-+0.000",
+      "key": "forecast.252.latest"
+    }
+  },
+  "trials": {
+    "analyzer": 1,
+    "family": {
+      "id": "volatility",
+      "n": 1
+    },
+    "team": 11
+  },
+  "references_detail": [
+    {
+      "id": "ref:christensen-prabhala-1998",
+      "kind": "literature",
+      "authors": "Christensen, B.J. and Prabhala, N.R.",
+      "year": "1998",
+      "title": "The relation between implied and realized volatility",
+      "container": "Journal of Financial Economics",
+      "details": "50(2), pp. 125–150",
+      "url": null,
+      "medium": null,
+      "verification": "ai_recalled",
+      "used_by": ["F5", "T3"],
+      "accessed": null,
+      "text": "Christensen, B.J. and Prabhala, N.R. (1998) ‘The relation between implied and realized volatility’, Journal of Financial Economics, 50(2), pp. 125–150.",
+      "html": "Christensen, B.J. and Prabhala, N.R. (1998) ‘The relation between implied and realized volatility’, <i>Journal of Financial Economics</i>, 50(2), pp. 125–150.",
+      "in_text": "(Christensen and Prabhala, 1998)",
+      "bibtex_key": "ChristensenPrabhala1998",
+      "bibtex": "@article{ChristensenPrabhala1998,\n  author = {Christensen, B.J. and Prabhala, N.R.},\n  year = {1998},\n  title = {{The relation between implied and realized volatility}},\n  journal = {Journal of Financial Economics},\n  note = {50(2), pp. 125–150}\n}",
+      "content_hash": "c6b5a4bd3275acdc",
+      "in_bibliography": false
+    },
+    {
+      "id": "ref:poon-granger-2003",
+      "kind": "literature",
+      "authors": "Poon, S.-H. and Granger, C.W.J.",
+      "year": "2003",
+      "title": "Forecasting volatility in financial markets: a review",
+      "container": "Journal of Economic Literature",
+      "details": "41(2), pp. 478–539",
+      "url": null,
+      "medium": null,
+      "verification": "ai_recalled",
+      "used_by": ["F5", "T3"],
+      "accessed": null,
+      "text": "Poon, S.-H. and Granger, C.W.J. (2003) ‘Forecasting volatility in financial markets: a review’, Journal of Economic Literature, 41(2), pp. 478–539.",
+      "html": "Poon, S.-H. and Granger, C.W.J. (2003) ‘Forecasting volatility in financial markets: a review’, <i>Journal of Economic Literature</i>, 41(2), pp. 478–539.",
+      "in_text": "(Poon and Granger, 2003)",
+      "bibtex_key": "PoonGranger2003",
+      "bibtex": "@article{PoonGranger2003,\n  author = {Poon, S.-H. and Granger, C.W.J.},\n  year = {2003},\n  title = {{Forecasting volatility in financial markets: a review}},\n  journal = {Journal of Economic Literature},\n  note = {41(2), pp. 478–539}\n}",
+      "content_hash": "523a4c44ee2e7459",
+      "in_bibliography": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0.0+fc76379",
+      "first_seen": "2026-11-18T15:39:52.391391+00:00",
+      "configs": 1,
+      "runs": ["20261118T153952-992cede8"],
+      "current": true
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "20261118T153952-992cede8",
+      "analyzer": "volatility.implied_vol",
+      "name": "Implied-volatility scale (option-implied)",
+      "version": "1.0.0+fc76379",
+      "family": "volatility",
+      "author": "probcast",
+      "slot": 1,
+      "status": "completed",
+      "completed_at": "2026-11-18T15:39:52.388971Z",
+      "grades": {
+        "5": {
+          "grade": "C"
+        },
+        "21": {
+          "grade": "C"
+        },
+        "63": {
+          "grade": "D"
+        },
+        "126": {
+          "grade": "D"
+        },
+        "252": {
+          "grade": "D"
+        }
+      },
+      "natural_horizon": 252,
+      "scored": true
+    }
+  ],
+  "provenance": {
+    "kind": "dataset",
+    "id": "analyzer:volatility.implied_vol",
+    "snapshot": "fixture-7-+0.000",
+    "snapshot_hash": "fixture-v1-7-+0.000"
+  }
+}

@@ -1,0 +1,413 @@
+{
+  "fixture": true,
+  "id": "baseline.rw0",
+  "name": "Zero-drift random walk",
+  "version": "1.0.0+30dce24",
+  "family": "baseline",
+  "author": "probcast",
+  "slot": 0,
+  "builtin": true,
+  "natural_horizon": 252,
+  "leak": {
+    "status": "passed",
+    "tests": {
+      "T1": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T2": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T3": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T5": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T7": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      }
+    }
+  },
+  "in_committee": false,
+  "category": "baseline",
+  "report_section": "future",
+  "horizons": [5, 21, 63, 126, 252],
+  "calibrator": "none",
+  "hypothesis": "The median log return is zero at every horizon.",
+  "references": [],
+  "idea_card": null,
+  "manifest": {
+    "expected_direction": null,
+    "course_concepts": ["EMH weak form", "random walk"],
+    "informs": ["location"],
+    "min_history_sessions": 252,
+    "data_dependencies": [],
+    "params": {},
+    "param_grid_declared": {},
+    "manifest_version": "1.0.0",
+    "code_hash": "30dce248f9003ac0df39298ef93386ba6199068586bbe2caa19d22fec58a16b9"
+  },
+  "literature_prior": null,
+  "idea": null,
+  "dependencies": [
+    {
+      "id": "PX:close_base",
+      "name": "Close, base-share units",
+      "class": "exchange_price",
+      "rule": "same_session_close",
+      "strict_rule": "same_session_close",
+      "licence": "L2",
+      "source": "Yahoo Finance via yfinance"
+    }
+  ],
+  "leak_details": {
+    "T1": "passed",
+    "T2": "passed",
+    "T3": "passed",
+    "T5": "passed",
+    "T7": "passed"
+  },
+  "leak_at": "2026-11-20T14:00:00Z",
+  "status": "baseline",
+  "default_run_id": "20261118T154002-f251840a",
+  "anchor_run_id": "20261118T153935-9403903c",
+  "grades": {
+    "5": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": -0.002104308527188792,
+      "ci": {
+        "lo": -0.006048517357738104,
+        "hi": 0.0018500197231112532,
+        "level": 0.9
+      },
+      "n_eff": 104.0,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "baseline",
+          "n": 4
+        },
+        "team": 11
+      },
+      "mde": 0.007011595526271304,
+      "sample": "dev",
+      "dm_p": 0.4046674476944549,
+      "bh_q": 0.4652824025777325,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T154002-f251840a",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.5.dev"
+      },
+      "n": 104,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-11-30"
+      },
+      "cov80": {
+        "est": 0.75,
+        "sample": "dev"
+      }
+    },
+    "21": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.0095460448264173,
+      "ci": {
+        "lo": 0.001145407401394505,
+        "hi": 0.017580267004701496,
+        "level": 0.9
+      },
+      "n_eff": 104.0,
+      "grade": "B",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "baseline",
+          "n": 4
+        },
+        "team": 11
+      },
+      "mde": 0.014693551898249996,
+      "sample": "dev",
+      "dm_p": 0.07300108119205737,
+      "bh_q": 0.5110075683444015,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T154002-f251840a",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.21.dev"
+      },
+      "n": 104,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-11-30"
+      },
+      "cov80": {
+        "est": 0.7596153846153846,
+        "sample": "dev"
+      }
+    },
+    "63": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.01723318888428882,
+      "ci": {
+        "lo": 0.0027735555416033347,
+        "hi": 0.03139759585934935,
+        "level": 0.9
+      },
+      "n_eff": 34.333333333333336,
+      "grade": "C",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "baseline",
+          "n": 4
+        },
+        "team": 11
+      },
+      "mde": 0.02621367801947522,
+      "sample": "dev",
+      "dm_p": 0.07528388961489746,
+      "bh_q": 0.22585166884469238,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T154002-f251840a",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.63.dev"
+      },
+      "n": 103,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-08-31"
+      },
+      "cov80": {
+        "est": 0.7961165048543689,
+        "sample": "dev"
+      }
+    },
+    "126": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.023379856237266794,
+      "ci": {
+        "lo": -0.0011390035813742309,
+        "hi": 0.04433091172223605,
+        "level": 0.9
+      },
+      "n_eff": 17.0,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "baseline",
+          "n": 4
+        },
+        "team": 11
+      },
+      "mde": 0.041044703701596304,
+      "sample": "dev",
+      "dm_p": 0.13422511858551162,
+      "bh_q": 0.5868921848468701,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T154002-f251840a",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.126.dev"
+      },
+      "n": 102,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-05-29"
+      },
+      "cov80": {
+        "est": 0.7450980392156863,
+        "sample": "dev"
+      }
+    },
+    "252": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.028568190468776566,
+      "ci": {
+        "lo": -0.0025690653841951017,
+        "hi": 0.058966745060978334,
+        "level": 0.9
+      },
+      "n_eff": 8.333333333333334,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "baseline",
+          "n": 4
+        },
+        "team": 11
+      },
+      "mde": 0.06393762368798538,
+      "sample": "dev",
+      "dm_p": 0.27062688150127484,
+      "bh_q": 0.8540394417204408,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T154002-f251840a",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.252.dev"
+      },
+      "n": 100,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2014-11-28"
+      },
+      "cov80": {
+        "est": 0.72,
+        "sample": "dev"
+      }
+    }
+  },
+  "nutrition": [
+    {
+      "h": 5,
+      "declared": true,
+      "n_eff_max": 104.0,
+      "n_eff": 104.0,
+      "mde": 0.007011595526271304,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 21,
+      "declared": true,
+      "n_eff_max": 104.0,
+      "n_eff": 104.0,
+      "mde": 0.014693551898249996,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 63,
+      "declared": true,
+      "n_eff_max": 34.333333333333336,
+      "n_eff": 34.333333333333336,
+      "mde": 0.02621367801947522,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 126,
+      "declared": true,
+      "n_eff_max": 17.0,
+      "n_eff": 17.0,
+      "mde": 0.041044703701596304,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 252,
+      "declared": true,
+      "n_eff_max": 8.333333333333334,
+      "n_eff": 8.333333333333334,
+      "mde": 0.06393762368798538,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    }
+  ],
+  "latest": {
+    "origin": "2026-11-30",
+    "h": 252,
+    "unit": "log_return",
+    "median": 4.726990722876749e-12,
+    "interval_80": {
+      "lo": -0.5710136872150955,
+      "hi": 0.5987629895902531,
+      "level": 0.8
+    },
+    "p_up": 0.5000000000033659,
+    "base_rate": {
+      "p": 0.68,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2014-11-28"
+      },
+      "sample": "dev"
+    },
+    "signal": null,
+    "calibration": {},
+    "provenance": {
+      "kind": "run",
+      "id": "20261118T154002-f251840a",
+      "snapshot": "fixture-7-+0.000",
+      "snapshot_hash": "fixture-v1-7-+0.000",
+      "key": "forecast.252.latest"
+    }
+  },
+  "trials": {
+    "analyzer": 1,
+    "family": {
+      "id": "baseline",
+      "n": 4
+    },
+    "team": 11
+  },
+  "references_detail": [],
+  "versions": [
+    {
+      "version": "1.0.0+30dce24",
+      "first_seen": "2026-11-18T15:40:02.515546+00:00",
+      "configs": 1,
+      "runs": ["20261118T154002-f251840a"],
+      "current": true
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "20261118T154002-f251840a",
+      "analyzer": "baseline.rw0",
+      "name": "Zero-drift random walk",
+      "version": "1.0.0+30dce24",
+      "family": "baseline",
+      "author": "probcast",
+      "slot": 0,
+      "status": "completed",
+      "completed_at": "2026-11-18T15:40:02.512685Z",
+      "grades": {
+        "5": {
+          "grade": "D"
+        },
+        "21": {
+          "grade": "B"
+        },
+        "63": {
+          "grade": "C"
+        },
+        "126": {
+          "grade": "D"
+        },
+        "252": {
+          "grade": "D"
+        }
+      },
+      "natural_horizon": 252,
+      "scored": true
+    }
+  ],
+  "provenance": {
+    "kind": "dataset",
+    "id": "analyzer:baseline.rw0",
+    "snapshot": "fixture-7-+0.000",
+    "snapshot_hash": "fixture-v1-7-+0.000"
+  }
+}

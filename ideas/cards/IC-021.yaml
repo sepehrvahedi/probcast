@@ -1,0 +1,12 @@
+# Round-2 idea (researched, built and tested in round 2, D-101).
+id: IC-021
+title: Earnings surprises keep drifting
+author: probcast
+created_at: '2026-11-19T00:30:00Z'
+sample: true
+text: When a company beats its own year-ago quarter by an unusual margin, the market is slow to fully
+  believe it, so the stock keeps drifting the same way for a few months.
+analyzer: fundamental.sue
+implementation: 'Standardised unexpected earnings, seasonal random walk (Foster, Olsen & Shevlin 1984;
+  Bernard & Thomas 1990): (EPS - EPS a year earlier - mean of previous 8 such changes) / their standard
+  deviation, capped at ±5; counts from the filing date. C3, positive sign; 1 and 3 months.'

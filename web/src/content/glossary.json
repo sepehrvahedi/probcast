@@ -1,0 +1,125 @@
+{
+  "$comment": "Glossary (ux-spec §7.13, UX-C21). The same JSON powers GlossaryTerm popovers and About › Glossary.",
+  "terms": [
+    {
+      "key": "crps",
+      "term": "CRPS",
+      "definition": "Continuous ranked probability score. It scores a whole predictive distribution against the outcome: roughly, the distance between the forecast's cumulative distribution and the realised value. Lower is better, and it rewards forecasts that are both calibrated and sharp. ProbCast computes it from the 23 forecast quantiles, in units of log return (Gneiting and Raftery, 2007)."
+    },
+    {
+      "key": "crpss",
+      "term": "CRPSS",
+      "definition": "CRPS skill score: 1 − CRPS(method) ÷ CRPS(reference). Above 0 means better than the reference. ProbCast's headline reference is the CAPM anchor; hist_drift is shown alongside as a survivor-biased yardstick. Always shown with a 90% bootstrap confidence interval."
+    },
+    {
+      "key": "n-eff",
+      "term": "n_eff",
+      "definition": "Effective number of independent observations. Monthly forecasts of 12-month returns overlap by 11 months, so about 400 monthly origins carry only about 33 independent outcomes. ProbCast hides a metric below 10, greys it below 20, and reports tests only from 20."
+    },
+    {
+      "key": "evidence-grade",
+      "term": "Evidence grade",
+      "definition": "A computed A–D rating of a method at one horizon: A strong, B moderate, C weak, D insufficient; ⊘ marks forecasts worse than the CAPM anchor. It depends on n_eff, the skill confidence interval, a forecast-comparison test (HLN-DM) and calibration. Skill is claimed only at grade B or above."
+    },
+    {
+      "key": "family",
+      "term": "Family",
+      "definition": "One of eight fixed groups of related analyzers (technical.trend, technical.reversion, volatility, macro.rates, macro.fx, valuation, events, sentiment_alt). Each family gets one equal vote in the committee, so many similar ideas cannot dominate it."
+    },
+    {
+      "key": "anchor",
+      "term": "Anchor",
+      "definition": "The CAPM expected return, used as the committee's location anchor (fixed 25% weight; its effective location weight is higher when scale-only families are active) and as the reference for headline skill. It fixes the expected simple return, so the median log return is slightly lower (the Jensen gap). Equity risk premium 5% (sensitivity 4% and 6%); β estimated at each date; risk-free rate = 1-year Treasury yield."
+    },
+    {
+      "key": "holdout",
+      "term": "Holdout",
+      "definition": "Forecasts whose outcome date falls on or after 1 Jan 2021 (so a 12-month forecast made in mid-2020 is included). Their scores stay sealed until one witnessed reveal on Tue 1 Dec 2026 at 12:00 UK, after all methods and the final forecast are frozen. It is pseudo-out-of-sample: scores sealed and methods frozen; the data and history are public knowledge, so it tests tuning, not the choice of ideas."
+    },
+    {
+      "key": "pseudo-out-of-sample",
+      "term": "Pseudo-out-of-sample",
+      "definition": "Scores sealed and methods frozen; the data and history are public knowledge. ProbCast's holdout is of this kind: everyone has seen AAPL's 2021–2026 prices, but nobody has seen how the frozen methods score on them."
+    },
+    {
+      "key": "location-tilt",
+      "term": "Location tilt",
+      "definition": "How far, on average over the backtest, a forecaster's median sits above or below the CAPM anchor's median, in percentage points per year. Calibrators are built so that AAPL's past excess return cannot create a tilt on its own (drift neutrality)."
+    },
+    {
+      "key": "snapshot",
+      "term": "Snapshot",
+      "definition": "A named, content-hashed copy of all data at one moment: `r1-dev` (24 Nov 2026 close) and `final` (30 Nov 2026 close). Every run, figure and number cites its snapshot, so results can be reproduced."
+    },
+    {
+      "key": "trial",
+      "term": "Trial",
+      "definition": "Every analyzer configuration that has been evaluated. All trials are counted in an append-only registry and shown next to results, because trying many variants makes a lucky result more likely."
+    },
+    {
+      "key": "mde",
+      "term": "MDE",
+      "definition": "Minimum detectable effect: the smallest skill this sample could reliably distinguish from zero. A smaller true effect would usually look like noise."
+    },
+    {
+      "key": "base-rate",
+      "term": "Base rate",
+      "definition": "How often the event happened in the past, for comparison with a forecast probability (for example, the share of past 12-month windows in which AAPL's price rose)."
+    },
+    {
+      "key": "calibration",
+      "term": "Calibration",
+      "definition": "Whether stated probabilities match outcomes: events forecast at 70% should happen about 70% of the time, and 80% intervals should contain about 80% of outcomes."
+    },
+    {
+      "key": "reliability-diagram",
+      "term": "Reliability diagram",
+      "definition": "A chart of forecast probability (x) against observed frequency (y), grouped into bins; a calibrated forecaster lies near the diagonal."
+    },
+    {
+      "key": "pit-histogram",
+      "term": "PIT histogram",
+      "definition": "The share of outcomes falling in each tenth of the forecast distribution. Flat = calibrated; U-shaped = overconfident; hump-shaped = underconfident; sloped = biased."
+    },
+    {
+      "key": "leak-tested",
+      "term": "Leak-tested",
+      "definition": "Passed ProbCast's automated look-ahead tests (future-poisoning and related checks). It does not rule out selection hindsight."
+    },
+    {
+      "key": "as-of",
+      "term": "As-of",
+      "definition": "The moment whose public information a view or forecast uses."
+    },
+    {
+      "key": "horizon",
+      "term": "Horizon",
+      "definition": "How far ahead a forecast looks, in trading sessions: 5, 21, 63, 126 or 252 (about 1 week to 12 months)."
+    },
+    {
+      "key": "forecast-origin",
+      "term": "Forecast origin",
+      "definition": "The session close at which a forecast is made (ProbCast scores month-end origins)."
+    },
+    {
+      "key": "median-waterfall",
+      "term": "Median waterfall",
+      "definition": "An exact breakdown of how far each family moves the committee's median away from the CAPM anchor's median."
+    },
+    {
+      "key": "leave-one-family-out",
+      "term": "Leave-one-family-out (LOFO)",
+      "definition": "The change in P(price higher) when one family is removed from the committee."
+    },
+    {
+      "key": "survivor-bias",
+      "term": "Survivor bias",
+      "definition": "Studying a winner because it won. AAPL's own past average return overstates what was expectable in advance."
+    },
+    {
+      "key": "quantile-averaging",
+      "term": "Quantile averaging",
+      "definition": "How the committee combines families: it averages their forecast quantiles level by level (Vincentization)."
+    }
+  ]
+}

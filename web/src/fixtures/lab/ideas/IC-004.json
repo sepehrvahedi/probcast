@@ -1,0 +1,157 @@
+{
+  "fixture": true,
+  "id": "IC-004",
+  "status": "implementing",
+  "registered": true,
+  "record": {
+    "author": "osprey",
+    "content_hash": "8bf236a438e6b6e32ef38619c927eecff6aa14fda3fa1999534967cee425493a",
+    "entered_by": "kestrel",
+    "hash": "44db17cb73711c496bc6811075d517452126fbcd2573c4d186aa6c977cbda124",
+    "horizons": [126],
+    "id": "IC-004",
+    "path": "ideas/IC-004.yaml",
+    "report_section": "macro",
+    "seq": 4,
+    "status": "implementing",
+    "success_criterion": "Beats the CAPM anchor on CRPS at 126 sessions with grade ≥ C.",
+    "title": "Real-yield sensitivity",
+    "ts": "2026-11-18T13:15:00Z"
+  },
+  "history": [
+    {
+      "seq": 4,
+      "at": "2026-11-18T13:15:00Z",
+      "status": "registered",
+      "by": "kestrel",
+      "hash": "44db17cb73711c496bc6811075d517452126fbcd2573c4d186aa6c977cbda124",
+      "reason": null
+    },
+    {
+      "seq": 14,
+      "at": "2026-11-19T12:00:00Z",
+      "status": "triaged",
+      "by": "kestrel",
+      "hash": null,
+      "reason": null
+    },
+    {
+      "seq": 24,
+      "at": "2026-11-20T20:00:00Z",
+      "status": "implementing",
+      "by": "kestrel",
+      "hash": null,
+      "reason": null
+    }
+  ],
+  "card": {
+    "id": "IC-004",
+    "title": "Real-yield sensitivity",
+    "author": "osprey",
+    "report_section": "macro",
+    "course_concepts": ["interest rates", "CAPM/beta"],
+    "hypothesis": "When the 10-year real yield has risen over the last quarter, DEMO's 6M return is lower than its CAPM expectation.",
+    "rationale": "Long-duration equity cash flows are discounted at higher real rates. Counter-argument: the CAPM anchor already includes the risk-free rate.",
+    "data_needed": ["FRED:DFII10 — market_observable (same_session_close): daily, next morning"],
+    "rule": "63-session change in the 10-year TIPS yield as of each origin.",
+    "parameters": {
+      "sessions": [63]
+    },
+    "horizons": [126],
+    "expected_direction": "lower; about −3% over six months",
+    "success_criterion": "Beats the CAPM anchor on CRPS at 126 sessions with grade ≥ C.",
+    "drop_if": "CRPSS 90% CI entirely below zero at 126 sessions.",
+    "references": [
+      "Campbell, J.Y. and Ammer, J. (1993) 'What moves the stock and bond markets?', Journal of Finance, 48(1), pp. 3–37."
+    ],
+    "holdout_ack": true,
+    "created_at": "2026-11-18T13:15:00Z"
+  },
+  "path": "ideas/IC-004.yaml",
+  "integrity": {
+    "content_hash": "8bf236a438e6b6e32ef38619c927eecff6aa14fda3fa1999534967cee425493a",
+    "recomputed": "8bf236a438e6b6e32ef38619c927eecff6aa14fda3fa1999534967cee425493a",
+    "match": true,
+    "chain_ok": true,
+    "registry": "registry/ideas.jsonl"
+  },
+  "checks": [
+    {
+      "id": "hypothesis",
+      "status": "ok",
+      "text": "Hypothesis has a condition, a direction, a horizon and a comparison",
+      "detail": ""
+    },
+    {
+      "id": "data_rules",
+      "status": "ok",
+      "text": "Every data item has a timing rule (when it becomes public)",
+      "detail": "1 item(s)"
+    },
+    {
+      "id": "no_full_sample",
+      "status": "ok",
+      "text": "No full-sample statistics in the rule",
+      "detail": ""
+    },
+    {
+      "id": "parameters",
+      "status": "ok",
+      "text": "At most 3 alternatives per parameter",
+      "detail": ""
+    },
+    {
+      "id": "planned_trials",
+      "status": "ok",
+      "text": "Planned configurations 1 (soft budget 20)",
+      "detail": ""
+    },
+    {
+      "id": "horizons",
+      "status": "ok",
+      "text": "Horizons are on the contract grid (5, 21, 63, 126, 252 sessions)",
+      "detail": ""
+    },
+    {
+      "id": "mde",
+      "status": "warn",
+      "text": "Expected −3.0% is below the MDE at 126 sessions (±21.1%)",
+      "detail": "Likely undetectable on DEMO alone; consider descriptive-only."
+    },
+    {
+      "id": "references",
+      "status": "ok",
+      "text": "At least one reference",
+      "detail": "1 reference(s)"
+    },
+    {
+      "id": "holdout_ack",
+      "status": "ok",
+      "text": "Holdout confirmation ticked",
+      "detail": "Designed without looking at any ProbCast result for 2021 onwards."
+    },
+    {
+      "id": "licence",
+      "status": "info",
+      "text": "Licensed data (L3/L4) stays local-only",
+      "detail": "Licensed data: none"
+    }
+  ],
+  "analyzers": [],
+  "runs": [],
+  "audit": [
+    {
+      "at": "2026-11-18T13:15:00Z",
+      "actor": "kestrel",
+      "action": "idea.register",
+      "reason": "Real-yield sensitivity"
+    }
+  ],
+  "immutable": true,
+  "amend_note": "Content is immutable after registration; an amendment is a new card and counts as a new trial.",
+  "provenance": {
+    "kind": "ledger",
+    "id": "registry/ideas.jsonl",
+    "key": "IC-004"
+  }
+}

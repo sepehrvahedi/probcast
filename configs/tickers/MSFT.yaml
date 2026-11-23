@@ -1,0 +1,15 @@
+# Per-ticker configuration (D-070), generated for the top32 universe (D-097). CIK resolved from SEC at ingest;
+# earnings dates come from 8-K item 2.02 filings. Fiscal year end is the usual month-end (informational).
+ticker: MSFT
+name: Microsoft Corporation
+exchange: XNYS
+fiscal_year_end: 06-30
+universe: top32
+benchmarks:
+  market: ^SP500TR
+  market_price: ^GSPC
+  nasdaq: QQQ
+  sector: XLK
+  broad: SPY
+usd_series: FRED:DTWEXBGS
+real_yield_series: FRED:DFII10

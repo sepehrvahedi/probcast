@@ -1,0 +1,13 @@
+# Round-3 advanced method (D-102).
+id: IC-036
+title: A volatility model with fat tails
+author: probcast
+created_at: '2026-11-19T00:40:00Z'
+sample: true
+kind: advanced
+text: Big moves come in clusters, falls stir up more turbulence than rises, and extreme days happen more
+  often than a bell curve suggests. A model that captures all three should size the likely range better.
+analyzer: advanced.garch_gjr_t
+implementation: GJR-GARCH(1,1) with Student-t errors (Glosten, Jagannathan & Runkle 1993; Bollerslev 1986),
+  refitted at every month-end on the last 10 years of daily returns; its variance forecast sets the spread
+  around the simple guess's middle (direction unchanged). All horizons.

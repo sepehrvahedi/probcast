@@ -1,0 +1,12 @@
+# Round-3 advanced method (D-102).
+id: IC-037
+title: Yesterday, last week and last month all matter for turbulence
+author: probcast
+created_at: '2026-11-19T00:40:00Z'
+sample: true
+kind: advanced
+text: How turbulent a stock will be depends on how turbulent it was yesterday, over the past week and
+  over the past month, each in its own way. Combining the three should size the likely range better.
+analyzer: advanced.har_rv
+implementation: Heterogeneous autoregressive model of realised variance (Corsi 2009) on daily squared
+  returns, refitted at every month-end on the last 10 years; sets the spread only. All horizons.

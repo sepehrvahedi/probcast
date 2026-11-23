@@ -1,0 +1,344 @@
+{
+  "fixture": true,
+  "id": "technical.reversal_1m",
+  "name": "Short-term reversal (1 month)",
+  "version": "1.0.0+ce3e378",
+  "family": "technical.reversion",
+  "author": "probcast",
+  "slot": 4,
+  "builtin": true,
+  "natural_horizon": 21,
+  "leak": {
+    "status": "passed",
+    "tests": {
+      "T1": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T2": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T3": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T5": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T7": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "TDN": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      }
+    }
+  },
+  "in_committee": true,
+  "category": "technical",
+  "report_section": "future",
+  "horizons": [5, 21],
+  "calibrator": "C3",
+  "hypothesis": "A large past-month return is followed by a partial reversal over the next month.",
+  "references": ["ref:jegadeesh-1990", "ref:lehmann-1990"],
+  "idea_card": null,
+  "manifest": {
+    "expected_direction": "negative",
+    "course_concepts": ["EMH weak form", "liquidity provision"],
+    "informs": ["location"],
+    "min_history_sessions": 504,
+    "data_dependencies": [],
+    "params": {
+      "window": 21
+    },
+    "param_grid_declared": {},
+    "manifest_version": "1.0.0",
+    "code_hash": "ce3e3782c7845331d847d1e6fd199cfc3d563d51a3bb92eac9a2576072e9088b"
+  },
+  "literature_prior": null,
+  "idea": null,
+  "dependencies": [
+    {
+      "id": "PX:close_base",
+      "name": "Close, base-share units",
+      "class": "exchange_price",
+      "rule": "same_session_close",
+      "strict_rule": "same_session_close",
+      "licence": "L2",
+      "source": "Yahoo Finance via yfinance"
+    }
+  ],
+  "leak_details": {
+    "T1": "passed",
+    "T2": "passed",
+    "T3": "passed",
+    "T5": "passed",
+    "T7": "passed",
+    "T-DN": "passed"
+  },
+  "leak_at": "2026-11-20T14:00:00Z",
+  "status": "committee",
+  "default_run_id": "20261118T153945-84187823",
+  "anchor_run_id": "20261118T153935-9403903c",
+  "grades": {
+    "5": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.0006563753169760433,
+      "ci": {
+        "lo": -0.0006853411909886308,
+        "hi": 0.0018488488178511622,
+        "level": 0.9
+      },
+      "n_eff": 104.0,
+      "grade": "C",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "technical.reversion",
+          "n": 1
+        },
+        "team": 11
+      },
+      "mde": 0.0022727798570622137,
+      "sample": "dev",
+      "dm_p": 0.4225624619566543,
+      "bh_q": 0.4652824025777325,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153945-84187823",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.5.dev"
+      },
+      "n": 104,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-11-30"
+      },
+      "cov80": {
+        "est": 0.75,
+        "sample": "dev"
+      }
+    },
+    "21": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 6.932601011833128e-5,
+      "ci": {
+        "lo": -0.0010952884599864099,
+        "hi": 0.0010929642804425488,
+        "level": 0.9
+      },
+      "n_eff": 104.0,
+      "grade": "C",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "technical.reversion",
+          "n": 1
+        },
+        "team": 11
+      },
+      "mde": 0.0019410532788675507,
+      "sample": "dev",
+      "dm_p": 0.9208727086019657,
+      "bh_q": 0.9208727086019657,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153945-84187823",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.21.dev"
+      },
+      "n": 104,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-11-30"
+      },
+      "cov80": {
+        "est": 0.7692307692307693,
+        "sample": "dev"
+      }
+    }
+  },
+  "nutrition": [
+    {
+      "h": 5,
+      "declared": true,
+      "n_eff_max": 104.0,
+      "n_eff": 104.0,
+      "mde": 0.0022727798570622137,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 21,
+      "declared": true,
+      "n_eff_max": 104.0,
+      "n_eff": 104.0,
+      "mde": 0.0019410532788675507,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 63,
+      "declared": false,
+      "n_eff_max": null,
+      "n_eff": null,
+      "mde": null,
+      "warmup_start": null,
+      "sample": null
+    },
+    {
+      "h": 126,
+      "declared": false,
+      "n_eff_max": null,
+      "n_eff": null,
+      "mde": null,
+      "warmup_start": null,
+      "sample": null
+    },
+    {
+      "h": 252,
+      "declared": false,
+      "n_eff_max": null,
+      "n_eff": null,
+      "mde": null,
+      "warmup_start": null,
+      "sample": null
+    }
+  ],
+  "latest": {
+    "origin": "2026-11-30",
+    "h": 21,
+    "unit": "log_return",
+    "median": -0.008628861193019768,
+    "interval_80": {
+      "lo": -0.20179587464560322,
+      "hi": 0.19006142082712035,
+      "level": 0.8
+    },
+    "p_up": 0.4781902737278566,
+    "base_rate": {
+      "p": 0.6538461538461539,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-11-30"
+      },
+      "sample": "dev"
+    },
+    "signal": -3.254148206128918,
+    "calibration": {
+      "method": "C3",
+      "beta": 0.0,
+      "alpha_excess_drift_diagnostic": 0.12180528360763536,
+      "sign_restricted": true,
+      "n_pairs": 10033,
+      "n_eff": 478,
+      "tilt_z": -0.0,
+      "sigma_h": 0.15578427891982663,
+      "anchor_median": -0.008628861205733395
+    },
+    "provenance": {
+      "kind": "run",
+      "id": "20261118T153945-84187823",
+      "snapshot": "fixture-7-+0.000",
+      "snapshot_hash": "fixture-v1-7-+0.000",
+      "key": "forecast.21.latest"
+    }
+  },
+  "trials": {
+    "analyzer": 1,
+    "family": {
+      "id": "technical.reversion",
+      "n": 1
+    },
+    "team": 11
+  },
+  "references_detail": [
+    {
+      "id": "ref:jegadeesh-1990",
+      "kind": "literature",
+      "authors": "Jegadeesh, N.",
+      "year": "1990",
+      "title": "Evidence of predictable behavior of security returns",
+      "container": "Journal of Finance",
+      "details": "45(3), pp. 881–898",
+      "url": null,
+      "medium": null,
+      "verification": "ai_recalled",
+      "used_by": ["F5", "T3"],
+      "accessed": null,
+      "text": "Jegadeesh, N. (1990) ‘Evidence of predictable behavior of security returns’, Journal of Finance, 45(3), pp. 881–898.",
+      "html": "Jegadeesh, N. (1990) ‘Evidence of predictable behavior of security returns’, <i>Journal of Finance</i>, 45(3), pp. 881–898.",
+      "in_text": "(Jegadeesh, 1990)",
+      "bibtex_key": "Jegadeesh1990",
+      "bibtex": "@article{Jegadeesh1990,\n  author = {Jegadeesh, N.},\n  year = {1990},\n  title = {{Evidence of predictable behavior of security returns}},\n  journal = {Journal of Finance},\n  note = {45(3), pp. 881–898}\n}",
+      "content_hash": "e5362599044ff44e",
+      "in_bibliography": false
+    },
+    {
+      "id": "ref:lehmann-1990",
+      "kind": "literature",
+      "authors": "Lehmann, B.N.",
+      "year": "1990",
+      "title": "Fads, martingales, and market efficiency",
+      "container": "Quarterly Journal of Economics",
+      "details": "105(1), pp. 1–28",
+      "url": null,
+      "medium": null,
+      "verification": "ai_recalled",
+      "used_by": ["F5", "T3"],
+      "accessed": null,
+      "text": "Lehmann, B.N. (1990) ‘Fads, martingales, and market efficiency’, Quarterly Journal of Economics, 105(1), pp. 1–28.",
+      "html": "Lehmann, B.N. (1990) ‘Fads, martingales, and market efficiency’, <i>Quarterly Journal of Economics</i>, 105(1), pp. 1–28.",
+      "in_text": "(Lehmann, 1990)",
+      "bibtex_key": "Lehmann1990",
+      "bibtex": "@article{Lehmann1990,\n  author = {Lehmann, B.N.},\n  year = {1990},\n  title = {{Fads, martingales, and market efficiency}},\n  journal = {Quarterly Journal of Economics},\n  note = {105(1), pp. 1–28}\n}",
+      "content_hash": "14567f8c817ff3cb",
+      "in_bibliography": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0.0+ce3e378",
+      "first_seen": "2026-11-18T15:39:45.319341+00:00",
+      "configs": 1,
+      "runs": ["20261118T153945-84187823"],
+      "current": true
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "20261118T153945-84187823",
+      "analyzer": "technical.reversal_1m",
+      "name": "Short-term reversal (1 month)",
+      "version": "1.0.0+ce3e378",
+      "family": "technical.reversion",
+      "author": "probcast",
+      "slot": 4,
+      "status": "completed",
+      "completed_at": "2026-11-18T15:39:45.317086Z",
+      "grades": {
+        "5": {
+          "grade": "C"
+        },
+        "21": {
+          "grade": "C"
+        }
+      },
+      "natural_horizon": 21,
+      "scored": true
+    }
+  ],
+  "provenance": {
+    "kind": "dataset",
+    "id": "analyzer:technical.reversal_1m",
+    "snapshot": "fixture-7-+0.000",
+    "snapshot_hash": "fixture-v1-7-+0.000"
+  }
+}

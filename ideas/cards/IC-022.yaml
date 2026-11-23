@@ -1,0 +1,11 @@
+# Round-2 idea (researched, built and tested in round 2, D-101).
+id: IC-022
+title: Results months pay a premium
+author: probcast
+created_at: '2026-11-19T00:30:00Z'
+sample: true
+text: In months when a company is due to report results, its stock tends to earn a little more and swing
+  a lot more.
+analyzer: events.announcement_premium
+implementation: 'Frazzini & Lamont (2007): a results release is expected within the next 30 days if one
+  came 364 days earlier (from SEC 8-K dates only). Two buckets (C1); 1 month.'

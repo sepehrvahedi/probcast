@@ -1,0 +1,12 @@
+# Round-2 idea (researched, built and tested in round 2, D-101).
+id: IC-015
+title: High-beta stocks earn less than they should
+author: probcast
+created_at: '2026-11-19T00:30:00Z'
+sample: true
+text: Stocks that swing much more than the market tend to earn less than the simple guess expects, and
+  calm stocks a bit more.
+analyzer: technical.beta_flat_sml
+implementation: 'Frazzini & Pedersen (2014) ex-ante beta: correlation from 5 years of overlapping 3-day
+  returns, volatilities from 1 year of daily returns, shrunk 60/40 towards 1. C3, negative sign; 3, 6
+  and 12 months.'

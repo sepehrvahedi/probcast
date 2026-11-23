@@ -1,0 +1,19 @@
+{
+  "fixture": true,
+  "subject": "DEMO",
+  "asof": "2026-11-30",
+  "sets": [
+    { "id": "A", "key": "platform", "label": "Platform", "tickers": ["PEERA1", "PEERA2"] },
+    { "id": "B", "key": "hardware", "label": "Hardware", "tickers": ["PEERB1", "PEERB2"] },
+    { "id": "hindsight", "key": "hindsight", "label": "Hindsight peer", "tickers": ["PEERH1"] }
+  ],
+  "benchmarks": { "market": "^DEMOTR", "nasdaq": "^DEMONDX" },
+  "note": "Peer sets are today's large companies, chosen with hindsight; their past returns overstate what an investor could have known (survivorship). The hindsight peer is shown separately and excluded from medians.",
+  "provenance": {
+    "kind": "dataset",
+    "id": "configs/tickers/DEMO.yaml",
+    "snapshot": "r1-dev",
+    "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+    "source": "ticker configuration (D-070)"
+  }
+}

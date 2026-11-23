@@ -1,0 +1,126 @@
+# Migration patch: aapl_events_seed_v1.csv -> aapl_events.csv (events schema v1.1, ADR-016).
+# Applied by probcast.ingest.events.migrate_v1(). Data only (CC BY 4.0); the code is ticker-agnostic.
+# References: docs/kb/07-data/data-plan.md §1.4; docs/kb/03-reviews/R1a-critique-science-data.md §3.2;
+# ADR-016 (verification migration RT-17: never human_opened).
+schema: probcast.events.v1_1.patch
+ticker: AAPL
+source_file: aapl_events_seed_v1.csv
+target_file: aapl_events.csv
+
+# Classes treated as rule-complete (inference allowed); everything else is curated (CRT-A-022).
+rule_complete_event_types: [earnings]
+
+# Rows whose content was checked on the web. They map to `web_checked` instead of `ai_recalled`
+# (only if their v1 status is verified_*; v1 `unverified` rows stay `unverified`).
+web_checked:
+  # R1a §3.2 seed spot-check, 17 Nov 2026 (43 of the 45 rows; the other two were v1 `unverified`:
+  # AAPL-EV-20120820-01 and AAPL-EV-20230630-01, which stay `unverified` per the RT-17 mapping).
+  r1a_2026-11-17:
+    - AAPL-EV-20261102-01
+    - AAPL-EV-20260730-01
+    - AAPL-EV-20260430-01
+    - AAPL-EV-20260430-02
+    - AAPL-EV-20260129-01
+    - AAPL-EV-20260420-01
+    - AAPL-EV-20260901-01
+    - AAPL-EV-20260220-01
+    - AAPL-EV-20260630-01
+    - AAPL-EV-20251211-01
+    - AAPL-EV-20260916-01
+    - AAPL-EV-20240918-01
+    - AAPL-EV-20220615-01
+    - AAPL-EV-20220316-01
+    - AAPL-EV-20151216-01
+    - AAPL-EV-20200315-01
+    - AAPL-EV-20081216-01
+    - AAPL-EV-20260909-01
+    - AAPL-EV-20261023-01
+    - AAPL-EV-20261023-02
+    - AAPL-EV-20260608-01
+    - AAPL-EV-20260112-01
+    - AAPL-EV-20260114-01
+    - AAPL-EV-20260420-02
+    - AAPL-EV-20261105-01
+    - AAPL-EV-20251204-01
+    - AAPL-EV-20151216-02
+    - AAPL-EV-20140304-01
+    - AAPL-EV-20200313-01
+    - AAPL-EV-19870422-01
+    - AAPL-EV-19870616-01
+    - AAPL-EV-20000419-01
+    - AAPL-EV-20000621-01
+    - AAPL-EV-20050211-01
+    - AAPL-EV-20050228-01
+    - AAPL-EV-20140423-03
+    - AAPL-EV-20140609-01
+    - AAPL-EV-20200730-02
+    - AAPL-EV-20200831-01
+    - AAPL-EV-19951006-01
+    - AAPL-EV-20120319-01
+    - AAPL-EV-20120724-01
+    - AAPL-EV-20100125-01
+
+# Neutral text (data plan §1.4 column rule; CRT-A-010): no y/y growth claims in descriptions.
+# The FY2010 rows compared post-ASU-2009-13 revenue with pre-change as-reported revenue; the same
+# "vs as-reported prior-year quarter" clause is removed from every earnings row for consistency.
+description_rewrites:
+  - event_types: [earnings]
+    pattern: ',\s*[+-]\d+(?:\.\d+)?% vs as-reported prior-year quarter'
+    replace: ''
+    reason: CRT-A-010
+
+overrides:
+  AAPL-EV-20151216-02:
+    reason: "CRT-A-009: became public on 17 Dec 2015 (8-K accepted 16:30:59 ET; Apple Newsroom 17 Dec 2015); 16 Dec is the board-action date (occurred_at)."
+    content_available_at: "2015-12-17T16:30:59-05:00"
+    time_precision: exact
+    description: "8-K (Item 5.02) accepted 17 Dec 2015 16:30:59 ET (period of report 16 Dec 2015): Jeff Williams, SVP Operations, appointed Chief Operating Officer. Apple Newsroom release dated 17 Dec 2015."
+    tags: "leadership;coo;avail:edgar_accept"
+  AAPL-EV-20260730-01:
+    reason: "CRT-A-011: add the Q3 FY2026 tariff-refund note (re-checked on the web 2026-11-18: MacTrast and MacRumors coverage of the 30 Jul 2026 release)."
+    description_append: " Release states company gross margin of 50.1% includes a favourable impact of approximately 2 percentage points from tariff refunds, and diluted EPS includes a favourable impact of $0.11 from tariff refunds."
+
+# New rows (data plan §1.4 / CRT-A-012). Verified on the web 2026-11-18 (secondary sources).
+additions:
+  - event_id: AAPL-EV-20260304-01
+    event_type: product_launch
+    subtype: macbook_neo_announced
+    title: "MacBook Neo announced"
+    description: "Secondary reports: MacBook Neo announced from $599 with the A18 Pro chip; pre-orders from 4 Mar 2026, available 11 Mar 2026. content_available_at = earliest evidenced public timestamp (Engadget article, updated 09:46 EST); Apple's release time not verified."
+    occurred_at: "2026-03-04T00:00:00-05:00"
+    announced_at: ""
+    content_available_at: "2026-03-04T09:46:00-05:00"
+    time_precision: minute
+    verification: web_checked
+    importance: 2
+    source_url: "https://www.engadget.com/computing/laptops/the-599-macbook-neo-is-apples-cheapest-mac-laptop-yet-141028666.html"
+    source_name: "Engadget (4 Mar 2026); also PetaPixel, Macworld, TechRadar | accessed 2026-11-18"
+    tags: "product_launch;mac;macbook_neo;src:secondary;avail:earliest_public_report"
+  - event_id: AAPL-EV-20260717-01
+    event_type: market_milestone
+    subtype: most_valuable_passes_nvidia
+    title: "Passes Nvidia as the world's most valuable listed company"
+    description: "Reuters (17 Jul 2026): Apple last valued at about $4.88tn against Nvidia's roughly $4.86tn after a 3.5% fall in Nvidia shares. Intraday or closing basis not stated; availability assumed at the 16:00 ET close."
+    occurred_at: "2026-07-17T16:00:00-04:00"
+    announced_at: ""
+    content_available_at: "2026-07-17T16:00:00-04:00"
+    time_precision: assumed
+    verification: web_checked
+    importance: 2
+    source_url: "https://www.staradvertiser.com/2026/07/18/breaking-news/apple-unseats-nvidia-to-become-worlds-most-valuable-company/"
+    source_name: "Reuters via Honolulu Star-Advertiser (18 Jul 2026) | accessed 2026-11-18"
+    tags: "market_cap;milestone;src:secondary;avail:market_close"
+  - event_id: AAPL-EV-20260728-01
+    event_type: market_milestone
+    subtype: market_cap_5tn_intraday
+    title: "Market value tops $5 trillion intraday for the first time"
+    description: "9to5Mac (28 Jul 2026, 06:37 PT): Apple briefly crossed a $5tn market value during trading on 28 Jul 2026, the second company to do so after Nvidia. content_available_at = that article's publication time."
+    occurred_at: "2026-07-28T00:00:00-04:00"
+    announced_at: ""
+    content_available_at: "2026-07-28T09:37:00-04:00"
+    time_precision: minute
+    verification: web_checked
+    importance: 2
+    source_url: "https://9to5mac.com/2026/07/28/apple-just-hit-5-trillion-market-cap-for-first-time/"
+    source_name: "9to5Mac (28 Jul 2026); BNN Bloomberg (28 Jul 2026) | accessed 2026-11-18"
+    tags: "market_cap;milestone;src:secondary;avail:earliest_public_report"

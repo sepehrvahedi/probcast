@@ -1,0 +1,464 @@
+{
+  "fixture": true,
+  "id": "baseline.capm",
+  "name": "CAPM anchor",
+  "version": "1.0.0+2c31975",
+  "family": "baseline",
+  "author": "probcast",
+  "slot": 0,
+  "builtin": true,
+  "natural_horizon": 252,
+  "leak": {
+    "status": "passed",
+    "tests": {
+      "T1": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T2": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T3": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T5": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T7": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      }
+    }
+  },
+  "in_committee": false,
+  "category": "baseline",
+  "report_section": "future",
+  "horizons": [5, 21, 63, 126, 252],
+  "calibrator": "none",
+  "hypothesis": "Expected simple return equals r_f + beta x ERP (ERP 5%).",
+  "references": ["ref:sharpe-1964", "ref:blume-1971"],
+  "idea_card": null,
+  "manifest": {
+    "expected_direction": null,
+    "course_concepts": ["CAPM", "cost of equity"],
+    "informs": ["location", "scale"],
+    "min_history_sessions": 252,
+    "data_dependencies": [],
+    "params": {},
+    "param_grid_declared": {},
+    "manifest_version": "1.0.0",
+    "code_hash": "2c31975f074a9021b0d7fc108c9c085baebd05bba2b6de7efffe432c16c9c78f"
+  },
+  "literature_prior": null,
+  "idea": null,
+  "dependencies": [
+    {
+      "id": "PX:close_base",
+      "name": "Close, base-share units",
+      "class": "exchange_price",
+      "rule": "same_session_close",
+      "strict_rule": "same_session_close",
+      "licence": "L2",
+      "source": "Yahoo Finance via yfinance"
+    }
+  ],
+  "leak_details": {
+    "T1": "passed",
+    "T2": "passed",
+    "T3": "passed",
+    "T5": "passed",
+    "T7": "passed"
+  },
+  "leak_at": "2026-11-20T14:00:00Z",
+  "status": "baseline",
+  "default_run_id": "20261118T153935-9403903c",
+  "anchor_run_id": "20261118T153935-9403903c",
+  "grades": {
+    "5": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.0,
+      "ci": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "level": 0.9
+      },
+      "n_eff": 104.0,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "baseline",
+          "n": 4
+        },
+        "team": 11
+      },
+      "mde": 0.0,
+      "sample": "dev",
+      "dm_p": 1.0,
+      "bh_q": 1.0,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153935-9403903c",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.5.dev"
+      },
+      "n": 104,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-11-30"
+      },
+      "cov80": {
+        "est": 0.75,
+        "sample": "dev"
+      }
+    },
+    "21": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.0,
+      "ci": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "level": 0.9
+      },
+      "n_eff": 104.0,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "baseline",
+          "n": 4
+        },
+        "team": 11
+      },
+      "mde": 0.0,
+      "sample": "dev",
+      "dm_p": 1.0,
+      "bh_q": 1.0,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153935-9403903c",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.21.dev"
+      },
+      "n": 104,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-11-30"
+      },
+      "cov80": {
+        "est": 0.7692307692307693,
+        "sample": "dev"
+      }
+    },
+    "63": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.0,
+      "ci": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "level": 0.9
+      },
+      "n_eff": 34.333333333333336,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "baseline",
+          "n": 4
+        },
+        "team": 11
+      },
+      "mde": 0.0,
+      "sample": "dev",
+      "dm_p": 1.0,
+      "bh_q": 1.0,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153935-9403903c",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.63.dev"
+      },
+      "n": 103,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-08-31"
+      },
+      "cov80": {
+        "est": 0.7766990291262136,
+        "sample": "dev"
+      }
+    },
+    "126": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.0,
+      "ci": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "level": 0.9
+      },
+      "n_eff": 17.0,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "baseline",
+          "n": 4
+        },
+        "team": 11
+      },
+      "mde": 0.0,
+      "sample": "dev",
+      "dm_p": 1.0,
+      "bh_q": 1.0,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153935-9403903c",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.126.dev"
+      },
+      "n": 102,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-05-29"
+      },
+      "cov80": {
+        "est": 0.7450980392156863,
+        "sample": "dev"
+      }
+    },
+    "252": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.0,
+      "ci": {
+        "lo": 0.0,
+        "hi": 0.0,
+        "level": 0.9
+      },
+      "n_eff": 8.333333333333334,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "baseline",
+          "n": 4
+        },
+        "team": 11
+      },
+      "mde": 0.0,
+      "sample": "dev",
+      "dm_p": 1.0,
+      "bh_q": 1.0,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153935-9403903c",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.252.dev"
+      },
+      "n": 100,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2014-11-28"
+      },
+      "cov80": {
+        "est": 0.71,
+        "sample": "dev"
+      }
+    }
+  },
+  "nutrition": [
+    {
+      "h": 5,
+      "declared": true,
+      "n_eff_max": 104.0,
+      "n_eff": 104.0,
+      "mde": 0.0,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 21,
+      "declared": true,
+      "n_eff_max": 104.0,
+      "n_eff": 104.0,
+      "mde": 0.0,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 63,
+      "declared": true,
+      "n_eff_max": 34.333333333333336,
+      "n_eff": 34.333333333333336,
+      "mde": 0.0,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 126,
+      "declared": true,
+      "n_eff_max": 17.0,
+      "n_eff": 17.0,
+      "mde": 0.0,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 252,
+      "declared": true,
+      "n_eff_max": 8.333333333333334,
+      "n_eff": 8.333333333333334,
+      "mde": 0.0,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    }
+  ],
+  "latest": {
+    "origin": "2026-11-30",
+    "h": 252,
+    "unit": "log_return",
+    "median": -0.032643063230101056,
+    "interval_80": {
+      "lo": -0.6036567504499235,
+      "hi": 0.5661199263554251,
+      "level": 0.8
+    },
+    "p_up": 0.4710208515508886,
+    "base_rate": {
+      "p": 0.68,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2014-11-28"
+      },
+      "sample": "dev"
+    },
+    "signal": null,
+    "calibration": {
+      "mu": 0.0839428174347558,
+      "rf": 0.030409157741279683,
+      "beta": 1.0706731938695224,
+      "erp": 0.05
+    },
+    "provenance": {
+      "kind": "run",
+      "id": "20261118T153935-9403903c",
+      "snapshot": "fixture-7-+0.000",
+      "snapshot_hash": "fixture-v1-7-+0.000",
+      "key": "forecast.252.latest"
+    }
+  },
+  "trials": {
+    "analyzer": 1,
+    "family": {
+      "id": "baseline",
+      "n": 4
+    },
+    "team": 11
+  },
+  "references_detail": [
+    {
+      "id": "ref:sharpe-1964",
+      "kind": "literature",
+      "authors": "Sharpe, W.F.",
+      "year": "1964",
+      "title": "Capital asset prices: a theory of market equilibrium under conditions of risk",
+      "container": "Journal of Finance",
+      "details": "19(3), pp. 425–442",
+      "url": null,
+      "medium": null,
+      "verification": "human_opened",
+      "used_by": ["F5", "F6", "F7", "F2", "T6"],
+      "accessed": "2026-11-18",
+      "text": "Sharpe, W.F. (1964) ‘Capital asset prices: a theory of market equilibrium under conditions of risk’, Journal of Finance, 19(3), pp. 425–442.",
+      "html": "Sharpe, W.F. (1964) ‘Capital asset prices: a theory of market equilibrium under conditions of risk’, <i>Journal of Finance</i>, 19(3), pp. 425–442.",
+      "in_text": "(Sharpe, 1964)",
+      "bibtex_key": "Sharpe1964",
+      "bibtex": "@article{Sharpe1964,\n  author = {Sharpe, W.F.},\n  year = {1964},\n  title = {{Capital asset prices: a theory of market equilibrium under conditions of risk}},\n  journal = {Journal of Finance},\n  note = {19(3), pp. 425–442},\n  urldate = {2026-11-18}\n}",
+      "content_hash": "96bf0e5503d9a043",
+      "in_bibliography": true,
+      "opened_by": "kestrel",
+      "opened_at": "2026-11-18T15:40:03.019122+00:00",
+      "record_hash": "e1a3eb559704a83ea4834332551f9687828a4d8844a76c3058b2be246cb4fb2e"
+    },
+    {
+      "id": "ref:blume-1971",
+      "kind": "literature",
+      "authors": "Blume, M.E.",
+      "year": "1971",
+      "title": "On the assessment of risk",
+      "container": "Journal of Finance",
+      "details": "26(1), pp. 1–10",
+      "url": null,
+      "medium": null,
+      "verification": "ai_recalled",
+      "used_by": [],
+      "accessed": null,
+      "text": "Blume, M.E. (1971) ‘On the assessment of risk’, Journal of Finance, 26(1), pp. 1–10.",
+      "html": "Blume, M.E. (1971) ‘On the assessment of risk’, <i>Journal of Finance</i>, 26(1), pp. 1–10.",
+      "in_text": "(Blume, 1971)",
+      "bibtex_key": "Blume1971",
+      "bibtex": "@article{Blume1971,\n  author = {Blume, M.E.},\n  year = {1971},\n  title = {{On the assessment of risk}},\n  journal = {Journal of Finance},\n  note = {26(1), pp. 1–10}\n}",
+      "content_hash": "2e5b0cbe01f20dcd",
+      "in_bibliography": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0.0+2c31975",
+      "first_seen": "2026-11-18T15:39:35.306954+00:00",
+      "configs": 1,
+      "runs": ["20261118T153935-9403903c"],
+      "current": true
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "20261118T153935-9403903c",
+      "analyzer": "baseline.capm",
+      "name": "CAPM anchor",
+      "version": "1.0.0+2c31975",
+      "family": "baseline",
+      "author": "probcast",
+      "slot": 0,
+      "status": "completed",
+      "completed_at": "2026-11-18T15:39:35.291981Z",
+      "grades": {
+        "5": {
+          "grade": "D"
+        },
+        "21": {
+          "grade": "D"
+        },
+        "63": {
+          "grade": "D"
+        },
+        "126": {
+          "grade": "D"
+        },
+        "252": {
+          "grade": "D"
+        }
+      },
+      "natural_horizon": 252,
+      "scored": true
+    }
+  ],
+  "provenance": {
+    "kind": "dataset",
+    "id": "analyzer:baseline.capm",
+    "snapshot": "fixture-7-+0.000",
+    "snapshot_hash": "fixture-v1-7-+0.000"
+  }
+}

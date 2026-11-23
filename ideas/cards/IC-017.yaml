@@ -1,0 +1,12 @@
+# Round-2 idea (researched, built and tested in round 2, D-101).
+id: IC-017
+title: Unusual trading volume gets noticed
+author: probcast
+created_at: '2026-11-19T00:30:00Z'
+sample: true
+text: When a stock trades unusually heavily, more investors notice it and it tends to drift up afterwards;
+  unusually quiet trading tends to come before weakness.
+analyzer: technical.abnormal_volume
+implementation: 'Gervais, Kaniel & Mingelgrin (2001): last week''s average volume ranked against the previous
+  50 days; top 10% vs bottom 10% vs the rest (C1); earnings weeks treated as ordinary. 1 week, 1 and 3
+  months.'

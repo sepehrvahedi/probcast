@@ -1,0 +1,15 @@
+# Round-3 advanced method (D-102).
+id: IC-040
+title: A machine-learning model that relearns every month
+author: probcast
+created_at: '2026-11-19T00:40:00Z'
+sample: true
+kind: advanced
+text: A gradient-boosted decision-tree model looks at 13 price, turbulence, volume and market measurements
+  and learns which patterns came before the stock beat the market. It is retrained every month on outcomes
+  that were already known.
+analyzer: advanced.gbm_walkforward
+implementation: scikit-learn HistGradientBoostingRegressor with library defaults (Friedman 2001; Gu, Kelly
+  & Xiu 2020), retrained at every month-end on earlier month-ends whose outcome was known; target = return
+  relative to the S&P 500 over the next 1 or 3 months. Prediction calibrated by C3 (positive sign). Forecasts
+  start around 2005, after 10 years of training and checking data.

@@ -1,0 +1,17 @@
+{
+  "fixture": true,
+  "state": "missing",
+  "snapshot": "fixture-7-+0.000",
+  "snapshot_hash": "fixture-v1-7-+0.000",
+  "pack": null,
+  "stale": [],
+  "other_packs": [],
+  "job": null,
+  "cli": "probcast report build",
+  "provenance": {
+    "kind": "dataset",
+    "id": "report:fixture-7-+0.000:status",
+    "snapshot": "fixture-7-+0.000",
+    "snapshot_hash": "fixture-v1-7-+0.000"
+  }
+}

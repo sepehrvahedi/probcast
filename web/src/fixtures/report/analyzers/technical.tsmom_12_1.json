@@ -1,0 +1,431 @@
+{
+  "fixture": true,
+  "id": "technical.tsmom_12_1",
+  "name": "Time-series momentum 12-1",
+  "version": "1.0.0+fb8c786",
+  "family": "technical.trend",
+  "author": "probcast",
+  "slot": 5,
+  "builtin": true,
+  "natural_horizon": 252,
+  "leak": {
+    "status": "passed",
+    "tests": {
+      "T1": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T2": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T3": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T5": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T7": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "TDN": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      }
+    }
+  },
+  "in_committee": true,
+  "category": "technical",
+  "report_section": "future",
+  "horizons": [21, 63, 126, 252],
+  "calibrator": "C1",
+  "hypothesis": "When the past 12-month return excluding the most recent month is positive, forward returns are higher than the CAPM anchor implies.",
+  "references": ["ref:moskowitz-ooi-pedersen-2012", "ref:jegadeesh-titman-1993"],
+  "idea_card": null,
+  "manifest": {
+    "expected_direction": "positive",
+    "course_concepts": ["EMH weak form", "behavioural finance (under-reaction)"],
+    "informs": ["location"],
+    "min_history_sessions": 504,
+    "data_dependencies": [],
+    "params": {
+      "lookback": 252,
+      "skip": 21
+    },
+    "param_grid_declared": {},
+    "manifest_version": "1.0.0",
+    "code_hash": "fb8c786222d1bfa6bcf5221cd0b5aaa70d995db70b83e1653e208a437750bc19"
+  },
+  "literature_prior": null,
+  "idea": null,
+  "dependencies": [
+    {
+      "id": "PX:close_base",
+      "name": "Close, base-share units",
+      "class": "exchange_price",
+      "rule": "same_session_close",
+      "strict_rule": "same_session_close",
+      "licence": "L2",
+      "source": "Yahoo Finance via yfinance"
+    }
+  ],
+  "leak_details": {
+    "T1": "passed",
+    "T2": "passed",
+    "T3": "passed",
+    "T5": "passed",
+    "T7": "passed",
+    "T-DN": "passed"
+  },
+  "leak_at": "2026-11-20T14:00:00Z",
+  "status": "committee",
+  "default_run_id": "20261118T153940-ec3922bc",
+  "anchor_run_id": "20261118T153935-9403903c",
+  "grades": {
+    "21": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.002683814835098053,
+      "ci": {
+        "lo": -0.00879661428980939,
+        "hi": 0.013108343196439281,
+        "level": 0.9
+      },
+      "n_eff": 104.0,
+      "grade": "C",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "technical.trend",
+          "n": 2
+        },
+        "team": 11
+      },
+      "mde": 0.018513035613263902,
+      "sample": "dev",
+      "dm_p": 0.6869143653151382,
+      "bh_q": 0.9208727086019657,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153940-ec3922bc",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.21.dev"
+      },
+      "n": 104,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-11-30"
+      },
+      "cov80": {
+        "est": 0.7596153846153846,
+        "sample": "dev"
+      }
+    },
+    "63": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.006341781418167658,
+      "ci": {
+        "lo": -0.006465174797116935,
+        "hi": 0.017968874896955568,
+        "level": 0.9
+      },
+      "n_eff": 34.333333333333336,
+      "grade": "C",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "technical.trend",
+          "n": 2
+        },
+        "team": 11
+      },
+      "mde": 0.020816530636999907,
+      "sample": "dev",
+      "dm_p": 0.406914586642836,
+      "bh_q": 0.67819097773806,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153940-ec3922bc",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.63.dev"
+      },
+      "n": 103,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-08-31"
+      },
+      "cov80": {
+        "est": 0.7961165048543689,
+        "sample": "dev"
+      }
+    },
+    "126": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.0014670708234351126,
+      "ci": {
+        "lo": -0.01387100343942802,
+        "hi": 0.016526726378012346,
+        "level": 0.9
+      },
+      "n_eff": 17.0,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "technical.trend",
+          "n": 2
+        },
+        "team": 11
+      },
+      "mde": 0.025090893657356818,
+      "sample": "dev",
+      "dm_p": 0.8771507449504646,
+      "bh_q": 0.9965933320168319,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153940-ec3922bc",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.126.dev"
+      },
+      "n": 102,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-05-29"
+      },
+      "cov80": {
+        "est": 0.7549019607843137,
+        "sample": "dev"
+      }
+    },
+    "252": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.005353987360188772,
+      "ci": {
+        "lo": -0.0181275743837749,
+        "hi": 0.019764111466727827,
+        "level": 0.9
+      },
+      "n_eff": 8.333333333333334,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "technical.trend",
+          "n": 2
+        },
+        "team": 11
+      },
+      "mde": 0.03009614086289762,
+      "sample": "dev",
+      "dm_p": 0.6601246576594713,
+      "bh_q": 0.8540394417204407,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153940-ec3922bc",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.252.dev"
+      },
+      "n": 100,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2014-11-28"
+      },
+      "cov80": {
+        "est": 0.71,
+        "sample": "dev"
+      }
+    }
+  },
+  "nutrition": [
+    {
+      "h": 5,
+      "declared": false,
+      "n_eff_max": null,
+      "n_eff": null,
+      "mde": null,
+      "warmup_start": null,
+      "sample": null
+    },
+    {
+      "h": 21,
+      "declared": true,
+      "n_eff_max": 104.0,
+      "n_eff": 104.0,
+      "mde": 0.018513035613263902,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 63,
+      "declared": true,
+      "n_eff_max": 34.333333333333336,
+      "n_eff": 34.333333333333336,
+      "mde": 0.020816530636999907,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 126,
+      "declared": true,
+      "n_eff_max": 17.0,
+      "n_eff": 17.0,
+      "mde": 0.025090893657356818,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 252,
+      "declared": true,
+      "n_eff_max": 8.333333333333334,
+      "n_eff": 8.333333333333334,
+      "mde": 0.03009614086289762,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    }
+  ],
+  "latest": {
+    "origin": "2026-11-30",
+    "h": 252,
+    "unit": "log_return",
+    "median": -0.0406728792026597,
+    "interval_80": {
+      "lo": -0.602503294380839,
+      "hi": 0.5952035226591479,
+      "level": 0.8
+    },
+    "p_up": 0.46668270930208666,
+    "base_rate": {
+      "p": 0.68,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2014-11-28"
+      },
+      "sample": "dev"
+    },
+    "signal": 0.4545974627741476,
+    "calibration": {
+      "method": "C1",
+      "bucket": 1,
+      "edges": [0.0],
+      "n_pairs": 6144,
+      "n_eff": 38,
+      "lambda": 0.6551724137931034,
+      "tilt_z": -0.018685878828504934,
+      "sigma_h": 0.42972642935243177,
+      "anchor_median": -0.032643063230101056
+    },
+    "provenance": {
+      "kind": "run",
+      "id": "20261118T153940-ec3922bc",
+      "snapshot": "fixture-7-+0.000",
+      "snapshot_hash": "fixture-v1-7-+0.000",
+      "key": "forecast.252.latest"
+    }
+  },
+  "trials": {
+    "analyzer": 1,
+    "family": {
+      "id": "technical.trend",
+      "n": 2
+    },
+    "team": 11
+  },
+  "references_detail": [
+    {
+      "id": "ref:moskowitz-ooi-pedersen-2012",
+      "kind": "literature",
+      "authors": "Moskowitz, T.J., Ooi, Y.H. and Pedersen, L.H.",
+      "year": "2012",
+      "title": "Time series momentum",
+      "container": "Journal of Financial Economics",
+      "details": "104(2), pp. 228–250",
+      "url": null,
+      "medium": null,
+      "verification": "ai_recalled",
+      "used_by": ["F5", "T3"],
+      "accessed": null,
+      "text": "Moskowitz, T.J., Ooi, Y.H. and Pedersen, L.H. (2012) ‘Time series momentum’, Journal of Financial Economics, 104(2), pp. 228–250.",
+      "html": "Moskowitz, T.J., Ooi, Y.H. and Pedersen, L.H. (2012) ‘Time series momentum’, <i>Journal of Financial Economics</i>, 104(2), pp. 228–250.",
+      "in_text": "(Moskowitz, Ooi and Pedersen, 2012)",
+      "bibtex_key": "MoskowitzOoiPedersen2012",
+      "bibtex": "@article{MoskowitzOoiPedersen2012,\n  author = {Moskowitz, T.J. and Ooi, Y.H. and Pedersen, L.H.},\n  year = {2012},\n  title = {{Time series momentum}},\n  journal = {Journal of Financial Economics},\n  note = {104(2), pp. 228–250}\n}",
+      "content_hash": "bf78b40b10876df9",
+      "in_bibliography": false
+    },
+    {
+      "id": "ref:jegadeesh-titman-1993",
+      "kind": "literature",
+      "authors": "Jegadeesh, N. and Titman, S.",
+      "year": "1993",
+      "title": "Returns to buying winners and selling losers: implications for stock market efficiency",
+      "container": "Journal of Finance",
+      "details": "48(1), pp. 65–91",
+      "url": null,
+      "medium": null,
+      "verification": "ai_recalled",
+      "used_by": ["F5", "T3"],
+      "accessed": null,
+      "text": "Jegadeesh, N. and Titman, S. (1993) ‘Returns to buying winners and selling losers: implications for stock market efficiency’, Journal of Finance, 48(1), pp. 65–91.",
+      "html": "Jegadeesh, N. and Titman, S. (1993) ‘Returns to buying winners and selling losers: implications for stock market efficiency’, <i>Journal of Finance</i>, 48(1), pp. 65–91.",
+      "in_text": "(Jegadeesh and Titman, 1993)",
+      "bibtex_key": "JegadeeshTitman1993",
+      "bibtex": "@article{JegadeeshTitman1993,\n  author = {Jegadeesh, N. and Titman, S.},\n  year = {1993},\n  title = {{Returns to buying winners and selling losers: implications for stock market efficiency}},\n  journal = {Journal of Finance},\n  note = {48(1), pp. 65–91}\n}",
+      "content_hash": "d6e6bdda211933b4",
+      "in_bibliography": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0.0+fb8c786",
+      "first_seen": "2026-11-18T15:39:40.191678+00:00",
+      "configs": 1,
+      "runs": ["20261118T153940-ec3922bc"],
+      "current": true
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "20261118T153940-ec3922bc",
+      "analyzer": "technical.tsmom_12_1",
+      "name": "Time-series momentum 12-1",
+      "version": "1.0.0+fb8c786",
+      "family": "technical.trend",
+      "author": "probcast",
+      "slot": 5,
+      "status": "completed",
+      "completed_at": "2026-11-18T15:39:40.188828Z",
+      "grades": {
+        "21": {
+          "grade": "C"
+        },
+        "63": {
+          "grade": "C"
+        },
+        "126": {
+          "grade": "D"
+        },
+        "252": {
+          "grade": "D"
+        }
+      },
+      "natural_horizon": 252,
+      "scored": true
+    }
+  ],
+  "provenance": {
+    "kind": "dataset",
+    "id": "analyzer:technical.tsmom_12_1",
+    "snapshot": "fixture-7-+0.000",
+    "snapshot_hash": "fixture-v1-7-+0.000"
+  }
+}

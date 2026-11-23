@@ -1,0 +1,2795 @@
+{
+  "fixture": true,
+  "items": [
+    {
+      "id": "DEMO-EV-0091",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2007-12-31 results",
+      "date": "2008-01-28",
+      "content_available_at": "2008-01-28T21:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2008-01-29",
+        "car_0_1": 0.00189736,
+        "car_0_5": 0.0251102,
+        "t_0_1": 0.0917787,
+        "t_0_5": 0.699709,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0091",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2008-01-28T21:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0092",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2008-03-31 results",
+      "date": "2008-04-28",
+      "content_available_at": "2008-04-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2008-04-29",
+        "car_0_1": 0.0134784,
+        "car_0_5": 0.00219167,
+        "t_0_1": 0.750707,
+        "t_0_5": 0.0704499,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0092",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2008-04-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0093",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2008-06-30 results",
+      "date": "2008-07-28",
+      "content_available_at": "2008-07-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2008-07-29",
+        "car_0_1": -0.00960846,
+        "car_0_5": 0.0135215,
+        "t_0_1": -0.5525,
+        "t_0_5": 0.448893,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0093",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2008-07-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0094",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2008-09-30 results",
+      "date": "2008-10-28",
+      "content_available_at": "2008-10-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2008-10-29",
+        "car_0_1": -0.000537341,
+        "car_0_5": 0.00766574,
+        "t_0_1": -0.0314673,
+        "t_0_5": 0.258578,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0094",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2008-10-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0095",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2008-12-31 results",
+      "date": "2009-01-28",
+      "content_available_at": "2009-01-28T21:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2009-01-29",
+        "car_0_1": -0.0112086,
+        "car_0_5": 0.0254935,
+        "t_0_1": -0.650102,
+        "t_0_5": 0.85334,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0095",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2009-01-28T21:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0096",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2009-03-31 results",
+      "date": "2009-04-28",
+      "content_available_at": "2009-04-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2009-04-29",
+        "car_0_1": 0.0245401,
+        "car_0_5": 0.00686293,
+        "t_0_1": 1.31595,
+        "t_0_5": 0.212367,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0096",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2009-04-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0097",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2009-06-30 results",
+      "date": "2009-07-28",
+      "content_available_at": "2009-07-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2009-07-29",
+        "car_0_1": 0.0244418,
+        "car_0_5": 0.0207722,
+        "t_0_1": 1.26341,
+        "t_0_5": 0.619819,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0097",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2009-07-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0098",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2009-09-30 results",
+      "date": "2009-10-28",
+      "content_available_at": "2009-10-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2009-10-29",
+        "car_0_1": 0.0244344,
+        "car_0_5": 0.0210027,
+        "t_0_1": 1.2664,
+        "t_0_5": 0.628065,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0098",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2009-10-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0099",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2009-12-31 results",
+      "date": "2010-01-28",
+      "content_available_at": "2010-01-28T21:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2010-01-29",
+        "car_0_1": 0.02595,
+        "car_0_5": 0.113614,
+        "t_0_1": 1.32169,
+        "t_0_5": 3.33992,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0099",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2010-01-28T21:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-C000",
+      "type": "product",
+      "lake_type": "product_launch",
+      "subtype": "product_launch",
+      "title": "Tablet goes on sale (synthetic)",
+      "date": "2010-04-03",
+      "content_available_at": "2010-04-03T17:00:00Z",
+      "precision": "minute",
+      "selection": "curated",
+      "verification": "web_checked",
+      "annotation_only": true,
+      "reaction": {
+        "day0_session": "2010-04-05",
+        "car_0_1": 0.014785,
+        "car_0_5": -0.0226111,
+        "t_0_1": 0.724385,
+        "t_0_5": -0.640423,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-C000",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "Example Press: Tablet goes on sale (synthetic) | accessed 2026-11-17",
+        "url": "https://example.org/demo/000",
+        "available_at": "2010-04-03T17:00:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0100",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2010-03-31 results",
+      "date": "2010-04-28",
+      "content_available_at": "2010-04-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2010-04-29",
+        "car_0_1": 0.0548011,
+        "car_0_5": 0.0149144,
+        "t_0_1": 2.64748,
+        "t_0_5": 0.416052,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0100",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2010-04-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0101",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2010-06-30 results",
+      "date": "2010-07-28",
+      "content_available_at": "2010-07-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2010-07-29",
+        "car_0_1": -0.00716298,
+        "car_0_5": 0.040291,
+        "t_0_1": -0.311387,
+        "t_0_5": 1.00989,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0101",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2010-07-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0102",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2010-09-30 results",
+      "date": "2010-10-28",
+      "content_available_at": "2010-10-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2010-10-29",
+        "car_0_1": 0.0186779,
+        "car_0_5": 0.000681886,
+        "t_0_1": 0.698927,
+        "t_0_5": 0.0147352,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0102",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2010-10-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0103",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2010-12-31 results",
+      "date": "2011-01-28",
+      "content_available_at": "2011-01-28T21:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2011-01-31",
+        "car_0_1": 0.0181368,
+        "car_0_5": -0.014071,
+        "t_0_1": 0.632021,
+        "t_0_5": -0.282858,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0103",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2011-01-28T21:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0104",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2011-03-31 results",
+      "date": "2011-04-28",
+      "content_available_at": "2011-04-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2011-04-29",
+        "car_0_1": 0.013729,
+        "car_0_5": -0.0321432,
+        "t_0_1": 0.495182,
+        "t_0_5": -0.67165,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0104",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2011-04-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0105",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2011-06-30 results",
+      "date": "2011-07-28",
+      "content_available_at": "2011-07-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2011-07-29",
+        "car_0_1": -0.0193924,
+        "car_0_5": -0.0120157,
+        "t_0_1": -0.708468,
+        "t_0_5": -0.253316,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0105",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2011-07-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-C001",
+      "type": "leadership",
+      "lake_type": "leadership",
+      "subtype": "leadership",
+      "title": "Chief executive transition (synthetic)",
+      "date": "2011-08-24",
+      "content_available_at": "2011-08-24T17:00:00Z",
+      "precision": "minute",
+      "selection": "curated",
+      "verification": "human_opened",
+      "annotation_only": true,
+      "reaction": {
+        "day0_session": "2011-08-24",
+        "car_0_1": -0.0417388,
+        "car_0_5": -0.0720833,
+        "t_0_1": -1.5988,
+        "t_0_5": -1.59459,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-C001",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "Example Press: Chief executive transition (synthetic) | accessed 2026-11-17",
+        "url": "https://example.org/demo/001",
+        "available_at": "2011-08-24T17:00:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0106",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2011-09-30 results",
+      "date": "2011-10-28",
+      "content_available_at": "2011-10-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2011-10-31",
+        "car_0_1": 0.0109568,
+        "car_0_5": 0.0735965,
+        "t_0_1": 0.405218,
+        "t_0_5": 1.56834,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0106",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2011-10-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0107",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2011-12-31 results",
+      "date": "2012-01-30",
+      "content_available_at": "2012-01-30T21:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2012-01-31",
+        "car_0_1": -0.0421498,
+        "car_0_5": -0.0428975,
+        "t_0_1": -1.57975,
+        "t_0_5": -0.927767,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0107",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2012-01-30T21:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0108",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2012-03-31 results",
+      "date": "2012-04-30",
+      "content_available_at": "2012-04-30T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2012-05-01",
+        "car_0_1": -0.0316202,
+        "car_0_5": -0.0591148,
+        "t_0_1": -1.11813,
+        "t_0_5": -1.20636,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0108",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2012-04-30T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0109",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2012-06-30 results",
+      "date": "2012-07-30",
+      "content_available_at": "2012-07-30T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2012-07-31",
+        "car_0_1": -0.00078562,
+        "car_0_5": 0.0461628,
+        "t_0_1": -0.0274534,
+        "t_0_5": 0.931298,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0109",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2012-07-30T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-C002",
+      "type": "legal",
+      "lake_type": "legal_regulatory",
+      "subtype": "legal_regulatory",
+      "title": "Patent verdict (synthetic)",
+      "date": "2012-08-24",
+      "content_available_at": "2012-08-24T17:00:00Z",
+      "precision": "minute",
+      "selection": "curated",
+      "verification": "ai_recalled",
+      "annotation_only": true,
+      "reaction": {
+        "day0_session": "2012-08-24",
+        "car_0_1": -0.00567331,
+        "car_0_5": 0.0109669,
+        "t_0_1": -0.197145,
+        "t_0_5": 0.22004,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-C002",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "Example Press: Patent verdict (synthetic) | accessed 2026-11-17",
+        "url": "https://example.org/demo/002",
+        "available_at": "2012-08-24T17:00:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0110",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2012-09-30 results",
+      "date": "2012-10-31",
+      "content_available_at": "2012-10-31T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2012-11-01",
+        "car_0_1": 0.0254256,
+        "car_0_5": -0.0203739,
+        "t_0_1": 0.837017,
+        "t_0_5": -0.38682,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0110",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2012-10-31T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0111",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2012-12-31 results",
+      "date": "2013-01-28",
+      "content_available_at": "2013-01-28T21:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2013-01-29",
+        "car_0_1": -0.0181577,
+        "car_0_5": -0.012305,
+        "t_0_1": -0.590668,
+        "t_0_5": -0.230822,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0111",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2013-01-28T21:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-C003",
+      "type": "capital",
+      "lake_type": "capital_return",
+      "subtype": "capital_return",
+      "title": "Capital return programme expanded (synthetic)",
+      "date": "2013-04-23",
+      "content_available_at": "2013-04-23T17:00:00Z",
+      "precision": "minute",
+      "selection": "curated",
+      "verification": "web_checked",
+      "annotation_only": true,
+      "reaction": {
+        "day0_session": "2013-04-23",
+        "car_0_1": -0.0717536,
+        "car_0_5": -0.118064,
+        "t_0_1": -2.38457,
+        "t_0_5": -2.26048,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-C003",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "Example Press: Capital return programme expanded (synthetic) | accessed 2026-11-17",
+        "url": "https://example.org/demo/003",
+        "available_at": "2013-04-23T17:00:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0112",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2013-03-31 results",
+      "date": "2013-04-29",
+      "content_available_at": "2013-04-29T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2013-04-30",
+        "car_0_1": -0.00284208,
+        "car_0_5": -0.0544385,
+        "t_0_1": -0.0944624,
+        "t_0_5": -1.04331,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0112",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2013-04-29T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0113",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2013-06-30 results",
+      "date": "2013-07-29",
+      "content_available_at": "2013-07-29T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2013-07-30",
+        "car_0_1": -0.0130926,
+        "car_0_5": -0.00261845,
+        "t_0_1": -0.440345,
+        "t_0_5": -0.0507786,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0113",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2013-07-29T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0114",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2013-09-30 results",
+      "date": "2013-10-28",
+      "content_available_at": "2013-10-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2013-10-29",
+        "car_0_1": 0.0236692,
+        "car_0_5": 0.0613656,
+        "t_0_1": 0.869067,
+        "t_0_5": 1.30058,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0114",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2013-10-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0115",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2013-12-31 results",
+      "date": "2014-01-28",
+      "content_available_at": "2014-01-28T21:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2014-01-29",
+        "car_0_1": 0.0254437,
+        "car_0_5": 0.0346627,
+        "t_0_1": 0.758908,
+        "t_0_5": 0.595282,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0115",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2014-01-28T21:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0116",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2014-03-31 results",
+      "date": "2014-04-28",
+      "content_available_at": "2014-04-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2014-04-29",
+        "car_0_1": 0.0168672,
+        "car_0_5": 0.0274804,
+        "t_0_1": 0.414054,
+        "t_0_5": 0.388502,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0116",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2014-04-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-C004",
+      "type": "capital",
+      "lake_type": "corporate_action",
+      "subtype": "stock_split_effective",
+      "title": "7-for-1 split effective (synthetic)",
+      "date": "2014-06-09",
+      "content_available_at": "2014-06-09T17:00:00Z",
+      "precision": "minute",
+      "selection": "curated",
+      "verification": "human_opened",
+      "annotation_only": true,
+      "reaction": {
+        "day0_session": "2014-06-09",
+        "car_0_1": -0.0576631,
+        "car_0_5": -0.0336566,
+        "t_0_1": -1.36162,
+        "t_0_5": -0.457747,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-C004",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "Example Press: 7-for-1 split effective (synthetic) | accessed 2026-11-17",
+        "url": "https://example.org/demo/004",
+        "available_at": "2014-06-09T17:00:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0117",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2014-06-30 results",
+      "date": "2014-07-28",
+      "content_available_at": "2014-07-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2014-07-29",
+        "car_0_1": 0.0963848,
+        "car_0_5": 0.149875,
+        "t_0_1": 2.28357,
+        "t_0_5": 2.05387,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0117",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2014-07-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0118",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2014-09-30 results",
+      "date": "2014-10-28",
+      "content_available_at": "2014-10-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2014-10-29",
+        "car_0_1": 0.021289,
+        "car_0_5": 0.0349244,
+        "t_0_1": 0.516864,
+        "t_0_5": 0.489919,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0118",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2014-10-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0119",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2014-12-31 results",
+      "date": "2015-01-28",
+      "content_available_at": "2015-01-28T21:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2015-01-29",
+        "car_0_1": 0.0244606,
+        "car_0_5": 0.0590632,
+        "t_0_1": 0.666273,
+        "t_0_5": 0.92779,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0119",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2015-01-28T21:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0120",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2015-03-31 results",
+      "date": "2015-04-28",
+      "content_available_at": "2015-04-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2015-04-29",
+        "car_0_1": 0.0194857,
+        "car_0_5": 0.0630109,
+        "t_0_1": 0.689129,
+        "t_0_5": 1.28613,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0120",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2015-04-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0121",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2015-06-30 results",
+      "date": "2015-07-28",
+      "content_available_at": "2015-07-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2015-07-29",
+        "car_0_1": -0.000122805,
+        "car_0_5": 0.0243456,
+        "t_0_1": -0.00456696,
+        "t_0_5": 0.521683,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0121",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2015-07-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-C005",
+      "type": "macro",
+      "lake_type": "macro",
+      "subtype": "macro",
+      "title": "Market-wide drawdown day (synthetic)",
+      "date": "2015-08-24",
+      "content_available_at": "2015-08-24T17:00:00Z",
+      "precision": "minute",
+      "selection": "curated",
+      "verification": "web_checked",
+      "annotation_only": true,
+      "reaction": {
+        "day0_session": "2015-08-24",
+        "car_0_1": 0.0342435,
+        "car_0_5": 0.0301874,
+        "t_0_1": 1.14389,
+        "t_0_5": 0.581727,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-C005",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "Example Press: Market-wide drawdown day (synthetic) | accessed 2026-11-17",
+        "url": "https://example.org/demo/005",
+        "available_at": "2015-08-24T17:00:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0122",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2015-09-30 results",
+      "date": "2015-10-28",
+      "content_available_at": "2015-10-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2015-10-29",
+        "car_0_1": 0.00453261,
+        "car_0_5": 0.0424503,
+        "t_0_1": 0.151249,
+        "t_0_5": 0.81786,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0122",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2015-10-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0123",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2015-12-31 results",
+      "date": "2016-01-28",
+      "content_available_at": "2016-01-28T21:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2016-01-29",
+        "car_0_1": 0.015763,
+        "car_0_5": 0.0330286,
+        "t_0_1": 0.501468,
+        "t_0_5": 0.605745,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0123",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2016-01-28T21:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-C006",
+      "type": "legal",
+      "lake_type": "legal_regulatory",
+      "subtype": "legal_regulatory",
+      "title": "Court order on device access (synthetic)",
+      "date": "2016-02-16",
+      "content_available_at": "2016-02-16T18:00:00Z",
+      "precision": "minute",
+      "selection": "curated",
+      "verification": "unverified",
+      "annotation_only": true,
+      "reaction": {
+        "day0_session": "2016-02-16",
+        "car_0_1": 0.0433711,
+        "car_0_5": 0.115085,
+        "t_0_1": 1.36419,
+        "t_0_5": 2.08894,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-C006",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "Example Press: Court order on device access (synthetic) | accessed 2026-11-17",
+        "url": "https://example.org/demo/006",
+        "available_at": "2016-02-16T18:00:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0124",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2016-03-31 results",
+      "date": "2016-04-28",
+      "content_available_at": "2016-04-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2016-04-29",
+        "car_0_1": 0.00730535,
+        "car_0_5": 0.0312176,
+        "t_0_1": 0.231637,
+        "t_0_5": 0.572478,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0124",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2016-04-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0125",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2016-06-30 results",
+      "date": "2016-07-28",
+      "content_available_at": "2016-07-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2016-07-29",
+        "car_0_1": -0.0111585,
+        "car_0_5": 0.0162564,
+        "t_0_1": -0.34586,
+        "t_0_5": 0.290981,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0125",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2016-07-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0126",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2016-09-30 results",
+      "date": "2016-10-28",
+      "content_available_at": "2016-10-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2016-10-31",
+        "car_0_1": 0.00455463,
+        "car_0_5": 0.0355575,
+        "t_0_1": 0.156832,
+        "t_0_5": 0.706485,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0126",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2016-10-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0127",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2016-12-31 results",
+      "date": "2017-01-30",
+      "content_available_at": "2017-01-30T21:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2017-01-31",
+        "car_0_1": 0.0225345,
+        "car_0_5": 0.00759887,
+        "t_0_1": 0.70148,
+        "t_0_5": 0.135428,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0127",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2017-01-30T21:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0128",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2017-03-31 results",
+      "date": "2017-04-28",
+      "content_available_at": "2017-04-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2017-05-01",
+        "car_0_1": -0.0374616,
+        "car_0_5": -0.0806526,
+        "t_0_1": -1.07666,
+        "t_0_5": -1.33398,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0128",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2017-04-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0129",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2017-06-30 results",
+      "date": "2017-07-28",
+      "content_available_at": "2017-07-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2017-07-31",
+        "car_0_1": -0.0114348,
+        "car_0_5": 0.00592368,
+        "t_0_1": -0.334075,
+        "t_0_5": 0.0999425,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0129",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2017-07-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-C007",
+      "type": "product",
+      "lake_type": "keynote_event",
+      "subtype": "keynote_event",
+      "title": "Autumn product event (synthetic)",
+      "date": "2017-09-12",
+      "content_available_at": "2017-09-12T17:00:00Z",
+      "precision": "minute",
+      "selection": "curated",
+      "verification": "web_checked",
+      "annotation_only": true,
+      "reaction": {
+        "day0_session": "2017-09-12",
+        "car_0_1": -0.0316302,
+        "car_0_5": 0.00857208,
+        "t_0_1": -0.908749,
+        "t_0_5": 0.142122,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-C007",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "Example Press: Autumn product event (synthetic) | accessed 2026-11-17",
+        "url": "https://example.org/demo/007",
+        "available_at": "2017-09-12T17:00:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0130",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2017-09-30 results",
+      "date": "2017-10-30",
+      "content_available_at": "2017-10-30T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2017-10-31",
+        "car_0_1": -0.0236862,
+        "car_0_5": -0.0114357,
+        "t_0_1": -0.656379,
+        "t_0_5": -0.182976,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0130",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2017-10-30T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0131",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2017-12-31 results",
+      "date": "2018-01-29",
+      "content_available_at": "2018-01-29T21:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2018-01-30",
+        "car_0_1": -0.000181736,
+        "car_0_5": 0.00798228,
+        "t_0_1": -0.00589857,
+        "t_0_5": 0.149579,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0131",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2018-01-29T21:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0132",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2018-03-31 results",
+      "date": "2018-04-30",
+      "content_available_at": "2018-04-30T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2018-05-01",
+        "car_0_1": -0.00391928,
+        "car_0_5": -0.0250991,
+        "t_0_1": -0.147372,
+        "t_0_5": -0.543616,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0132",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2018-04-30T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0133",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2018-06-30 results",
+      "date": "2018-07-30",
+      "content_available_at": "2018-07-30T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2018-07-31",
+        "car_0_1": 0.00566289,
+        "car_0_5": 0.0141843,
+        "t_0_1": 0.244565,
+        "t_0_5": 0.353936,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0133",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2018-07-30T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0134",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2018-09-30 results",
+      "date": "2018-10-29",
+      "content_available_at": "2018-10-29T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2018-10-30",
+        "car_0_1": 0.00714551,
+        "car_0_5": 0.00406006,
+        "t_0_1": 0.353401,
+        "t_0_5": 0.115926,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0134",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2018-10-29T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-C008",
+      "type": "supply_chain",
+      "lake_type": "supply_chain",
+      "subtype": "supply_chain",
+      "title": "Component supplier warning (synthetic)",
+      "date": "2018-11-01",
+      "content_available_at": "2018-11-01T17:00:00Z",
+      "precision": "minute",
+      "selection": "curated",
+      "verification": "ai_recalled",
+      "annotation_only": true,
+      "reaction": {
+        "day0_session": "2018-11-01",
+        "car_0_1": -0.00594983,
+        "car_0_5": 0.0283824,
+        "t_0_1": -0.296246,
+        "t_0_5": 0.815963,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-C008",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "Example Press: Component supplier warning (synthetic) | accessed 2026-11-17",
+        "url": "https://example.org/demo/008",
+        "available_at": "2018-11-01T17:00:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-C009",
+      "type": "earnings",
+      "lake_type": "guidance",
+      "subtype": "guidance",
+      "title": "Revenue guidance revised (synthetic)",
+      "date": "2019-01-02",
+      "content_available_at": "2019-01-02T18:00:00Z",
+      "precision": "minute",
+      "selection": "curated",
+      "verification": "human_opened",
+      "annotation_only": true,
+      "reaction": {
+        "day0_session": "2019-01-02",
+        "car_0_1": -0.0485116,
+        "car_0_5": -0.105968,
+        "t_0_1": -2.49156,
+        "t_0_5": -3.13548,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-C009",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "Example Press: Revenue guidance revised (synthetic) | accessed 2026-11-17",
+        "url": "https://example.org/demo/009",
+        "available_at": "2019-01-02T18:00:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0135",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2018-12-31 results",
+      "date": "2019-01-28",
+      "content_available_at": "2019-01-28T21:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2019-01-29",
+        "car_0_1": -0.0170097,
+        "car_0_5": -0.0924395,
+        "t_0_1": -0.872686,
+        "t_0_5": -2.73408,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0135",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2019-01-28T21:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0136",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2019-03-31 results",
+      "date": "2019-04-29",
+      "content_available_at": "2019-04-29T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2019-04-30",
+        "car_0_1": -0.00941015,
+        "car_0_5": 0.00173595,
+        "t_0_1": -0.376804,
+        "t_0_5": 0.040059,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0136",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2019-04-29T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-C010",
+      "type": "macro",
+      "lake_type": "geopolitical",
+      "subtype": "geopolitical",
+      "title": "Tariff escalation announced (synthetic)",
+      "date": "2019-05-10",
+      "content_available_at": "2019-05-10T17:00:00Z",
+      "precision": "minute",
+      "selection": "curated",
+      "verification": "unverified",
+      "annotation_only": true,
+      "reaction": {
+        "day0_session": "2019-05-10",
+        "car_0_1": -0.0156717,
+        "car_0_5": -0.0301769,
+        "t_0_1": -0.613405,
+        "t_0_5": -0.676195,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-C010",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "Example Press: Tariff escalation announced (synthetic) | accessed 2026-11-17",
+        "url": "https://example.org/demo/010",
+        "available_at": "2019-05-10T17:00:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0137",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2019-06-30 results",
+      "date": "2019-07-29",
+      "content_available_at": "2019-07-29T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2019-07-30",
+        "car_0_1": 0.0208302,
+        "car_0_5": 0.0290924,
+        "t_0_1": 0.763529,
+        "t_0_5": 0.615118,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0137",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2019-07-29T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0138",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2019-09-30 results",
+      "date": "2019-10-28",
+      "content_available_at": "2019-10-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2019-10-29",
+        "car_0_1": 0.00897478,
+        "car_0_5": 0.0337729,
+        "t_0_1": 0.314662,
+        "t_0_5": 0.683405,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0138",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2019-10-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0139",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2019-12-31 results",
+      "date": "2020-01-28",
+      "content_available_at": "2020-01-28T21:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2020-01-29",
+        "car_0_1": 0.000511297,
+        "car_0_5": 0.0256413,
+        "t_0_1": 0.0179197,
+        "t_0_5": 0.51959,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0139",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2020-01-28T21:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-C011",
+      "type": "macro",
+      "lake_type": "macro",
+      "subtype": "macro",
+      "title": "Emergency rate cut (synthetic)",
+      "date": "2020-03-16",
+      "content_available_at": "2020-03-16T17:00:00Z",
+      "precision": "minute",
+      "selection": "curated",
+      "verification": "web_checked",
+      "annotation_only": true,
+      "reaction": {
+        "day0_session": "2020-03-16",
+        "car_0_1": 0.000566643,
+        "car_0_5": -0.0109679,
+        "t_0_1": 0.0216063,
+        "t_0_5": -0.241243,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-C011",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "Example Press: Emergency rate cut (synthetic) | accessed 2026-11-17",
+        "url": "https://example.org/demo/011",
+        "available_at": "2020-03-16T17:00:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0140",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2020-03-31 results",
+      "date": "2020-04-28",
+      "content_available_at": "2020-04-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2020-04-29",
+        "car_0_1": 0.0234399,
+        "car_0_5": 0.0158729,
+        "t_0_1": 0.951569,
+        "t_0_5": 0.372142,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0140",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2020-04-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0141",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2020-06-30 results",
+      "date": "2020-07-28",
+      "content_available_at": "2020-07-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2020-07-29",
+        "car_0_1": -0.00768254,
+        "car_0_5": -0.014571,
+        "t_0_1": -0.331408,
+        "t_0_5": -0.363359,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0141",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2020-07-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-C012",
+      "type": "capital",
+      "lake_type": "corporate_action",
+      "subtype": "stock_split_effective",
+      "title": "4-for-1 split effective (synthetic)",
+      "date": "2020-08-31",
+      "content_available_at": "2020-08-31T17:00:00Z",
+      "precision": "minute",
+      "selection": "curated",
+      "verification": "web_checked",
+      "annotation_only": true,
+      "reaction": {
+        "day0_session": "2020-08-31",
+        "car_0_1": -0.0289963,
+        "car_0_5": 0.0100992,
+        "t_0_1": -1.35402,
+        "t_0_5": 0.272892,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-C012",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "Example Press: 4-for-1 split effective (synthetic) | accessed 2026-11-17",
+        "url": "https://example.org/demo/012",
+        "available_at": "2020-08-31T17:00:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0142",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2020-09-30 results",
+      "date": "2020-10-28",
+      "content_available_at": "2020-10-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2020-10-29",
+        "car_0_1": 0.00827449,
+        "car_0_5": 0.0364779,
+        "t_0_1": 0.399083,
+        "t_0_5": 1.01685,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0142",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2020-10-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0143",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2020-12-31 results",
+      "date": "2021-01-28",
+      "content_available_at": "2021-01-28T21:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2021-01-29",
+        "car_0_1": 0.0476405,
+        "car_0_5": 0.0418587,
+        "t_0_1": 2.27826,
+        "t_0_5": 1.15522,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0143",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2021-01-28T21:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0144",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2021-03-31 results",
+      "date": "2021-04-28",
+      "content_available_at": "2021-04-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2021-04-29",
+        "car_0_1": -0.00227743,
+        "car_0_5": -0.0166735,
+        "t_0_1": -0.118374,
+        "t_0_5": -0.501066,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0144",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2021-04-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-C013",
+      "type": "product",
+      "lake_type": "keynote_event",
+      "subtype": "keynote_event",
+      "title": "Developer conference keynote (synthetic)",
+      "date": "2021-06-07",
+      "content_available_at": "2021-06-07T17:00:00Z",
+      "precision": "minute",
+      "selection": "curated",
+      "verification": "ai_recalled",
+      "annotation_only": true,
+      "reaction": {
+        "day0_session": "2021-06-07",
+        "car_0_1": 0.00691134,
+        "car_0_5": 0.0849641,
+        "t_0_1": 0.308684,
+        "t_0_5": 2.18913,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-C013",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "Example Press: Developer conference keynote (synthetic) | accessed 2026-11-17",
+        "url": "https://example.org/demo/013",
+        "available_at": "2021-06-07T17:00:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0145",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2021-06-30 results",
+      "date": "2021-07-28",
+      "content_available_at": "2021-07-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2021-07-29",
+        "car_0_1": 0.00265476,
+        "car_0_5": 0.0378941,
+        "t_0_1": 0.115565,
+        "t_0_5": 0.951626,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0145",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2021-07-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0146",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2021-09-30 results",
+      "date": "2021-10-28",
+      "content_available_at": "2021-10-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2021-10-29",
+        "car_0_1": 0.0336076,
+        "car_0_5": 0.0396939,
+        "t_0_1": 1.20738,
+        "t_0_5": 0.824046,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0146",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2021-10-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0147",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2021-12-31 results",
+      "date": "2022-01-28",
+      "content_available_at": "2022-01-28T21:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2022-01-31",
+        "car_0_1": -0.0114884,
+        "car_0_5": 0.0051827,
+        "t_0_1": -0.418215,
+        "t_0_5": 0.108821,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0147",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2022-01-28T21:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0148",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2022-03-31 results",
+      "date": "2022-04-28",
+      "content_available_at": "2022-04-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2022-04-29",
+        "car_0_1": -0.0249045,
+        "car_0_5": -0.051096,
+        "t_0_1": -0.919271,
+        "t_0_5": -1.08345,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0148",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2022-04-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0149",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2022-06-30 results",
+      "date": "2022-07-28",
+      "content_available_at": "2022-07-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2022-07-29",
+        "car_0_1": -0.0156678,
+        "car_0_5": -0.0185074,
+        "t_0_1": -0.655701,
+        "t_0_5": -0.447061,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0149",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2022-07-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0150",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2022-09-30 results",
+      "date": "2022-10-28",
+      "content_available_at": "2022-10-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2022-10-31",
+        "car_0_1": -0.0152926,
+        "car_0_5": -0.0495281,
+        "t_0_1": -0.865298,
+        "t_0_5": -1.62163,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0150",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2022-10-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-C014",
+      "type": "supply_chain",
+      "lake_type": "supply_chain",
+      "subtype": "supply_chain",
+      "title": "Assembly plant disruption (synthetic)",
+      "date": "2022-11-07",
+      "content_available_at": "2022-11-07T18:00:00Z",
+      "precision": "minute",
+      "selection": "curated",
+      "verification": "unverified",
+      "annotation_only": true,
+      "reaction": {
+        "day0_session": "2022-11-07",
+        "car_0_1": 0.00162532,
+        "car_0_5": -0.0120411,
+        "t_0_1": 0.0911174,
+        "t_0_5": -0.38923,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-C014",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "Example Press: Assembly plant disruption (synthetic) | accessed 2026-11-17",
+        "url": "https://example.org/demo/014",
+        "available_at": "2022-11-07T18:00:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0151",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2022-12-31 results",
+      "date": "2023-01-30",
+      "content_available_at": "2023-01-30T21:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2023-01-31",
+        "car_0_1": -0.00555269,
+        "car_0_5": -0.0498454,
+        "t_0_1": -0.302655,
+        "t_0_5": -1.56987,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0151",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2023-01-30T21:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0152",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2023-03-31 results",
+      "date": "2023-04-28",
+      "content_available_at": "2023-04-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2023-05-01",
+        "car_0_1": -0.0178128,
+        "car_0_5": -0.0509635,
+        "t_0_1": -0.909212,
+        "t_0_5": -1.51043,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0152",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2023-04-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-C015",
+      "type": "product",
+      "lake_type": "product_launch",
+      "subtype": "product_launch",
+      "title": "Headset announced (synthetic)",
+      "date": "2023-06-05",
+      "content_available_at": "2023-06-05T17:00:00Z",
+      "precision": "minute",
+      "selection": "curated",
+      "verification": "web_checked",
+      "annotation_only": true,
+      "reaction": {
+        "day0_session": "2023-06-05",
+        "car_0_1": -0.00781201,
+        "car_0_5": -0.108751,
+        "t_0_1": -0.428738,
+        "t_0_5": -3.44553,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-C015",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "Example Press: Headset announced (synthetic) | accessed 2026-11-17",
+        "url": "https://example.org/demo/015",
+        "available_at": "2023-06-05T17:00:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0153",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2023-06-30 results",
+      "date": "2023-07-28",
+      "content_available_at": "2023-07-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2023-07-31",
+        "car_0_1": -0.0135758,
+        "car_0_5": -0.0275835,
+        "t_0_1": -0.69368,
+        "t_0_5": -0.814789,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0153",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2023-07-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0154",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2023-09-30 results",
+      "date": "2023-10-30",
+      "content_available_at": "2023-10-30T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2023-10-31",
+        "car_0_1": -0.014397,
+        "car_0_5": -0.0360048,
+        "t_0_1": -0.731462,
+        "t_0_5": -1.05859,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0154",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2023-10-30T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0155",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2023-12-31 results",
+      "date": "2024-01-29",
+      "content_available_at": "2024-01-29T21:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2024-01-30",
+        "car_0_1": 0.0194378,
+        "car_0_5": 0.0615718,
+        "t_0_1": 0.897092,
+        "t_0_5": 1.64485,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0155",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2024-01-29T21:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-C016",
+      "type": "legal",
+      "lake_type": "legal_regulatory",
+      "subtype": "legal_regulatory",
+      "title": "Antitrust complaint filed (synthetic)",
+      "date": "2024-03-21",
+      "content_available_at": "2024-03-21T17:00:00Z",
+      "precision": "minute",
+      "selection": "curated",
+      "verification": "web_checked",
+      "annotation_only": true,
+      "reaction": {
+        "day0_session": "2024-03-21",
+        "car_0_1": -0.00464346,
+        "car_0_5": 0.00802109,
+        "t_0_1": -0.202012,
+        "t_0_5": 0.201529,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-C016",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "Example Press: Antitrust complaint filed (synthetic) | accessed 2026-11-17",
+        "url": "https://example.org/demo/016",
+        "available_at": "2024-03-21T17:00:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0156",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2024-03-31 results",
+      "date": "2024-04-29",
+      "content_available_at": "2024-04-29T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2024-04-30",
+        "car_0_1": -0.0307703,
+        "car_0_5": 0.00250309,
+        "t_0_1": -1.31293,
+        "t_0_5": 0.0616396,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0156",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2024-04-29T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0157",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2024-06-30 results",
+      "date": "2024-07-29",
+      "content_available_at": "2024-07-29T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2024-07-30",
+        "car_0_1": 0.00504072,
+        "car_0_5": 0.0117013,
+        "t_0_1": 0.205701,
+        "t_0_5": 0.274772,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0157",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2024-07-29T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0158",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2024-09-30 results",
+      "date": "2024-10-28",
+      "content_available_at": "2024-10-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2024-10-29",
+        "car_0_1": -0.0427081,
+        "car_0_5": -0.00412137,
+        "t_0_1": -1.43897,
+        "t_0_5": -0.0801775,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0158",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2024-10-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0159",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2024-12-31 results",
+      "date": "2025-01-28",
+      "content_available_at": "2025-01-28T21:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2025-01-29",
+        "car_0_1": -0.00387908,
+        "car_0_5": 0.021631,
+        "t_0_1": -0.117667,
+        "t_0_5": 0.378973,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0159",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2025-01-28T21:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-C017",
+      "type": "macro",
+      "lake_type": "geopolitical",
+      "subtype": "geopolitical",
+      "title": "Broad tariff announcement (synthetic)",
+      "date": "2025-04-03",
+      "content_available_at": "2025-04-03T17:00:00Z",
+      "precision": "minute",
+      "selection": "curated",
+      "verification": "ai_recalled",
+      "annotation_only": true,
+      "reaction": {
+        "day0_session": "2025-04-03",
+        "car_0_1": 0.0103346,
+        "car_0_5": 0.00212793,
+        "t_0_1": 0.302462,
+        "t_0_5": 0.0359959,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-C017",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "Example Press: Broad tariff announcement (synthetic) | accessed 2026-11-17",
+        "url": "https://example.org/demo/017",
+        "available_at": "2025-04-03T17:00:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0160",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2025-03-31 results",
+      "date": "2025-04-28",
+      "content_available_at": "2025-04-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2025-04-29",
+        "car_0_1": -0.0188329,
+        "car_0_5": 0.000218564,
+        "t_0_1": -0.550956,
+        "t_0_5": 0.00369136,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0160",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2025-04-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0161",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2025-06-30 results",
+      "date": "2025-07-28",
+      "content_available_at": "2025-07-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2025-07-29",
+        "car_0_1": 0.00385572,
+        "car_0_5": -0.00675817,
+        "t_0_1": 0.115663,
+        "t_0_5": -0.116987,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0161",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2025-07-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0162",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2025-09-30 results",
+      "date": "2025-10-28",
+      "content_available_at": "2025-10-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2025-10-29",
+        "car_0_1": -0.000651511,
+        "car_0_5": -0.0222101,
+        "t_0_1": -0.0217951,
+        "t_0_5": -0.429267,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0162",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2025-10-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0163",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2025-12-31 results",
+      "date": "2026-01-28",
+      "content_available_at": "2026-01-28T21:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2026-01-29",
+        "car_0_1": 0.0577862,
+        "car_0_5": -0.00970806,
+        "t_0_1": 2.09382,
+        "t_0_5": -0.203277,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0163",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2026-01-28T21:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-C018",
+      "type": "leadership",
+      "lake_type": "leadership",
+      "subtype": "leadership",
+      "title": "Chief executive succession announced (synthetic)",
+      "date": "2026-04-20",
+      "content_available_at": "2026-04-20T17:00:00Z",
+      "precision": "minute",
+      "selection": "curated",
+      "verification": "web_checked",
+      "annotation_only": true,
+      "reaction": {
+        "day0_session": "2026-04-20",
+        "car_0_1": -0.0310101,
+        "car_0_5": -0.0973414,
+        "t_0_1": -0.959886,
+        "t_0_5": -1.73943,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-C018",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "Example Press: Chief executive succession announced (synthetic) | accessed 2026-11-17",
+        "url": "https://example.org/demo/018",
+        "available_at": "2026-04-20T17:00:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0164",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2026-03-31 results",
+      "date": "2026-04-28",
+      "content_available_at": "2026-04-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2026-04-29",
+        "car_0_1": -0.0376776,
+        "car_0_5": -0.0784495,
+        "t_0_1": -1.16984,
+        "t_0_5": -1.40676,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0164",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2026-04-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0165",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2026-06-30 results",
+      "date": "2026-07-28",
+      "content_available_at": "2026-07-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2026-07-29",
+        "car_0_1": 0.0575616,
+        "car_0_5": 0.0352651,
+        "t_0_1": 1.76554,
+        "t_0_5": 0.624285,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0165",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2026-07-28T20:30:00Z"
+      }
+    },
+    {
+      "id": "DEMO-EV-0166",
+      "type": "earnings",
+      "lake_type": "earnings",
+      "subtype": "quarterly",
+      "title": "Quarter ending 2026-09-30 results",
+      "date": "2026-10-28",
+      "content_available_at": "2026-10-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "annotation_only": false,
+      "reaction": {
+        "day0_session": "2026-10-29",
+        "car_0_1": -0.0672772,
+        "car_0_5": -0.0828947,
+        "t_0_1": -1.9105,
+        "t_0_5": -1.35864,
+        "status": "ok"
+      },
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-0166",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "fixture",
+        "available_at": "2026-10-28T20:30:00Z"
+      }
+    }
+  ],
+  "hidden_unverified": 0,
+  "counts": { "total": 95, "rule_complete": 76, "curated": 19, "unverified": 3 },
+  "model": {
+    "market": "^DEMOTR",
+    "estimation_window": [-280, -31],
+    "min_estimation": 120,
+    "windows": ["[0,+1]", "[0,+5]"],
+    "self_inclusion": "The S&P 500 includes this stock, so part of its own move is in the market return (self-inclusion); the abnormal return is biased towards zero by about its index weight."
+  },
+  "provenance": {
+    "kind": "dataset",
+    "id": "events",
+    "snapshot": "r1-dev",
+    "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+    "source": "Synthetic (fixture)"
+  }
+}

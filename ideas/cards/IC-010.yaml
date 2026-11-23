@@ -1,0 +1,9 @@
+# Sample idea card (written as a demonstration).
+id: IC-010
+title: Accelerating sales growth lifts the stock
+author: probcast
+created_at: '2026-11-18T18:00:00Z'
+sample: true
+text: When Apple's revenue is growing faster than a year ago, the stock should do better, because the
+  market is slow to price in growth.
+analyzer: fundamental.sales_acceleration

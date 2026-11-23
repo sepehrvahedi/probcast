@@ -1,0 +1,12 @@
+# Round-2 idea (researched, built and tested in round 2, D-101).
+id: IC-019
+title: Overnight excitement fades
+author: probcast
+created_at: '2026-11-19T00:30:00Z'
+sample: true
+text: When a stock keeps jumping up overnight (eager buyers at the open) rather than during the trading
+  day, it tends to give those gains back over the next months.
+analyzer: technical.overnight_sentiment
+implementation: 'Lou, Polk & Skouras (2019) tug of war: past 21 sessions'' overnight minus intraday log
+  returns; first session after each results release excluded; missing opens ignored. C3, negative sign;
+  3 and 6 months.'

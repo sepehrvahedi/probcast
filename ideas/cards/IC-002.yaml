@@ -1,0 +1,11 @@
+# Sample idea card (written as a demonstration).
+id: IC-002
+title: Big monthly moves partly reverse
+author: probcast
+created_at: '2026-11-18T18:00:00Z'
+sample: true
+text: After a very big move in one month, the stock tends to give some of it back the next week or month,
+  because the move was an overreaction.
+analyzer: technical.reversal_1m
+implementation: Past 21-session total return, standardised point-in-time; predictive regression with the
+  reversal sign imposed (C3; Jegadeesh 1990, Lehmann 1990). Horizons 1 week and 1 month.

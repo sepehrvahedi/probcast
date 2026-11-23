@@ -1,0 +1,11 @@
+# Sample idea card (written as a demonstration).
+id: IC-001
+title: 'Winners keep winning: 12-month momentum'
+author: probcast
+created_at: '2026-11-18T18:00:00Z'
+sample: true
+text: If Apple has gone up over the past year (ignoring the most recent month), it tends to keep going
+  up over the next months; if it has gone down, it tends to keep lagging.
+analyzer: technical.tsmom_12_1
+implementation: Sign of the total return from 12 months ago to 1 month ago (literature default 12-1, Moskowitz,
+  Ooi & Pedersen 2012). Positive vs negative history buckets, calibrated point-in-time (C1).

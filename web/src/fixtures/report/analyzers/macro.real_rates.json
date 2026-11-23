@@ -1,0 +1,439 @@
+{
+  "fixture": true,
+  "id": "macro.real_rates",
+  "name": "Real-yield change (3-month change in the 10-year TIPS yield)",
+  "version": "1.0.0+31ebdac",
+  "family": "macro.rates",
+  "author": "probcast",
+  "slot": 1,
+  "builtin": true,
+  "natural_horizon": 252,
+  "leak": {
+    "status": "passed",
+    "tests": {
+      "T1": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T2": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T3": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T5": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T7": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "TDN": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      }
+    }
+  },
+  "in_committee": true,
+  "category": "macro",
+  "report_section": "macro",
+  "horizons": [21, 63, 126, 252],
+  "calibrator": "C3",
+  "hypothesis": "Rising real yields raise the discount rate on long-duration growth equity and are followed by lower excess returns.",
+  "references": ["ref:campbell-ammer-1993", "ref:dechow-sloan-soliman-2004"],
+  "idea_card": null,
+  "manifest": {
+    "expected_direction": "negative",
+    "course_concepts": ["discounting and the cost of capital", "equity duration"],
+    "informs": ["location"],
+    "min_history_sessions": 756,
+    "data_dependencies": ["FRED:DFII10"],
+    "params": {
+      "sessions": 63
+    },
+    "param_grid_declared": {},
+    "manifest_version": "1.0.0",
+    "code_hash": "31ebdac4ee17d5800f168e9ab7d0985c62d5845c013545897ce9776fb73934bc"
+  },
+  "literature_prior": null,
+  "idea": null,
+  "dependencies": [
+    {
+      "id": "PX:close_base",
+      "name": "Close, base-share units",
+      "class": "exchange_price",
+      "rule": "same_session_close",
+      "strict_rule": "same_session_close",
+      "licence": "L2",
+      "source": "Yahoo Finance via yfinance"
+    },
+    {
+      "id": "FRED:DFII10",
+      "name": "Market Yield on U.S. Treasury Securities at 10-Year Constant Maturity, Quoted on an Investment Basis, Inflation-Indexed",
+      "class": "market_observable",
+      "rule": "same_session_close",
+      "strict_rule": "plus_1_session",
+      "licence": "L0",
+      "source": "Federal Reserve Board H.15"
+    }
+  ],
+  "leak_details": {
+    "T1": "passed",
+    "T2": "passed",
+    "T3": "passed",
+    "T5": "passed",
+    "T7": "passed",
+    "T-DN": "passed"
+  },
+  "leak_at": "2026-11-20T14:00:00Z",
+  "status": "committee",
+  "default_run_id": "20261118T153951-e9389b67",
+  "anchor_run_id": "20261118T153935-9403903c",
+  "grades": {
+    "21": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.0010682814600796453,
+      "ci": {
+        "lo": -0.0031093628001572448,
+        "hi": 0.005328597346743402,
+        "level": 0.9
+      },
+      "n_eff": 104.0,
+      "grade": "C",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "macro.rates",
+          "n": 1
+        },
+        "team": 11
+      },
+      "mde": 0.007509696857091108,
+      "sample": "dev",
+      "dm_p": 0.6924719692328499,
+      "bh_q": 0.9208727086019657,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153951-e9389b67",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.21.dev"
+      },
+      "n": 104,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-11-30"
+      },
+      "cov80": {
+        "est": 0.7788461538461539,
+        "sample": "dev"
+      }
+    },
+    "63": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": -0.00034287996951642974,
+      "ci": {
+        "lo": -0.0009174088775086186,
+        "hi": 1.7837450666019506e-5,
+        "level": 0.9
+      },
+      "n_eff": 34.333333333333336,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "macro.rates",
+          "n": 1
+        },
+        "team": 11
+      },
+      "mde": 0.0009641779289332954,
+      "sample": "dev",
+      "dm_p": 0.33329901369937326,
+      "bh_q": 0.67819097773806,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153951-e9389b67",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.63.dev"
+      },
+      "n": 103,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-08-31"
+      },
+      "cov80": {
+        "est": 0.7766990291262136,
+        "sample": "dev"
+      }
+    },
+    "126": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": -0.0002883254160686022,
+      "ci": {
+        "lo": -0.0007789844468093831,
+        "hi": 2.1339558906885437e-5,
+        "level": 0.9
+      },
+      "n_eff": 17.0,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "macro.rates",
+          "n": 1
+        },
+        "team": 11
+      },
+      "mde": 0.0007720069691723483,
+      "sample": "dev",
+      "dm_p": 0.3245935461210867,
+      "bh_q": 0.8114838653027168,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153951-e9389b67",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.126.dev"
+      },
+      "n": 102,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-05-29"
+      },
+      "cov80": {
+        "est": 0.7450980392156863,
+        "sample": "dev"
+      }
+    },
+    "252": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": -3.4916017667141475e-5,
+      "ci": {
+        "lo": -7.892111709703053e-5,
+        "hi": 1.8558782288735645e-11,
+        "level": 0.9
+      },
+      "n_eff": 8.333333333333334,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "macro.rates",
+          "n": 1
+        },
+        "team": 11
+      },
+      "mde": 9.238187947592904e-5,
+      "sample": "dev",
+      "dm_p": 0.3509962520799347,
+      "bh_q": 0.8540394417204407,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153951-e9389b67",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.252.dev"
+      },
+      "n": 100,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2014-11-28"
+      },
+      "cov80": {
+        "est": 0.71,
+        "sample": "dev"
+      }
+    }
+  },
+  "nutrition": [
+    {
+      "h": 5,
+      "declared": false,
+      "n_eff_max": null,
+      "n_eff": null,
+      "mde": null,
+      "warmup_start": null,
+      "sample": null
+    },
+    {
+      "h": 21,
+      "declared": true,
+      "n_eff_max": 104.0,
+      "n_eff": 104.0,
+      "mde": 0.007509696857091108,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 63,
+      "declared": true,
+      "n_eff_max": 34.333333333333336,
+      "n_eff": 34.333333333333336,
+      "mde": 0.0009641779289332954,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 126,
+      "declared": true,
+      "n_eff_max": 17.0,
+      "n_eff": 17.0,
+      "mde": 0.0007720069691723483,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 252,
+      "declared": true,
+      "n_eff_max": 8.333333333333334,
+      "n_eff": 8.333333333333334,
+      "mde": 9.238187947592904e-5,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    }
+  ],
+  "latest": {
+    "origin": "2026-11-30",
+    "h": 252,
+    "unit": "log_return",
+    "median": -0.03264306321437407,
+    "interval_80": {
+      "lo": -0.6036567504421966,
+      "hi": 0.5661199263791521,
+      "level": 0.8
+    },
+    "p_up": 0.4710208515653649,
+    "base_rate": {
+      "p": 0.68,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2014-11-28"
+      },
+      "sample": "dev"
+    },
+    "signal": -0.22855474063503986,
+    "calibration": {
+      "method": "C3",
+      "beta": 0.0,
+      "alpha_excess_drift_diagnostic": 0.5272290261258363,
+      "sign_restricted": true,
+      "n_pairs": 9802,
+      "n_eff": 39,
+      "tilt_z": -0.0,
+      "sigma_h": 0.42972642935243177,
+      "anchor_median": -0.032643063230101056
+    },
+    "provenance": {
+      "kind": "run",
+      "id": "20261118T153951-e9389b67",
+      "snapshot": "fixture-7-+0.000",
+      "snapshot_hash": "fixture-v1-7-+0.000",
+      "key": "forecast.252.latest"
+    }
+  },
+  "trials": {
+    "analyzer": 1,
+    "family": {
+      "id": "macro.rates",
+      "n": 1
+    },
+    "team": 11
+  },
+  "references_detail": [
+    {
+      "id": "ref:campbell-ammer-1993",
+      "kind": "literature",
+      "authors": "Campbell, J.Y. and Ammer, J.",
+      "year": "1993",
+      "title": "What moves the stock and bond markets? A variance decomposition for long-term asset returns",
+      "container": "Journal of Finance",
+      "details": "48(1), pp. 3–37",
+      "url": null,
+      "medium": null,
+      "verification": "ai_recalled",
+      "used_by": ["F5", "T3"],
+      "accessed": null,
+      "text": "Campbell, J.Y. and Ammer, J. (1993) ‘What moves the stock and bond markets? A variance decomposition for long-term asset returns’, Journal of Finance, 48(1), pp. 3–37.",
+      "html": "Campbell, J.Y. and Ammer, J. (1993) ‘What moves the stock and bond markets? A variance decomposition for long-term asset returns’, <i>Journal of Finance</i>, 48(1), pp. 3–37.",
+      "in_text": "(Campbell and Ammer, 1993)",
+      "bibtex_key": "CampbellAmmer1993",
+      "bibtex": "@article{CampbellAmmer1993,\n  author = {Campbell, J.Y. and Ammer, J.},\n  year = {1993},\n  title = {{What moves the stock and bond markets? A variance decomposition for long-term asset returns}},\n  journal = {Journal of Finance},\n  note = {48(1), pp. 3–37}\n}",
+      "content_hash": "448acf7a3ee23144",
+      "in_bibliography": false
+    },
+    {
+      "id": "ref:dechow-sloan-soliman-2004",
+      "kind": "literature",
+      "authors": "Dechow, P.M., Sloan, R.G. and Soliman, M.T.",
+      "year": "2004",
+      "title": "Implied equity duration: a new measure of equity risk",
+      "container": "Review of Accounting Studies",
+      "details": "9(2–3), pp. 197–228",
+      "url": null,
+      "medium": null,
+      "verification": "ai_recalled",
+      "used_by": ["F5", "T3"],
+      "accessed": null,
+      "text": "Dechow, P.M., Sloan, R.G. and Soliman, M.T. (2004) ‘Implied equity duration: a new measure of equity risk’, Review of Accounting Studies, 9(2–3), pp. 197–228.",
+      "html": "Dechow, P.M., Sloan, R.G. and Soliman, M.T. (2004) ‘Implied equity duration: a new measure of equity risk’, <i>Review of Accounting Studies</i>, 9(2–3), pp. 197–228.",
+      "in_text": "(Dechow, Sloan and Soliman, 2004)",
+      "bibtex_key": "DechowSloanSoliman2004",
+      "bibtex": "@article{DechowSloanSoliman2004,\n  author = {Dechow, P.M. and Sloan, R.G. and Soliman, M.T.},\n  year = {2004},\n  title = {{Implied equity duration: a new measure of equity risk}},\n  journal = {Review of Accounting Studies},\n  note = {9(2–3), pp. 197–228}\n}",
+      "content_hash": "3eadba8fa904b468",
+      "in_bibliography": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0.0+31ebdac",
+      "first_seen": "2026-11-18T15:39:51.109438+00:00",
+      "configs": 1,
+      "runs": ["20261118T153951-e9389b67"],
+      "current": true
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "20261118T153951-e9389b67",
+      "analyzer": "macro.real_rates",
+      "name": "Real-yield change (3-month change in the 10-year TIPS yield)",
+      "version": "1.0.0+31ebdac",
+      "family": "macro.rates",
+      "author": "probcast",
+      "slot": 1,
+      "status": "completed",
+      "completed_at": "2026-11-18T15:39:51.106474Z",
+      "grades": {
+        "21": {
+          "grade": "C"
+        },
+        "63": {
+          "grade": "D"
+        },
+        "126": {
+          "grade": "D"
+        },
+        "252": {
+          "grade": "D"
+        }
+      },
+      "natural_horizon": 252,
+      "scored": true
+    }
+  ],
+  "provenance": {
+    "kind": "dataset",
+    "id": "analyzer:macro.real_rates",
+    "snapshot": "fixture-7-+0.000",
+    "snapshot_hash": "fixture-v1-7-+0.000"
+  }
+}

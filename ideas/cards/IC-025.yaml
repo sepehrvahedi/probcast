@@ -1,0 +1,10 @@
+# Round-2 idea (researched, built and tested in round 2, D-101).
+id: IC-025
+title: Fast-growing balance sheets disappoint
+author: probcast
+created_at: '2026-11-19T00:30:00Z'
+sample: true
+text: Companies that bulk up their balance sheet fast, often through big acquisitions, tend to lag afterwards.
+analyzer: fundamental.asset_growth
+implementation: 'Cooper, Gulen & Schill (2008): year-on-year growth in total assets (operating-lease assets
+  excluded so the 2019 accounting change doesn''t count as growth). C3, negative sign; 6 and 12 months.'

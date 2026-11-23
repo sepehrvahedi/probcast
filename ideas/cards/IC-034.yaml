@@ -1,0 +1,11 @@
+# Round-2 idea (researched, built and tested in round 2, D-101).
+id: IC-034
+title: High inflation is a drag
+author: probcast
+created_at: '2026-11-19T00:30:00Z'
+sample: true
+text: High inflation hurts stocks because investors mix up real and nominal growth; companies with pricing
+  power suffer less than long-term growth stories.
+analyzer: macro.inflation_level
+implementation: 'Fama & Schwert (1977); Campbell & Vuolteenaho (2004): 12-month CPI inflation (first release,
+  used from the end of the following month); terciles of its own history (C1); 3, 6 and 12 months.'

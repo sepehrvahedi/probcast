@@ -1,0 +1,37 @@
+{
+  "_comment": "Illustrative companyfacts excerpt (structure as the SEC API). Values are for tests only.",
+  "cik": 320193,
+  "entityName": "TEST ENTITY",
+  "facts": {
+    "dei": {
+      "EntityCommonStockSharesOutstanding": {
+        "units": {"shares": [
+          {"end": "2025-10-17", "val": 14776353000, "accn": "0000320193-25-000079", "fy": 2025, "fp": "FY", "form": "10-K", "filed": "2025-10-31"}
+        ]}
+      }
+    },
+    "us-gaap": {
+      "RevenueFromContractWithCustomerExcludingAssessedTax": {
+        "units": {"USD": [
+          {"start": "2024-09-29", "end": "2025-09-27", "val": 416161000000, "accn": "0000320193-25-000079", "fy": 2025, "fp": "FY", "form": "10-K", "filed": "2025-10-31", "frame": "CY2025"},
+          {"start": "2024-09-29", "end": "2025-09-27", "val": 416161000000, "accn": "0000320193-26-000026", "fy": 2026, "fp": "FY", "form": "10-K", "filed": "2026-11-03"}
+        ]}
+      },
+      "SalesRevenueNet": {
+        "units": {"USD": [
+          {"start": "2009-09-27", "end": "2009-12-26", "val": 15683000000, "accn": "0001193125-10-999999", "fy": 2010, "fp": "Q1", "form": "10-Q", "filed": "2010-01-25"}
+        ]}
+      },
+      "EarningsPerShareDiluted": {
+        "units": {"USD/shares": [
+          {"start": "2024-09-29", "end": "2025-09-27", "val": 7.46, "accn": "0000320193-25-000079", "fy": 2025, "fp": "FY", "form": "10-K", "filed": "2025-10-31"}
+        ]}
+      },
+      "NotARequestedConcept": {
+        "units": {"USD": [
+          {"end": "2025-09-27", "val": 1, "accn": "0000320193-25-000079", "fy": 2025, "fp": "FY", "form": "10-K", "filed": "2025-10-31"}
+        ]}
+      }
+    }
+  }
+}

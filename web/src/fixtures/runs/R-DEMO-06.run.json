@@ -1,0 +1,68 @@
+{
+  "fixture": true,
+  "run_id": "R-DEMO-06",
+  "status": "completed",
+  "analyzer": {
+    "id": "valuation.earnings_yield",
+    "name": "Earnings yield vs own history",
+    "version": "1.2.0+4036d5",
+    "family": "valuation",
+    "author": "wren",
+    "slot": 6,
+    "builtin": false,
+    "natural_horizon": 252,
+    "leak": {
+      "status": "passed",
+      "tests": {
+        "T1": { "passed": true, "at": "2026-11-22T14:05:00Z" },
+        "T2": { "passed": true, "at": "2026-11-22T14:05:00Z" },
+        "T3": { "passed": true, "at": "2026-11-22T14:05:00Z" },
+        "T5": { "passed": true, "at": "2026-11-22T14:05:00Z" },
+        "T7": { "passed": true, "at": "2026-11-22T14:05:00Z" },
+        "TDN": { "passed": true, "at": "2026-11-22T14:05:00Z" }
+      }
+    },
+    "in_committee": true
+  },
+  "completed_at": "2026-11-23T14:35:00Z",
+  "origins": { "schedule": "month_end", "from": "2009-07-31", "to": "2026-11-24", "n": 209 },
+  "windows": {
+    "dev": ["1990-01-01", "2015-12-31"],
+    "val": ["2016-01-01", "2020-12-31"],
+    "holdout_from": "2021-01-01"
+  },
+  "criterion": {
+    "status": "not_evaluable",
+    "text": "Beats the CAPM anchor on CRPS at 252 sessions with grade ≥ C.",
+    "ic_id": "IC-011",
+    "registered_at": "2026-11-19T15:02:00Z",
+    "hash": "aa31cff3c1d2e4b5a6978812345678"
+  },
+  "trials": { "analyzer": 1, "family": { "id": "valuation", "n": 5 }, "team": 41 },
+  "manifest": {
+    "run_id": "R-DEMO-06",
+    "config_hash": "sha256:5c128de1d2c3b4a5968778695a4b3c2d1e0f",
+    "analyzer_version": "1.2.0+4036d5",
+    "code_hash": "4036d50b1c2d3e4f5a6b7c8d9e0f1a2b3c4d",
+    "params_hash": "beef55aa11bb22cc33dd44ee55ff66",
+    "snapshot_id": "r1-dev",
+    "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+    "platform_version": "0.1.0",
+    "git_sha": "5e1f0a9c8b7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f",
+    "uv_lock_hash": "7d3e9a1b2c4f5e6d7c8b9a0f1e2d3c4b5a69788796a5b4c3d2e1f0a9b8c7d6e5",
+    "python": "3.12.8",
+    "os": "macOS 27.2 (arm64)",
+    "seed": 7,
+    "started_at": "2026-11-23T14:35:00Z",
+    "ended_at": "2026-11-23T14:35:00Z",
+    "author": "wren",
+    "contract_version": "1.1"
+  },
+  "tearsheet_url": "/api/v1/runs/R-DEMO-06/tearsheet.png",
+  "provenance": {
+    "kind": "run",
+    "id": "R-DEMO-06",
+    "snapshot": "r1-dev",
+    "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+  }
+}

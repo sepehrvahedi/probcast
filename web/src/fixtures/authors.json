@@ -1,0 +1,10 @@
+{
+  "fixture": true,
+  "items": [
+    { "handle": "kestrel", "role": "integrator", "slot": 1 },
+    { "handle": "heron", "role": "member", "slot": 2 },
+    { "handle": "wren", "role": "member", "slot": 3 },
+    { "handle": "finch", "role": "member", "slot": 4 },
+    { "handle": "osprey", "role": "member", "slot": 5 }
+  ]
+}

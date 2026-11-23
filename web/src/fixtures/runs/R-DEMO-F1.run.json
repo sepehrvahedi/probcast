@@ -1,0 +1,70 @@
+{
+  "fixture": true,
+  "run_id": "R-DEMO-F1",
+  "status": "failed",
+  "failed_stage": "contract validation",
+  "problem": {
+    "type": "https://probcast.local/problems/contract-error",
+    "title": "ContractError",
+    "status": 422,
+    "detail": "Quantiles at origin 2008-10-31, horizon 63 were not strictly increasing (q0.45 = q0.50).",
+    "error": "ContractError",
+    "id": "E-7F3A"
+  },
+  "analyzer": {
+    "id": "technical.momentum_12_1",
+    "name": "Momentum 12-1",
+    "version": "1.2.0+3fda08",
+    "family": "technical.trend",
+    "author": "finch",
+    "slot": 3,
+    "builtin": false,
+    "natural_horizon": 252,
+    "leak": {
+      "status": "passed",
+      "tests": {
+        "T1": { "passed": true, "at": "2026-11-22T14:02:00Z" },
+        "T2": { "passed": true, "at": "2026-11-22T14:02:00Z" },
+        "T3": { "passed": true, "at": "2026-11-22T14:02:00Z" },
+        "T5": { "passed": true, "at": "2026-11-22T14:02:00Z" },
+        "T7": { "passed": true, "at": "2026-11-22T14:02:00Z" },
+        "TDN": { "passed": true, "at": "2026-11-22T14:02:00Z" }
+      }
+    },
+    "in_committee": true
+  },
+  "completed_at": "2026-11-22T10:14:00Z",
+  "origins": { "schedule": "month_end", "from": "1991-01-31", "to": "2008-10-31", "n": 214 },
+  "windows": {
+    "dev": ["1990-01-01", "2015-12-31"],
+    "val": ["2016-01-01", "2020-12-31"],
+    "holdout_from": "2021-01-01"
+  },
+  "criterion": { "status": "not_evaluable" },
+  "trials": { "analyzer": 4, "family": { "id": "technical.trend", "n": 15 }, "team": 41 },
+  "manifest": {
+    "run_id": "R-DEMO-F1",
+    "config_hash": "sha256:00f1",
+    "analyzer_version": "1.2.0+3fda08",
+    "code_hash": "c0de",
+    "params_hash": "ba5e",
+    "snapshot_id": "r1-dev",
+    "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+    "platform_version": "0.1.0",
+    "git_sha": "5e1f0a9c",
+    "uv_lock_hash": "7d3e9a",
+    "python": "3.12.8",
+    "os": "macOS 27.2 (arm64)",
+    "seed": 7,
+    "started_at": "2026-11-22T10:13:40Z",
+    "ended_at": "2026-11-22T10:14:00Z",
+    "author": "finch",
+    "contract_version": "1.1"
+  },
+  "provenance": {
+    "kind": "run",
+    "id": "R-DEMO-F1",
+    "snapshot": "r1-dev",
+    "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+  }
+}

@@ -1,0 +1,709 @@
+{
+  "fixture": true,
+  "items": [
+    {
+      "id": "baseline.block_bootstrap",
+      "name": "Block-bootstrap climatology (re-centred)",
+      "version": "1.0.0+02e6096",
+      "family": "baseline",
+      "author": "probcast",
+      "slot": 0,
+      "builtin": true,
+      "natural_horizon": 252,
+      "leak": {
+        "status": "passed",
+        "tests": {
+          "T1": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T2": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T3": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T5": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T7": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          }
+        }
+      },
+      "in_committee": false,
+      "category": "baseline",
+      "report_section": "future",
+      "horizons": [5, 21, 63, 126, 252],
+      "calibrator": "none",
+      "hypothesis": "The past distribution of h-session returns, re-centred on the anchor, describes the future.",
+      "references": [],
+      "idea_card": null,
+      "grades": {
+        "5": {
+          "grade": "D"
+        },
+        "21": {
+          "grade": "D"
+        },
+        "63": {
+          "grade": "D"
+        },
+        "126": {
+          "grade": "D"
+        },
+        "252": {
+          "grade": "D"
+        }
+      },
+      "default_run_id": "20261118T154000-9c3f42a6",
+      "status": "baseline",
+      "literature_prior": null,
+      "trials": 1
+    },
+    {
+      "id": "baseline.capm",
+      "name": "CAPM anchor",
+      "version": "1.0.0+2c31975",
+      "family": "baseline",
+      "author": "probcast",
+      "slot": 0,
+      "builtin": true,
+      "natural_horizon": 252,
+      "leak": {
+        "status": "passed",
+        "tests": {
+          "T1": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T2": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T3": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T5": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T7": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          }
+        }
+      },
+      "in_committee": false,
+      "category": "baseline",
+      "report_section": "future",
+      "horizons": [5, 21, 63, 126, 252],
+      "calibrator": "none",
+      "hypothesis": "Expected simple return equals r_f + beta x ERP (ERP 5%).",
+      "references": ["ref:sharpe-1964", "ref:blume-1971"],
+      "idea_card": null,
+      "grades": {
+        "5": {
+          "grade": "D"
+        },
+        "21": {
+          "grade": "D"
+        },
+        "63": {
+          "grade": "D"
+        },
+        "126": {
+          "grade": "D"
+        },
+        "252": {
+          "grade": "D"
+        }
+      },
+      "default_run_id": "20261118T153935-9403903c",
+      "status": "baseline",
+      "literature_prior": null,
+      "trials": 1
+    },
+    {
+      "id": "baseline.hist_drift",
+      "name": "Historical drift (survivor-biased yardstick)",
+      "version": "1.0.0+8b22d46",
+      "family": "baseline",
+      "author": "probcast",
+      "slot": 0,
+      "builtin": true,
+      "natural_horizon": 252,
+      "leak": {
+        "status": "passed",
+        "tests": {
+          "T1": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T2": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T3": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T5": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T7": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          }
+        }
+      },
+      "in_committee": false,
+      "category": "baseline",
+      "report_section": "future",
+      "horizons": [5, 21, 63, 126, 252],
+      "calibrator": "none",
+      "hypothesis": "Future log returns equal the stock's own past mean (biased upward for a known winner).",
+      "references": [],
+      "idea_card": null,
+      "grades": {
+        "5": {
+          "grade": "D"
+        },
+        "21": {
+          "grade": "B"
+        },
+        "63": {
+          "grade": "C"
+        },
+        "126": {
+          "grade": "D"
+        },
+        "252": {
+          "grade": "D"
+        }
+      },
+      "default_run_id": "20261118T153937-82751642",
+      "status": "baseline",
+      "literature_prior": null,
+      "trials": 1
+    },
+    {
+      "id": "baseline.rw0",
+      "name": "Zero-drift random walk",
+      "version": "1.0.0+30dce24",
+      "family": "baseline",
+      "author": "probcast",
+      "slot": 0,
+      "builtin": true,
+      "natural_horizon": 252,
+      "leak": {
+        "status": "passed",
+        "tests": {
+          "T1": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T2": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T3": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T5": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T7": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          }
+        }
+      },
+      "in_committee": false,
+      "category": "baseline",
+      "report_section": "future",
+      "horizons": [5, 21, 63, 126, 252],
+      "calibrator": "none",
+      "hypothesis": "The median log return is zero at every horizon.",
+      "references": [],
+      "idea_card": null,
+      "grades": {
+        "5": {
+          "grade": "D"
+        },
+        "21": {
+          "grade": "B"
+        },
+        "63": {
+          "grade": "C"
+        },
+        "126": {
+          "grade": "D"
+        },
+        "252": {
+          "grade": "D"
+        }
+      },
+      "default_run_id": "20261118T154002-f251840a",
+      "status": "baseline",
+      "literature_prior": null,
+      "trials": 1
+    },
+    {
+      "id": "macro.real_rates",
+      "name": "Real-yield change (3-month change in the 10-year TIPS yield)",
+      "version": "1.0.0+31ebdac",
+      "family": "macro.rates",
+      "author": "probcast",
+      "slot": 1,
+      "builtin": true,
+      "natural_horizon": 252,
+      "leak": {
+        "status": "passed",
+        "tests": {
+          "T1": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T2": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T3": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T5": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T7": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "TDN": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          }
+        }
+      },
+      "in_committee": true,
+      "category": "macro",
+      "report_section": "macro",
+      "horizons": [21, 63, 126, 252],
+      "calibrator": "C3",
+      "hypothesis": "Rising real yields raise the discount rate on long-duration growth equity and are followed by lower excess returns.",
+      "references": ["ref:campbell-ammer-1993", "ref:dechow-sloan-soliman-2004"],
+      "idea_card": null,
+      "grades": {
+        "21": {
+          "grade": "C"
+        },
+        "63": {
+          "grade": "D"
+        },
+        "126": {
+          "grade": "D"
+        },
+        "252": {
+          "grade": "D"
+        }
+      },
+      "default_run_id": "20261118T153951-e9389b67",
+      "status": "committee",
+      "literature_prior": null,
+      "trials": 1
+    },
+    {
+      "id": "macro.usd_sensitivity",
+      "name": "USD strength (13-week change in the broad dollar index)",
+      "version": "1.0.0+5955991",
+      "family": "macro.fx",
+      "author": "probcast",
+      "slot": 2,
+      "builtin": true,
+      "natural_horizon": 252,
+      "leak": {
+        "status": "passed",
+        "tests": {
+          "T1": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T2": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T3": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T5": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T7": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "TDN": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          }
+        }
+      },
+      "in_committee": true,
+      "category": "macro",
+      "report_section": "macro",
+      "horizons": [21, 63, 126, 252],
+      "calibrator": "C3",
+      "hypothesis": "A stronger US dollar over the past quarter lowers a multinational's USD-reported foreign earnings and is followed by lower excess returns.",
+      "references": ["ref:jorion-1990", "ref:apple-10k-fx-risk"],
+      "idea_card": null,
+      "grades": {
+        "21": {
+          "grade": "D"
+        },
+        "63": {
+          "grade": "D",
+          "flag": "worse_than_anchor"
+        },
+        "126": {
+          "grade": "D",
+          "flag": "worse_than_anchor"
+        },
+        "252": {
+          "grade": "D"
+        }
+      },
+      "default_run_id": "20261118T153948-0eaabbd4",
+      "status": "committee",
+      "literature_prior": null,
+      "trials": 1
+    },
+    {
+      "id": "sector.relative_strength",
+      "name": "Relative strength vs the Nasdaq-100 (6 months)",
+      "version": "1.0.0+1a6a735",
+      "family": "technical.trend",
+      "author": "probcast",
+      "slot": 3,
+      "builtin": true,
+      "natural_horizon": 252,
+      "leak": {
+        "status": "passed",
+        "tests": {
+          "T1": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T2": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T3": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T5": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T7": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "TDN": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          }
+        }
+      },
+      "in_committee": true,
+      "category": "sector",
+      "report_section": "sector",
+      "horizons": [21, 63, 126, 252],
+      "calibrator": "C1",
+      "hypothesis": "Outperformance of the sector index over the past six months persists over the following months (industry-relative momentum).",
+      "references": ["ref:moskowitz-grinblatt-1999"],
+      "idea_card": null,
+      "grades": {
+        "21": {
+          "grade": "D"
+        },
+        "63": {
+          "grade": "D"
+        },
+        "126": {
+          "grade": "D"
+        },
+        "252": {
+          "grade": "D"
+        }
+      },
+      "default_run_id": "20261118T153943-95c4e12d",
+      "status": "committee",
+      "literature_prior": null,
+      "trials": 1
+    },
+    {
+      "id": "technical.reversal_1m",
+      "name": "Short-term reversal (1 month)",
+      "version": "1.0.0+ce3e378",
+      "family": "technical.reversion",
+      "author": "probcast",
+      "slot": 4,
+      "builtin": true,
+      "natural_horizon": 21,
+      "leak": {
+        "status": "passed",
+        "tests": {
+          "T1": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T2": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T3": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T5": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T7": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "TDN": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          }
+        }
+      },
+      "in_committee": true,
+      "category": "technical",
+      "report_section": "future",
+      "horizons": [5, 21],
+      "calibrator": "C3",
+      "hypothesis": "A large past-month return is followed by a partial reversal over the next month.",
+      "references": ["ref:jegadeesh-1990", "ref:lehmann-1990"],
+      "idea_card": null,
+      "grades": {
+        "5": {
+          "grade": "C"
+        },
+        "21": {
+          "grade": "C"
+        }
+      },
+      "default_run_id": "20261118T153945-84187823",
+      "status": "committee",
+      "literature_prior": null,
+      "trials": 1
+    },
+    {
+      "id": "technical.tsmom_12_1",
+      "name": "Time-series momentum 12-1",
+      "version": "1.0.0+fb8c786",
+      "family": "technical.trend",
+      "author": "probcast",
+      "slot": 5,
+      "builtin": true,
+      "natural_horizon": 252,
+      "leak": {
+        "status": "passed",
+        "tests": {
+          "T1": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T2": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T3": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T5": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T7": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "TDN": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          }
+        }
+      },
+      "in_committee": true,
+      "category": "technical",
+      "report_section": "future",
+      "horizons": [21, 63, 126, 252],
+      "calibrator": "C1",
+      "hypothesis": "When the past 12-month return excluding the most recent month is positive, forward returns are higher than the CAPM anchor implies.",
+      "references": ["ref:moskowitz-ooi-pedersen-2012", "ref:jegadeesh-titman-1993"],
+      "idea_card": null,
+      "grades": {
+        "21": {
+          "grade": "C"
+        },
+        "63": {
+          "grade": "C"
+        },
+        "126": {
+          "grade": "D"
+        },
+        "252": {
+          "grade": "D"
+        }
+      },
+      "default_run_id": "20261118T153940-ec3922bc",
+      "status": "committee",
+      "literature_prior": null,
+      "trials": 1
+    },
+    {
+      "id": "valuation.earnings_yield",
+      "name": "Earnings yield vs own history (TTM diluted EPS / price)",
+      "version": "1.0.0+b1f680d",
+      "family": "valuation",
+      "author": "probcast",
+      "slot": 6,
+      "builtin": true,
+      "natural_horizon": 252,
+      "leak": {
+        "status": "passed",
+        "tests": {
+          "T1": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T2": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T3": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T5": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T7": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "TDN": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          }
+        }
+      },
+      "in_committee": false,
+      "category": "fundamental",
+      "report_section": "fundamental",
+      "horizons": [63, 126, 252],
+      "calibrator": "C1",
+      "hypothesis": "When the earnings yield is in the top third of its own history the stock is cheap relative to its past, and forward excess returns are higher.",
+      "references": ["ref:basu-1977", "ref:campbell-shiller-1988"],
+      "idea_card": null,
+      "grades": {},
+      "default_run_id": "20261118T154003-3fdb5248",
+      "status": "candidate",
+      "literature_prior": null,
+      "trials": 1
+    },
+    {
+      "id": "volatility.implied_vol",
+      "name": "Implied-volatility scale (option-implied)",
+      "version": "1.0.0+fc76379",
+      "family": "volatility",
+      "author": "probcast",
+      "slot": 1,
+      "builtin": true,
+      "natural_horizon": 252,
+      "leak": {
+        "status": "passed",
+        "tests": {
+          "T1": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T2": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T3": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T5": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "T7": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          },
+          "TDN": {
+            "passed": true,
+            "at": "2026-11-20T14:00:00Z"
+          }
+        }
+      },
+      "in_committee": true,
+      "category": "statistical",
+      "report_section": "future",
+      "horizons": [5, 21, 63, 126, 252],
+      "calibrator": "C5",
+      "hypothesis": "The option market's implied volatility forecasts realised volatility better than history alone; the location is the CAPM anchor.",
+      "references": ["ref:christensen-prabhala-1998", "ref:poon-granger-2003"],
+      "idea_card": null,
+      "grades": {
+        "5": {
+          "grade": "C"
+        },
+        "21": {
+          "grade": "C"
+        },
+        "63": {
+          "grade": "D"
+        },
+        "126": {
+          "grade": "D"
+        },
+        "252": {
+          "grade": "D"
+        }
+      },
+      "default_run_id": "20261118T153952-992cede8",
+      "status": "committee",
+      "literature_prior": null,
+      "trials": 1
+    }
+  ],
+  "horizons": [5, 21, 63, 126, 252],
+  "provenance": {
+    "kind": "dataset",
+    "id": "analyzers",
+    "snapshot": "fixture-7-+0.000",
+    "snapshot_hash": "fixture-v1-7-+0.000"
+  }
+}

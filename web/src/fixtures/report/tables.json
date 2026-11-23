@@ -1,0 +1,838 @@
+{
+  "fixture": true,
+  "snapshot": "fixture-7-+0.000",
+  "items": [
+    {
+      "key": "T2_peers",
+      "number": "T2",
+      "section": "sector",
+      "title": "Peer multiples (TTM)",
+      "caption": "Table 2: Trailing-twelve-month multiples and returns of DEMO and peers as of 30 Nov 2026.",
+      "source": "SEC EDGAR companyfacts (latest filings accepted on or before the as-of date); prices: Yahoo Finance via yfinance; authors' calculations in ProbCast",
+      "notes": "",
+      "columns": [
+        "ticker",
+        "set_label",
+        "revenue_growth",
+        "gross_margin",
+        "operating_margin",
+        "roe",
+        "pe",
+        "ev_ebit",
+        "total_return_1y",
+        "fiscal_period_end",
+        "accession",
+        "filed",
+        "price_date"
+      ],
+      "rows": [
+        [
+          "DEMO",
+          "Subject",
+          0.03524229074889873,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.0951655086790495,
+          "2026-09-30",
+          "0000000000-26-000069",
+          "2026-10-30",
+          "2026-11-30"
+        ]
+      ],
+      "display": [
+        [
+          "DEMO",
+          "Subject",
+          "0.0352",
+          "—",
+          "—",
+          "—",
+          "—",
+          "—",
+          "0.0952",
+          "2026-09-30",
+          "0000000000-26-000069",
+          "2026-10-30",
+          "2026-11-30"
+        ]
+      ],
+      "n_rows": 1,
+      "order": 3,
+      "owner": null,
+      "files": {
+        "csv": {
+          "name": "T2_peers.csv",
+          "url": "/api/v1/report/tables/T2_peers.csv",
+          "state": "ok"
+        },
+        "md": {
+          "name": "T2_peers.md",
+          "url": "/api/v1/report/tables/T2_peers.md",
+          "state": "ok"
+        },
+        "html": {
+          "name": "T2_peers.html",
+          "url": "/api/v1/report/tables/T2_peers.html",
+          "state": "ok"
+        }
+      },
+      "references": ["software:probcast", "sec:0000000000-26-000069", "data:yahoo-finance"],
+      "provenance": {
+        "kind": "dataset",
+        "id": "report:T2_peers",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "T2",
+        "source": "SEC EDGAR companyfacts (latest filings accepted on or before the as-of date); prices: Yahoo Finance via yfinance; authors' calculations in ProbCast"
+      }
+    },
+    {
+      "key": "T3_scorecard",
+      "number": "T3",
+      "section": "future",
+      "title": "Scorecard against the CAPM anchor",
+      "caption": "Table 3: CRPS skill against the CAPM anchor by analyzer and horizon, with 90% stationary-bootstrap intervals, effective sample size and 80% interval coverage.",
+      "source": "ProbCast walk-forward backtests (pre-holdout pairs); authors' calculations",
+      "notes": "Grades follow the A–D evidence rule (n_eff, interval, HLN-DM, BH q, coverage).",
+      "columns": [
+        "analyzer",
+        "horizon",
+        "sample",
+        "grade",
+        "crpss",
+        "ci_lo",
+        "ci_hi",
+        "n_eff",
+        "coverage80"
+      ],
+      "rows": [
+        [
+          "technical.tsmom_12_1",
+          21,
+          "dev",
+          "C",
+          0.002683814835098053,
+          -0.00879661428980939,
+          0.013108343196439281,
+          104.0,
+          0.7596153846153846
+        ],
+        [
+          "technical.tsmom_12_1",
+          63,
+          "dev",
+          "C",
+          0.006341781418167658,
+          -0.006465174797116935,
+          0.017968874896955568,
+          34.333333333333336,
+          0.7961165048543689
+        ],
+        [
+          "technical.tsmom_12_1",
+          126,
+          "dev",
+          "D",
+          0.0014670708234351126,
+          -0.01387100343942802,
+          0.016526726378012346,
+          17.0,
+          0.7549019607843137
+        ],
+        [
+          "technical.tsmom_12_1",
+          252,
+          "dev",
+          "D",
+          0.005353987360188772,
+          -0.0181275743837749,
+          0.019764111466727827,
+          8.333333333333334,
+          0.71
+        ],
+        [
+          "sector.relative_strength",
+          21,
+          "dev",
+          "D",
+          -0.002221721918385766,
+          -0.006953399605652777,
+          0.0022566350551634033,
+          104.0,
+          0.7692307692307693
+        ],
+        [
+          "sector.relative_strength",
+          63,
+          "dev",
+          "D",
+          -0.0009948913004513837,
+          -0.008035554249239884,
+          0.005326086025881166,
+          34.333333333333336,
+          0.7864077669902912
+        ],
+        [
+          "sector.relative_strength",
+          126,
+          "dev",
+          "D",
+          -0.000493942376451173,
+          -0.005692267751902702,
+          0.005005889494652494,
+          17.0,
+          0.7450980392156863
+        ],
+        [
+          "sector.relative_strength",
+          252,
+          "dev",
+          "D",
+          0.008203945474460683,
+          -0.006336767917652919,
+          0.023421247980333144,
+          8.333333333333334,
+          0.72
+        ],
+        [
+          "technical.reversal_1m",
+          5,
+          "dev",
+          "C",
+          0.0006563753169760433,
+          -0.0006853411909886308,
+          0.0018488488178511622,
+          104.0,
+          0.75
+        ],
+        [
+          "technical.reversal_1m",
+          21,
+          "dev",
+          "C",
+          6.932601011833128e-5,
+          -0.0010952884599864099,
+          0.0010929642804425488,
+          104.0,
+          0.7692307692307693
+        ],
+        [
+          "macro.usd_sensitivity",
+          21,
+          "dev",
+          "D",
+          -0.0008812742231814052,
+          -0.003121594490252144,
+          0.0013294043685662005,
+          104.0,
+          0.7692307692307693
+        ],
+        [
+          "macro.usd_sensitivity",
+          63,
+          "dev",
+          "D",
+          -0.0022306534486569163,
+          -0.004042427673134052,
+          -0.0009089300350387574,
+          34.333333333333336,
+          0.7766990291262136
+        ],
+        [
+          "macro.usd_sensitivity",
+          126,
+          "dev",
+          "D",
+          -0.0005654300044939387,
+          -0.0012268807560864125,
+          -2.744222508797021e-5,
+          17.0,
+          0.7450980392156863
+        ],
+        [
+          "macro.usd_sensitivity",
+          252,
+          "dev",
+          "D",
+          3.1241867139431e-5,
+          -0.00017616848640819027,
+          0.00026388686097100777,
+          8.333333333333334,
+          0.71
+        ],
+        [
+          "macro.real_rates",
+          21,
+          "dev",
+          "C",
+          0.0010682814600796453,
+          -0.0031093628001572448,
+          0.005328597346743402,
+          104.0,
+          0.7788461538461539
+        ],
+        [
+          "macro.real_rates",
+          63,
+          "dev",
+          "D",
+          -0.00034287996951642974,
+          -0.0009174088775086186,
+          1.7837450666019506e-5,
+          34.333333333333336,
+          0.7766990291262136
+        ],
+        [
+          "macro.real_rates",
+          126,
+          "dev",
+          "D",
+          -0.0002883254160686022,
+          -0.0007789844468093831,
+          2.1339558906885437e-5,
+          17.0,
+          0.7450980392156863
+        ],
+        [
+          "macro.real_rates",
+          252,
+          "dev",
+          "D",
+          -3.4916017667141475e-5,
+          -7.892111709703053e-5,
+          1.8558782288735645e-11,
+          8.333333333333334,
+          0.71
+        ],
+        [
+          "volatility.implied_vol",
+          5,
+          "dev",
+          "C",
+          0.005241270831232936,
+          -0.009636835799715093,
+          0.012426369704883833,
+          22.0,
+          0.7727272727272727
+        ],
+        [
+          "volatility.implied_vol",
+          21,
+          "dev",
+          "C",
+          0.003195346658427134,
+          -0.02298115894207545,
+          0.017529056814079458,
+          22.0,
+          0.6818181818181818
+        ],
+        [
+          "volatility.implied_vol",
+          63,
+          "dev",
+          "D",
+          -0.011085806366749384,
+          -0.048935596185266717,
+          0.01391195276612722,
+          7.0,
+          0.8571428571428571
+        ],
+        [
+          "volatility.implied_vol",
+          126,
+          "dev",
+          "D",
+          0.00010901019412667967,
+          -0.04458368793909081,
+          0.02254093962168128,
+          3.3333333333333335,
+          0.75
+        ],
+        [
+          "volatility.implied_vol",
+          252,
+          "dev",
+          "D",
+          0.013726018383886096,
+          -0.01627790901129884,
+          0.03470858322928411,
+          1.5,
+          0.7222222222222222
+        ],
+        [
+          "committee",
+          5,
+          "dev",
+          "D",
+          -0.00047840728642944974,
+          -0.002904117599168199,
+          0.001853726474267848,
+          104.0,
+          0.75
+        ],
+        [
+          "committee",
+          21,
+          "dev",
+          "C",
+          0.00029135464312468606,
+          -0.00433346189680005,
+          0.004157011316081035,
+          104.0,
+          0.7692307692307693
+        ],
+        [
+          "committee",
+          63,
+          "dev",
+          "D",
+          -0.001562943706298947,
+          -0.004214195248753027,
+          0.0014349968404343387,
+          34.333333333333336,
+          0.7766990291262136
+        ],
+        [
+          "committee",
+          126,
+          "dev",
+          "D",
+          -0.0006777453042068338,
+          -0.003465985114618786,
+          0.0018674889407581058,
+          17.0,
+          0.7450980392156863
+        ],
+        [
+          "committee",
+          252,
+          "dev",
+          "D",
+          0.0034533261047529074,
+          -0.0019351190705952925,
+          0.00811354902223897,
+          8.333333333333334,
+          0.71
+        ]
+      ],
+      "display": [
+        [
+          "technical.tsmom_12_1",
+          "21",
+          "dev",
+          "C",
+          "0.0027",
+          "−0.0088",
+          "0.0131",
+          "104.0",
+          "0.7596"
+        ],
+        [
+          "technical.tsmom_12_1",
+          "63",
+          "dev",
+          "C",
+          "0.0063",
+          "−0.0065",
+          "0.0180",
+          "34.33",
+          "0.7961"
+        ],
+        [
+          "technical.tsmom_12_1",
+          "126",
+          "dev",
+          "D",
+          "0.0015",
+          "−0.0139",
+          "0.0165",
+          "17.00",
+          "0.7549"
+        ],
+        [
+          "technical.tsmom_12_1",
+          "252",
+          "dev",
+          "D",
+          "0.0054",
+          "−0.0181",
+          "0.0198",
+          "8.33",
+          "0.7100"
+        ],
+        [
+          "sector.relative_strength",
+          "21",
+          "dev",
+          "D",
+          "−0.0022",
+          "−0.0070",
+          "0.0023",
+          "104.0",
+          "0.7692"
+        ],
+        [
+          "sector.relative_strength",
+          "63",
+          "dev",
+          "D",
+          "−0.0010",
+          "−0.0080",
+          "0.0053",
+          "34.33",
+          "0.7864"
+        ],
+        [
+          "sector.relative_strength",
+          "126",
+          "dev",
+          "D",
+          "−0.0005",
+          "−0.0057",
+          "0.0050",
+          "17.00",
+          "0.7451"
+        ],
+        [
+          "sector.relative_strength",
+          "252",
+          "dev",
+          "D",
+          "0.0082",
+          "−0.0063",
+          "0.0234",
+          "8.33",
+          "0.7200"
+        ],
+        [
+          "technical.reversal_1m",
+          "5",
+          "dev",
+          "C",
+          "0.0007",
+          "−0.0007",
+          "0.0018",
+          "104.0",
+          "0.7500"
+        ],
+        [
+          "technical.reversal_1m",
+          "21",
+          "dev",
+          "C",
+          "0.0001",
+          "−0.0011",
+          "0.0011",
+          "104.0",
+          "0.7692"
+        ],
+        [
+          "macro.usd_sensitivity",
+          "21",
+          "dev",
+          "D",
+          "−0.0009",
+          "−0.0031",
+          "0.0013",
+          "104.0",
+          "0.7692"
+        ],
+        [
+          "macro.usd_sensitivity",
+          "63",
+          "dev",
+          "D",
+          "−0.0022",
+          "−0.0040",
+          "−0.0009",
+          "34.33",
+          "0.7767"
+        ],
+        [
+          "macro.usd_sensitivity",
+          "126",
+          "dev",
+          "D",
+          "−0.0006",
+          "−0.0012",
+          "−0.0000",
+          "17.00",
+          "0.7451"
+        ],
+        [
+          "macro.usd_sensitivity",
+          "252",
+          "dev",
+          "D",
+          "0.0000",
+          "−0.0002",
+          "0.0003",
+          "8.33",
+          "0.7100"
+        ],
+        ["macro.real_rates", "21", "dev", "C", "0.0011", "−0.0031", "0.0053", "104.0", "0.7788"],
+        ["macro.real_rates", "63", "dev", "D", "−0.0003", "−0.0009", "0.0000", "34.33", "0.7767"],
+        ["macro.real_rates", "126", "dev", "D", "−0.0003", "−0.0008", "0.0000", "17.00", "0.7451"],
+        ["macro.real_rates", "252", "dev", "D", "−0.0000", "−0.0001", "0.0000", "8.33", "0.7100"],
+        [
+          "volatility.implied_vol",
+          "5",
+          "dev",
+          "C",
+          "0.0052",
+          "−0.0096",
+          "0.0124",
+          "22.00",
+          "0.7727"
+        ],
+        [
+          "volatility.implied_vol",
+          "21",
+          "dev",
+          "C",
+          "0.0032",
+          "−0.0230",
+          "0.0175",
+          "22.00",
+          "0.6818"
+        ],
+        [
+          "volatility.implied_vol",
+          "63",
+          "dev",
+          "D",
+          "−0.0111",
+          "−0.0489",
+          "0.0139",
+          "7.00",
+          "0.8571"
+        ],
+        [
+          "volatility.implied_vol",
+          "126",
+          "dev",
+          "D",
+          "0.0001",
+          "−0.0446",
+          "0.0225",
+          "3.33",
+          "0.7500"
+        ],
+        [
+          "volatility.implied_vol",
+          "252",
+          "dev",
+          "D",
+          "0.0137",
+          "−0.0163",
+          "0.0347",
+          "1.50",
+          "0.7222"
+        ],
+        ["committee", "5", "dev", "D", "−0.0005", "−0.0029", "0.0019", "104.0", "0.7500"],
+        ["committee", "21", "dev", "C", "0.0003", "−0.0043", "0.0042", "104.0", "0.7692"],
+        ["committee", "63", "dev", "D", "−0.0016", "−0.0042", "0.0014", "34.33", "0.7767"],
+        ["committee", "126", "dev", "D", "−0.0007", "−0.0035", "0.0019", "17.00", "0.7451"],
+        ["committee", "252", "dev", "D", "0.0035", "−0.0019", "0.0081", "8.33", "0.7100"]
+      ],
+      "n_rows": 28,
+      "order": 8,
+      "owner": null,
+      "files": {
+        "csv": {
+          "name": "T3_scorecard.csv",
+          "url": "/api/v1/report/tables/T3_scorecard.csv",
+          "state": "ok"
+        },
+        "md": {
+          "name": "T3_scorecard.md",
+          "url": "/api/v1/report/tables/T3_scorecard.md",
+          "state": "ok"
+        },
+        "html": {
+          "name": "T3_scorecard.html",
+          "url": "/api/v1/report/tables/T3_scorecard.html",
+          "state": "ok"
+        }
+      },
+      "references": [
+        "method:benjamini-hochberg-1995",
+        "ref:campbell-ammer-1993",
+        "ref:christensen-prabhala-1998",
+        "ref:dechow-sloan-soliman-2004",
+        "method:diebold-mariano-1995",
+        "method:gneiting-raftery-2007",
+        "method:harvey-leybourne-newbold-1997",
+        "ref:jegadeesh-1990",
+        "ref:jegadeesh-titman-1993",
+        "ref:jorion-1990",
+        "ref:lehmann-1990",
+        "ref:moskowitz-grinblatt-1999",
+        "ref:moskowitz-ooi-pedersen-2012",
+        "method:politis-romano-1994",
+        "ref:poon-granger-2003",
+        "software:probcast",
+        "ref:apple-10k-fx-risk"
+      ],
+      "provenance": {
+        "kind": "dataset",
+        "id": "report:T3_scorecard",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "T3",
+        "source": "ProbCast walk-forward backtests (pre-holdout pairs); authors' calculations"
+      }
+    },
+    {
+      "key": "T5_scenarios",
+      "number": "T5",
+      "section": "future",
+      "title": "Scenario probabilities",
+      "caption": "Table 5: Committee probabilities of 12-month return scenarios for DEMO from 2026-11-30.",
+      "source": "ProbCast committee forecast",
+      "notes": "",
+      "columns": ["scenario", "probability"],
+      "rows": [
+        ["bear (< -15%)", 0.41953074048381644],
+        ["base (-15% to +15%)", 0.22359769573506216],
+        ["bull (> +15%)", 0.3568715637811214]
+      ],
+      "display": [
+        ["bear (< -15%)", "0.4195"],
+        ["base (-15% to +15%)", "0.2236"],
+        ["bull (> +15%)", "0.3569"]
+      ],
+      "n_rows": 3,
+      "order": 12,
+      "owner": null,
+      "files": {
+        "csv": {
+          "name": "T5_scenarios.csv",
+          "url": "/api/v1/report/tables/T5_scenarios.csv",
+          "state": "ok"
+        },
+        "md": {
+          "name": "T5_scenarios.md",
+          "url": "/api/v1/report/tables/T5_scenarios.md",
+          "state": "ok"
+        },
+        "html": {
+          "name": "T5_scenarios.html",
+          "url": "/api/v1/report/tables/T5_scenarios.html",
+          "state": "ok"
+        }
+      },
+      "references": ["software:probcast"],
+      "provenance": {
+        "kind": "dataset",
+        "id": "report:T5_scenarios",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "T5",
+        "source": "ProbCast committee forecast"
+      }
+    },
+    {
+      "key": "T6_anchor_sensitivity",
+      "number": "T6",
+      "section": "future",
+      "title": "Anchor sensitivity",
+      "caption": "Table 6: Committee 12-month forecast for DEMO under alternative anchor assumptions.",
+      "source": "ProbCast committee forecast (CAPM anchor variants)",
+      "notes": "",
+      "columns": ["anchor", "median_price", "p10", "p90", "p_price_up"],
+      "rows": [
+        [
+          "CAPM, ERP 4%",
+          93.55036221874691,
+          49.646718808121655,
+          182.64377891231823,
+          0.4561542803716351
+        ],
+        [
+          "CAPM, ERP 5%",
+          94.48363185492488,
+          50.14200043077475,
+          184.4658551614416,
+          0.4639860883755538
+        ],
+        [
+          "CAPM, ERP 6%",
+          95.41690149110282,
+          50.63728205342783,
+          186.28793141056494,
+          0.4717409160071233
+        ],
+        [
+          "50% shrink to own history",
+          105.14878633568084,
+          55.80194565165133,
+          205.28805264790478,
+          0.5390778932747337
+        ],
+        [
+          "Own historical drift (survivor-biased)",
+          115.81394081643681,
+          61.46189087252793,
+          226.110250134368,
+          0.6123715525037423
+        ]
+      ],
+      "display": [
+        ["CAPM, ERP 4%", "93.55", "49.65", "182.6", "0.4562"],
+        ["CAPM, ERP 5%", "94.48", "50.14", "184.5", "0.4640"],
+        ["CAPM, ERP 6%", "95.42", "50.64", "186.3", "0.4717"],
+        ["50% shrink to own history", "105.1", "55.80", "205.3", "0.5391"],
+        ["Own historical drift (survivor-biased)", "115.8", "61.46", "226.1", "0.6124"]
+      ],
+      "n_rows": 5,
+      "order": 13,
+      "owner": null,
+      "files": {
+        "csv": {
+          "name": "T6_anchor_sensitivity.csv",
+          "url": "/api/v1/report/tables/T6_anchor_sensitivity.csv",
+          "state": "ok"
+        },
+        "md": {
+          "name": "T6_anchor_sensitivity.md",
+          "url": "/api/v1/report/tables/T6_anchor_sensitivity.md",
+          "state": "ok"
+        },
+        "html": {
+          "name": "T6_anchor_sensitivity.html",
+          "url": "/api/v1/report/tables/T6_anchor_sensitivity.html",
+          "state": "ok"
+        }
+      },
+      "references": ["method:lintner-1965", "software:probcast", "ref:sharpe-1964"],
+      "provenance": {
+        "kind": "dataset",
+        "id": "report:T6_anchor_sensitivity",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "T6",
+        "source": "ProbCast committee forecast (CAPM anchor variants)"
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "key": "T1_ratios",
+      "reason": "ratio_table returned no finite values"
+    },
+    {
+      "key": "T4_reverse_dcf",
+      "reason": "reverse_dcf returned no finite implied-growth values"
+    }
+  ],
+  "provenance": {
+    "kind": "dataset",
+    "id": "report:fixture-7-+0.000:tables",
+    "snapshot": "fixture-7-+0.000",
+    "snapshot_hash": "fixture-v1-7-+0.000"
+  }
+}

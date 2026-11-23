@@ -1,0 +1,390 @@
+{
+  "fixture": true,
+  "items": [
+    {
+      "id": "DEMO-EV-20060322-01",
+      "type": "earnings",
+      "title": "Quarterly results (synthetic)",
+      "date": "2006-03-22",
+      "content_available_at": "2006-03-22T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "human_opened",
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-20060322",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+      }
+    },
+    {
+      "id": "DEMO-EV-20061108-02",
+      "type": "product",
+      "title": "Product launch (synthetic)",
+      "date": "2006-11-08",
+      "content_available_at": "2006-11-08T20:30:00Z",
+      "precision": "session",
+      "selection": "curated",
+      "verification": "web_checked",
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-20061108",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+      }
+    },
+    {
+      "id": "DEMO-EV-20070627-03",
+      "type": "macro",
+      "title": "Policy-rate decision (synthetic)",
+      "date": "2007-06-27",
+      "content_available_at": "2007-06-27T20:30:00Z",
+      "precision": "session",
+      "selection": "curated",
+      "verification": "ai_recalled",
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-20070627",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+      }
+    },
+    {
+      "id": "DEMO-EV-20080930-02",
+      "type": "capital",
+      "title": "Buyback authorisation (synthetic)",
+      "date": "2008-09-30",
+      "content_available_at": "2008-09-30T20:30:00Z",
+      "precision": "session",
+      "selection": "rule_complete",
+      "verification": "human_opened",
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-20080930",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+      }
+    },
+    {
+      "id": "DEMO-EV-20090519-03",
+      "type": "leadership",
+      "title": "Executive change (synthetic)",
+      "date": "2009-05-19",
+      "content_available_at": "2009-05-19T20:30:00Z",
+      "precision": "session",
+      "selection": "curated",
+      "verification": "web_checked",
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-20090519",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+      }
+    },
+    {
+      "id": "DEMO-EV-20100105-01",
+      "type": "supply_chain",
+      "title": "Supplier disruption (synthetic)",
+      "date": "2010-01-05",
+      "content_available_at": "2010-01-05T20:30:00Z",
+      "precision": "minute",
+      "selection": "curated",
+      "verification": "ai_recalled",
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-20100105",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+      }
+    },
+    {
+      "id": "DEMO-EV-20110412-03",
+      "type": "product",
+      "title": "Product launch (synthetic)",
+      "date": "2011-04-12",
+      "content_available_at": "2011-04-12T20:30:00Z",
+      "precision": "session",
+      "selection": "curated",
+      "verification": "human_opened",
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-20110412",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+      }
+    },
+    {
+      "id": "DEMO-EV-20111128-01",
+      "type": "macro",
+      "title": "Policy-rate decision (synthetic)",
+      "date": "2011-11-28",
+      "content_available_at": "2011-11-28T20:30:00Z",
+      "precision": "minute",
+      "selection": "curated",
+      "verification": "web_checked",
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-20111128",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+      }
+    },
+    {
+      "id": "DEMO-EV-20120716-02",
+      "type": "legal",
+      "title": "Court ruling (synthetic)",
+      "date": "2012-07-16",
+      "content_available_at": "2012-07-16T20:30:00Z",
+      "precision": "session",
+      "selection": "curated",
+      "verification": "ai_recalled",
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-20120716",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+      }
+    },
+    {
+      "id": "DEMO-EV-20131021-01",
+      "type": "leadership",
+      "title": "Executive change (synthetic)",
+      "date": "2013-10-21",
+      "content_available_at": "2013-10-21T20:30:00Z",
+      "precision": "minute",
+      "selection": "curated",
+      "verification": "human_opened",
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-20131021",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+      }
+    },
+    {
+      "id": "DEMO-EV-20140609-02",
+      "type": "supply_chain",
+      "title": "Supplier disruption (synthetic)",
+      "date": "2014-06-09",
+      "content_available_at": "2014-06-09T20:30:00Z",
+      "precision": "session",
+      "selection": "curated",
+      "verification": "web_checked",
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-20140609",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+      }
+    },
+    {
+      "id": "DEMO-EV-20150126-03",
+      "type": "earnings",
+      "title": "Quarterly results (synthetic)",
+      "date": "2015-01-26",
+      "content_available_at": "2015-01-26T20:30:00Z",
+      "precision": "session",
+      "selection": "rule_complete",
+      "verification": "ai_recalled",
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-20150126",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+      }
+    },
+    {
+      "id": "DEMO-EV-20160429-02",
+      "type": "macro",
+      "title": "Policy-rate decision (synthetic)",
+      "date": "2016-04-29",
+      "content_available_at": "2016-04-29T20:30:00Z",
+      "precision": "session",
+      "selection": "curated",
+      "verification": "human_opened",
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-20160429",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+      }
+    },
+    {
+      "id": "DEMO-EV-20161216-03",
+      "type": "legal",
+      "title": "Court ruling (synthetic)",
+      "date": "2016-12-16",
+      "content_available_at": "2016-12-16T20:30:00Z",
+      "precision": "session",
+      "selection": "curated",
+      "verification": "web_checked",
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-20161216",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+      }
+    },
+    {
+      "id": "DEMO-EV-20170804-01",
+      "type": "capital",
+      "title": "Buyback authorisation (synthetic)",
+      "date": "2017-08-04",
+      "content_available_at": "2017-08-04T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "ai_recalled",
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-20170804",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+      }
+    },
+    {
+      "id": "DEMO-EV-20181109-03",
+      "type": "supply_chain",
+      "title": "Supplier disruption (synthetic)",
+      "date": "2018-11-09",
+      "content_available_at": "2018-11-09T20:30:00Z",
+      "precision": "session",
+      "selection": "curated",
+      "verification": "human_opened",
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-20181109",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+      }
+    },
+    {
+      "id": "DEMO-EV-20190627-01",
+      "type": "earnings",
+      "title": "Quarterly results (synthetic)",
+      "date": "2019-06-27",
+      "content_available_at": "2019-06-27T20:30:00Z",
+      "precision": "minute",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-20190627",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+      }
+    },
+    {
+      "id": "DEMO-EV-20200213-02",
+      "type": "product",
+      "title": "Product launch (synthetic)",
+      "date": "2020-02-13",
+      "content_available_at": "2020-02-13T20:30:00Z",
+      "precision": "session",
+      "selection": "curated",
+      "verification": "ai_recalled",
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-20200213",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+      }
+    },
+    {
+      "id": "DEMO-EV-20210520-01",
+      "type": "legal",
+      "title": "Court ruling (synthetic)",
+      "date": "2021-05-20",
+      "content_available_at": "2021-05-20T20:30:00Z",
+      "precision": "minute",
+      "selection": "curated",
+      "verification": "human_opened",
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-20210520",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+      }
+    },
+    {
+      "id": "DEMO-EV-20220106-02",
+      "type": "capital",
+      "title": "Buyback authorisation (synthetic)",
+      "date": "2022-01-06",
+      "content_available_at": "2022-01-06T20:30:00Z",
+      "precision": "session",
+      "selection": "rule_complete",
+      "verification": "web_checked",
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-20220106",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+      }
+    },
+    {
+      "id": "DEMO-EV-20220825-03",
+      "type": "leadership",
+      "title": "Executive change (synthetic)",
+      "date": "2022-08-25",
+      "content_available_at": "2022-08-25T20:30:00Z",
+      "precision": "session",
+      "selection": "curated",
+      "verification": "ai_recalled",
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-20220825",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+      }
+    },
+    {
+      "id": "DEMO-EV-20231129-02",
+      "type": "earnings",
+      "title": "Quarterly results (synthetic)",
+      "date": "2023-11-29",
+      "content_available_at": "2023-11-29T20:30:00Z",
+      "precision": "session",
+      "selection": "rule_complete",
+      "verification": "human_opened",
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-20231129",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+      }
+    },
+    {
+      "id": "DEMO-EV-20240717-03",
+      "type": "product",
+      "title": "Product launch (synthetic)",
+      "date": "2024-07-17",
+      "content_available_at": "2024-07-17T20:30:00Z",
+      "precision": "session",
+      "selection": "curated",
+      "verification": "web_checked",
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-20240717",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+      }
+    },
+    {
+      "id": "DEMO-EV-20250305-01",
+      "type": "macro",
+      "title": "Policy-rate decision (synthetic)",
+      "date": "2025-03-05",
+      "content_available_at": "2025-03-05T20:30:00Z",
+      "precision": "minute",
+      "selection": "curated",
+      "verification": "ai_recalled",
+      "provenance": {
+        "kind": "event",
+        "id": "DEMO-EV-20250305",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+      }
+    }
+  ],
+  "hidden_unverified": 8
+}

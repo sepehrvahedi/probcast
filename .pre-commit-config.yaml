@@ -1,0 +1,19 @@
+repos:
+  - repo: local
+    hooks:
+      - id: data-guard
+        name: data-guard (no market data, state or secrets)
+        entry: python3 scripts/data_guard.py
+        language: system
+        pass_filenames: true
+      - id: ruff
+        name: ruff
+        entry: uv run ruff check --fix
+        language: system
+        types: [python]
+      - id: lint-imports
+        name: import boundaries (analyzers -> sdk only)
+        entry: uv run lint-imports
+        language: system
+        pass_filenames: false
+        types: [python]

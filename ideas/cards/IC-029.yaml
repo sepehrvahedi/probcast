@@ -1,0 +1,11 @@
+# Round-2 idea (researched, built and tested in round 2, D-101).
+id: IC-029
+title: Corporate bond fear is paid back later
+author: probcast
+created_at: '2026-11-19T00:30:00Z'
+sample: true
+text: When lenders demand much more interest from companies than from the government, fear is high and
+  stocks tend to make up for it later.
+analyzer: macro.credit_spread
+implementation: Moody's Baa yield minus 10-year Treasury (FRED BAA10Y), lagged a day (Keim & Stambaugh
+  1986; Gilchrist & Zakrajšek 2012). C3, positive sign; 6 and 12 months.

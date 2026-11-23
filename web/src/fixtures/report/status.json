@@ -1,0 +1,108 @@
+{
+  "fixture": true,
+  "state": "ready",
+  "snapshot": "fixture-7-+0.000",
+  "snapshot_hash": "fixture-v1-7-+0.000",
+  "pack": {
+    "snapshot": "fixture-7-+0.000",
+    "committee": "demo-committee",
+    "origin": "2026-11-30",
+    "final_sha256": "a0bae0366b284db12c0c85310555870b321c590ab607f112cf17b180416cfb18",
+    "figures": 7,
+    "tables": 4,
+    "references": 31,
+    "skipped": [
+      {
+        "key": "F4_margins_roe",
+        "reason": "ratio_table has no margin or ROE rows by fiscal year"
+      },
+      {
+        "key": "T1_ratios",
+        "reason": "ratio_table returned no finite values"
+      },
+      {
+        "key": "T4_reverse_dcf",
+        "reason": "reverse_dcf returned no finite implied-growth values"
+      }
+    ],
+    "built_at": "2026-11-18T15:39:57.756951Z",
+    "built_by": "kestrel",
+    "build_seconds": 2.1,
+    "bytes": 1728229,
+    "zip_url": "/api/v1/report/pack.zip",
+    "name": "probcast-evidence-pack-fixture-7-+0.000.zip",
+    "contents": [
+      "figures/F1_price_events.png",
+      "figures/F1_price_events.svg",
+      "figures/F2_rolling_betas.png",
+      "figures/F2_rolling_betas.svg",
+      "figures/F3_indexed_tr.png",
+      "figures/F3_indexed_tr.svg",
+      "figures/F5_scorecard.png",
+      "figures/F5_scorecard.svg",
+      "figures/F6_waterfall.png",
+      "figures/F6_waterfall.svg",
+      "figures/F7_fan.png",
+      "figures/F7_fan.svg",
+      "figures/F8_reliability.png",
+      "figures/F8_reliability.svg",
+      "final.json",
+      "numbers.csv",
+      "pack.json",
+      "references.json",
+      "tables/T2_peers.csv",
+      "tables/T2_peers.html",
+      "tables/T2_peers.md",
+      "tables/T3_scorecard.csv",
+      "tables/T3_scorecard.html",
+      "tables/T3_scorecard.md",
+      "tables/T5_scenarios.csv",
+      "tables/T5_scenarios.html",
+      "tables/T5_scenarios.md",
+      "tables/T6_anchor_sensitivity.csv",
+      "tables/T6_anchor_sensitivity.html",
+      "tables/T6_anchor_sensitivity.md"
+    ]
+  },
+  "stale": [],
+  "other_packs": [],
+  "job": {
+    "id": "J-e65cd4c92c",
+    "kind": "report",
+    "label": "Evidence pack",
+    "actor": "kestrel",
+    "status": "succeeded",
+    "created_at": "2026-11-18T15:39:33Z",
+    "started_at": "2026-11-18T15:39:33Z",
+    "finished_at": "2026-11-18T15:39:57Z",
+    "progress": "evidence pack: figures, tables, references, ledger",
+    "result": {
+      "figures": 7,
+      "tables": 4,
+      "references": 31,
+      "skipped": [
+        {
+          "key": "F4_margins_roe",
+          "reason": "ratio_table has no margin or ROE rows by fiscal year"
+        },
+        {
+          "key": "T1_ratios",
+          "reason": "ratio_table returned no finite values"
+        },
+        {
+          "key": "T4_reverse_dcf",
+          "reason": "reverse_dcf returned no finite implied-growth values"
+        }
+      ],
+      "url": "/api/v1/report/status"
+    },
+    "url": "/api/v1/jobs/J-e65cd4c92c"
+  },
+  "cli": "probcast report build",
+  "provenance": {
+    "kind": "dataset",
+    "id": "report:fixture-7-+0.000:status",
+    "snapshot": "fixture-7-+0.000",
+    "snapshot_hash": "fixture-v1-7-+0.000"
+  }
+}

@@ -1,0 +1,535 @@
+{
+  "fixture": true,
+  "analyzer": {
+    "id": "technical.rsi_reversal",
+    "name": "RSI reversal",
+    "version": "1.1.0+4017e6",
+    "family": "technical.reversion",
+    "author": "osprey",
+    "idea_card": "IC-003",
+    "slot": 5,
+    "horizons": [21, 63, 126, 252],
+    "calibrator": "C1",
+    "headline_horizon": 252
+  },
+  "protocol": {
+    "text": "Standard walk-forward: month-end origins from 1990; segments by outcome date (dev ≤ 2015, val 2016–20); holdout ≥ 2021 sealed.",
+    "seed": 7,
+    "origin_stride": 1,
+    "eval_start": "1990-01-01",
+    "dev_end": "2015-12-31",
+    "val_end": "2020-12-31",
+    "holdout_start": "2021-01-01"
+  },
+  "snapshot": {
+    "id": "r1-dev",
+    "hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+  },
+  "declared_grid": {
+    "window": [9, 14, 21],
+    "lower": [25, 30],
+    "upper": [70, 75]
+  },
+  "undeclared_keys": [],
+  "presets": [
+    {
+      "id": "default",
+      "kind": "default",
+      "label": "card default",
+      "description": "lower 30 · upper 70 · window 14",
+      "params": {},
+      "full_params": {
+        "window": 14,
+        "lower": 30,
+        "upper": 70
+      },
+      "params_hash": "a20901894fcfc064102c50d87b777bc5134947631d93e74f29ecdc5f8f4aeef9",
+      "evaluated": true,
+      "run_id": "R-DEMO-05",
+      "cache_hit": true,
+      "trials": {
+        "before": {
+          "analyzer": 2,
+          "family": {
+            "id": "technical.reversion",
+            "n": 12
+          },
+          "team": 41
+        },
+        "after": {
+          "analyzer": 2,
+          "family": {
+            "id": "technical.reversion",
+            "n": 12
+          },
+          "team": 41
+        },
+        "adds": 0
+      },
+      "blocked": null,
+      "warnings": [],
+      "message": "This exact configuration was already evaluated: opening the existing run. No new trial."
+    },
+    {
+      "id": "p1",
+      "kind": "declared",
+      "label": "declared alternative",
+      "description": "lower 25 · upper 70 · window 9",
+      "params": {
+        "window": 9,
+        "lower": 25
+      },
+      "full_params": {
+        "window": 9,
+        "lower": 25,
+        "upper": 70
+      },
+      "params_hash": "b3f8a51bf57159b5a60cc3ed6f9addd5bcf4dee03de769bec73cfe83920aff15",
+      "evaluated": false,
+      "run_id": null,
+      "cache_hit": false,
+      "trials": {
+        "before": {
+          "analyzer": 2,
+          "family": {
+            "id": "technical.reversion",
+            "n": 12
+          },
+          "team": 41
+        },
+        "after": {
+          "analyzer": 3,
+          "family": {
+            "id": "technical.reversion",
+            "n": 13
+          },
+          "team": 42
+        },
+        "adds": 1
+      },
+      "blocked": null,
+      "warnings": [],
+      "message": "This run adds 1 trial."
+    },
+    {
+      "id": "p2",
+      "kind": "declared",
+      "label": "declared alternative",
+      "description": "lower 25 · upper 70 · window 14",
+      "params": {
+        "lower": 25
+      },
+      "full_params": {
+        "window": 14,
+        "lower": 25,
+        "upper": 70
+      },
+      "params_hash": "b11213c044005b5d7217885fc2dbd8bab2c84314971a2adf7c3b4cbc08ea3e6e",
+      "evaluated": false,
+      "run_id": null,
+      "cache_hit": false,
+      "trials": {
+        "before": {
+          "analyzer": 2,
+          "family": {
+            "id": "technical.reversion",
+            "n": 12
+          },
+          "team": 41
+        },
+        "after": {
+          "analyzer": 3,
+          "family": {
+            "id": "technical.reversion",
+            "n": 13
+          },
+          "team": 42
+        },
+        "adds": 1
+      },
+      "blocked": null,
+      "warnings": [],
+      "message": "This run adds 1 trial."
+    },
+    {
+      "id": "p3",
+      "kind": "declared",
+      "label": "declared alternative",
+      "description": "lower 25 · upper 70 · window 21",
+      "params": {
+        "window": 21,
+        "lower": 25
+      },
+      "full_params": {
+        "window": 21,
+        "lower": 25,
+        "upper": 70
+      },
+      "params_hash": "95c022b9542b6365311ac1eb5789b936d6c70f08de52c61f8e1d46643ff72804",
+      "evaluated": false,
+      "run_id": null,
+      "cache_hit": false,
+      "trials": {
+        "before": {
+          "analyzer": 2,
+          "family": {
+            "id": "technical.reversion",
+            "n": 12
+          },
+          "team": 41
+        },
+        "after": {
+          "analyzer": 3,
+          "family": {
+            "id": "technical.reversion",
+            "n": 13
+          },
+          "team": 42
+        },
+        "adds": 1
+      },
+      "blocked": null,
+      "warnings": [],
+      "message": "This run adds 1 trial."
+    },
+    {
+      "id": "p4",
+      "kind": "declared",
+      "label": "declared alternative",
+      "description": "lower 25 · upper 75 · window 9",
+      "params": {
+        "window": 9,
+        "lower": 25,
+        "upper": 75
+      },
+      "full_params": {
+        "window": 9,
+        "lower": 25,
+        "upper": 75
+      },
+      "params_hash": "36f339581ba32f485e98fd26dabc5a04db27de0ae43e559417dcb45aa03fe79b",
+      "evaluated": false,
+      "run_id": null,
+      "cache_hit": false,
+      "trials": {
+        "before": {
+          "analyzer": 2,
+          "family": {
+            "id": "technical.reversion",
+            "n": 12
+          },
+          "team": 41
+        },
+        "after": {
+          "analyzer": 3,
+          "family": {
+            "id": "technical.reversion",
+            "n": 13
+          },
+          "team": 42
+        },
+        "adds": 1
+      },
+      "blocked": null,
+      "warnings": [],
+      "message": "This run adds 1 trial."
+    },
+    {
+      "id": "p5",
+      "kind": "declared",
+      "label": "declared alternative",
+      "description": "lower 25 · upper 75 · window 14",
+      "params": {
+        "lower": 25,
+        "upper": 75
+      },
+      "full_params": {
+        "window": 14,
+        "lower": 25,
+        "upper": 75
+      },
+      "params_hash": "b5a189aba3c1976b4a1bb2c1a88c8da01b88d11f6b13878c123918ff58d0ec60",
+      "evaluated": false,
+      "run_id": null,
+      "cache_hit": false,
+      "trials": {
+        "before": {
+          "analyzer": 2,
+          "family": {
+            "id": "technical.reversion",
+            "n": 12
+          },
+          "team": 41
+        },
+        "after": {
+          "analyzer": 3,
+          "family": {
+            "id": "technical.reversion",
+            "n": 13
+          },
+          "team": 42
+        },
+        "adds": 1
+      },
+      "blocked": null,
+      "warnings": [],
+      "message": "This run adds 1 trial."
+    },
+    {
+      "id": "p6",
+      "kind": "declared",
+      "label": "declared alternative",
+      "description": "lower 25 · upper 75 · window 21",
+      "params": {
+        "window": 21,
+        "lower": 25,
+        "upper": 75
+      },
+      "full_params": {
+        "window": 21,
+        "lower": 25,
+        "upper": 75
+      },
+      "params_hash": "a11e22fb391abe249544d8e82d2a895699434644e89f73bc8baaaffb05944c8f",
+      "evaluated": false,
+      "run_id": null,
+      "cache_hit": false,
+      "trials": {
+        "before": {
+          "analyzer": 2,
+          "family": {
+            "id": "technical.reversion",
+            "n": 12
+          },
+          "team": 41
+        },
+        "after": {
+          "analyzer": 3,
+          "family": {
+            "id": "technical.reversion",
+            "n": 13
+          },
+          "team": 42
+        },
+        "adds": 1
+      },
+      "blocked": null,
+      "warnings": [],
+      "message": "This run adds 1 trial."
+    },
+    {
+      "id": "p7",
+      "kind": "declared",
+      "label": "declared alternative",
+      "description": "lower 30 · upper 70 · window 9",
+      "params": {
+        "window": 9
+      },
+      "full_params": {
+        "window": 9,
+        "lower": 30,
+        "upper": 70
+      },
+      "params_hash": "b32ec2ba637233579acec010050ab42ffcac2aee9d295abfda4f79e3dc3b4b48",
+      "evaluated": false,
+      "run_id": null,
+      "cache_hit": false,
+      "trials": {
+        "before": {
+          "analyzer": 2,
+          "family": {
+            "id": "technical.reversion",
+            "n": 12
+          },
+          "team": 41
+        },
+        "after": {
+          "analyzer": 3,
+          "family": {
+            "id": "technical.reversion",
+            "n": 13
+          },
+          "team": 42
+        },
+        "adds": 1
+      },
+      "blocked": null,
+      "warnings": [],
+      "message": "This run adds 1 trial."
+    },
+    {
+      "id": "p9",
+      "kind": "declared",
+      "label": "declared alternative",
+      "description": "lower 30 · upper 70 · window 21",
+      "params": {
+        "window": 21
+      },
+      "full_params": {
+        "window": 21,
+        "lower": 30,
+        "upper": 70
+      },
+      "params_hash": "d1887621087b07fe96032423710be04303d0adaccea191cbfab5648a43c311e0",
+      "evaluated": false,
+      "run_id": null,
+      "cache_hit": false,
+      "trials": {
+        "before": {
+          "analyzer": 2,
+          "family": {
+            "id": "technical.reversion",
+            "n": 12
+          },
+          "team": 41
+        },
+        "after": {
+          "analyzer": 3,
+          "family": {
+            "id": "technical.reversion",
+            "n": 13
+          },
+          "team": 42
+        },
+        "adds": 1
+      },
+      "blocked": null,
+      "warnings": [],
+      "message": "This run adds 1 trial."
+    },
+    {
+      "id": "p10",
+      "kind": "declared",
+      "label": "declared alternative",
+      "description": "lower 30 · upper 75 · window 9",
+      "params": {
+        "window": 9,
+        "upper": 75
+      },
+      "full_params": {
+        "window": 9,
+        "lower": 30,
+        "upper": 75
+      },
+      "params_hash": "99eed34c6ea1d7dc96051bdf112c7c1eb3cef3d76c65595ecac694334ae635f2",
+      "evaluated": false,
+      "run_id": null,
+      "cache_hit": false,
+      "trials": {
+        "before": {
+          "analyzer": 2,
+          "family": {
+            "id": "technical.reversion",
+            "n": 12
+          },
+          "team": 41
+        },
+        "after": {
+          "analyzer": 3,
+          "family": {
+            "id": "technical.reversion",
+            "n": 13
+          },
+          "team": 42
+        },
+        "adds": 1
+      },
+      "blocked": null,
+      "warnings": [],
+      "message": "This run adds 1 trial."
+    },
+    {
+      "id": "p11",
+      "kind": "declared",
+      "label": "declared alternative",
+      "description": "lower 30 · upper 75 · window 14",
+      "params": {
+        "upper": 75
+      },
+      "full_params": {
+        "window": 14,
+        "lower": 30,
+        "upper": 75
+      },
+      "params_hash": "180ede2ecd2d1ada0a9ee5cd27fb041623818ca04aee6bb20f00145d8c7836b8",
+      "evaluated": false,
+      "run_id": null,
+      "cache_hit": false,
+      "trials": {
+        "before": {
+          "analyzer": 2,
+          "family": {
+            "id": "technical.reversion",
+            "n": 12
+          },
+          "team": 41
+        },
+        "after": {
+          "analyzer": 3,
+          "family": {
+            "id": "technical.reversion",
+            "n": 13
+          },
+          "team": 42
+        },
+        "adds": 1
+      },
+      "blocked": null,
+      "warnings": [],
+      "message": "This run adds 1 trial."
+    },
+    {
+      "id": "p12",
+      "kind": "declared",
+      "label": "declared alternative",
+      "description": "lower 30 · upper 75 · window 21",
+      "params": {
+        "window": 21,
+        "upper": 75
+      },
+      "full_params": {
+        "window": 21,
+        "lower": 30,
+        "upper": 75
+      },
+      "params_hash": "79fb6a75c154bc565e7accd21c8bbc50558c4a462f0e1fb50c7acd8c83ac760e",
+      "evaluated": false,
+      "run_id": null,
+      "cache_hit": false,
+      "trials": {
+        "before": {
+          "analyzer": 2,
+          "family": {
+            "id": "technical.reversion",
+            "n": 12
+          },
+          "team": 41
+        },
+        "after": {
+          "analyzer": 3,
+          "family": {
+            "id": "technical.reversion",
+            "n": 13
+          },
+          "team": 42
+        },
+        "adds": 1
+      },
+      "blocked": null,
+      "warnings": [],
+      "message": "This run adds 1 trial."
+    }
+  ],
+  "truncated": false,
+  "budgets": {
+    "trial_budget": 20,
+    "grid_cap": 30
+  },
+  "free_parameters": false,
+  "provenance": {
+    "kind": "ledger",
+    "id": "registry/trials.jsonl",
+    "key": "technical.rsi_reversal",
+    "snapshot": "r1-dev"
+  }
+}

@@ -1,0 +1,11 @@
+# Sample idea card (written as a demonstration).
+id: IC-006
+title: Options market fear predicts bigger swings
+author: probcast
+created_at: '2026-11-18T18:00:00Z'
+sample: true
+text: The options market's implied volatility for Apple tells us how big the next moves will be. Use it
+  to make the forecast range wider or narrower, without changing the direction.
+analyzer: volatility.implied_vol
+implementation: 'Scale only: the forecast spread uses Cboe''s AAPL implied volatility index (FRED VXAPLCLS)
+  as known at the origin; the median stays on the baseline.'

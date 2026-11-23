@@ -1,0 +1,8 @@
+series_id,period_date,release_date,release_time_et,source_url,notes
+FRED:UNRATE,2025-09-01,2025-11-20,08:30,https://www.bls.gov/bls/2025-lapse-revised-release-dates.htm,"Employment Situation for Sep 2025 moved from 3 Oct to 20 Nov 2025 (2025 lapse in appropriations); Oct 2025 release cancelled. Web-checked 2026-11-18."
+FRED:PCU334413334413,2025-09-01,2025-11-25,08:30,https://www.bls.gov/bls/2025-lapse-revised-release-dates.htm,"PPI for Sep 2025 moved from 16 Oct to 25 Nov 2025. Web-checked 2026-11-18."
+FRED:PCU334413334413,2025-10-01,2026-01-14,08:30,https://www.bls.gov/bls/2025-lapse-revised-release-dates.htm,"Oct 2025 PPI release cancelled; October data published with the Nov 2025 release on 14 Jan 2026. Web-checked 2026-11-18."
+FRED:PCU334413334413,2025-11-01,2026-01-14,08:30,https://www.bls.gov/bls/2025-lapse-revised-release-dates.htm,"PPI for Nov 2025 moved from 11 Dec 2025 to 14 Jan 2026. Web-checked 2026-11-18."
+FRED:INDPRO,2025-09-01,2025-12-03,09:15,https://www.federalreserve.gov/releases/G17/20251203/g17.pdf,"Sep 2025 G.17 estimates delayed to 3 Dec 2025 (inputs held up by the 2025 shutdown). Web-checked 2026-11-18."
+FRED:INDPRO,2025-10-01,2025-12-23,09:15,https://www.federalreserve.gov/Releases/g17/20251223/,"Oct and Nov 2025 preliminary estimates released jointly on 23 Dec 2025. Web-checked 2026-11-18."
+FRED:INDPRO,2025-11-01,2025-12-23,09:15,https://www.federalreserve.gov/Releases/g17/20251223/,"Oct and Nov 2025 preliminary estimates released jointly on 23 Dec 2025. Web-checked 2026-11-18."

@@ -1,0 +1,149 @@
+{
+  "fixture": true,
+  "id": "IC-005",
+  "status": "parked",
+  "registered": true,
+  "record": {
+    "author": "heron",
+    "content_hash": "5c2af02f1266ea5b76ccf53700949ae4c3b3409b23a558c887378b06050bbd22",
+    "entered_by": "kestrel",
+    "hash": "471f54fc3394d52ecbf47e57c60fdf9839d4471758509907a5bfb4391fbff7ff",
+    "horizons": [5],
+    "id": "IC-005",
+    "path": "ideas/IC-005.yaml",
+    "report_section": "sector",
+    "seq": 5,
+    "status": "parked",
+    "success_criterion": "Beats the CAPM anchor on CRPS at 5 sessions with grade ≥ C.",
+    "title": "Product-launch week drift",
+    "ts": "2026-11-18T14:20:00Z"
+  },
+  "history": [
+    {
+      "seq": 5,
+      "at": "2026-11-18T14:20:00Z",
+      "status": "registered",
+      "by": "kestrel",
+      "hash": "471f54fc3394d52ecbf47e57c60fdf9839d4471758509907a5bfb4391fbff7ff",
+      "reason": null
+    },
+    {
+      "seq": 15,
+      "at": "2026-11-19T12:00:00Z",
+      "status": "parked",
+      "by": "kestrel",
+      "hash": null,
+      "reason": "Parked for R2: event count before 2021 too small for a 5-session test."
+    }
+  ],
+  "card": {
+    "id": "IC-005",
+    "title": "Product-launch week drift",
+    "author": "heron",
+    "report_section": "sector",
+    "course_concepts": ["event study", "EMH semi-strong"],
+    "hypothesis": "After a curated product launch, DEMO's 1W return is higher than its CAPM expectation.",
+    "rationale": "Attention effects around launches. Counter-argument: launches are scheduled and anticipated.",
+    "data_needed": [
+      "events (product) — curated_event (content_available_at): when the press release is public"
+    ],
+    "rule": "Indicator of a product event in the last 5 sessions before the origin.",
+    "parameters": {},
+    "horizons": [5],
+    "expected_direction": "higher; about +0.3% over a week",
+    "success_criterion": "Beats the CAPM anchor on CRPS at 5 sessions with grade ≥ C.",
+    "drop_if": "Fewer than 20 events before 2021.",
+    "references": [
+      "MacKinlay, A.C. (1997) 'Event studies in economics and finance', Journal of Economic Literature, 35(1), pp. 13–39."
+    ],
+    "holdout_ack": true,
+    "created_at": "2026-11-18T14:20:00Z"
+  },
+  "path": "ideas/IC-005.yaml",
+  "integrity": {
+    "content_hash": "5c2af02f1266ea5b76ccf53700949ae4c3b3409b23a558c887378b06050bbd22",
+    "recomputed": "5c2af02f1266ea5b76ccf53700949ae4c3b3409b23a558c887378b06050bbd22",
+    "match": true,
+    "chain_ok": true,
+    "registry": "registry/ideas.jsonl"
+  },
+  "checks": [
+    {
+      "id": "hypothesis",
+      "status": "ok",
+      "text": "Hypothesis has a condition, a direction, a horizon and a comparison",
+      "detail": ""
+    },
+    {
+      "id": "data_rules",
+      "status": "ok",
+      "text": "Every data item has a timing rule (when it becomes public)",
+      "detail": "1 item(s)"
+    },
+    {
+      "id": "no_full_sample",
+      "status": "ok",
+      "text": "No full-sample statistics in the rule",
+      "detail": ""
+    },
+    {
+      "id": "parameters",
+      "status": "ok",
+      "text": "At most 3 alternatives per parameter",
+      "detail": ""
+    },
+    {
+      "id": "planned_trials",
+      "status": "ok",
+      "text": "Planned configurations 1 (soft budget 20)",
+      "detail": ""
+    },
+    {
+      "id": "horizons",
+      "status": "ok",
+      "text": "Horizons are on the contract grid (5, 21, 63, 126, 252 sessions)",
+      "detail": ""
+    },
+    {
+      "id": "mde",
+      "status": "warn",
+      "text": "Expected +0.3% is below the MDE at 5 sessions (±1.7%)",
+      "detail": "Likely undetectable on DEMO alone; consider descriptive-only."
+    },
+    {
+      "id": "references",
+      "status": "ok",
+      "text": "At least one reference",
+      "detail": "1 reference(s)"
+    },
+    {
+      "id": "holdout_ack",
+      "status": "ok",
+      "text": "Holdout confirmation ticked",
+      "detail": "Designed without looking at any ProbCast result for 2021 onwards."
+    },
+    {
+      "id": "licence",
+      "status": "info",
+      "text": "Licensed data (L3/L4) stays local-only",
+      "detail": "Licensed data: none"
+    }
+  ],
+  "analyzers": [],
+  "runs": [],
+  "audit": [
+    {
+      "at": "2026-11-18T14:20:00Z",
+      "actor": "kestrel",
+      "action": "idea.register",
+      "reason": "Product-launch week drift"
+    }
+  ],
+  "immutable": true,
+  "amend_note": "Content is immutable after registration; an amendment is a new card and counts as a new trial.",
+  "provenance": {
+    "kind": "ledger",
+    "id": "registry/ideas.jsonl",
+    "key": "IC-005"
+  }
+}

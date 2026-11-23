@@ -1,0 +1,11 @@
+# Sample idea card (written as a demonstration).
+id: IC-004
+title: A strong dollar hurts Apple
+author: probcast
+created_at: '2026-11-18T18:00:00Z'
+sample: true
+text: Apple sells most of its products abroad, so when the US dollar has been getting stronger, its foreign
+  earnings are worth less and the stock should do worse.
+analyzer: macro.usd_sensitivity
+implementation: 13-week change in the broad trade-weighted dollar index (FRED DTWEXBGS, as known at the
+  time); predictive regression with a negative sign imposed (C3).

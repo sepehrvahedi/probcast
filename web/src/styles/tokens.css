@@ -1,0 +1,98 @@
+/* ProbCast design tokens: verbatim from docs/kb/06-architecture/ux-spec.md §2.8 (v1.1).
+   Colour values mirror src/styles/tokens.json; src/styles/tokens.test.ts checks they agree. */
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* LIGHT: also used by the .light preview subtree (Report studio) */
+:root, .light {
+  --o-canvas:#F6F7F9; --o-surface:#FFFFFF; --o-raised:#FFFFFF; --o-overlay:#FFFFFF; --o-sunken:#EEF0F3;
+  --o-hover:#F0F2F5; --o-selected:#E8E9FB;
+  --o-text:#0F1419; --o-text-2:#46505D; --o-text-3:#626B79; --o-text-disabled:#9AA2AE;
+  --o-border-subtle:#E9ECF0; --o-border:#D9DDE3; --o-border-input:#7E8794;
+  --o-accent:#4A50D9; --o-accent-hover:#3B41C4; --o-on-accent:#FFFFFF; --o-accent-subtle:#ECEDFC;
+  --o-up:#1764C0; --o-down:#B04E0B; --o-on-up:#FFFFFF; --o-on-down:#FFFFFF;
+  --o-success:#16784F; --o-warning:#8F5B00; --o-danger:#C42B2B;
+  --o-tm:#8A5A00; --o-tm-bg:rgb(138 90 0 / .06);
+  --o-s1:#1097BF; --o-s2:#8A4208; --o-s3:#17604A; --o-s4:#BA1481; --o-s5:#A07C00; --o-s6:#6E8F5E;
+  --o-ink:#0F1419; --o-fan-50:#BEC0F1; --o-fan-80:#D7D8F7; --o-fan-95:#E9EAFA;
+  --o-ref:#7A8494; --o-neutral-fill:#C9CED6; --o-hatch:#C4CAD3; --o-grid:#EEF0F3; --o-axis:#C4CAD3;
+  --o-shadow-2:0 1px 2px rgb(16 24 40/.06),0 1px 3px rgb(16 24 40/.10);
+  --o-shadow-3:0 8px 24px rgb(16 24 40/.12); --o-shadow-4:0 16px 48px rgb(16 24 40/.16);
+  --o-scrim:rgb(15 20 25/.4);
+}
+.dark {
+  --o-canvas:#0B0D10; --o-surface:#111418; --o-raised:#171B21; --o-overlay:#1D222A; --o-sunken:#08090B;
+  --o-hover:#1C2129; --o-selected:#232845;
+  --o-text:#E8EBF0; --o-text-2:#A9B1BD; --o-text-3:#828C9B; --o-text-disabled:#5A6370;
+  --o-border-subtle:#232931; --o-border:#2E3540; --o-border-input:#677284;
+  --o-accent:#8B93FF; --o-accent-hover:#A3A9FF; --o-on-accent:#0B0D10; --o-accent-subtle:#1F2340;
+  --o-up:#5AA9F0; --o-down:#F28C3A; --o-on-up:#0B0D10; --o-on-down:#0B0D10;
+  --o-success:#4CC38A; --o-warning:#F2B84B; --o-danger:#F26464;
+  --o-tm:#E8B04A; --o-tm-bg:rgb(232 176 74 / .08);
+  --o-s1:#66C6F5; --o-s2:#DF971D; --o-s3:#3C9E7F; --o-s4:#EF6BBA; --o-s5:#F2CF86; --o-s6:#A2A05A;
+  --o-ink:#E8EBF0; --o-fan-50:#3F4470; --o-fan-80:#2E324F; --o-fan-95:#222638;
+  --o-ref:#8B95A5; --o-neutral-fill:#4A5260; --o-hatch:#46505E; --o-grid:#1A1F26; --o-axis:#2E3540;
+  --o-shadow-2:0 1px 2px rgb(0 0 0/.4); --o-shadow-3:0 8px 24px rgb(0 0 0/.5);
+  --o-shadow-4:0 16px 48px rgb(0 0 0/.6); --o-scrim:rgb(0 0 0/.6);
+}
+:root {
+  --o-motion-fast:120ms; --o-motion-base:180ms; --o-motion-slow:240ms; --o-motion-deliberate:900ms;
+  --o-z-sticky:10; --o-z-rail:20; --o-z-bars:30; --o-z-drawer:40; --o-z-popover:50;
+  --o-z-dialog:60; --o-z-toast:70; --o-z-tooltip:80;
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --o-motion-fast:0ms; --o-motion-base:0ms; --o-motion-slow:0ms; --o-motion-deliberate:0ms; }
+}
+
+@theme inline {
+  --font-sans:"Inter Variable", Inter, ui-sans-serif, system-ui, sans-serif;
+  --font-mono:"JetBrains Mono Variable", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --text-2xs:0.6875rem; --text-2xs--line-height:0.875rem;
+  --text-xs:0.75rem;    --text-xs--line-height:1rem;
+  --text-sm:0.8125rem;  --text-sm--line-height:1.25rem;
+  --text-base:0.875rem; --text-base--line-height:1.375rem;
+  --text-md:1rem;       --text-md--line-height:1.5rem;
+  --text-lg:1.25rem;    --text-lg--line-height:1.75rem;
+  --text-xl:1.5rem;     --text-xl--line-height:2rem;
+  --text-2xl:2rem;      --text-2xl--line-height:2.5rem;
+  --text-3xl:3rem;      --text-3xl--line-height:3.25rem;
+  --radius-xs:3px; --radius-sm:4px; --radius-md:5px; --radius-lg:8px; --radius-xl:12px;
+  --shadow-e2:var(--o-shadow-2); --shadow-e3:var(--o-shadow-3); --shadow-e4:var(--o-shadow-4);
+  --ease-standard:cubic-bezier(0.2,0,0,1); --ease-exit:cubic-bezier(0.4,0,1,1);
+  --breakpoint-xl:80rem; --breakpoint-2xl:90rem; --breakpoint-3xl:120rem;
+
+  /* ProbCast utilities: bg-o-surface, text-o-up, border-o-border … */
+  --color-o-canvas:var(--o-canvas); --color-o-surface:var(--o-surface); --color-o-raised:var(--o-raised);
+  --color-o-overlay:var(--o-overlay); --color-o-sunken:var(--o-sunken); --color-o-hover:var(--o-hover);
+  --color-o-selected:var(--o-selected); --color-o-text:var(--o-text); --color-o-text-2:var(--o-text-2);
+  --color-o-text-3:var(--o-text-3); --color-o-text-disabled:var(--o-text-disabled);
+  --color-o-border-subtle:var(--o-border-subtle); --color-o-border:var(--o-border);
+  --color-o-accent:var(--o-accent); --color-o-accent-subtle:var(--o-accent-subtle);
+  --color-o-up:var(--o-up); --color-o-down:var(--o-down); --color-o-success:var(--o-success);
+  --color-o-warning:var(--o-warning); --color-o-danger:var(--o-danger);
+  --color-o-tm:var(--o-tm); --color-o-tm-bg:var(--o-tm-bg);
+  --color-o-s1:var(--o-s1); --color-o-s2:var(--o-s2); --color-o-s3:var(--o-s3);
+  --color-o-s4:var(--o-s4); --color-o-s5:var(--o-s5); --color-o-s6:var(--o-s6);
+
+  /* shadcn semantic names (UXR1-09) */
+  --color-background:var(--o-canvas);  --color-foreground:var(--o-text);
+  --color-card:var(--o-surface);       --color-card-foreground:var(--o-text);
+  --color-popover:var(--o-raised);     --color-popover-foreground:var(--o-text);
+  --color-primary:var(--o-accent);     --color-primary-foreground:var(--o-on-accent);
+  --color-secondary:var(--o-hover);    --color-secondary-foreground:var(--o-text);
+  --color-muted:var(--o-sunken);       --color-muted-foreground:var(--o-text-3);
+  --color-accent:var(--o-hover);       --color-accent-foreground:var(--o-text);
+  --color-destructive:var(--o-danger);
+  --color-border:var(--o-border);      --color-input:var(--o-border-input); --color-ring:var(--o-accent);
+  --color-sidebar:var(--o-surface);    --color-sidebar-foreground:var(--o-text-2);
+  --color-sidebar-primary:var(--o-accent); --color-sidebar-primary-foreground:var(--o-on-accent);
+  --color-sidebar-accent:var(--o-selected); --color-sidebar-accent-foreground:var(--o-text);
+  --color-sidebar-border:var(--o-border-subtle); --color-sidebar-ring:var(--o-accent);
+}
+
+@layer base {
+  html { font-family:var(--font-sans); background:var(--o-canvas); color:var(--o-text); font-size:16px; }
+  body { font-size:var(--text-sm); line-height:var(--text-sm--line-height); }
+  [data-metric], table, .num, .font-mono { font-variant-numeric:tabular-nums slashed-zero; }
+  :focus-visible { outline:2px solid var(--o-accent); outline-offset:2px; }
+}

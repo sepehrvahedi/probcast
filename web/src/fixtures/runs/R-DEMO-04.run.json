@@ -1,0 +1,68 @@
+{
+  "fixture": true,
+  "run_id": "R-DEMO-04",
+  "status": "completed",
+  "analyzer": {
+    "id": "valuation.fed_model_gap",
+    "name": "Fed-model gap",
+    "version": "1.0.0+3ff8f7",
+    "family": "valuation",
+    "author": "heron",
+    "slot": 4,
+    "builtin": false,
+    "natural_horizon": 252,
+    "leak": {
+      "status": "passed",
+      "tests": {
+        "T1": { "passed": true, "at": "2026-11-20T14:03:00Z" },
+        "T2": { "passed": true, "at": "2026-11-20T14:03:00Z" },
+        "T3": { "passed": true, "at": "2026-11-20T14:03:00Z" },
+        "T5": { "passed": true, "at": "2026-11-20T14:03:00Z" },
+        "T7": { "passed": true, "at": "2026-11-20T14:03:00Z" },
+        "TDN": { "passed": true, "at": "2026-11-20T14:03:00Z" }
+      }
+    },
+    "in_committee": true
+  },
+  "completed_at": "2026-11-21T12:21:00Z",
+  "origins": { "schedule": "month_end", "from": "2000-01-31", "to": "2026-11-24", "n": 323 },
+  "windows": {
+    "dev": ["1990-01-01", "2015-12-31"],
+    "val": ["2016-01-01", "2020-12-31"],
+    "holdout_from": "2021-01-01"
+  },
+  "criterion": {
+    "status": "not_evaluable",
+    "text": "Beats the CAPM anchor on CRPS at 252 sessions with grade ≥ C.",
+    "ic_id": "IC-009",
+    "registered_at": "2026-11-19T13:02:00Z",
+    "hash": "aa11c9f3c1d2e4b5a6978812345678"
+  },
+  "trials": { "analyzer": 2, "family": { "id": "valuation", "n": 5 }, "team": 41 },
+  "manifest": {
+    "run_id": "R-DEMO-04",
+    "config_hash": "sha256:5c1187e1d2c3b4a5968778695a4b3c2d1e0f",
+    "analyzer_version": "1.0.0+3ff8f7",
+    "code_hash": "3ff8f70b1c2d3e4f5a6b7c8d9e0f1a2b3c4d",
+    "params_hash": "beef33aa11bb22cc33dd44ee55ff66",
+    "snapshot_id": "r1-dev",
+    "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+    "platform_version": "0.1.0",
+    "git_sha": "5e1f0a9c8b7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f",
+    "uv_lock_hash": "7d3e9a1b2c4f5e6d7c8b9a0f1e2d3c4b5a69788796a5b4c3d2e1f0a9b8c7d6e5",
+    "python": "3.12.8",
+    "os": "macOS 27.2 (arm64)",
+    "seed": 7,
+    "started_at": "2026-11-21T12:21:00Z",
+    "ended_at": "2026-11-21T12:21:00Z",
+    "author": "heron",
+    "contract_version": "1.1"
+  },
+  "tearsheet_url": "/api/v1/runs/R-DEMO-04/tearsheet.png",
+  "provenance": {
+    "kind": "run",
+    "id": "R-DEMO-04",
+    "snapshot": "r1-dev",
+    "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+  }
+}

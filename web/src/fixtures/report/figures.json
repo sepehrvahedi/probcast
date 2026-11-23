@@ -1,0 +1,819 @@
+{
+  "fixture": true,
+  "snapshot": "fixture-7-+0.000",
+  "committee": "demo-committee",
+  "config_hash": "70db7c4ce3acf43bcded56785304fd08e5ba16074e70b99042ff3882b2579b44",
+  "origin": "2026-11-30",
+  "final_sha256": "a0bae0366b284db12c0c85310555870b321c590ab607f112cf17b180416cfb18",
+  "run_ids": {
+    "anchor": "20261118T153935-9403903c",
+    "yardstick": "20261118T153937-82751642",
+    "committee": "C-bf4bf413bbd4",
+    "technical.tsmom_12_1": "20261118T153940-ec3922bc",
+    "sector.relative_strength": "20261118T153943-95c4e12d",
+    "technical.reversal_1m": "20261118T153945-84187823",
+    "macro.usd_sensitivity": "20261118T153948-0eaabbd4",
+    "macro.real_rates": "20261118T153951-e9389b67",
+    "volatility.implied_vol": "20261118T153952-992cede8"
+  },
+  "built_at": "2026-11-18T15:39:57.756951Z",
+  "built_by": "kestrel",
+  "sections": [
+    {
+      "id": "intro",
+      "title": "Introduction",
+      "words": 400,
+      "items": [
+        {
+          "key": "F1_price_events",
+          "number": "F1",
+          "kind": "figure",
+          "title": "Share price and curated events",
+          "section": "intro",
+          "order": 0,
+          "owner": null,
+          "lint_ok": true
+        }
+      ]
+    },
+    {
+      "id": "macro",
+      "title": "Macroeconomic analysis",
+      "words": 400,
+      "items": [
+        {
+          "key": "F2_rolling_betas",
+          "number": "F2",
+          "kind": "figure",
+          "title": "Rolling FX and real-yield betas",
+          "section": "macro",
+          "order": 1,
+          "owner": null,
+          "lint_ok": true
+        }
+      ]
+    },
+    {
+      "id": "sector",
+      "title": "Sector analysis",
+      "words": 400,
+      "items": [
+        {
+          "key": "F3_indexed_tr",
+          "number": "F3",
+          "kind": "figure",
+          "title": "Indexed total return against benchmarks and peers",
+          "section": "sector",
+          "order": 2,
+          "owner": null,
+          "lint_ok": true
+        },
+        {
+          "key": "T2_peers",
+          "number": "T2",
+          "kind": "table",
+          "title": "Peer multiples (TTM)",
+          "section": "sector",
+          "order": 3,
+          "owner": null,
+          "lint_ok": true
+        }
+      ]
+    },
+    {
+      "id": "fundamental",
+      "title": "Fundamental analysis",
+      "words": 400,
+      "items": [
+        {
+          "key": "F4_margins_roe",
+          "number": "F4",
+          "kind": "figure",
+          "title": "Margins and ROE by fiscal year",
+          "section": "fundamental",
+          "order": 4,
+          "owner": null,
+          "lint_ok": false,
+          "skipped": "ratio_table has no margin or ROE rows by fiscal year"
+        },
+        {
+          "key": "T1_ratios",
+          "number": "T1",
+          "kind": "table",
+          "title": "Financial ratios with filing citations",
+          "section": "fundamental",
+          "order": 5,
+          "owner": null,
+          "lint_ok": false,
+          "skipped": "ratio_table returned no finite values"
+        },
+        {
+          "key": "T4_reverse_dcf",
+          "number": "T4",
+          "kind": "table",
+          "title": "Reverse DCF: market-implied growth and sensitivity",
+          "section": "fundamental",
+          "order": 6,
+          "owner": null,
+          "lint_ok": false,
+          "skipped": "reverse_dcf returned no finite implied-growth values"
+        }
+      ]
+    },
+    {
+      "id": "future",
+      "title": "Future performance",
+      "words": 400,
+      "items": [
+        {
+          "key": "F5_scorecard",
+          "number": "F5",
+          "kind": "figure",
+          "title": "Out-of-sample skill by horizon",
+          "section": "future",
+          "order": 7,
+          "owner": null,
+          "lint_ok": true
+        },
+        {
+          "key": "T3_scorecard",
+          "number": "T3",
+          "kind": "table",
+          "title": "Scorecard against the CAPM anchor",
+          "section": "future",
+          "order": 8,
+          "owner": null,
+          "lint_ok": true
+        },
+        {
+          "key": "F6_waterfall",
+          "number": "F6",
+          "kind": "figure",
+          "title": "Median waterfall by idea family",
+          "section": "future",
+          "order": 9,
+          "owner": null,
+          "lint_ok": true
+        },
+        {
+          "key": "F7_fan",
+          "number": "F7",
+          "kind": "figure",
+          "title": "12-month predictive distribution",
+          "section": "future",
+          "order": 10,
+          "owner": null,
+          "lint_ok": true
+        },
+        {
+          "key": "F8_reliability",
+          "number": "F8",
+          "kind": "figure",
+          "title": "Reliability of P(up)",
+          "section": "future",
+          "order": 11,
+          "owner": null,
+          "lint_ok": true
+        },
+        {
+          "key": "T5_scenarios",
+          "number": "T5",
+          "kind": "table",
+          "title": "Scenario probabilities",
+          "section": "future",
+          "order": 12,
+          "owner": null,
+          "lint_ok": true
+        },
+        {
+          "key": "T6_anchor_sensitivity",
+          "number": "T6",
+          "kind": "table",
+          "title": "Anchor sensitivity",
+          "section": "future",
+          "order": 13,
+          "owner": null,
+          "lint_ok": true
+        }
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "Conclusion",
+      "words": 200,
+      "items": []
+    }
+  ],
+  "items": [
+    {
+      "key": "F1_price_events",
+      "number": "F1",
+      "section": "intro",
+      "title": "Share price and curated events",
+      "caption": "Figure 1: DEMO daily closing price on a log scale in base-share units (forward split adjustment), with curated corporate events marked. 02 Jan 1985 to 30 Nov 2026. Events are annotations, not model inputs.",
+      "slots": {
+        "what": "Figure 1: DEMO daily closing price on a log scale in base-share units (forward split adjustment), with curated corporate events marked.",
+        "period": "02 Jan 1985 to 30 Nov 2026.",
+        "notes": "Events are annotations, not model inputs."
+      },
+      "source": "Yahoo Finance via yfinance (as traded, splits reconstructed); ProbCast events corpus v1.1",
+      "alt": "Long-run log price chart with event markers",
+      "disclaimer": "Educational research tool. Not investment advice.",
+      "context": null,
+      "stamp": null,
+      "png_sha256": "b6029ee201bc33fbe97307d8886c0b0bc481267482909a9104528bf53aff8e09",
+      "svg_sha256": "ddbd9fbb6a14d9b7bae574ad78b64723a83f7fc5f64c266ec170c47ba453f10c",
+      "png_bytes": 136860,
+      "svg_bytes": 139386,
+      "width_px": 1880,
+      "height_px": 941,
+      "width_mm": 159.2,
+      "lint": [
+        {
+          "id": "caption",
+          "label": "Has a caption",
+          "ok": true
+        },
+        {
+          "id": "source",
+          "label": "Has a source line",
+          "ok": true
+        },
+        {
+          "id": "alt",
+          "label": "Has alt text",
+          "ok": true
+        },
+        {
+          "id": "disclaimer",
+          "label": "Disclaimer present",
+          "ok": true
+        },
+        {
+          "id": "dpi",
+          "label": "300 dpi PNG",
+          "ok": true
+        },
+        {
+          "id": "context",
+          "label": "Context stamp on backtest figures",
+          "ok": true
+        }
+      ],
+      "order": 0,
+      "owner": null,
+      "file_state": "ok",
+      "stale": false,
+      "png_url": "/api/v1/report/figures/F1_price_events.png",
+      "svg_url": "/api/v1/report/figures/F1_price_events.svg",
+      "files": {
+        "png": "F1_price_events.png",
+        "svg": "F1_price_events.svg"
+      },
+      "references": ["software:probcast", "data:yahoo-finance"],
+      "in_text": "",
+      "provenance": {
+        "kind": "figure",
+        "id": "F1_price_events",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "F1",
+        "source": "Yahoo Finance via yfinance (as traded, splits reconstructed); ProbCast events corpus v1.1"
+      }
+    },
+    {
+      "key": "F2_rolling_betas",
+      "number": "F2",
+      "section": "macro",
+      "title": "Rolling FX and real-yield betas",
+      "caption": "Figure 2: Rolling 156-week OLS coefficients of DEMO's weekly excess return on weekly changes in the broad USD index (DTWEXBGS) and the 10-year real yield (DFII10), one regression per factor with the market excess return as a control. Shaded bands are 90% intervals. Weekly, 01 Jan 1988 to 27 Nov 2026; data as available at 30 Nov 2026. Contemporaneous regressions describe exposure; they are not forecasts.",
+      "slots": {
+        "what": "Figure 2: Rolling 156-week OLS coefficients of DEMO's weekly excess return on weekly changes in the broad USD index (DTWEXBGS) and the 10-year real yield (DFII10), one regression per factor with the market excess return as a control.",
+        "uncertainty": "Shaded bands are 90% intervals.",
+        "period": "Weekly, 01 Jan 1988 to 27 Nov 2026; data as available at 30 Nov 2026.",
+        "notes": "Contemporaneous regressions describe exposure; they are not forecasts."
+      },
+      "source": "FRED/ALFRED (DTWEXBGS, DFII10) as first available; prices: Yahoo Finance via yfinance; authors' calculations in ProbCast",
+      "alt": "Two stacked line charts of rolling factor betas over time, one panel per factor",
+      "disclaimer": "Educational research tool. Not investment advice.",
+      "context": null,
+      "stamp": null,
+      "png_sha256": "9214e13e2152f47b08c8d0f772a44c99ac4f8226791a8042d0b4137a5cd8b4db",
+      "svg_sha256": "373e2ae9d807b915240925f10fc31f37e141fbcf1b69e05562b3ad5a13d97f2e",
+      "png_bytes": 306353,
+      "svg_bytes": 294839,
+      "width_px": 1880,
+      "height_px": 1211,
+      "width_mm": 159.2,
+      "lint": [
+        {
+          "id": "caption",
+          "label": "Has a caption",
+          "ok": true
+        },
+        {
+          "id": "source",
+          "label": "Has a source line",
+          "ok": true
+        },
+        {
+          "id": "alt",
+          "label": "Has alt text",
+          "ok": true
+        },
+        {
+          "id": "disclaimer",
+          "label": "Disclaimer present",
+          "ok": true
+        },
+        {
+          "id": "dpi",
+          "label": "300 dpi PNG",
+          "ok": true
+        },
+        {
+          "id": "context",
+          "label": "Context stamp on backtest figures",
+          "ok": true
+        }
+      ],
+      "order": 1,
+      "owner": null,
+      "file_state": "ok",
+      "stale": false,
+      "png_url": "/api/v1/report/figures/F2_rolling_betas.png",
+      "svg_url": "/api/v1/report/figures/F2_rolling_betas.svg",
+      "files": {
+        "png": "F2_rolling_betas.png",
+        "svg": "F2_rolling_betas.svg"
+      },
+      "references": [
+        "alfred:DFII10",
+        "alfred:DTWEXBGS",
+        "fred:DTWEXBGS",
+        "fred:DFII10",
+        "method:newey-west-1987",
+        "software:probcast",
+        "ref:sharpe-1964",
+        "data:yahoo-finance"
+      ],
+      "in_text": "Newey and West, 1987; Sharpe, 1964",
+      "provenance": {
+        "kind": "figure",
+        "id": "F2_rolling_betas",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "F2",
+        "source": "FRED/ALFRED (DTWEXBGS, DFII10) as first available; prices: Yahoo Finance via yfinance; authors' calculations in ProbCast"
+      }
+    },
+    {
+      "key": "F3_indexed_tr",
+      "number": "F3",
+      "section": "sector",
+      "title": "Indexed total return against benchmarks and peers",
+      "caption": "Figure 3: Total return index of DEMO, ^DEMONDX and 0 peers, in base-share units with dividends reinvested, rebased to 100 at the start. 30 Nov 2021 to 30 Nov 2026; data as available at 30 Nov 2026. No peer series available.",
+      "slots": {
+        "what": "Figure 3: Total return index of DEMO, ^DEMONDX and 0 peers, in base-share units with dividends reinvested, rebased to 100 at the start.",
+        "period": "30 Nov 2021 to 30 Nov 2026; data as available at 30 Nov 2026.",
+        "notes": "No peer series available."
+      },
+      "source": "Yahoo Finance via yfinance (as traded, splits and dividends reconstructed forward); authors' calculations in ProbCast",
+      "alt": "Line chart of indexed total returns",
+      "disclaimer": "Educational research tool. Not investment advice.",
+      "context": null,
+      "stamp": null,
+      "png_sha256": "aa49abdfd61866fb321019ab2378d93f3b5ccc982bdf391b78e1695cc20c5abd",
+      "svg_sha256": "6e49cf88c5acf0befab770a354178004417c3bd60cb006c42a6c9e305691f358",
+      "png_bytes": 165908,
+      "svg_bytes": 66096,
+      "width_px": 1897,
+      "height_px": 951,
+      "width_mm": 160.6,
+      "lint": [
+        {
+          "id": "caption",
+          "label": "Has a caption",
+          "ok": true
+        },
+        {
+          "id": "source",
+          "label": "Has a source line",
+          "ok": true
+        },
+        {
+          "id": "alt",
+          "label": "Has alt text",
+          "ok": true
+        },
+        {
+          "id": "disclaimer",
+          "label": "Disclaimer present",
+          "ok": true
+        },
+        {
+          "id": "dpi",
+          "label": "300 dpi PNG",
+          "ok": true
+        },
+        {
+          "id": "context",
+          "label": "Context stamp on backtest figures",
+          "ok": true
+        }
+      ],
+      "order": 2,
+      "owner": null,
+      "file_state": "ok",
+      "stale": false,
+      "png_url": "/api/v1/report/figures/F3_indexed_tr.png",
+      "svg_url": "/api/v1/report/figures/F3_indexed_tr.svg",
+      "files": {
+        "png": "F3_indexed_tr.png",
+        "svg": "F3_indexed_tr.svg"
+      },
+      "references": ["software:probcast", "data:yahoo-finance"],
+      "in_text": "",
+      "provenance": {
+        "kind": "figure",
+        "id": "F3_indexed_tr",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "F3",
+        "source": "Yahoo Finance via yfinance (as traded, splits and dividends reconstructed forward); authors' calculations in ProbCast"
+      }
+    },
+    {
+      "key": "F5_scorecard",
+      "number": "F5",
+      "section": "future",
+      "title": "Out-of-sample skill by horizon",
+      "caption": "Figure 5: CRPS skill score of each analyzer relative to the CAPM anchor by forecast horizon; zero means no improvement over the anchor. Bars are 90% stationary-bootstrap intervals. Pre-holdout walk-forward pairs (month-end origins from 1990; outcomes before 2021).",
+      "slots": {
+        "what": "Figure 5: CRPS skill score of each analyzer relative to the CAPM anchor by forecast horizon; zero means no improvement over the anchor.",
+        "uncertainty": "Bars are 90% stationary-bootstrap intervals.",
+        "period": "Pre-holdout walk-forward pairs (month-end origins from 1990; outcomes before 2021)."
+      },
+      "source": "ProbCast walk-forward backtests (month-end origins from 1990)",
+      "alt": "Skill by horizon with confidence intervals",
+      "disclaimer": "Educational research tool. Not investment advice.",
+      "context": {
+        "window": "1990-02-28 to 2014-11-28 (dev)",
+        "n": 100,
+        "n_eff": 8.3,
+        "trials": 8,
+        "reference": "CAPM anchor",
+        "holdout": "sealed"
+      },
+      "stamp": "Notes: eval 1990-02-28 to 2014-11-28 (dev); n = 100, n_eff ≈ 8.3; trials 8; reference CAPM anchor; holdout sealed.",
+      "png_sha256": "ac89751c02654f094c7a9d53c5e3ada48173b655240d8a872ecc330527cd9da3",
+      "svg_sha256": "c1c20a634dac3a8a312ce821068cc0277a59ee792c1bbade7cf17fae95de9042",
+      "png_bytes": 113375,
+      "svg_bytes": 33775,
+      "width_px": 1880,
+      "height_px": 951,
+      "width_mm": 159.2,
+      "lint": [
+        {
+          "id": "caption",
+          "label": "Has a caption",
+          "ok": true
+        },
+        {
+          "id": "source",
+          "label": "Has a source line",
+          "ok": true
+        },
+        {
+          "id": "alt",
+          "label": "Has alt text",
+          "ok": true
+        },
+        {
+          "id": "disclaimer",
+          "label": "Disclaimer present",
+          "ok": true
+        },
+        {
+          "id": "dpi",
+          "label": "300 dpi PNG",
+          "ok": true
+        },
+        {
+          "id": "context",
+          "label": "Context stamp on backtest figures",
+          "ok": true
+        }
+      ],
+      "order": 7,
+      "owner": null,
+      "file_state": "ok",
+      "stale": false,
+      "png_url": "/api/v1/report/figures/F5_scorecard.png",
+      "svg_url": "/api/v1/report/figures/F5_scorecard.svg",
+      "files": {
+        "png": "F5_scorecard.png",
+        "svg": "F5_scorecard.svg"
+      },
+      "references": [
+        "ref:campbell-ammer-1993",
+        "ref:christensen-prabhala-1998",
+        "ref:dechow-sloan-soliman-2004",
+        "method:diebold-mariano-1995",
+        "method:gneiting-raftery-2007",
+        "method:harvey-leybourne-newbold-1997",
+        "ref:jegadeesh-1990",
+        "ref:jegadeesh-titman-1993",
+        "ref:jorion-1990",
+        "ref:lehmann-1990",
+        "method:lintner-1965",
+        "method:matheson-winkler-1976",
+        "ref:moskowitz-grinblatt-1999",
+        "ref:moskowitz-ooi-pedersen-2012",
+        "method:politis-romano-1994",
+        "ref:poon-granger-2003",
+        "software:probcast",
+        "ref:apple-10k-fx-risk",
+        "ref:sharpe-1964",
+        "data:yahoo-finance"
+      ],
+      "in_text": "Campbell and Ammer, 1993; Christensen and Prabhala, 1998; Dechow, Sloan and Soliman, 2004; Diebold and Mariano, 1995; Gneiting and Raftery, 2007; Harvey, Leybourne and Newbold, 1997; Jegadeesh, 1990; Jegadeesh and Titman, 1993; Jorion, 1990; Lehmann, 1990; Lintner, 1965; Matheson and Winkler, 1976; Moskowitz and Grinblatt, 1999; Moskowitz, Ooi and Pedersen, 2012; Politis and Romano, 1994; Poon and Granger, 2003; Reference key, n.d.; Sharpe, 1964",
+      "provenance": {
+        "kind": "figure",
+        "id": "F5_scorecard",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "F5",
+        "source": "ProbCast walk-forward backtests (month-end origins from 1990)"
+      }
+    },
+    {
+      "key": "F6_waterfall",
+      "number": "F6",
+      "section": "future",
+      "title": "Median waterfall by idea family",
+      "caption": "Figure 6: Exact decomposition of the committee's median 12-month log total return into the CAPM anchor (weight 25%; effective location weight 44%) and each family's contribution. Steps sum exactly to the committee median in log space.",
+      "slots": {
+        "what": "Figure 6: Exact decomposition of the committee's median 12-month log total return into the CAPM anchor (weight 25%; effective location weight 44%) and each family's contribution.",
+        "notes": "Steps sum exactly to the committee median in log space."
+      },
+      "source": "ProbCast committee (equal weight per family, Vincentized)",
+      "alt": "Waterfall of median contributions",
+      "disclaimer": "Educational research tool. Not investment advice.",
+      "context": null,
+      "stamp": null,
+      "png_sha256": "d451c0bde8c9a03042dd6b921f83a81bcbeed00401d8ea6dd9acabb4c1c9c049",
+      "svg_sha256": "c373cfd13a9aea4e9389d8a1fce9bbd303c1dc60575e4bcc912fb041daab50ef",
+      "png_bytes": 83333,
+      "svg_bytes": 13220,
+      "width_px": 1880,
+      "height_px": 951,
+      "width_mm": 159.2,
+      "lint": [
+        {
+          "id": "caption",
+          "label": "Has a caption",
+          "ok": true
+        },
+        {
+          "id": "source",
+          "label": "Has a source line",
+          "ok": true
+        },
+        {
+          "id": "alt",
+          "label": "Has alt text",
+          "ok": true
+        },
+        {
+          "id": "disclaimer",
+          "label": "Disclaimer present",
+          "ok": true
+        },
+        {
+          "id": "dpi",
+          "label": "300 dpi PNG",
+          "ok": true
+        },
+        {
+          "id": "context",
+          "label": "Context stamp on backtest figures",
+          "ok": true
+        }
+      ],
+      "order": 9,
+      "owner": null,
+      "file_state": "ok",
+      "stale": false,
+      "png_url": "/api/v1/report/figures/F6_waterfall.png",
+      "svg_url": "/api/v1/report/figures/F6_waterfall.svg",
+      "files": {
+        "png": "F6_waterfall.png",
+        "svg": "F6_waterfall.svg"
+      },
+      "references": ["method:genest-1992", "software:probcast", "ref:sharpe-1964"],
+      "in_text": "Genest, 1992; Sharpe, 1964",
+      "provenance": {
+        "kind": "figure",
+        "id": "F6_waterfall",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "F6",
+        "source": "ProbCast committee (equal weight per family, Vincentized)"
+      }
+    },
+    {
+      "key": "F7_fan",
+      "number": "F7",
+      "section": "future",
+      "title": "12-month predictive distribution",
+      "caption": "Figure 7: Committee predictive distribution for the DEMO share price; the line is the median (94.48). Shaded bands are central 50%, 80% and 95% predictive intervals. P(price above 98.90) = 46%; base rates: own history 63% (survivor-biased), market 69%. Origin 2026-11-30 close to 2027-12-01 (252 trading sessions).",
+      "slots": {
+        "what": "Figure 7: Committee predictive distribution for the DEMO share price; the line is the median (94.48).",
+        "uncertainty": "Shaded bands are central 50%, 80% and 95% predictive intervals. P(price above 98.90) = 46%; base rates: own history 63% (survivor-biased), market 69%.",
+        "period": "Origin 2026-11-30 close to 2027-12-01 (252 trading sessions)."
+      },
+      "source": "ProbCast committee forecast (CAPM anchor, ERP 5%); prices: Yahoo Finance via yfinance, reconstructed as traded",
+      "alt": "Fan chart of the 12-month price distribution",
+      "disclaimer": "Educational research tool. Not investment advice.",
+      "context": {
+        "window": "1990-02-28 to 2014-11-28 (dev)",
+        "n": 100,
+        "n_eff": 8.3,
+        "trials": 8,
+        "reference": "CAPM anchor",
+        "holdout": "sealed"
+      },
+      "stamp": "Notes: eval 1990-02-28 to 2014-11-28 (dev); n = 100, n_eff ≈ 8.3; trials 8; reference CAPM anchor; holdout sealed.",
+      "png_sha256": "755fa48b89694dbb69576cb1e88fd516ee79d2153cc98edbec996f135b062691",
+      "svg_sha256": "518469413b5dad3904d10d15169d8d425aa22f7d9fe6c4c64ed7746b5d6f435f",
+      "png_bytes": 137149,
+      "svg_bytes": 18000,
+      "width_px": 1880,
+      "height_px": 988,
+      "width_mm": 159.2,
+      "lint": [
+        {
+          "id": "caption",
+          "label": "Has a caption",
+          "ok": true
+        },
+        {
+          "id": "source",
+          "label": "Has a source line",
+          "ok": true
+        },
+        {
+          "id": "alt",
+          "label": "Has alt text",
+          "ok": true
+        },
+        {
+          "id": "disclaimer",
+          "label": "Disclaimer present",
+          "ok": true
+        },
+        {
+          "id": "dpi",
+          "label": "300 dpi PNG",
+          "ok": true
+        },
+        {
+          "id": "context",
+          "label": "Context stamp on backtest figures",
+          "ok": true
+        }
+      ],
+      "order": 10,
+      "owner": null,
+      "file_state": "ok",
+      "stale": false,
+      "png_url": "/api/v1/report/figures/F7_fan.png",
+      "svg_url": "/api/v1/report/figures/F7_fan.svg",
+      "files": {
+        "png": "F7_fan.png",
+        "svg": "F7_fan.svg"
+      },
+      "references": [
+        "method:bracher-2021",
+        "method:genest-1992",
+        "method:lintner-1965",
+        "software:probcast",
+        "ref:sharpe-1964",
+        "data:yahoo-finance"
+      ],
+      "in_text": "Bracher et al., 2021; Genest, 1992; Lintner, 1965; Sharpe, 1964",
+      "provenance": {
+        "kind": "figure",
+        "id": "F7_fan",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "F7",
+        "source": "ProbCast committee forecast (CAPM anchor, ERP 5%); prices: Yahoo Finance via yfinance, reconstructed as traded"
+      }
+    },
+    {
+      "key": "F8_reliability",
+      "number": "F8",
+      "section": "future",
+      "title": "Reliability of P(up)",
+      "caption": "Figure 8: Reliability of P(up) forecasts (committee, 21-session P(up)); bins of forecast probability against the observed frequency. Marker size is proportional to the number of forecasts in the bin; the dashed line is perfect calibration. Pre-holdout walk-forward pairs (outcomes before 2021).",
+      "slots": {
+        "what": "Figure 8: Reliability of P(up) forecasts (committee, 21-session P(up)); bins of forecast probability against the observed frequency.",
+        "uncertainty": "Marker size is proportional to the number of forecasts in the bin; the dashed line is perfect calibration.",
+        "period": "Pre-holdout walk-forward pairs (outcomes before 2021)."
+      },
+      "source": "ProbCast walk-forward backtest (pre-holdout pairs)",
+      "alt": "Reliability diagram",
+      "disclaimer": "Educational research tool. Not investment advice.",
+      "context": {
+        "window": "1990-02-28 to 2014-11-28 (dev)",
+        "n": 100,
+        "n_eff": 8.3,
+        "trials": 8,
+        "reference": "CAPM anchor",
+        "holdout": "sealed"
+      },
+      "stamp": "Notes: eval 1990-02-28 to 2014-11-28 (dev); n = 100, n_eff ≈ 8.3; trials 8; reference CAPM anchor; holdout sealed.",
+      "png_sha256": "01508ea84c263210052738acfd6b792094db08fe6c4983930fcae9c6e0d5161a",
+      "svg_sha256": "e232893473d67f7d2550b97eb501e25c6ccbd22e954e025833c5dbd5627b4939",
+      "png_bytes": 97612,
+      "svg_bytes": 14400,
+      "width_px": 1081,
+      "height_px": 951,
+      "width_mm": 91.5,
+      "lint": [
+        {
+          "id": "caption",
+          "label": "Has a caption",
+          "ok": true
+        },
+        {
+          "id": "source",
+          "label": "Has a source line",
+          "ok": true
+        },
+        {
+          "id": "alt",
+          "label": "Has alt text",
+          "ok": true
+        },
+        {
+          "id": "disclaimer",
+          "label": "Disclaimer present",
+          "ok": true
+        },
+        {
+          "id": "dpi",
+          "label": "300 dpi PNG",
+          "ok": true
+        },
+        {
+          "id": "context",
+          "label": "Context stamp on backtest figures",
+          "ok": true
+        }
+      ],
+      "order": 11,
+      "owner": null,
+      "file_state": "ok",
+      "stale": false,
+      "png_url": "/api/v1/report/figures/F8_reliability.png",
+      "svg_url": "/api/v1/report/figures/F8_reliability.svg",
+      "files": {
+        "png": "F8_reliability.png",
+        "svg": "F8_reliability.svg"
+      },
+      "references": ["method:brocker-smith-2007", "method:dawid-1984", "software:probcast"],
+      "in_text": "Bröcker and Smith, 2007; Dawid, 1984",
+      "provenance": {
+        "kind": "figure",
+        "id": "F8_reliability",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "F8",
+        "source": "ProbCast walk-forward backtest (pre-holdout pairs)"
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "key": "F4_margins_roe",
+      "reason": "ratio_table has no margin or ROE rows by fiscal year"
+    },
+    {
+      "key": "T1_ratios",
+      "reason": "ratio_table returned no finite values"
+    },
+    {
+      "key": "T4_reverse_dcf",
+      "reason": "reverse_dcf returned no finite implied-growth values"
+    }
+  ],
+  "provenance": {
+    "kind": "figure",
+    "id": "report:fixture-7-+0.000",
+    "snapshot": "fixture-7-+0.000",
+    "snapshot_hash": "fixture-v1-7-+0.000"
+  }
+}

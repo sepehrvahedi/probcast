@@ -1,0 +1,409 @@
+{
+  "fixture": true,
+  "id": "sector.relative_strength",
+  "name": "Relative strength vs the Nasdaq-100 (6 months)",
+  "version": "1.0.0+1a6a735",
+  "family": "technical.trend",
+  "author": "probcast",
+  "slot": 3,
+  "builtin": true,
+  "natural_horizon": 252,
+  "leak": {
+    "status": "passed",
+    "tests": {
+      "T1": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T2": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T3": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T5": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T7": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "TDN": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      }
+    }
+  },
+  "in_committee": true,
+  "category": "sector",
+  "report_section": "sector",
+  "horizons": [21, 63, 126, 252],
+  "calibrator": "C1",
+  "hypothesis": "Outperformance of the sector index over the past six months persists over the following months (industry-relative momentum).",
+  "references": ["ref:moskowitz-grinblatt-1999"],
+  "idea_card": null,
+  "manifest": {
+    "expected_direction": "positive",
+    "course_concepts": ["sector analysis", "relative valuation", "momentum"],
+    "informs": ["location"],
+    "min_history_sessions": 756,
+    "data_dependencies": [],
+    "params": {
+      "lookback": 126
+    },
+    "param_grid_declared": {},
+    "manifest_version": "1.0.0",
+    "code_hash": "1a6a735d39e93cd9e0ac1547c06246391db5492c91b2b1f2253630b83fe242c0"
+  },
+  "literature_prior": null,
+  "idea": null,
+  "dependencies": [
+    {
+      "id": "PX:close_base",
+      "name": "Close, base-share units",
+      "class": "exchange_price",
+      "rule": "same_session_close",
+      "strict_rule": "same_session_close",
+      "licence": "L2",
+      "source": "Yahoo Finance via yfinance"
+    }
+  ],
+  "leak_details": {
+    "T1": "passed",
+    "T2": "passed",
+    "T3": "passed",
+    "T5": "passed",
+    "T7": "passed",
+    "T-DN": "passed"
+  },
+  "leak_at": "2026-11-20T14:00:00Z",
+  "status": "committee",
+  "default_run_id": "20261118T153943-95c4e12d",
+  "anchor_run_id": "20261118T153935-9403903c",
+  "grades": {
+    "21": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": -0.002221721918385766,
+      "ci": {
+        "lo": -0.006953399605652777,
+        "hi": 0.0022566350551634033,
+        "level": 0.9
+      },
+      "n_eff": 104.0,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "technical.trend",
+          "n": 2
+        },
+        "team": 11
+      },
+      "mde": 0.0074543227044319435,
+      "sample": "dev",
+      "dm_p": 0.40791062405688155,
+      "bh_q": 0.9208727086019657,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153943-95c4e12d",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.21.dev"
+      },
+      "n": 104,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-11-30"
+      },
+      "cov80": {
+        "est": 0.7692307692307693,
+        "sample": "dev"
+      }
+    },
+    "63": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": -0.0009948913004513837,
+      "ci": {
+        "lo": -0.008035554249239884,
+        "hi": 0.005326086025881166,
+        "level": 0.9
+      },
+      "n_eff": 34.333333333333336,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "technical.trend",
+          "n": 2
+        },
+        "team": 11
+      },
+      "mde": 0.011595246492677281,
+      "sample": "dev",
+      "dm_p": 0.8150334255268028,
+      "bh_q": 0.8150334255268028,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153943-95c4e12d",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.63.dev"
+      },
+      "n": 103,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-08-31"
+      },
+      "cov80": {
+        "est": 0.7864077669902912,
+        "sample": "dev"
+      }
+    },
+    "126": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": -0.000493942376451173,
+      "ci": {
+        "lo": -0.005692267751902702,
+        "hi": 0.005005889494652494,
+        "level": 0.9
+      },
+      "n_eff": 17.0,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "technical.trend",
+          "n": 2
+        },
+        "team": 11
+      },
+      "mde": 0.009788004087259617,
+      "sample": "dev",
+      "dm_p": 0.8938631302335498,
+      "bh_q": 0.9965933320168319,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153943-95c4e12d",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.126.dev"
+      },
+      "n": 102,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-05-29"
+      },
+      "cov80": {
+        "est": 0.7450980392156863,
+        "sample": "dev"
+      }
+    },
+    "252": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.008203945474460683,
+      "ci": {
+        "lo": -0.006336767917652919,
+        "hi": 0.023421247980333144,
+        "level": 0.9
+      },
+      "n_eff": 8.333333333333334,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "technical.trend",
+          "n": 2
+        },
+        "team": 11
+      },
+      "mde": 0.029003820057438724,
+      "sample": "dev",
+      "dm_p": 0.48475714406429177,
+      "bh_q": 0.8540394417204407,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153943-95c4e12d",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.252.dev"
+      },
+      "n": 100,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2014-11-28"
+      },
+      "cov80": {
+        "est": 0.72,
+        "sample": "dev"
+      }
+    }
+  },
+  "nutrition": [
+    {
+      "h": 5,
+      "declared": false,
+      "n_eff_max": null,
+      "n_eff": null,
+      "mde": null,
+      "warmup_start": null,
+      "sample": null
+    },
+    {
+      "h": 21,
+      "declared": true,
+      "n_eff_max": 104.0,
+      "n_eff": 104.0,
+      "mde": 0.0074543227044319435,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 63,
+      "declared": true,
+      "n_eff_max": 34.333333333333336,
+      "n_eff": 34.333333333333336,
+      "mde": 0.011595246492677281,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 126,
+      "declared": true,
+      "n_eff_max": 17.0,
+      "n_eff": 17.0,
+      "mde": 0.009788004087259617,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 252,
+      "declared": true,
+      "n_eff_max": 8.333333333333334,
+      "n_eff": 8.333333333333334,
+      "mde": 0.029003820057438724,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    }
+  ],
+  "latest": {
+    "origin": "2026-11-30",
+    "h": 252,
+    "unit": "log_return",
+    "median": -0.052967670408800537,
+    "interval_80": {
+      "lo": -0.6158997959935274,
+      "hi": 0.5388974059943654,
+      "level": 0.8
+    },
+    "p_up": 0.4551212293280126,
+    "base_rate": {
+      "p": 0.68,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2014-11-28"
+      },
+      "sample": "dev"
+    },
+    "signal": -0.046794019658233044,
+    "calibration": {
+      "method": "C1",
+      "bucket": 0,
+      "edges": [0.0],
+      "n_pairs": 4434,
+      "n_eff": 39,
+      "lambda": 0.6610169491525424,
+      "tilt_z": -0.04729661897932193,
+      "sigma_h": 0.42972642935243177,
+      "anchor_median": -0.032643063230101056
+    },
+    "provenance": {
+      "kind": "run",
+      "id": "20261118T153943-95c4e12d",
+      "snapshot": "fixture-7-+0.000",
+      "snapshot_hash": "fixture-v1-7-+0.000",
+      "key": "forecast.252.latest"
+    }
+  },
+  "trials": {
+    "analyzer": 1,
+    "family": {
+      "id": "technical.trend",
+      "n": 2
+    },
+    "team": 11
+  },
+  "references_detail": [
+    {
+      "id": "ref:moskowitz-grinblatt-1999",
+      "kind": "literature",
+      "authors": "Moskowitz, T.J. and Grinblatt, M.",
+      "year": "1999",
+      "title": "Do industries explain momentum?",
+      "container": "Journal of Finance",
+      "details": "54(4), pp. 1249–1290",
+      "url": null,
+      "medium": null,
+      "verification": "ai_recalled",
+      "used_by": ["F5", "T3"],
+      "accessed": null,
+      "text": "Moskowitz, T.J. and Grinblatt, M. (1999) ‘Do industries explain momentum?’, Journal of Finance, 54(4), pp. 1249–1290.",
+      "html": "Moskowitz, T.J. and Grinblatt, M. (1999) ‘Do industries explain momentum?’, <i>Journal of Finance</i>, 54(4), pp. 1249–1290.",
+      "in_text": "(Moskowitz and Grinblatt, 1999)",
+      "bibtex_key": "MoskowitzGrinblatt1999",
+      "bibtex": "@article{MoskowitzGrinblatt1999,\n  author = {Moskowitz, T.J. and Grinblatt, M.},\n  year = {1999},\n  title = {{Do industries explain momentum?}},\n  journal = {Journal of Finance},\n  note = {54(4), pp. 1249–1290}\n}",
+      "content_hash": "08c33e68087bd4bf",
+      "in_bibliography": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0.0+1a6a735",
+      "first_seen": "2026-11-18T15:39:43.097369+00:00",
+      "configs": 1,
+      "runs": ["20261118T153943-95c4e12d"],
+      "current": true
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "20261118T153943-95c4e12d",
+      "analyzer": "sector.relative_strength",
+      "name": "Relative strength vs the Nasdaq-100 (6 months)",
+      "version": "1.0.0+1a6a735",
+      "family": "technical.trend",
+      "author": "probcast",
+      "slot": 3,
+      "status": "completed",
+      "completed_at": "2026-11-18T15:39:43.094584Z",
+      "grades": {
+        "21": {
+          "grade": "D"
+        },
+        "63": {
+          "grade": "D"
+        },
+        "126": {
+          "grade": "D"
+        },
+        "252": {
+          "grade": "D"
+        }
+      },
+      "natural_horizon": 252,
+      "scored": true
+    }
+  ],
+  "provenance": {
+    "kind": "dataset",
+    "id": "analyzer:sector.relative_strength",
+    "snapshot": "fixture-7-+0.000",
+    "snapshot_hash": "fixture-v1-7-+0.000"
+  }
+}

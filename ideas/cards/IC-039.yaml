@@ -1,0 +1,13 @@
+# Round-3 advanced method (D-102).
+id: IC-039
+title: A trend line that filters out the noise
+author: probcast
+created_at: '2026-11-19T00:40:00Z'
+sample: true
+kind: advanced
+text: A Kalman filter separates the underlying trend of the price from day-to-day noise. When that cleaned-up
+  trend points up, the stock tends to keep rising.
+analyzer: advanced.kalman_trend
+implementation: Local-linear-trend state-space model of the monthly log total-return index (Harvey 1989;
+  Durbin & Koopman 2012), refitted at every month-end; signal = filtered annualised slope. C3, positive
+  sign; 1, 3 and 6 months.

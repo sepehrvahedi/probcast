@@ -1,0 +1,16 @@
+# Default R1 committee (ADR-009). Families assigned by the integrator from the fixed list (contract §7).
+# One vote per family; CAPM anchor fixed at 25%. Edit membership by Fri 27 Nov; vetoes need a reason.
+name: r1-default
+ticker: AAPL
+anchor_weight: 0.25
+erp: 0.05
+spread_recalibration: true
+members:
+  - {analyzer: technical.tsmom_12_1, family: technical.trend}
+  - {analyzer: sector.relative_strength, family: technical.trend}
+  - {analyzer: technical.reversal_1m, family: technical.reversion}
+  - {analyzer: macro.usd_sensitivity, family: macro.fx}
+  - {analyzer: macro.real_rates, family: macro.rates}
+  - {analyzer: volatility.implied_vol, family: volatility}
+  - {analyzer: valuation.earnings_yield, family: valuation}   # added by the integrator (PO), 2026-11-18 (D-082)
+vetoes: {}

@@ -1,0 +1,438 @@
+{
+  "fixture": true,
+  "id": "main",
+  "name": "main",
+  "method": "Equal weight per family, quantile averaging (Vincentized), spread recalibrated",
+  "anchor": { "weight": 0.25, "effective_location_weight": 0.3571 },
+  "families_active": 7,
+  "families_total": 8,
+  "members": [
+    {
+      "analyzer": "events.earnings_drift",
+      "name": "Post-earnings drift",
+      "version": "1.0.0+3f9c2a",
+      "family": "events",
+      "author": "wren",
+      "slot": 1,
+      "run_id": "R-DEMO-01",
+      "family_weight": 0.107143,
+      "within_family_share": 1,
+      "decision": "committee",
+      "reason": "Passed every gate check",
+      "gate": [
+        { "id": "schema", "label": "Schema", "ok": true },
+        { "id": "leak", "label": "Leak-tested", "ok": true },
+        { "id": "tdn", "label": "T-DN drift neutrality", "ok": true },
+        {
+          "id": "walkforward",
+          "label": "Pre-holdout walk-forward complete (outcomes ≤ 2020)",
+          "ok": true
+        },
+        {
+          "id": "val",
+          "label": "Not significantly worse than CAPM on the val segment (HLN-DM one-sided 10%)",
+          "ok": true
+        },
+        { "id": "tearsheet", "label": "Tear sheet", "ok": true }
+      ],
+      "grades": { "21": { "grade": "A" }, "63": { "grade": "C" }, "252": { "grade": "C" } },
+      "delta_crps_63": 0.0002
+    },
+    {
+      "analyzer": "macro.usd_sensitivity",
+      "name": "USD sensitivity",
+      "version": "1.1.0+3fbb19",
+      "family": "macro.fx",
+      "author": "heron",
+      "slot": 2,
+      "run_id": "R-DEMO-02",
+      "family_weight": 0.107143,
+      "within_family_share": 1,
+      "decision": "committee",
+      "reason": "Passed every gate check",
+      "gate": [
+        { "id": "schema", "label": "Schema", "ok": true },
+        { "id": "leak", "label": "Leak-tested", "ok": true },
+        { "id": "tdn", "label": "T-DN drift neutrality", "ok": true },
+        {
+          "id": "walkforward",
+          "label": "Pre-holdout walk-forward complete (outcomes ≤ 2020)",
+          "ok": true
+        },
+        {
+          "id": "val",
+          "label": "Not significantly worse than CAPM on the val segment (HLN-DM one-sided 10%)",
+          "ok": true
+        },
+        { "id": "tearsheet", "label": "Tear sheet", "ok": true }
+      ],
+      "grades": { "21": { "grade": "C" }, "63": { "grade": "B" }, "252": { "grade": "C" } },
+      "delta_crps_63": -0.0002
+    },
+    {
+      "analyzer": "technical.momentum_12_1",
+      "name": "Momentum 12-1",
+      "version": "1.2.0+3fda08",
+      "family": "technical.trend",
+      "author": "finch",
+      "slot": 3,
+      "run_id": "R-DEMO-03",
+      "family_weight": 0.107143,
+      "within_family_share": 0.3333,
+      "decision": "committee",
+      "reason": "Passed every gate check",
+      "gate": [
+        { "id": "schema", "label": "Schema", "ok": true },
+        { "id": "leak", "label": "Leak-tested", "ok": true },
+        { "id": "tdn", "label": "T-DN drift neutrality", "ok": true },
+        {
+          "id": "walkforward",
+          "label": "Pre-holdout walk-forward complete (outcomes ≤ 2020)",
+          "ok": true
+        },
+        {
+          "id": "val",
+          "label": "Not significantly worse than CAPM on the val segment (HLN-DM one-sided 10%)",
+          "ok": true
+        },
+        { "id": "tearsheet", "label": "Tear sheet", "ok": true }
+      ],
+      "grades": { "21": { "grade": "C" }, "63": { "grade": "C" }, "252": { "grade": "C" } },
+      "delta_crps_63": -0.0006
+    },
+    {
+      "analyzer": "valuation.fed_model_gap",
+      "name": "Fed-model gap",
+      "version": "1.0.0+3ff8f7",
+      "family": "valuation",
+      "author": "heron",
+      "slot": 4,
+      "run_id": "R-DEMO-04",
+      "family_weight": 0.107143,
+      "within_family_share": 0.5,
+      "decision": "committee",
+      "reason": "Passed every gate check",
+      "gate": [
+        { "id": "schema", "label": "Schema", "ok": true },
+        { "id": "leak", "label": "Leak-tested", "ok": true },
+        { "id": "tdn", "label": "T-DN drift neutrality", "ok": true },
+        {
+          "id": "walkforward",
+          "label": "Pre-holdout walk-forward complete (outcomes ≤ 2020)",
+          "ok": true
+        },
+        {
+          "id": "val",
+          "label": "Not significantly worse than CAPM on the val segment (HLN-DM one-sided 10%)",
+          "ok": true
+        },
+        { "id": "tearsheet", "label": "Tear sheet", "ok": true }
+      ],
+      "grades": { "21": { "grade": "C" }, "63": { "grade": "C" }, "252": { "grade": "D" } },
+      "delta_crps_63": -0.001
+    },
+    {
+      "analyzer": "technical.rsi_reversal",
+      "name": "RSI reversal",
+      "version": "1.1.0+4017e6",
+      "family": "technical.reversion",
+      "author": "osprey",
+      "slot": 5,
+      "run_id": "R-DEMO-05",
+      "family_weight": 0,
+      "within_family_share": 0,
+      "decision": "rejected",
+      "reason": "Worse than the CAPM anchor on the val segment",
+      "gate": [
+        { "id": "schema", "label": "Schema", "ok": true },
+        { "id": "leak", "label": "Leak-tested", "ok": true },
+        { "id": "tdn", "label": "T-DN drift neutrality", "ok": true },
+        {
+          "id": "walkforward",
+          "label": "Pre-holdout walk-forward complete (outcomes ≤ 2020)",
+          "ok": true
+        },
+        {
+          "id": "val",
+          "label": "Not significantly worse than CAPM on the val segment (HLN-DM one-sided 10%)",
+          "ok": false,
+          "reason": "HLN-DM one-sided p = 0.03 on val"
+        },
+        { "id": "tearsheet", "label": "Tear sheet", "ok": true }
+      ],
+      "grades": {
+        "21": { "grade": "D", "flag": "worse_than_anchor" },
+        "63": { "grade": "D" },
+        "252": { "grade": "D" }
+      }
+    },
+    {
+      "analyzer": "valuation.earnings_yield",
+      "name": "Earnings yield vs own history",
+      "version": "1.2.0+4036d5",
+      "family": "valuation",
+      "author": "wren",
+      "slot": 6,
+      "run_id": "R-DEMO-06",
+      "family_weight": 0.107143,
+      "within_family_share": 0.5,
+      "decision": "committee",
+      "reason": "Passed every gate check",
+      "gate": [
+        { "id": "schema", "label": "Schema", "ok": true },
+        { "id": "leak", "label": "Leak-tested", "ok": true },
+        { "id": "tdn", "label": "T-DN drift neutrality", "ok": true },
+        {
+          "id": "walkforward",
+          "label": "Pre-holdout walk-forward complete (outcomes ≤ 2020)",
+          "ok": true
+        },
+        {
+          "id": "val",
+          "label": "Not significantly worse than CAPM on the val segment (HLN-DM one-sided 10%)",
+          "ok": true
+        },
+        { "id": "tearsheet", "label": "Tear sheet", "ok": true }
+      ],
+      "grades": { "21": { "grade": "C" }, "63": { "grade": "C" }, "252": { "grade": "D" } },
+      "delta_crps_63": -0.0002
+    },
+    {
+      "analyzer": "technical.trend_200d",
+      "name": "200-day trend filter",
+      "version": "1.0.0+4055c4",
+      "family": "technical.trend",
+      "author": "finch",
+      "slot": 1,
+      "run_id": "R-DEMO-07",
+      "family_weight": 0.107143,
+      "within_family_share": 0.3333,
+      "decision": "committee",
+      "reason": "Passed every gate check",
+      "gate": [
+        { "id": "schema", "label": "Schema", "ok": true },
+        { "id": "leak", "label": "Leak-tested", "ok": true },
+        { "id": "tdn", "label": "T-DN drift neutrality", "ok": true },
+        {
+          "id": "walkforward",
+          "label": "Pre-holdout walk-forward complete (outcomes ≤ 2020)",
+          "ok": true
+        },
+        {
+          "id": "val",
+          "label": "Not significantly worse than CAPM on the val segment (HLN-DM one-sided 10%)",
+          "ok": true
+        },
+        { "id": "tearsheet", "label": "Tear sheet", "ok": true }
+      ],
+      "grades": { "21": { "grade": "C" }, "63": { "grade": "C" }, "252": { "grade": "C" } },
+      "delta_crps_63": -0.0006
+    },
+    {
+      "analyzer": "technical.ma_cross",
+      "name": "Moving-average cross",
+      "version": "1.1.0+4074b3",
+      "family": "technical.trend",
+      "author": "osprey",
+      "slot": 2,
+      "run_id": "R-DEMO-08",
+      "family_weight": 0.107143,
+      "within_family_share": 0.3333,
+      "decision": "committee",
+      "reason": "Passed every gate check",
+      "gate": [
+        { "id": "schema", "label": "Schema", "ok": true },
+        { "id": "leak", "label": "Leak-tested", "ok": true },
+        { "id": "tdn", "label": "T-DN drift neutrality", "ok": true },
+        {
+          "id": "walkforward",
+          "label": "Pre-holdout walk-forward complete (outcomes ≤ 2020)",
+          "ok": true
+        },
+        {
+          "id": "val",
+          "label": "Not significantly worse than CAPM on the val segment (HLN-DM one-sided 10%)",
+          "ok": true
+        },
+        { "id": "tearsheet", "label": "Tear sheet", "ok": true }
+      ],
+      "grades": { "21": { "grade": "C" }, "63": { "grade": "C" }, "252": { "grade": "D" } },
+      "delta_crps_63": -0.001
+    },
+    {
+      "analyzer": "technical.bollinger_reversion",
+      "name": "Bollinger reversion",
+      "version": "1.2.0+4093a2",
+      "family": "technical.reversion",
+      "author": "finch",
+      "slot": 3,
+      "run_id": "R-DEMO-09",
+      "family_weight": 0.107143,
+      "within_family_share": 1,
+      "decision": "committee",
+      "reason": "Passed every gate check",
+      "gate": [
+        { "id": "schema", "label": "Schema", "ok": true },
+        { "id": "leak", "label": "Leak-tested", "ok": true },
+        { "id": "tdn", "label": "T-DN drift neutrality", "ok": true },
+        {
+          "id": "walkforward",
+          "label": "Pre-holdout walk-forward complete (outcomes ≤ 2020)",
+          "ok": true
+        },
+        {
+          "id": "val",
+          "label": "Not significantly worse than CAPM on the val segment (HLN-DM one-sided 10%)",
+          "ok": true
+        },
+        { "id": "tearsheet", "label": "Tear sheet", "ok": true }
+      ],
+      "grades": { "21": { "grade": "C" }, "63": { "grade": "C" }, "252": { "grade": "D" } },
+      "delta_crps_63": 0.0002
+    },
+    {
+      "analyzer": "macro.term_spread",
+      "name": "Term-spread tilt",
+      "version": "1.0.0+40b291",
+      "family": "macro.rates",
+      "author": "osprey",
+      "slot": 4,
+      "run_id": "R-DEMO-10",
+      "family_weight": 0.107143,
+      "within_family_share": 1,
+      "decision": "committee",
+      "reason": "Passed every gate check",
+      "gate": [
+        { "id": "schema", "label": "Schema", "ok": true },
+        { "id": "leak", "label": "Leak-tested", "ok": true },
+        { "id": "tdn", "label": "T-DN drift neutrality", "ok": true },
+        {
+          "id": "walkforward",
+          "label": "Pre-holdout walk-forward complete (outcomes ≤ 2020)",
+          "ok": true
+        },
+        {
+          "id": "val",
+          "label": "Not significantly worse than CAPM on the val segment (HLN-DM one-sided 10%)",
+          "ok": true
+        },
+        { "id": "tearsheet", "label": "Tear sheet", "ok": true }
+      ],
+      "grades": { "21": { "grade": "D" }, "63": { "grade": "C" }, "252": { "grade": "C" } },
+      "delta_crps_63": -0.0002
+    },
+    {
+      "analyzer": "volatility.ewma_blend",
+      "name": "EWMA volatility blend",
+      "version": "1.1.0+40d180",
+      "family": "volatility",
+      "author": "kestrel",
+      "slot": 5,
+      "run_id": "R-DEMO-11",
+      "family_weight": 0.107143,
+      "within_family_share": 0.5,
+      "decision": "committee",
+      "reason": "Passed every gate check",
+      "gate": [
+        { "id": "schema", "label": "Schema", "ok": true },
+        { "id": "leak", "label": "Leak-tested", "ok": true },
+        { "id": "tdn", "label": "T-DN drift neutrality", "ok": true },
+        {
+          "id": "walkforward",
+          "label": "Pre-holdout walk-forward complete (outcomes ≤ 2020)",
+          "ok": true
+        },
+        {
+          "id": "val",
+          "label": "Not significantly worse than CAPM on the val segment (HLN-DM one-sided 10%)",
+          "ok": true
+        },
+        { "id": "tearsheet", "label": "Tear sheet", "ok": true }
+      ],
+      "grades": { "21": { "grade": "C" }, "63": { "grade": "C" }, "252": { "grade": "C" } },
+      "delta_crps_63": -0.0006
+    },
+    {
+      "analyzer": "volatility.garch_t",
+      "name": "GARCH(1,1)-t",
+      "version": "1.2.0+40f06f",
+      "family": "volatility",
+      "author": "kestrel",
+      "slot": 6,
+      "run_id": "R-DEMO-12",
+      "family_weight": 0.107143,
+      "within_family_share": 0.5,
+      "decision": "committee",
+      "reason": "Passed every gate check",
+      "gate": [
+        { "id": "schema", "label": "Schema", "ok": true },
+        { "id": "leak", "label": "Leak-tested", "ok": true },
+        { "id": "tdn", "label": "T-DN drift neutrality", "ok": true },
+        {
+          "id": "walkforward",
+          "label": "Pre-holdout walk-forward complete (outcomes ≤ 2020)",
+          "ok": true
+        },
+        {
+          "id": "val",
+          "label": "Not significantly worse than CAPM on the val segment (HLN-DM one-sided 10%)",
+          "ok": true
+        },
+        { "id": "tearsheet", "label": "Tear sheet", "ok": true }
+      ],
+      "grades": { "21": { "grade": "C" }, "63": { "grade": "C" }, "252": { "grade": "C" } },
+      "delta_crps_63": -0.001
+    }
+  ],
+  "gate_log": [
+    {
+      "at": "2026-11-23T17:10:00Z",
+      "actor": "kestrel",
+      "action": "gate.evaluate",
+      "target": "committee:main",
+      "reason": "Nightly batch on r1-dev"
+    },
+    {
+      "at": "2026-11-23T17:12:00Z",
+      "actor": "kestrel",
+      "action": "member.reject",
+      "target": "technical.rsi_reversal",
+      "reason": "Worse than CAPM on val (HLN-DM one-sided 10%)"
+    },
+    {
+      "at": "2026-11-22T19:40:00Z",
+      "actor": "kestrel",
+      "action": "member.admit",
+      "target": "valuation.earnings_yield",
+      "reason": "All gate checks passed; 12M grade capped at C (XBRL era)"
+    },
+    {
+      "at": "2026-11-21T15:05:00Z",
+      "actor": "kestrel",
+      "action": "member.admit",
+      "target": "macro.usd_sensitivity",
+      "reason": "All gate checks passed"
+    }
+  ],
+  "freezes": [
+    {
+      "version": 1,
+      "frozen_at": "2026-11-30T23:59:00Z",
+      "by": "kestrel",
+      "snapshot": "final",
+      "snapshot_hash": "b7c6d5e4f3a2918071625344352617089a8b7c6d5e4f3a2918071625344352f",
+      "config_hash": "sha256:c0ffee11223344556677889900aabbccddeeff00112233445566778899aabbcc",
+      "forecast_hash": "3f9c71e0b2d4a6c8e0f1a3b5c7d9e1f2a4b6c8d0e2f4a6b8c0d2e4f6a8b0ca21",
+      "pushed": true,
+      "published": true,
+      "final": true
+    }
+  ],
+  "final_freeze_at": "2026-11-30T23:59:00Z",
+  "provenance": {
+    "kind": "committee",
+    "id": "main",
+    "snapshot": "r1-dev",
+    "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+  }
+}

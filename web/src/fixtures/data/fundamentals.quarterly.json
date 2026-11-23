@@ -1,0 +1,1431 @@
+{
+  "fixture": true,
+  "ticker": "DEMO",
+  "asof": "2026-11-30",
+  "period": "quarterly",
+  "columns": [
+    {
+      "key": "2024-12-31",
+      "label": "Q·2024-12-31",
+      "period_end": "2024-12-31",
+      "derived": false,
+      "available_at": "2025-01-29T21:30:00Z"
+    },
+    {
+      "key": "2025-03-31",
+      "label": "Q·2025-03-31",
+      "period_end": "2025-03-31",
+      "derived": false,
+      "available_at": "2025-04-29T20:30:00Z"
+    },
+    {
+      "key": "2025-06-30",
+      "label": "Q·2025-06-30",
+      "period_end": "2025-06-30",
+      "derived": false,
+      "available_at": "2025-07-29T20:30:00Z"
+    },
+    {
+      "key": "2025-09-30",
+      "label": "Q·2025-09-30",
+      "period_end": "2025-09-30",
+      "derived": true,
+      "available_at": "2025-11-03T21:30:00Z"
+    },
+    {
+      "key": "2025-12-31",
+      "label": "Q·2025-12-31",
+      "period_end": "2025-12-31",
+      "derived": false,
+      "available_at": "2026-01-29T21:30:00Z"
+    },
+    {
+      "key": "2026-03-31",
+      "label": "Q·2026-03-31",
+      "period_end": "2026-03-31",
+      "derived": false,
+      "available_at": "2026-04-29T20:30:00Z"
+    },
+    {
+      "key": "2026-06-30",
+      "label": "Q·2026-06-30",
+      "period_end": "2026-06-30",
+      "derived": false,
+      "available_at": "2026-07-29T20:30:00Z"
+    },
+    {
+      "key": "2026-09-30",
+      "label": "Q·2026-09-30",
+      "period_end": "2026-09-30",
+      "derived": true,
+      "available_at": "2026-11-03T21:30:00Z"
+    }
+  ],
+  "lines": [
+    {
+      "key": "revenue",
+      "label": "Revenue",
+      "unit": "usd",
+      "cells": {
+        "2024-12-31": {
+          "value": 7825470000.0,
+          "accession": "0009000007-25-000061",
+          "available_at": "2025-01-29T21:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000061/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000061",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "revenue.2024-12-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000061/",
+            "available_at": "2025-01-29T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-03-31": {
+          "value": 6286880000.0,
+          "accession": "0009000007-25-000062",
+          "available_at": "2025-04-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000062/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000062",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "revenue.2025-03-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000062/",
+            "available_at": "2025-04-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-06-30": {
+          "value": 6568260000.0,
+          "accession": "0009000007-25-000063",
+          "available_at": "2025-07-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000063/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000063",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "revenue.2025-06-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000063/",
+            "available_at": "2025-07-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-09-30": {
+          "value": 6237070000.0,
+          "accession": "0009000007-25-000064",
+          "available_at": "2025-11-03T21:30:00Z",
+          "form": "10-K",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000064/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000064",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "revenue.2025-09-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000064/",
+            "available_at": "2025-11-03T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-12-31": {
+          "value": 8813180000.0,
+          "accession": "0009000007-26-000065",
+          "available_at": "2026-01-29T21:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000065/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000065",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "revenue.2025-12-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000065/",
+            "available_at": "2026-01-29T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2026-03-31": {
+          "value": 7012520000.0,
+          "accession": "0009000007-26-000066",
+          "available_at": "2026-04-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000066/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000066",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "revenue.2026-03-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000066/",
+            "available_at": "2026-04-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2026-06-30": {
+          "value": 6758230000.0,
+          "accession": "0009000007-26-000067",
+          "available_at": "2026-07-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000067/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000067",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "revenue.2026-06-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000067/",
+            "available_at": "2026-07-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2026-09-30": {
+          "value": 7029020000.0,
+          "accession": "0009000007-26-000068",
+          "available_at": "2026-11-03T21:30:00Z",
+          "form": "10-K",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000068/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000068",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "revenue.2026-09-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000068/",
+            "available_at": "2026-11-03T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        }
+      }
+    },
+    {
+      "key": "gross_profit",
+      "label": "Gross profit",
+      "unit": "usd",
+      "cells": {
+        "2024-12-31": null,
+        "2025-03-31": null,
+        "2025-06-30": null,
+        "2025-09-30": null,
+        "2025-12-31": null,
+        "2026-03-31": null,
+        "2026-06-30": null,
+        "2026-09-30": null
+      }
+    },
+    {
+      "key": "operating_income",
+      "label": "Operating income",
+      "unit": "usd",
+      "cells": {
+        "2024-12-31": {
+          "value": 2318690000.0,
+          "accession": "0009000007-25-000061",
+          "available_at": "2025-01-29T21:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000061/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000061",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "operating_income.2024-12-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000061/",
+            "available_at": "2025-01-29T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-03-31": {
+          "value": 1824590000.0,
+          "accession": "0009000007-25-000062",
+          "available_at": "2025-04-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000062/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000062",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "operating_income.2025-03-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000062/",
+            "available_at": "2025-04-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-06-30": {
+          "value": 1929930000.0,
+          "accession": "0009000007-25-000063",
+          "available_at": "2025-07-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000063/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000063",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "operating_income.2025-06-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000063/",
+            "available_at": "2025-07-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-09-30": {
+          "value": 1867970000.0,
+          "accession": "0009000007-25-000064",
+          "available_at": "2025-11-03T21:30:00Z",
+          "form": "10-K",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000064/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000064",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "operating_income.2025-09-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000064/",
+            "available_at": "2025-11-03T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-12-31": {
+          "value": 2603580000.0,
+          "accession": "0009000007-26-000065",
+          "available_at": "2026-01-29T21:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000065/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000065",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "operating_income.2025-12-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000065/",
+            "available_at": "2026-01-29T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2026-03-31": {
+          "value": 2098240000.0,
+          "accession": "0009000007-26-000066",
+          "available_at": "2026-04-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000066/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000066",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "operating_income.2026-03-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000066/",
+            "available_at": "2026-04-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2026-06-30": {
+          "value": 1875640000.0,
+          "accession": "0009000007-26-000067",
+          "available_at": "2026-07-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000067/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000067",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "operating_income.2026-06-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000067/",
+            "available_at": "2026-07-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2026-09-30": {
+          "value": 2099820000.0,
+          "accession": "0009000007-26-000068",
+          "available_at": "2026-11-03T21:30:00Z",
+          "form": "10-K",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000068/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000068",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "operating_income.2026-09-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000068/",
+            "available_at": "2026-11-03T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        }
+      }
+    },
+    {
+      "key": "net_income",
+      "label": "Net income",
+      "unit": "usd",
+      "cells": {
+        "2024-12-31": {
+          "value": 1860900000.0,
+          "accession": "0009000007-25-000061",
+          "available_at": "2025-01-29T21:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000061/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000061",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "net_income.2024-12-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000061/",
+            "available_at": "2025-01-29T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-03-31": {
+          "value": 1495020000.0,
+          "accession": "0009000007-25-000062",
+          "available_at": "2025-04-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000062/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000062",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "net_income.2025-03-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000062/",
+            "available_at": "2025-04-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-06-30": {
+          "value": 1561930000.0,
+          "accession": "0009000007-25-000063",
+          "available_at": "2025-07-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000063/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000063",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "net_income.2025-06-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000063/",
+            "available_at": "2025-07-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-09-30": {
+          "value": 1483180000.0,
+          "accession": "0009000007-25-000064",
+          "available_at": "2025-11-03T21:30:00Z",
+          "form": "10-K",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000064/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000064",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "net_income.2025-09-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000064/",
+            "available_at": "2025-11-03T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-12-31": {
+          "value": 2095770000.0,
+          "accession": "0009000007-26-000065",
+          "available_at": "2026-01-29T21:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000065/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000065",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "net_income.2025-12-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000065/",
+            "available_at": "2026-01-29T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2026-03-31": {
+          "value": 1667580000.0,
+          "accession": "0009000007-26-000066",
+          "available_at": "2026-04-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000066/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000066",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "net_income.2026-03-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000066/",
+            "available_at": "2026-04-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2026-06-30": {
+          "value": 1607110000.0,
+          "accession": "0009000007-26-000067",
+          "available_at": "2026-07-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000067/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000067",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "net_income.2026-06-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000067/",
+            "available_at": "2026-07-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2026-09-30": {
+          "value": 1671500000.0,
+          "accession": "0009000007-26-000068",
+          "available_at": "2026-11-03T21:30:00Z",
+          "form": "10-K",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000068/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000068",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "net_income.2026-09-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000068/",
+            "available_at": "2026-11-03T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        }
+      }
+    },
+    {
+      "key": "eps_diluted",
+      "label": "Diluted EPS (today's share units)",
+      "unit": "usd_per_share",
+      "cells": {
+        "2024-12-31": {
+          "value": 0.766261,
+          "accession": "0009000007-25-000061",
+          "available_at": "2025-01-29T21:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000061/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000061",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "eps_diluted.2024-12-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000061/",
+            "available_at": "2025-01-29T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-03-31": {
+          "value": 0.652091,
+          "accession": "0009000007-25-000062",
+          "available_at": "2025-04-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000062/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000062",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "eps_diluted.2025-03-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000062/",
+            "available_at": "2025-04-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-06-30": {
+          "value": 0.682482,
+          "accession": "0009000007-25-000063",
+          "available_at": "2025-07-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000063/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000063",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "eps_diluted.2025-06-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000063/",
+            "available_at": "2025-07-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-09-30": {
+          "value": 1.13882,
+          "accession": "0009000007-25-000064",
+          "available_at": "2025-11-03T21:30:00Z",
+          "form": "10-K",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000064/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000064",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "eps_diluted.2025-09-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000064/",
+            "available_at": "2025-11-03T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-12-31": {
+          "value": 1.1962,
+          "accession": "0009000007-26-000065",
+          "available_at": "2026-01-29T21:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000065/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000065",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "eps_diluted.2025-12-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000065/",
+            "available_at": "2026-01-29T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2026-03-31": {
+          "value": 1.61808,
+          "accession": "0009000007-26-000066",
+          "available_at": "2026-04-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000066/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000066",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "eps_diluted.2026-03-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000066/",
+            "available_at": "2026-04-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2026-06-30": {
+          "value": 1.30454,
+          "accession": "0009000007-26-000067",
+          "available_at": "2026-07-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000067/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000067",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "eps_diluted.2026-06-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000067/",
+            "available_at": "2026-07-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2026-09-30": {
+          "value": 0.984138,
+          "accession": "0009000007-26-000068",
+          "available_at": "2026-11-03T21:30:00Z",
+          "form": "10-K",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000068/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000068",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "eps_diluted.2026-09-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000068/",
+            "available_at": "2026-11-03T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        }
+      }
+    },
+    {
+      "key": "ocf",
+      "label": "Operating cash flow",
+      "unit": "usd",
+      "cells": {
+        "2024-12-31": {
+          "value": 2140030000.0,
+          "accession": "0009000007-25-000061",
+          "available_at": "2025-01-29T21:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000061/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000061",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "ocf.2024-12-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000061/",
+            "available_at": "2025-01-29T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-03-31": {
+          "value": 1719270000.0,
+          "accession": "0009000007-25-000062",
+          "available_at": "2025-04-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000062/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000062",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "ocf.2025-03-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000062/",
+            "available_at": "2025-04-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-06-30": {
+          "value": 1796220000.0,
+          "accession": "0009000007-25-000063",
+          "available_at": "2025-07-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000063/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000063",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "ocf.2025-06-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000063/",
+            "available_at": "2025-07-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-09-30": {
+          "value": 1705650000.0,
+          "accession": "0009000007-25-000064",
+          "available_at": "2025-11-03T21:30:00Z",
+          "form": "10-K",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000064/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000064",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "ocf.2025-09-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000064/",
+            "available_at": "2025-11-03T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-12-31": {
+          "value": 2410140000.0,
+          "accession": "0009000007-26-000065",
+          "available_at": "2026-01-29T21:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000065/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000065",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "ocf.2025-12-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000065/",
+            "available_at": "2026-01-29T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2026-03-31": {
+          "value": 1917710000.0,
+          "accession": "0009000007-26-000066",
+          "available_at": "2026-04-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000066/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000066",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "ocf.2026-03-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000066/",
+            "available_at": "2026-04-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2026-06-30": {
+          "value": 1848170000.0,
+          "accession": "0009000007-26-000067",
+          "available_at": "2026-07-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000067/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000067",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "ocf.2026-06-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000067/",
+            "available_at": "2026-07-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2026-09-30": {
+          "value": 1922230000.0,
+          "accession": "0009000007-26-000068",
+          "available_at": "2026-11-03T21:30:00Z",
+          "form": "10-K",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000068/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000068",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "ocf.2026-09-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000068/",
+            "available_at": "2026-11-03T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        }
+      }
+    },
+    {
+      "key": "capex",
+      "label": "Capital expenditure",
+      "unit": "usd",
+      "cells": {
+        "2024-12-31": {
+          "value": 273891000.0,
+          "accession": "0009000007-25-000061",
+          "available_at": "2025-01-29T21:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000061/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000061",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "capex.2024-12-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000061/",
+            "available_at": "2025-01-29T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-03-31": {
+          "value": 220041000.0,
+          "accession": "0009000007-25-000062",
+          "available_at": "2025-04-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000062/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000062",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "capex.2025-03-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000062/",
+            "available_at": "2025-04-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-06-30": {
+          "value": 229889000.0,
+          "accession": "0009000007-25-000063",
+          "available_at": "2025-07-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000063/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000063",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "capex.2025-06-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000063/",
+            "available_at": "2025-07-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-09-30": {
+          "value": 218298000.0,
+          "accession": "0009000007-25-000064",
+          "available_at": "2025-11-03T21:30:00Z",
+          "form": "10-K",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000064/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000064",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "capex.2025-09-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000064/",
+            "available_at": "2025-11-03T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-12-31": {
+          "value": 308461000.0,
+          "accession": "0009000007-26-000065",
+          "available_at": "2026-01-29T21:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000065/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000065",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "capex.2025-12-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000065/",
+            "available_at": "2026-01-29T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2026-03-31": {
+          "value": 245438000.0,
+          "accession": "0009000007-26-000066",
+          "available_at": "2026-04-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000066/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000066",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "capex.2026-03-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000066/",
+            "available_at": "2026-04-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2026-06-30": {
+          "value": 236538000.0,
+          "accession": "0009000007-26-000067",
+          "available_at": "2026-07-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000067/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000067",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "capex.2026-06-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000067/",
+            "available_at": "2026-07-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2026-09-30": {
+          "value": 246016000.0,
+          "accession": "0009000007-26-000068",
+          "available_at": "2026-11-03T21:30:00Z",
+          "form": "10-K",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000068/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000068",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "capex.2026-09-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000068/",
+            "available_at": "2026-11-03T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        }
+      }
+    },
+    {
+      "key": "dividends",
+      "label": "Dividends paid",
+      "unit": "usd",
+      "cells": {
+        "2024-12-31": {
+          "value": 409397000.0,
+          "accession": "0009000007-25-000061",
+          "available_at": "2025-01-29T21:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000061/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000061",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "dividends.2024-12-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000061/",
+            "available_at": "2025-01-29T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-03-31": {
+          "value": 328905000.0,
+          "accession": "0009000007-25-000062",
+          "available_at": "2025-04-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000062/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000062",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "dividends.2025-03-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000062/",
+            "available_at": "2025-04-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-06-30": {
+          "value": 343625000.0,
+          "accession": "0009000007-25-000063",
+          "available_at": "2025-07-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000063/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000063",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "dividends.2025-06-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000063/",
+            "available_at": "2025-07-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-09-30": {
+          "value": 326299000.0,
+          "accession": "0009000007-25-000064",
+          "available_at": "2025-11-03T21:30:00Z",
+          "form": "10-K",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000064/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000064",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "dividends.2025-09-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000064/",
+            "available_at": "2025-11-03T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-12-31": {
+          "value": 461070000.0,
+          "accession": "0009000007-26-000065",
+          "available_at": "2026-01-29T21:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000065/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000065",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "dividends.2025-12-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000065/",
+            "available_at": "2026-01-29T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2026-03-31": {
+          "value": 366867000.0,
+          "accession": "0009000007-26-000066",
+          "available_at": "2026-04-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000066/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000066",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "dividends.2026-03-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000066/",
+            "available_at": "2026-04-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2026-06-30": {
+          "value": 353564000.0,
+          "accession": "0009000007-26-000067",
+          "available_at": "2026-07-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000067/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000067",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "dividends.2026-06-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000067/",
+            "available_at": "2026-07-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2026-09-30": {
+          "value": 367730000.0,
+          "accession": "0009000007-26-000068",
+          "available_at": "2026-11-03T21:30:00Z",
+          "form": "10-K",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000068/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000068",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "dividends.2026-09-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000068/",
+            "available_at": "2026-11-03T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        }
+      }
+    },
+    {
+      "key": "buybacks",
+      "label": "Share repurchases",
+      "unit": "usd",
+      "cells": {
+        "2024-12-31": {
+          "value": 1302630000.0,
+          "accession": "0009000007-25-000061",
+          "available_at": "2025-01-29T21:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000061/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000061",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "buybacks.2024-12-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000061/",
+            "available_at": "2025-01-29T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-03-31": {
+          "value": 1046510000.0,
+          "accession": "0009000007-25-000062",
+          "available_at": "2025-04-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000062/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000062",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "buybacks.2025-03-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000062/",
+            "available_at": "2025-04-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-06-30": {
+          "value": 1093350000.0,
+          "accession": "0009000007-25-000063",
+          "available_at": "2025-07-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000063/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000063",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "buybacks.2025-06-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000063/",
+            "available_at": "2025-07-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-09-30": {
+          "value": 1038220000.0,
+          "accession": "0009000007-25-000064",
+          "available_at": "2025-11-03T21:30:00Z",
+          "form": "10-K",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000064/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-25-000064",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "buybacks.2025-09-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000725000064/",
+            "available_at": "2025-11-03T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2025-12-31": {
+          "value": 1467040000.0,
+          "accession": "0009000007-26-000065",
+          "available_at": "2026-01-29T21:30:00Z",
+          "form": "10-Q",
+          "derived": false,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000065/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000065",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "buybacks.2025-12-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000065/",
+            "available_at": "2026-01-29T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2026-03-31": {
+          "value": 1167300000.0,
+          "accession": "0009000007-26-000066",
+          "available_at": "2026-04-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000066/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000066",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "buybacks.2026-03-31",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000066/",
+            "available_at": "2026-04-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2026-06-30": {
+          "value": 1124970000.0,
+          "accession": "0009000007-26-000067",
+          "available_at": "2026-07-29T20:30:00Z",
+          "form": "10-Q",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000067/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000067",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "buybacks.2026-06-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000067/",
+            "available_at": "2026-07-29T20:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        },
+        "2026-09-30": {
+          "value": 1170050000.0,
+          "accession": "0009000007-26-000068",
+          "available_at": "2026-11-03T21:30:00Z",
+          "form": "10-K",
+          "derived": true,
+          "source_url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000068/",
+          "provenance": {
+            "kind": "filing",
+            "id": "0009000007-26-000068",
+            "snapshot": "r1-dev",
+            "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+            "key": "buybacks.2026-09-30",
+            "source": "Synthetic (fixture)",
+            "url": "https://www.sec.gov/Archives/edgar/data/9000007/000900000726000068/",
+            "available_at": "2026-11-03T21:30:00Z",
+            "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+            "licence": "L0"
+          }
+        }
+      }
+    }
+  ],
+  "facts": null,
+  "notes": [
+    "As first reported (earliest accepted filing per period).",
+    "Q4 and cash-flow quarters are derived (FY − 9M, or year-to-date differences) and flagged."
+  ],
+  "provenance": {
+    "kind": "dataset",
+    "id": "fundamentals",
+    "snapshot": "r1-dev",
+    "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+    "source": "Synthetic (fixture)",
+    "rule": "available_at = EDGAR acceptance; usable from the first close after acceptance",
+    "licence": "L0"
+  }
+}

@@ -1,0 +1,12 @@
+# Round-2 idea (researched, built and tested in round 2, D-101).
+id: IC-033
+title: Buy into a slump, get paid in the recovery
+author: probcast
+created_at: '2026-11-19T00:30:00Z'
+sample: true
+text: When factories are producing far below their long-run trend, the economy is in a slump, and investors
+  who hold stocks then tend to be paid more as it recovers.
+analyzer: macro.output_gap
+implementation: 'Cooper & Priestley (2009): industrial production minus its quadratic trend, refitted
+  each month on the figures published by then (first releases, used from the end of the following month).
+  C3, negative sign; 6 and 12 months.'

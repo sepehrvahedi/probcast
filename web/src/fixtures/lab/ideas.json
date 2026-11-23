@@ -1,0 +1,84 @@
+{
+  "fixture": true,
+  "items": [
+    {
+      "author": "heron",
+      "content_hash": "bcdc2c629bdf5bf4dd031f4ad3e3d5413ddeac79f75d2f86f989cd0f326122f0",
+      "entered_by": "kestrel",
+      "hash": "0d45797bfd439d9ef83e0e47062d3b2148450f0223727ceed9a1e5d4c4f790bc",
+      "horizons": [63],
+      "id": "IC-001",
+      "path": "ideas/IC-001.yaml",
+      "report_section": "macro",
+      "seq": 1,
+      "status": "evaluated",
+      "success_criterion": "Beats the CAPM anchor on CRPS at 63 sessions with grade ≥ B and 80% intervals covering 70–90%.",
+      "title": "USD index sensitivity",
+      "ts": "2026-11-18T10:00:00Z"
+    },
+    {
+      "author": "wren",
+      "content_hash": "0b9d33af3f91c43e691099427572ff1db883fa0d5f0619cb9f067c25ab8d8e2f",
+      "entered_by": "kestrel",
+      "hash": "df77f0ce1ab8f8406af7bad8c37d0157eeeb7c70e0a0342a773ff1aac36e4862",
+      "horizons": [252],
+      "id": "IC-002",
+      "path": "ideas/IC-002.yaml",
+      "report_section": "fundamental",
+      "seq": 2,
+      "status": "committee",
+      "success_criterion": "80% intervals cover 70–90% at 252 sessions; descriptive role otherwise.",
+      "title": "Earnings yield vs own history",
+      "ts": "2026-11-18T11:05:00Z"
+    },
+    {
+      "author": "finch",
+      "content_hash": "9bf4f9ee392d93b107d0a65b783885c3d46365a34502be439b8bdfe46b296014",
+      "entered_by": "heron",
+      "hash": "4f01767cd51d3c97355aede1947e5ad9b487d9481239877e16bd6fcb49892c01",
+      "horizons": [21],
+      "id": "IC-003",
+      "path": "ideas/IC-003.yaml",
+      "report_section": "future",
+      "seq": 3,
+      "status": "leak_tested",
+      "success_criterion": "Beats the CAPM anchor on CRPS at 21 sessions with grade ≥ B.",
+      "title": "One-month reversal",
+      "ts": "2026-11-18T12:10:00Z"
+    },
+    {
+      "author": "osprey",
+      "content_hash": "8bf236a438e6b6e32ef38619c927eecff6aa14fda3fa1999534967cee425493a",
+      "entered_by": "kestrel",
+      "hash": "44db17cb73711c496bc6811075d517452126fbcd2573c4d186aa6c977cbda124",
+      "horizons": [126],
+      "id": "IC-004",
+      "path": "ideas/IC-004.yaml",
+      "report_section": "macro",
+      "seq": 4,
+      "status": "implementing",
+      "success_criterion": "Beats the CAPM anchor on CRPS at 126 sessions with grade ≥ C.",
+      "title": "Real-yield sensitivity",
+      "ts": "2026-11-18T13:15:00Z"
+    },
+    {
+      "author": "heron",
+      "content_hash": "5c2af02f1266ea5b76ccf53700949ae4c3b3409b23a558c887378b06050bbd22",
+      "entered_by": "kestrel",
+      "hash": "471f54fc3394d52ecbf47e57c60fdf9839d4471758509907a5bfb4391fbff7ff",
+      "horizons": [5],
+      "id": "IC-005",
+      "path": "ideas/IC-005.yaml",
+      "report_section": "sector",
+      "seq": 5,
+      "status": "parked",
+      "success_criterion": "Beats the CAPM anchor on CRPS at 5 sessions with grade ≥ C.",
+      "title": "Product-launch week drift",
+      "ts": "2026-11-18T14:20:00Z"
+    }
+  ],
+  "provenance": {
+    "kind": "ledger",
+    "id": "registry/ideas.jsonl"
+  }
+}

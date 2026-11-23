@@ -1,0 +1,269 @@
+{
+  "fixture": true,
+  "items": [
+    {
+      "id": "events.earnings_drift",
+      "name": "Post-earnings drift",
+      "version": "1.0.0+3f9c2a",
+      "family": "events",
+      "author": "wren",
+      "slot": 1,
+      "builtin": false,
+      "natural_horizon": 21,
+      "leak": {
+        "status": "passed",
+        "tests": {
+          "T1": { "passed": true, "at": "2026-11-20T14:00:00Z" },
+          "T2": { "passed": true, "at": "2026-11-20T14:00:00Z" },
+          "T3": { "passed": true, "at": "2026-11-20T14:00:00Z" },
+          "T5": { "passed": true, "at": "2026-11-20T14:00:00Z" },
+          "T7": { "passed": true, "at": "2026-11-20T14:00:00Z" },
+          "TDN": { "passed": true, "at": "2026-11-20T14:00:00Z" }
+        }
+      },
+      "in_committee": true
+    },
+    {
+      "id": "macro.usd_sensitivity",
+      "name": "USD sensitivity",
+      "version": "1.1.0+3fbb19",
+      "family": "macro.fx",
+      "author": "heron",
+      "slot": 2,
+      "builtin": false,
+      "natural_horizon": 63,
+      "leak": {
+        "status": "passed",
+        "tests": {
+          "T1": { "passed": true, "at": "2026-11-21T14:01:00Z" },
+          "T2": { "passed": true, "at": "2026-11-21T14:01:00Z" },
+          "T3": { "passed": true, "at": "2026-11-21T14:01:00Z" },
+          "T5": { "passed": true, "at": "2026-11-21T14:01:00Z" },
+          "T7": { "passed": true, "at": "2026-11-21T14:01:00Z" },
+          "TDN": { "passed": true, "at": "2026-11-21T14:01:00Z" }
+        }
+      },
+      "in_committee": true
+    },
+    {
+      "id": "technical.momentum_12_1",
+      "name": "Momentum 12-1",
+      "version": "1.2.0+3fda08",
+      "family": "technical.trend",
+      "author": "finch",
+      "slot": 3,
+      "builtin": false,
+      "natural_horizon": 252,
+      "leak": {
+        "status": "passed",
+        "tests": {
+          "T1": { "passed": true, "at": "2026-11-22T14:02:00Z" },
+          "T2": { "passed": true, "at": "2026-11-22T14:02:00Z" },
+          "T3": { "passed": true, "at": "2026-11-22T14:02:00Z" },
+          "T5": { "passed": true, "at": "2026-11-22T14:02:00Z" },
+          "T7": { "passed": true, "at": "2026-11-22T14:02:00Z" },
+          "TDN": { "passed": true, "at": "2026-11-22T14:02:00Z" }
+        }
+      },
+      "in_committee": true
+    },
+    {
+      "id": "valuation.fed_model_gap",
+      "name": "Fed-model gap",
+      "version": "1.0.0+3ff8f7",
+      "family": "valuation",
+      "author": "heron",
+      "slot": 4,
+      "builtin": false,
+      "natural_horizon": 252,
+      "leak": {
+        "status": "passed",
+        "tests": {
+          "T1": { "passed": true, "at": "2026-11-20T14:03:00Z" },
+          "T2": { "passed": true, "at": "2026-11-20T14:03:00Z" },
+          "T3": { "passed": true, "at": "2026-11-20T14:03:00Z" },
+          "T5": { "passed": true, "at": "2026-11-20T14:03:00Z" },
+          "T7": { "passed": true, "at": "2026-11-20T14:03:00Z" },
+          "TDN": { "passed": true, "at": "2026-11-20T14:03:00Z" }
+        }
+      },
+      "in_committee": true
+    },
+    {
+      "id": "technical.rsi_reversal",
+      "name": "RSI reversal",
+      "version": "1.1.0+4017e6",
+      "family": "technical.reversion",
+      "author": "osprey",
+      "slot": 5,
+      "builtin": false,
+      "natural_horizon": 21,
+      "leak": {
+        "status": "passed",
+        "tests": {
+          "T1": { "passed": true, "at": "2026-11-21T14:04:00Z" },
+          "T2": { "passed": true, "at": "2026-11-21T14:04:00Z" },
+          "T3": { "passed": true, "at": "2026-11-21T14:04:00Z" },
+          "T5": { "passed": true, "at": "2026-11-21T14:04:00Z" },
+          "T7": { "passed": true, "at": "2026-11-21T14:04:00Z" },
+          "TDN": { "passed": true, "at": "2026-11-21T14:04:00Z" }
+        }
+      },
+      "in_committee": false
+    },
+    {
+      "id": "valuation.earnings_yield",
+      "name": "Earnings yield vs own history",
+      "version": "1.2.0+4036d5",
+      "family": "valuation",
+      "author": "wren",
+      "slot": 6,
+      "builtin": false,
+      "natural_horizon": 252,
+      "leak": {
+        "status": "passed",
+        "tests": {
+          "T1": { "passed": true, "at": "2026-11-22T14:05:00Z" },
+          "T2": { "passed": true, "at": "2026-11-22T14:05:00Z" },
+          "T3": { "passed": true, "at": "2026-11-22T14:05:00Z" },
+          "T5": { "passed": true, "at": "2026-11-22T14:05:00Z" },
+          "T7": { "passed": true, "at": "2026-11-22T14:05:00Z" },
+          "TDN": { "passed": true, "at": "2026-11-22T14:05:00Z" }
+        }
+      },
+      "in_committee": true
+    },
+    {
+      "id": "technical.trend_200d",
+      "name": "200-day trend filter",
+      "version": "1.0.0+4055c4",
+      "family": "technical.trend",
+      "author": "finch",
+      "slot": 1,
+      "builtin": false,
+      "natural_horizon": 63,
+      "leak": {
+        "status": "passed",
+        "tests": {
+          "T1": { "passed": true, "at": "2026-11-20T14:06:00Z" },
+          "T2": { "passed": true, "at": "2026-11-20T14:06:00Z" },
+          "T3": { "passed": true, "at": "2026-11-20T14:06:00Z" },
+          "T5": { "passed": true, "at": "2026-11-20T14:06:00Z" },
+          "T7": { "passed": true, "at": "2026-11-20T14:06:00Z" },
+          "TDN": { "passed": true, "at": "2026-11-20T14:06:00Z" }
+        }
+      },
+      "in_committee": true
+    },
+    {
+      "id": "technical.ma_cross",
+      "name": "Moving-average cross",
+      "version": "1.1.0+4074b3",
+      "family": "technical.trend",
+      "author": "osprey",
+      "slot": 2,
+      "builtin": false,
+      "natural_horizon": 63,
+      "leak": {
+        "status": "passed",
+        "tests": {
+          "T1": { "passed": true, "at": "2026-11-21T14:07:00Z" },
+          "T2": { "passed": true, "at": "2026-11-21T14:07:00Z" },
+          "T3": { "passed": true, "at": "2026-11-21T14:07:00Z" },
+          "T5": { "passed": true, "at": "2026-11-21T14:07:00Z" },
+          "T7": { "passed": true, "at": "2026-11-21T14:07:00Z" },
+          "TDN": { "passed": true, "at": "2026-11-21T14:07:00Z" }
+        }
+      },
+      "in_committee": true
+    },
+    {
+      "id": "technical.bollinger_reversion",
+      "name": "Bollinger reversion",
+      "version": "1.2.0+4093a2",
+      "family": "technical.reversion",
+      "author": "finch",
+      "slot": 3,
+      "builtin": false,
+      "natural_horizon": 21,
+      "leak": {
+        "status": "passed",
+        "tests": {
+          "T1": { "passed": true, "at": "2026-11-22T14:08:00Z" },
+          "T2": { "passed": true, "at": "2026-11-22T14:08:00Z" },
+          "T3": { "passed": true, "at": "2026-11-22T14:08:00Z" },
+          "T5": { "passed": true, "at": "2026-11-22T14:08:00Z" },
+          "T7": { "passed": true, "at": "2026-11-22T14:08:00Z" },
+          "TDN": { "passed": true, "at": "2026-11-22T14:08:00Z" }
+        }
+      },
+      "in_committee": true
+    },
+    {
+      "id": "macro.term_spread",
+      "name": "Term-spread tilt",
+      "version": "1.0.0+40b291",
+      "family": "macro.rates",
+      "author": "osprey",
+      "slot": 4,
+      "builtin": false,
+      "natural_horizon": 126,
+      "leak": {
+        "status": "passed",
+        "tests": {
+          "T1": { "passed": true, "at": "2026-11-20T14:09:00Z" },
+          "T2": { "passed": true, "at": "2026-11-20T14:09:00Z" },
+          "T3": { "passed": true, "at": "2026-11-20T14:09:00Z" },
+          "T5": { "passed": true, "at": "2026-11-20T14:09:00Z" },
+          "T7": { "passed": true, "at": "2026-11-20T14:09:00Z" },
+          "TDN": { "passed": true, "at": "2026-11-20T14:09:00Z" }
+        }
+      },
+      "in_committee": true
+    },
+    {
+      "id": "volatility.ewma_blend",
+      "name": "EWMA volatility blend",
+      "version": "1.1.0+40d180",
+      "family": "volatility",
+      "author": "kestrel",
+      "slot": 5,
+      "builtin": true,
+      "natural_horizon": 21,
+      "leak": {
+        "status": "passed",
+        "tests": {
+          "T1": { "passed": true, "at": "2026-11-21T14:00:00Z" },
+          "T2": { "passed": true, "at": "2026-11-21T14:00:00Z" },
+          "T3": { "passed": true, "at": "2026-11-21T14:00:00Z" },
+          "T5": { "passed": true, "at": "2026-11-21T14:00:00Z" },
+          "T7": { "passed": true, "at": "2026-11-21T14:00:00Z" },
+          "TDN": { "passed": true, "at": "2026-11-21T14:00:00Z" }
+        }
+      },
+      "in_committee": true
+    },
+    {
+      "id": "volatility.garch_t",
+      "name": "GARCH(1,1)-t",
+      "version": "1.2.0+40f06f",
+      "family": "volatility",
+      "author": "kestrel",
+      "slot": 6,
+      "builtin": true,
+      "natural_horizon": 21,
+      "leak": {
+        "status": "passed",
+        "tests": {
+          "T1": { "passed": true, "at": "2026-11-22T14:01:00Z" },
+          "T2": { "passed": true, "at": "2026-11-22T14:01:00Z" },
+          "T3": { "passed": true, "at": "2026-11-22T14:01:00Z" },
+          "T5": { "passed": true, "at": "2026-11-22T14:01:00Z" },
+          "T7": { "passed": true, "at": "2026-11-22T14:01:00Z" },
+          "TDN": { "passed": true, "at": "2026-11-22T14:01:00Z" }
+        }
+      },
+      "in_committee": true
+    }
+  ]
+}

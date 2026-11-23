@@ -1,0 +1,208 @@
+{
+  "fixture": true,
+  "id": "IC-002",
+  "status": "committee",
+  "registered": true,
+  "record": {
+    "author": "wren",
+    "content_hash": "0b9d33af3f91c43e691099427572ff1db883fa0d5f0619cb9f067c25ab8d8e2f",
+    "entered_by": "kestrel",
+    "hash": "df77f0ce1ab8f8406af7bad8c37d0157eeeb7c70e0a0342a773ff1aac36e4862",
+    "horizons": [252],
+    "id": "IC-002",
+    "path": "ideas/IC-002.yaml",
+    "report_section": "fundamental",
+    "seq": 2,
+    "status": "committee",
+    "success_criterion": "80% intervals cover 70–90% at 252 sessions; descriptive role otherwise.",
+    "title": "Earnings yield vs own history",
+    "ts": "2026-11-18T11:05:00Z"
+  },
+  "history": [
+    {
+      "seq": 2,
+      "at": "2026-11-18T11:05:00Z",
+      "status": "registered",
+      "by": "kestrel",
+      "hash": "df77f0ce1ab8f8406af7bad8c37d0157eeeb7c70e0a0342a773ff1aac36e4862",
+      "reason": null
+    },
+    {
+      "seq": 12,
+      "at": "2026-11-19T12:00:00Z",
+      "status": "triaged",
+      "by": "kestrel",
+      "hash": null,
+      "reason": null
+    },
+    {
+      "seq": 22,
+      "at": "2026-11-20T20:00:00Z",
+      "status": "implementing",
+      "by": "kestrel",
+      "hash": null,
+      "reason": null
+    },
+    {
+      "seq": 32,
+      "at": "2026-11-21T12:00:00Z",
+      "status": "leak_tested",
+      "by": "kestrel",
+      "hash": null,
+      "reason": null
+    },
+    {
+      "seq": 42,
+      "at": "2026-11-22T20:00:00Z",
+      "status": "evaluated",
+      "by": "kestrel",
+      "hash": null,
+      "reason": null
+    },
+    {
+      "seq": 52,
+      "at": "2026-11-23T12:00:00Z",
+      "status": "committee",
+      "by": "kestrel",
+      "hash": null,
+      "reason": null
+    }
+  ],
+  "card": {
+    "id": "IC-002",
+    "title": "Earnings yield vs own history",
+    "author": "wren",
+    "report_section": "fundamental",
+    "course_concepts": ["valuation/DCF", "EMH"],
+    "hypothesis": "When the earnings yield is in the top tercile of its own past values, DEMO's 12M return is higher than its CAPM expectation.",
+    "rationale": "Cheap valuations relative to history may mean-revert. The market may already price this. Counter-argument: low prices can reflect lower expected growth.",
+    "data_needed": [
+      "10-K/10-Q diluted EPS — sec_filing (acceptance_then_first_close): on the SEC acceptance time",
+      "prices — exchange_price (same_session_close): at each close"
+    ],
+    "rule": "TTM diluted EPS divided by the as-of close; tercile cut-offs from past values only (expanding window).",
+    "parameters": {
+      "terciles": [3]
+    },
+    "horizons": [252],
+    "expected_direction": "higher; about +4% over 12 months",
+    "success_criterion": "80% intervals cover 70–90% at 252 sessions; descriptive role otherwise.",
+    "drop_if": "Coverage outside 60–95% at 252 sessions.",
+    "references": [
+      "Campbell, J.Y. and Shiller, R.J. (1988) 'Stock prices, earnings, and expected dividends', Journal of Finance, 43(3), pp. 661–676."
+    ],
+    "holdout_ack": true,
+    "created_at": "2026-11-18T11:05:00Z"
+  },
+  "path": "ideas/IC-002.yaml",
+  "integrity": {
+    "content_hash": "0b9d33af3f91c43e691099427572ff1db883fa0d5f0619cb9f067c25ab8d8e2f",
+    "recomputed": "0b9d33af3f91c43e691099427572ff1db883fa0d5f0619cb9f067c25ab8d8e2f",
+    "match": true,
+    "chain_ok": true,
+    "registry": "registry/ideas.jsonl"
+  },
+  "checks": [
+    {
+      "id": "hypothesis",
+      "status": "ok",
+      "text": "Hypothesis has a condition, a direction, a horizon and a comparison",
+      "detail": ""
+    },
+    {
+      "id": "data_rules",
+      "status": "ok",
+      "text": "Every data item has a timing rule (when it becomes public)",
+      "detail": "2 item(s)"
+    },
+    {
+      "id": "no_full_sample",
+      "status": "ok",
+      "text": "No full-sample statistics in the rule",
+      "detail": ""
+    },
+    {
+      "id": "parameters",
+      "status": "ok",
+      "text": "At most 3 alternatives per parameter",
+      "detail": ""
+    },
+    {
+      "id": "planned_trials",
+      "status": "ok",
+      "text": "Planned configurations 1 (soft budget 20)",
+      "detail": ""
+    },
+    {
+      "id": "horizons",
+      "status": "ok",
+      "text": "Horizons are on the contract grid (5, 21, 63, 126, 252 sessions)",
+      "detail": ""
+    },
+    {
+      "id": "mde",
+      "status": "warn",
+      "text": "Expected +4.0% is below the MDE at 252 sessions (±42.5%)",
+      "detail": "Likely undetectable on DEMO alone; consider descriptive-only."
+    },
+    {
+      "id": "references",
+      "status": "ok",
+      "text": "At least one reference",
+      "detail": "1 reference(s)"
+    },
+    {
+      "id": "holdout_ack",
+      "status": "ok",
+      "text": "Holdout confirmation ticked",
+      "detail": "Designed without looking at any ProbCast result for 2021 onwards."
+    },
+    {
+      "id": "licence",
+      "status": "info",
+      "text": "Licensed data (L3/L4) stays local-only",
+      "detail": "Licensed data: none"
+    }
+  ],
+  "analyzers": [
+    {
+      "id": "valuation.earnings_yield",
+      "name": "Earnings yield vs own history",
+      "version": "1.0.0+3f9c2a1",
+      "family": "valuation",
+      "slot": 6,
+      "trials": {
+        "analyzer": 3,
+        "family": {
+          "id": "valuation",
+          "n": 7
+        },
+        "team": 41
+      }
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "R-DEMO-06",
+      "analyzer": "valuation.earnings_yield",
+      "created_at": "2026-11-22T14:05:00Z",
+      "author": "wren",
+      "params_hash": "c278bb9e1dc2"
+    }
+  ],
+  "audit": [
+    {
+      "at": "2026-11-18T11:05:00Z",
+      "actor": "kestrel",
+      "action": "idea.register",
+      "reason": "Earnings yield vs own history"
+    }
+  ],
+  "immutable": true,
+  "amend_note": "Content is immutable after registration; an amendment is a new card and counts as a new trial.",
+  "provenance": {
+    "kind": "ledger",
+    "id": "registry/ideas.jsonl",
+    "key": "IC-002"
+  }
+}

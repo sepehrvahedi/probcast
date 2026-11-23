@@ -1,0 +1,11 @@
+# Round-2 idea (researched, built and tested in round 2, D-101).
+id: IC-023
+title: Shrinking share count is a good sign
+author: probcast
+created_at: '2026-11-19T00:30:00Z'
+sample: true
+text: Companies buy back their own shares when they think the stock is cheap and issue new shares when
+  it looks dear, so a shrinking share count is a good sign.
+analyzer: fundamental.net_share_issuance
+implementation: 'Pontiff & Woodgate (2008): log change in split-adjusted shares outstanding over a year,
+  from the filing cover page. C3, negative sign; 6 and 12 months.'

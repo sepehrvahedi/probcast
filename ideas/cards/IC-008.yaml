@@ -1,0 +1,9 @@
+# Sample idea card (written as a demonstration).
+id: IC-008
+title: 'Golden cross: above the 200-day average is bullish'
+author: probcast
+created_at: '2026-11-18T18:00:00Z'
+sample: true
+text: When the share price is above its 200-day moving average, the trend is up and the stock tends to
+  keep rising; below it, the outlook is worse.
+analyzer: technical.sma200

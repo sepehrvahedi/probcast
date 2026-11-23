@@ -1,0 +1,12 @@
+# Round-2 idea (researched, built and tested in round 2, D-101).
+id: IC-035
+title: Too much consumer cheer is a warning
+author: probcast
+created_at: '2026-11-19T00:30:00Z'
+sample: true
+text: When consumers are unusually upbeat, consumer-facing stocks are already priced for good times; when
+  consumers are gloomy, these stocks tend to do better afterwards.
+analyzer: sentiment.consumer_contrarian
+implementation: 'Fisher & Statman (2003); Lemmon & Portniaguina (2006): University of Michigan sentiment
+  vs its past 5 years (z-score), used from the end of the following month. C3, negative for consumer sectors
+  (XLY, XLP), learned elsewhere; 6 and 12 months.'

@@ -1,0 +1,158 @@
+{
+  "fixture": true,
+  "analyzer": {
+    "id": "macro.usd_sensitivity",
+    "name": "USD sensitivity",
+    "version": "1.1.0+3fbb19",
+    "family": "macro.fx",
+    "author": "heron",
+    "idea_card": "IC-001",
+    "slot": 2,
+    "horizons": [21, 63, 126, 252],
+    "calibrator": "C1",
+    "headline_horizon": 252
+  },
+  "protocol": {
+    "text": "Standard walk-forward: month-end origins from 1990; segments by outcome date (dev ≤ 2015, val 2016–20); holdout ≥ 2021 sealed.",
+    "seed": 7,
+    "origin_stride": 1,
+    "eval_start": "1990-01-01",
+    "dev_end": "2015-12-31",
+    "val_end": "2020-12-31",
+    "holdout_start": "2021-01-01"
+  },
+  "snapshot": {
+    "id": "r1-dev",
+    "hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+  },
+  "declared_grid": {
+    "weeks": [13, 8, 26]
+  },
+  "undeclared_keys": [],
+  "presets": [
+    {
+      "id": "default",
+      "kind": "default",
+      "label": "card default",
+      "description": "weeks 13",
+      "params": {},
+      "full_params": {
+        "weeks": 13
+      },
+      "params_hash": "c278bb9e1dc2b14ac7a3660bd5830a60ead671a0641996a4af3fd1d84050100d",
+      "evaluated": true,
+      "run_id": "R-DEMO-02",
+      "cache_hit": true,
+      "trials": {
+        "before": {
+          "analyzer": 3,
+          "family": {
+            "id": "macro.fx",
+            "n": 7
+          },
+          "team": 41
+        },
+        "after": {
+          "analyzer": 3,
+          "family": {
+            "id": "macro.fx",
+            "n": 7
+          },
+          "team": 41
+        },
+        "adds": 0
+      },
+      "blocked": null,
+      "warnings": [],
+      "message": "This exact configuration was already evaluated: opening the existing run. No new trial."
+    },
+    {
+      "id": "p2",
+      "kind": "declared",
+      "label": "declared alternative",
+      "description": "weeks 8",
+      "params": {
+        "weeks": 8
+      },
+      "full_params": {
+        "weeks": 8
+      },
+      "params_hash": "a0efc60fd11f76deb89c93ba86a6eab21eae739a9dde788b8fcdf03b8062e9a7",
+      "evaluated": true,
+      "run_id": null,
+      "cache_hit": false,
+      "trials": {
+        "before": {
+          "analyzer": 3,
+          "family": {
+            "id": "macro.fx",
+            "n": 7
+          },
+          "team": 41
+        },
+        "after": {
+          "analyzer": 3,
+          "family": {
+            "id": "macro.fx",
+            "n": 7
+          },
+          "team": 41
+        },
+        "adds": 0
+      },
+      "blocked": null,
+      "warnings": [],
+      "message": "A new run on this snapshot; this configuration is already a trial, so no new trial."
+    },
+    {
+      "id": "p3",
+      "kind": "declared",
+      "label": "declared alternative",
+      "description": "weeks 26",
+      "params": {
+        "weeks": 26
+      },
+      "full_params": {
+        "weeks": 26
+      },
+      "params_hash": "bbaccd2615dec5a4d1b9b0e5fdb23e2de9bdd91640990e6a70e550757262ffb5",
+      "evaluated": false,
+      "run_id": null,
+      "cache_hit": false,
+      "trials": {
+        "before": {
+          "analyzer": 3,
+          "family": {
+            "id": "macro.fx",
+            "n": 7
+          },
+          "team": 41
+        },
+        "after": {
+          "analyzer": 4,
+          "family": {
+            "id": "macro.fx",
+            "n": 8
+          },
+          "team": 42
+        },
+        "adds": 1
+      },
+      "blocked": null,
+      "warnings": [],
+      "message": "This run adds 1 trial."
+    }
+  ],
+  "truncated": false,
+  "budgets": {
+    "trial_budget": 20,
+    "grid_cap": 30
+  },
+  "free_parameters": false,
+  "provenance": {
+    "kind": "ledger",
+    "id": "registry/trials.jsonl",
+    "key": "macro.usd_sensitivity",
+    "snapshot": "r1-dev"
+  }
+}

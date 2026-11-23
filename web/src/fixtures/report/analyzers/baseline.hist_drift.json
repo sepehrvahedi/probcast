@@ -1,0 +1,416 @@
+{
+  "fixture": true,
+  "id": "baseline.hist_drift",
+  "name": "Historical drift (survivor-biased yardstick)",
+  "version": "1.0.0+8b22d46",
+  "family": "baseline",
+  "author": "probcast",
+  "slot": 0,
+  "builtin": true,
+  "natural_horizon": 252,
+  "leak": {
+    "status": "passed",
+    "tests": {
+      "T1": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T2": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T3": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T5": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T7": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      }
+    }
+  },
+  "in_committee": false,
+  "category": "baseline",
+  "report_section": "future",
+  "horizons": [5, 21, 63, 126, 252],
+  "calibrator": "none",
+  "hypothesis": "Future log returns equal the stock's own past mean (biased upward for a known winner).",
+  "references": [],
+  "idea_card": null,
+  "manifest": {
+    "expected_direction": null,
+    "course_concepts": ["survivorship bias"],
+    "informs": ["location", "scale"],
+    "min_history_sessions": 252,
+    "data_dependencies": [],
+    "params": {},
+    "param_grid_declared": {},
+    "manifest_version": "1.0.0",
+    "code_hash": "8b22d463278a330a89be29bdb5861f55fa78f63cf6bd36364804dd395bc3f298"
+  },
+  "literature_prior": null,
+  "idea": null,
+  "dependencies": [
+    {
+      "id": "PX:close_base",
+      "name": "Close, base-share units",
+      "class": "exchange_price",
+      "rule": "same_session_close",
+      "strict_rule": "same_session_close",
+      "licence": "L2",
+      "source": "Yahoo Finance via yfinance"
+    }
+  ],
+  "leak_details": {
+    "T1": "passed",
+    "T2": "passed",
+    "T3": "passed",
+    "T5": "passed",
+    "T7": "passed"
+  },
+  "leak_at": "2026-11-20T14:00:00Z",
+  "status": "baseline",
+  "default_run_id": "20261118T153937-82751642",
+  "anchor_run_id": "20261118T153935-9403903c",
+  "grades": {
+    "5": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": -0.00708897989994961,
+      "ci": {
+        "lo": -0.017985077340088394,
+        "hi": 0.0032746845034053187,
+        "level": 0.9
+      },
+      "n_eff": 104.0,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "baseline",
+          "n": 4
+        },
+        "team": 11
+      },
+      "mde": 0.01759233494837224,
+      "sample": "dev",
+      "dm_p": 0.263844686877684,
+      "bh_q": 0.4652824025777325,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153937-82751642",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.5.dev"
+      },
+      "n": 104,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-11-30"
+      },
+      "cov80": {
+        "est": 0.7403846153846154,
+        "sample": "dev"
+      }
+    },
+    "21": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.026377415158085005,
+      "ci": {
+        "lo": 0.002424052034857749,
+        "hi": 0.048036416589277785,
+        "level": 0.9
+      },
+      "n_eff": 104.0,
+      "grade": "B",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "baseline",
+          "n": 4
+        },
+        "team": 11
+      },
+      "mde": 0.03983092170853717,
+      "sample": "dev",
+      "dm_p": 0.0677105574813114,
+      "bh_q": 0.4739739023691798,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153937-82751642",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.21.dev"
+      },
+      "n": 104,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-11-30"
+      },
+      "cov80": {
+        "est": 0.7596153846153846,
+        "sample": "dev"
+      }
+    },
+    "63": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.015613095751079165,
+      "ci": {
+        "lo": -0.030745686340062927,
+        "hi": 0.05461180732194745,
+        "level": 0.9
+      },
+      "n_eff": 34.333333333333336,
+      "grade": "C",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "baseline",
+          "n": 4
+        },
+        "team": 11
+      },
+      "mde": 0.07735087493958379,
+      "sample": "dev",
+      "dm_p": 0.5823188700584262,
+      "bh_q": 0.729574816454396,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153937-82751642",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.63.dev"
+      },
+      "n": 103,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-08-31"
+      },
+      "cov80": {
+        "est": 0.8349514563106796,
+        "sample": "dev"
+      }
+    },
+    "126": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.028764760853687066,
+      "ci": {
+        "lo": -0.04379781894262291,
+        "hi": 0.08170690253227152,
+        "level": 0.9
+      },
+      "n_eff": 17.0,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "baseline",
+          "n": 4
+        },
+        "team": 11
+      },
+      "mde": 0.12202351597401874,
+      "sample": "dev",
+      "dm_p": 0.5335100304878744,
+      "bh_q": 0.996593332016832,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153937-82751642",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.126.dev"
+      },
+      "n": 102,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-05-29"
+      },
+      "cov80": {
+        "est": 0.7450980392156863,
+        "sample": "dev"
+      }
+    },
+    "252": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.05482175013797286,
+      "ci": {
+        "lo": -0.0545977145642587,
+        "hi": 0.14134257435113745,
+        "level": 0.9
+      },
+      "n_eff": 8.333333333333334,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "baseline",
+          "n": 4
+        },
+        "team": 11
+      },
+      "mde": 0.19201948479262043,
+      "sample": "dev",
+      "dm_p": 0.48069499391915704,
+      "bh_q": 0.8540394417204408,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T153937-82751642",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.252.dev"
+      },
+      "n": 100,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2014-11-28"
+      },
+      "cov80": {
+        "est": 0.75,
+        "sample": "dev"
+      }
+    }
+  },
+  "nutrition": [
+    {
+      "h": 5,
+      "declared": true,
+      "n_eff_max": 104.0,
+      "n_eff": 104.0,
+      "mde": 0.01759233494837224,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 21,
+      "declared": true,
+      "n_eff_max": 104.0,
+      "n_eff": 104.0,
+      "mde": 0.03983092170853717,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 63,
+      "declared": true,
+      "n_eff_max": 34.333333333333336,
+      "n_eff": 34.333333333333336,
+      "mde": 0.07735087493958379,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 126,
+      "declared": true,
+      "n_eff_max": 17.0,
+      "n_eff": 17.0,
+      "mde": 0.12202351597401874,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 252,
+      "declared": true,
+      "n_eff_max": 8.333333333333334,
+      "n_eff": 8.333333333333334,
+      "mde": 0.19201948479262043,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    }
+  ],
+  "latest": {
+    "origin": "2026-11-30",
+    "h": 252,
+    "unit": "log_return",
+    "median": 0.1709152700656343,
+    "interval_80": {
+      "lo": -0.40009841715418815,
+      "hi": 0.7696782596511604,
+      "level": 0.8
+    },
+    "p_up": 0.6364755819188586,
+    "base_rate": {
+      "p": 0.68,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2014-11-28"
+      },
+      "sample": "dev"
+    },
+    "signal": null,
+    "calibration": {
+      "mean_daily_log_return": 0.0006782351986543941,
+      "label": "survivor-biased"
+    },
+    "provenance": {
+      "kind": "run",
+      "id": "20261118T153937-82751642",
+      "snapshot": "fixture-7-+0.000",
+      "snapshot_hash": "fixture-v1-7-+0.000",
+      "key": "forecast.252.latest"
+    }
+  },
+  "trials": {
+    "analyzer": 1,
+    "family": {
+      "id": "baseline",
+      "n": 4
+    },
+    "team": 11
+  },
+  "references_detail": [],
+  "versions": [
+    {
+      "version": "1.0.0+8b22d46",
+      "first_seen": "2026-11-18T15:39:37.416211+00:00",
+      "configs": 1,
+      "runs": ["20261118T153937-82751642"],
+      "current": true
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "20261118T153937-82751642",
+      "analyzer": "baseline.hist_drift",
+      "name": "Historical drift (survivor-biased yardstick)",
+      "version": "1.0.0+8b22d46",
+      "family": "baseline",
+      "author": "probcast",
+      "slot": 0,
+      "status": "completed",
+      "completed_at": "2026-11-18T15:39:37.413448Z",
+      "grades": {
+        "5": {
+          "grade": "D"
+        },
+        "21": {
+          "grade": "B"
+        },
+        "63": {
+          "grade": "C"
+        },
+        "126": {
+          "grade": "D"
+        },
+        "252": {
+          "grade": "D"
+        }
+      },
+      "natural_horizon": 252,
+      "scored": true
+    }
+  ],
+  "provenance": {
+    "kind": "dataset",
+    "id": "analyzer:baseline.hist_drift",
+    "snapshot": "fixture-7-+0.000",
+    "snapshot_hash": "fixture-v1-7-+0.000"
+  }
+}

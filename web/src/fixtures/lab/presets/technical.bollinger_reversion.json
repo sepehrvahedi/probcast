@@ -1,0 +1,81 @@
+{
+  "fixture": true,
+  "analyzer": {
+    "id": "technical.bollinger_reversion",
+    "name": "Bollinger reversion",
+    "version": "1.2.0+4093a2",
+    "family": "technical.reversion",
+    "author": "finch",
+    "idea_card": null,
+    "slot": 3,
+    "horizons": [21, 63, 126, 252],
+    "calibrator": "C1",
+    "headline_horizon": 252
+  },
+  "protocol": {
+    "text": "Standard walk-forward: month-end origins from 1990; segments by outcome date (dev ≤ 2015, val 2016–20); holdout ≥ 2021 sealed.",
+    "seed": 7,
+    "origin_stride": 1,
+    "eval_start": "1990-01-01",
+    "dev_end": "2015-12-31",
+    "val_end": "2020-12-31",
+    "holdout_start": "2021-01-01"
+  },
+  "snapshot": {
+    "id": "r1-dev",
+    "hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+  },
+  "declared_grid": {},
+  "undeclared_keys": [],
+  "presets": [
+    {
+      "id": "default",
+      "kind": "default",
+      "label": "card default",
+      "description": "k 2 · window 20",
+      "params": {},
+      "full_params": {
+        "window": 20,
+        "k": 2
+      },
+      "params_hash": "8f6efcd79eb1019844ebbdfe7e2082454c03be31597f4df2f221fd7774fa3139",
+      "evaluated": true,
+      "run_id": "R-DEMO-09",
+      "cache_hit": true,
+      "trials": {
+        "before": {
+          "analyzer": 1,
+          "family": {
+            "id": "technical.reversion",
+            "n": 12
+          },
+          "team": 41
+        },
+        "after": {
+          "analyzer": 1,
+          "family": {
+            "id": "technical.reversion",
+            "n": 12
+          },
+          "team": 41
+        },
+        "adds": 0
+      },
+      "blocked": null,
+      "warnings": [],
+      "message": "This exact configuration was already evaluated: opening the existing run. No new trial."
+    }
+  ],
+  "truncated": false,
+  "budgets": {
+    "trial_budget": 20,
+    "grid_cap": 30
+  },
+  "free_parameters": false,
+  "provenance": {
+    "kind": "ledger",
+    "id": "registry/trials.jsonl",
+    "key": "technical.bollinger_reversion",
+    "snapshot": "r1-dev"
+  }
+}

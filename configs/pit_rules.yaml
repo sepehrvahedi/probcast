@@ -1,0 +1,31 @@
+# One availability rule per series (contract §6; data plan §1.3). strict = true publication lag.
+classes:
+  exchange_price:      {normal: same_session_close, strict: same_session_close}
+  market_observable:   {normal: same_session_close, strict: plus_1_session}
+  h10_fx:              {normal: same_session_close, strict: next_weekly_release}
+  constructed_weekly:  {normal: alfred_realtime_start, strict: alfred_realtime_start}
+  monthly_macro:       {normal: alfred_realtime_start, strict: alfred_realtime_start}
+  sec_filing:          {normal: acceptance_then_first_close, strict: acceptance_then_first_close}
+  curated_event:       {normal: content_available_at, strict: plus_1_session}
+series:
+  "FRED:DGS1":      market_observable
+  "FRED:DGS2":      market_observable
+  "FRED:DGS10":     market_observable
+  "FRED:DFII10":    market_observable
+  "FRED:DTB3":      market_observable
+  "FRED:VIXCLS":    market_observable
+  "FRED:VXAPLCLS":  market_observable
+  "FRED:VXAZNCLS":  market_observable   # Cboe Amazon volatility index (top32 universe)
+  "FRED:VXGOGCLS":  market_observable   # Cboe Google volatility index (top32 universe)
+  "FRED:BAA10Y":    market_observable   # Moody's Baa minus 10y Treasury; no ALFRED vintages (never revised); the analyzer lags it one session (D-101)
+  "FRED:DCOILWTICO": constructed_weekly # WTI spot (EIA, weekly release); ALFRED real-time dates (D-101)
+  "FRED:DEXUSEU":   h10_fx
+  "FRED:DEXCHUS":   h10_fx
+  "FRED:DEXJPUS":   h10_fx
+  "FRED:DTWEXBGS":  constructed_weekly
+  "FRED:FEDFUNDS":  monthly_macro
+  "FRED:CPIAUCSL":  monthly_macro
+  "FRED:UNRATE":    monthly_macro
+  "FRED:UMCSENT":   monthly_macro
+  "FRED:INDPRO":    monthly_macro
+  "FRED:PCU334413334413": monthly_macro

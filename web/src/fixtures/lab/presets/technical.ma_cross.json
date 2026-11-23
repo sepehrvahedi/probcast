@@ -1,0 +1,122 @@
+{
+  "fixture": true,
+  "analyzer": {
+    "id": "technical.ma_cross",
+    "name": "Moving-average cross",
+    "version": "1.1.0+4074b3",
+    "family": "technical.trend",
+    "author": "osprey",
+    "idea_card": null,
+    "slot": 2,
+    "horizons": [21, 63, 126, 252],
+    "calibrator": "C1",
+    "headline_horizon": 252
+  },
+  "protocol": {
+    "text": "Standard walk-forward: month-end origins from 1990; segments by outcome date (dev ≤ 2015, val 2016–20); holdout ≥ 2021 sealed.",
+    "seed": 7,
+    "origin_stride": 1,
+    "eval_start": "1990-01-01",
+    "dev_end": "2015-12-31",
+    "val_end": "2020-12-31",
+    "holdout_start": "2021-01-01"
+  },
+  "snapshot": {
+    "id": "r1-dev",
+    "hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9"
+  },
+  "declared_grid": {
+    "fast": [50, 20]
+  },
+  "undeclared_keys": [],
+  "presets": [
+    {
+      "id": "default",
+      "kind": "default",
+      "label": "card default",
+      "description": "fast 50 · slow 200",
+      "params": {},
+      "full_params": {
+        "fast": 50,
+        "slow": 200
+      },
+      "params_hash": "76fbe958ff59196f9f0328247c2829d8d8c9d2c5b04bfd9de9eb7826afaa633a",
+      "evaluated": true,
+      "run_id": "R-DEMO-08",
+      "cache_hit": true,
+      "trials": {
+        "before": {
+          "analyzer": 2,
+          "family": {
+            "id": "technical.trend",
+            "n": 30
+          },
+          "team": 41
+        },
+        "after": {
+          "analyzer": 2,
+          "family": {
+            "id": "technical.trend",
+            "n": 30
+          },
+          "team": 41
+        },
+        "adds": 0
+      },
+      "blocked": null,
+      "warnings": [],
+      "message": "This exact configuration was already evaluated: opening the existing run. No new trial."
+    },
+    {
+      "id": "p2",
+      "kind": "declared",
+      "label": "declared alternative",
+      "description": "fast 20 · slow 200",
+      "params": {
+        "fast": 20
+      },
+      "full_params": {
+        "fast": 20,
+        "slow": 200
+      },
+      "params_hash": "a31dabcaa5f8ceb128f3b89c5d7c366ff1b84520c6f1e6feb4a1a457e3ff06ef",
+      "evaluated": false,
+      "run_id": null,
+      "cache_hit": false,
+      "trials": {
+        "before": {
+          "analyzer": 2,
+          "family": {
+            "id": "technical.trend",
+            "n": 30
+          },
+          "team": 41
+        },
+        "after": {
+          "analyzer": 3,
+          "family": {
+            "id": "technical.trend",
+            "n": 31
+          },
+          "team": 42
+        },
+        "adds": 1
+      },
+      "blocked": "Grid cap reached: family technical.trend already has 30 evaluated configurations (cap 30).",
+      "warnings": [],
+      "message": "This run adds 1 trial."
+    }
+  ],
+  "truncated": false,
+  "budgets": {
+    "trial_budget": 20,
+    "grid_cap": 30
+  },
+  "free_parameters": false,
+  "provenance": {
+    "kind": "ledger",
+    "id": "registry/trials.jsonl",
+    "key": "technical.ma_cross",
+    "snapshot": "r1-dev"
+  }
+}

@@ -1,0 +1,352 @@
+{
+  "fixture": true,
+  "snapshot": "fixture-7-+0.000",
+  "rows": [
+    {
+      "key": "final.origin",
+      "value": "2026-11-30",
+      "unit": "date",
+      "source": "committee",
+      "run_id": "C-bf4bf413bbd4",
+      "provenance": {
+        "kind": "ledger",
+        "id": "artifacts/report/fixture-7-+0.000/numbers.csv",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "final.origin"
+      }
+    },
+    {
+      "key": "final.target_date",
+      "value": "2027-12-01",
+      "unit": "date",
+      "source": "committee",
+      "run_id": "C-bf4bf413bbd4",
+      "provenance": {
+        "kind": "ledger",
+        "id": "artifacts/report/fixture-7-+0.000/numbers.csv",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "final.target_date"
+      }
+    },
+    {
+      "key": "final.p0",
+      "value": 98.9,
+      "unit": "price",
+      "source": "committee",
+      "run_id": "C-bf4bf413bbd4",
+      "provenance": {
+        "kind": "ledger",
+        "id": "artifacts/report/fixture-7-+0.000/numbers.csv",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "final.p0"
+      }
+    },
+    {
+      "key": "final.median_price",
+      "value": 94.48,
+      "unit": "price",
+      "source": "committee",
+      "run_id": "C-bf4bf413bbd4",
+      "provenance": {
+        "kind": "ledger",
+        "id": "artifacts/report/fixture-7-+0.000/numbers.csv",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "final.median_price"
+      }
+    },
+    {
+      "key": "final.mean_price",
+      "value": 108.83,
+      "unit": "price",
+      "source": "committee",
+      "run_id": "C-bf4bf413bbd4",
+      "provenance": {
+        "kind": "ledger",
+        "id": "artifacts/report/fixture-7-+0.000/numbers.csv",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "final.mean_price"
+      }
+    },
+    {
+      "key": "final.p10",
+      "value": 50.14,
+      "unit": "price",
+      "source": "committee",
+      "run_id": "C-bf4bf413bbd4",
+      "provenance": {
+        "kind": "ledger",
+        "id": "artifacts/report/fixture-7-+0.000/numbers.csv",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "final.p10"
+      }
+    },
+    {
+      "key": "final.p90",
+      "value": 184.47,
+      "unit": "price",
+      "source": "committee",
+      "run_id": "C-bf4bf413bbd4",
+      "provenance": {
+        "kind": "ledger",
+        "id": "artifacts/report/fixture-7-+0.000/numbers.csv",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "final.p90"
+      }
+    },
+    {
+      "key": "final.p_price_up",
+      "value": 0.464,
+      "unit": "probability",
+      "source": "committee",
+      "run_id": "C-bf4bf413bbd4",
+      "provenance": {
+        "kind": "ledger",
+        "id": "artifacts/report/fixture-7-+0.000/numbers.csv",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "final.p_price_up"
+      }
+    },
+    {
+      "key": "final.sha256",
+      "value": "a0bae0366b284db12c0c85310555870b321c590ab607f112cf17b180416cfb18",
+      "unit": "hash",
+      "source": "committee",
+      "run_id": "C-bf4bf413bbd4",
+      "provenance": {
+        "kind": "ledger",
+        "id": "artifacts/report/fixture-7-+0.000/numbers.csv",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "final.sha256"
+      }
+    },
+    {
+      "key": "anchor.mu",
+      "value": 0.0839,
+      "unit": "log return",
+      "source": "anchor",
+      "run_id": "20261118T153935-9403903c",
+      "provenance": {
+        "kind": "ledger",
+        "id": "artifacts/report/fixture-7-+0.000/numbers.csv",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "anchor.mu"
+      }
+    },
+    {
+      "key": "anchor.beta",
+      "value": 1.071,
+      "unit": "beta",
+      "source": "anchor",
+      "run_id": "20261118T153935-9403903c",
+      "provenance": {
+        "kind": "ledger",
+        "id": "artifacts/report/fixture-7-+0.000/numbers.csv",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "anchor.beta"
+      }
+    },
+    {
+      "key": "anchor.rf",
+      "value": 0.0304,
+      "unit": "rate",
+      "source": "anchor",
+      "run_id": "20261118T153935-9403903c",
+      "provenance": {
+        "kind": "ledger",
+        "id": "artifacts/report/fixture-7-+0.000/numbers.csv",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "anchor.rf"
+      }
+    },
+    {
+      "key": "committee.h5.crpss",
+      "value": -0.0005,
+      "unit": "CRPSS",
+      "source": "committee backtest",
+      "run_id": "C-bf4bf413bbd4",
+      "provenance": {
+        "kind": "ledger",
+        "id": "artifacts/report/fixture-7-+0.000/numbers.csv",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "committee.h5.crpss"
+      }
+    },
+    {
+      "key": "committee.h5.coverage80",
+      "value": 0.75,
+      "unit": "coverage",
+      "source": "committee backtest",
+      "run_id": "C-bf4bf413bbd4",
+      "provenance": {
+        "kind": "ledger",
+        "id": "artifacts/report/fixture-7-+0.000/numbers.csv",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "committee.h5.coverage80"
+      }
+    },
+    {
+      "key": "committee.h21.crpss",
+      "value": 0.0003,
+      "unit": "CRPSS",
+      "source": "committee backtest",
+      "run_id": "C-bf4bf413bbd4",
+      "provenance": {
+        "kind": "ledger",
+        "id": "artifacts/report/fixture-7-+0.000/numbers.csv",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "committee.h21.crpss"
+      }
+    },
+    {
+      "key": "committee.h21.coverage80",
+      "value": 0.769,
+      "unit": "coverage",
+      "source": "committee backtest",
+      "run_id": "C-bf4bf413bbd4",
+      "provenance": {
+        "kind": "ledger",
+        "id": "artifacts/report/fixture-7-+0.000/numbers.csv",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "committee.h21.coverage80"
+      }
+    },
+    {
+      "key": "committee.h63.crpss",
+      "value": -0.0016,
+      "unit": "CRPSS",
+      "source": "committee backtest",
+      "run_id": "C-bf4bf413bbd4",
+      "provenance": {
+        "kind": "ledger",
+        "id": "artifacts/report/fixture-7-+0.000/numbers.csv",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "committee.h63.crpss"
+      }
+    },
+    {
+      "key": "committee.h63.coverage80",
+      "value": 0.777,
+      "unit": "coverage",
+      "source": "committee backtest",
+      "run_id": "C-bf4bf413bbd4",
+      "provenance": {
+        "kind": "ledger",
+        "id": "artifacts/report/fixture-7-+0.000/numbers.csv",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "committee.h63.coverage80"
+      }
+    },
+    {
+      "key": "committee.h126.crpss",
+      "value": -0.0007,
+      "unit": "CRPSS",
+      "source": "committee backtest",
+      "run_id": "C-bf4bf413bbd4",
+      "provenance": {
+        "kind": "ledger",
+        "id": "artifacts/report/fixture-7-+0.000/numbers.csv",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "committee.h126.crpss"
+      }
+    },
+    {
+      "key": "committee.h126.coverage80",
+      "value": 0.745,
+      "unit": "coverage",
+      "source": "committee backtest",
+      "run_id": "C-bf4bf413bbd4",
+      "provenance": {
+        "kind": "ledger",
+        "id": "artifacts/report/fixture-7-+0.000/numbers.csv",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "committee.h126.coverage80"
+      }
+    },
+    {
+      "key": "committee.h252.crpss",
+      "value": 0.0035,
+      "unit": "CRPSS",
+      "source": "committee backtest",
+      "run_id": "C-bf4bf413bbd4",
+      "provenance": {
+        "kind": "ledger",
+        "id": "artifacts/report/fixture-7-+0.000/numbers.csv",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "committee.h252.crpss"
+      }
+    },
+    {
+      "key": "committee.h252.coverage80",
+      "value": 0.71,
+      "unit": "coverage",
+      "source": "committee backtest",
+      "run_id": "C-bf4bf413bbd4",
+      "provenance": {
+        "kind": "ledger",
+        "id": "artifacts/report/fixture-7-+0.000/numbers.csv",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "committee.h252.coverage80"
+      }
+    }
+  ],
+  "consistency": {
+    "ok": true,
+    "checks": [
+      {
+        "id": "ledger_final",
+        "label": "Ledger hash equals the pack's final-forecast hash",
+        "ok": true
+      },
+      {
+        "id": "final_json",
+        "label": "final.json hash equals the pack manifest",
+        "ok": true
+      },
+      {
+        "id": "caption",
+        "label": "F7 caption carries the ledger median",
+        "ok": true
+      },
+      {
+        "id": "files",
+        "label": "Every figure file matches its recorded SHA-256",
+        "ok": true
+      },
+      {
+        "id": "committee",
+        "label": "Pack matches the current committee forecast",
+        "ok": true
+      }
+    ],
+    "checked_at": "2026-11-18T15:40:03.036265Z"
+  },
+  "built_at": "2026-11-18T15:39:57.756951Z",
+  "provenance": {
+    "kind": "ledger",
+    "id": "artifacts/report/fixture-7-+0.000/numbers.csv",
+    "snapshot": "fixture-7-+0.000",
+    "snapshot_hash": "fixture-v1-7-+0.000"
+  }
+}

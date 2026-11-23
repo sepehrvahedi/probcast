@@ -1,0 +1,12 @@
+# Round-2 idea (researched, built and tested in round 2, D-101).
+id: IC-013
+title: Stock-specific momentum
+author: probcast
+created_at: '2026-11-19T00:30:00Z'
+sample: true
+text: When a stock has done better than the market and its sector would explain over the past year, it
+  tends to keep doing so for a few more months.
+analyzer: technical.idio_momentum
+implementation: 'Residual momentum (Blitz, Huij & Martens 2011): 36-month regression of monthly excess
+  returns on the market (S&P 500 TR) and the sector ETF (orthogonalised to the market); signal = sum of
+  residuals for months t-12..t-2 divided by their standard deviation. C3, positive sign; 1, 3 and 6 months.'

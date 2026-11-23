@@ -1,0 +1,318 @@
+{
+  "fixture": true,
+  "policies": [
+    {
+      "id": "holdout",
+      "label": "Holdout boundary",
+      "value": "2021-01-01",
+      "display": "2021-01-01 by outcome date (t + h): pairs with t + h ≥ 2021-01-01 are sealed until the witnessed reveal",
+      "set_in": "src/probcast/contract/grid.py (HOLDOUT_START)",
+      "changed_by": "contract change only",
+      "refs": ["ADR-005", "D-058"]
+    },
+    {
+      "id": "segments",
+      "label": "Evaluation sample",
+      "value": {
+        "start": "1990-01-01",
+        "dev_end": "2015-12-31",
+        "val_end": "2020-12-31"
+      },
+      "display": "Month-end origins from 1990-01; segments by outcome date: dev ≤ 2015, val 2016–2020",
+      "set_in": "src/probcast/contract/grid.py",
+      "changed_by": "contract change only",
+      "refs": ["ADR-005"]
+    },
+    {
+      "id": "freeze_at",
+      "label": "Final freeze",
+      "value": "2026-11-30T23:59:00Z",
+      "display": "Committee and analyzers frozen; the final forecast is computed and hashed (CLI only, witnessed)",
+      "set_in": "documented default (src/probcast/server/policy.py)",
+      "changed_by": "the PO",
+      "refs": ["ADR-015", "D-047", "D-058"]
+    },
+    {
+      "id": "reveal_at",
+      "label": "Holdout reveal",
+      "value": "2026-12-01T12:00:00Z",
+      "display": "Unseals scores only; the forecast hash is unchanged (CLI only, witnessed)",
+      "set_in": "documented default (src/probcast/server/policy.py)",
+      "changed_by": "the PO",
+      "refs": ["ADR-005", "D-047", "D-058"]
+    },
+    {
+      "id": "horizons",
+      "label": "Horizons",
+      "value": [5, 21, 63, 126, 252],
+      "display": "5 / 21 / 63 / 126 / 252 sessions",
+      "set_in": "src/probcast/contract/grid.py (HORIZONS)",
+      "changed_by": "contract change only",
+      "refs": ["ADR-004"]
+    },
+    {
+      "id": "quantile_grid",
+      "label": "Quantile grid",
+      "value": [
+        0.01, 0.025, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7,
+        0.75, 0.8, 0.85, 0.9, 0.95, 0.975, 0.99
+      ],
+      "display": "23 levels from 0.01 to 0.99",
+      "set_in": "src/probcast/contract/grid.py (QUANTILE_LEVELS)",
+      "changed_by": "contract change only",
+      "refs": ["ADR-004"]
+    },
+    {
+      "id": "anchor",
+      "label": "Location anchor",
+      "value": {
+        "erp": 0.05,
+        "sensitivity": [0.04, 0.05, 0.06]
+      },
+      "display": "CAPM: 1-year Treasury + β × ERP 5% (sensitivity 4%, 5%, 6%)",
+      "set_in": "configs/committees/demo.yaml",
+      "changed_by": "the PO",
+      "refs": ["ADR-006"]
+    },
+    {
+      "id": "anchor_weight",
+      "label": "Anchor weight",
+      "value": 0.25,
+      "display": "25% fixed (one vote per family for the rest)",
+      "set_in": "configs/committees/demo.yaml",
+      "changed_by": "the PO",
+      "refs": ["ADR-009"]
+    },
+    {
+      "id": "spread_recalibration",
+      "label": "Spread recalibration",
+      "value": true,
+      "display": "on (fitted on pre-holdout pairs only)",
+      "set_in": "configs/committees/demo.yaml",
+      "changed_by": "the PO",
+      "refs": ["ADR-009"]
+    },
+    {
+      "id": "families",
+      "label": "Families",
+      "value": [
+        "technical.trend",
+        "technical.reversion",
+        "volatility",
+        "macro.rates",
+        "macro.fx",
+        "valuation",
+        "events",
+        "sentiment_alt"
+      ],
+      "display": "8 fixed families: technical.trend, technical.reversion, volatility, macro.rates, macro.fx, valuation, events, sentiment_alt",
+      "set_in": "src/probcast/contract/grid.py (FAMILIES)",
+      "changed_by": "contract change only",
+      "refs": ["ADR-009", "contract"]
+    },
+    {
+      "id": "trial_budget",
+      "label": "Trial soft budget",
+      "value": 20,
+      "display": "20 configurations per idea (over it: a written justification on the card)",
+      "set_in": "documented default (src/probcast/server/policy.py)",
+      "changed_by": "the PO",
+      "refs": ["ADR-012"]
+    },
+    {
+      "id": "grid_cap",
+      "label": "Grid cap",
+      "value": 30,
+      "display": "30 evaluated configurations per family (hard cap; the next launch is refused)",
+      "set_in": "documented default (src/probcast/server/policy.py)",
+      "changed_by": "the PO",
+      "refs": ["ADR-012"]
+    },
+    {
+      "id": "intake_close_at",
+      "label": "Idea intake closes",
+      "value": "2026-11-28T23:59:00Z",
+      "display": "Registration closes; cap 2 active cards per teammate (a warning, not a block)",
+      "set_in": "documented default (idea-card §3)",
+      "changed_by": "the PO",
+      "refs": ["idea-card"]
+    },
+    {
+      "id": "snapshot",
+      "label": "Active snapshot",
+      "value": "r1-dev",
+      "display": "r1-dev (a1b2c3d4e5f6), as of 2026-11-24T21:00:00Z",
+      "set_in": "PROBCAST_SNAPSHOT or the newest snapshot (ADR-015)",
+      "changed_by": "the PO (`probcast snapshot create`)",
+      "refs": ["ADR-015", "ADR-008"]
+    },
+    {
+      "id": "data_mode",
+      "label": "Data mode",
+      "value": "fixtures",
+      "display": "fixtures (synthetic, ticker DEMO)",
+      "set_in": "PROBCAST_DATA",
+      "changed_by": "server start-up",
+      "refs": ["ADR-008"]
+    }
+  ],
+  "holdout": {
+    "state": "sealed",
+    "boundary": "2021-01-01",
+    "basis": "outcome_date",
+    "freeze_at": "2026-11-30T23:59:00Z",
+    "reveal_at": "2026-12-01T12:00:00Z",
+    "frozen": false
+  },
+  "snapshot": {
+    "id": "r1-dev",
+    "hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+    "created_at": "2026-11-24T21:30:00Z",
+    "asof_close": "2026-11-24T21:00:00Z"
+  },
+  "committee": {
+    "id": "main",
+    "name": "demo-committee",
+    "config": "configs/committees/demo.yaml",
+    "config_hash": "70db7c4ce3acf43bcded56785304fd08e5ba16074e70b99042ff3882b2579b44"
+  },
+  "build": {
+    "version": "0.1.0",
+    "git_sha": "5e1f0a9c8b7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f",
+    "api": "/api/v1",
+    "data": "fixtures",
+    "ticker": "DEMO"
+  },
+  "availability": {
+    "classes": [
+      {
+        "id": "exchange_price",
+        "normal": "same_session_close",
+        "strict": "same_session_close"
+      },
+      {
+        "id": "market_observable",
+        "normal": "same_session_close",
+        "strict": "plus_1_session"
+      },
+      {
+        "id": "h10_fx",
+        "normal": "same_session_close",
+        "strict": "next_weekly_release"
+      },
+      {
+        "id": "constructed_weekly",
+        "normal": "alfred_realtime_start",
+        "strict": "alfred_realtime_start"
+      },
+      {
+        "id": "monthly_macro",
+        "normal": "alfred_realtime_start",
+        "strict": "alfred_realtime_start"
+      },
+      {
+        "id": "sec_filing",
+        "normal": "acceptance_then_first_close",
+        "strict": "acceptance_then_first_close"
+      },
+      {
+        "id": "curated_event",
+        "normal": "content_available_at",
+        "strict": "plus_1_session"
+      }
+    ],
+    "series": {
+      "FRED:DGS1": "market_observable",
+      "FRED:DGS2": "market_observable",
+      "FRED:DGS10": "market_observable",
+      "FRED:DFII10": "market_observable",
+      "FRED:DTB3": "market_observable",
+      "FRED:VIXCLS": "market_observable",
+      "FRED:VXAPLCLS": "market_observable",
+      "FRED:DEXUSEU": "h10_fx",
+      "FRED:DEXCHUS": "h10_fx",
+      "FRED:DEXJPUS": "h10_fx",
+      "FRED:DTWEXBGS": "constructed_weekly",
+      "FRED:FEDFUNDS": "monthly_macro",
+      "FRED:CPIAUCSL": "monthly_macro",
+      "FRED:UNRATE": "monthly_macro",
+      "FRED:UMCSENT": "monthly_macro",
+      "FRED:INDPRO": "monthly_macro",
+      "FRED:PCU334413334413": "monthly_macro"
+    },
+    "source": "configs/pit_rules.yaml"
+  },
+  "mde": {
+    "by_horizon": [
+      {
+        "h": 5,
+        "n_pairs": 371,
+        "n_eff": 371.0,
+        "sigma_h": 0.058513753111501476,
+        "mde": 0.017021774511686044
+      },
+      {
+        "h": 21,
+        "n_pairs": 371,
+        "n_eff": 371.0,
+        "sigma_h": 0.11991750945301419,
+        "mde": 0.03488425707410258
+      },
+      {
+        "h": 63,
+        "n_pairs": 369,
+        "n_eff": 123.0,
+        "sigma_h": 0.2077032190897417,
+        "mde": 0.10493599980848724
+      },
+      {
+        "h": 126,
+        "n_pairs": 366,
+        "n_eff": 61.0,
+        "sigma_h": 0.2937367093852631,
+        "mde": 0.210730375385949
+      },
+      {
+        "h": 252,
+        "n_pairs": 360,
+        "n_eff": 30.0,
+        "sigma_h": 0.4154064381794834,
+        "mde": 0.42495841033591986
+      }
+    ],
+    "sigma_annual": 0.4154064381794834,
+    "alpha": 0.05,
+    "power": 0.8,
+    "unit": "mean h-session log return",
+    "formula": "MDE = (z₀.₉₇₅ + z₀.₈) · σ_h · √(4 / n_eff), σ_h = σ·√(h/252), n_eff = n / ceil(h/21)",
+    "reference": "Cohen (1988); A5 §2.6",
+    "sample": "pre-holdout (outcomes ≤ 2020-12-31)"
+  },
+  "intake": {
+    "closes_at": "2026-11-28T23:59:00Z",
+    "active_card_cap": 2,
+    "trial_budget": 20
+  },
+  "refs": {
+    "ADR-004": "docs/kb/04-decisions/adr/ADR-004-analyzer-contract-v1.md",
+    "ADR-005": "docs/kb/04-decisions/adr/ADR-005-sample-split-holdout.md",
+    "ADR-006": "docs/kb/04-decisions/adr/ADR-006-capm-location-anchor.md",
+    "ADR-008": "docs/kb/04-decisions/adr/ADR-008-file-based-state-r1.md",
+    "ADR-009": "docs/kb/04-decisions/adr/ADR-009-committee-scheme.md",
+    "ADR-012": "docs/kb/04-decisions/adr/ADR-012-academic-integrity.md",
+    "ADR-015": "docs/kb/04-decisions/adr/ADR-015-snapshots-and-target-date.md",
+    "D-047": "docs/kb/04-decisions/decision-log.md#d-047",
+    "D-048": "docs/kb/04-decisions/decision-log.md#d-048",
+    "D-058": "docs/kb/04-decisions/decision-log.md#d-058",
+    "idea-card": "docs/kb/05-requirements/idea-card.md",
+    "contract": "docs/kb/06-architecture/analyzer-contract.md"
+  },
+  "read_only": true,
+  "provenance": {
+    "kind": "dataset",
+    "id": "settings",
+    "snapshot": "r1-dev",
+    "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+    "source": "configs/ and the contract grid (read-only)"
+  }
+}

@@ -1,0 +1,185 @@
+name: top32
+description: The 32 largest US companies by market value (Yahoo Finance, all share
+  classes), from a pool of 74 large US SEC filers.
+as_of: '2026-11-18'
+method: yfinance fast_info market_cap; one share class per company
+caveat: 'Chosen with today''s knowledge: backtests on these stocks are survivor-biased
+  (they are today''s winners).'
+tickers:
+- AAPL
+- MSFT
+- NVDA
+- GOOGL
+- AMZN
+- AVGO
+- META
+- TSLA
+- LLY
+- BRK-B
+- WMT
+- AMD
+- JPM
+- MU
+- V
+- JNJ
+- XOM
+- MA
+- ABBV
+- COST
+- KO
+- CVX
+- PG
+- CSCO
+- PLTR
+- ORCL
+- MRK
+- GE
+- BAC
+- HD
+- UNH
+- PM
+ranking:
+- ticker: AAPL
+  market_cap_usd: 5121867723295
+  last_price: 352.45
+  rank: 1
+- ticker: MSFT
+  market_cap_usd: 3774660492292
+  last_price: 508.29
+  rank: 2
+- ticker: NVDA
+  market_cap_usd: 3645231282120
+  last_price: 150.96
+  rank: 3
+- ticker: GOOGL
+  market_cap_usd: 3472317390015
+  last_price: 282.44
+  rank: 4
+- ticker: AMZN
+  market_cap_usd: 2895109544451
+  last_price: 267.74
+  rank: 5
+- ticker: AVGO
+  market_cap_usd: 1690103595431
+  last_price: 354.05
+  rank: 6
+- ticker: META
+  market_cap_usd: 1575615996006
+  last_price: 616.38
+  rank: 7
+- ticker: TSLA
+  market_cap_usd: 1516752283864
+  last_price: 383.72
+  rank: 8
+- ticker: LLY
+  market_cap_usd: 1231290165335
+  last_price: 1382.31
+  rank: 9
+- ticker: BRK-B
+  market_cap_usd: 1220047701429
+  last_price: 574.27
+  rank: 10
+- ticker: WMT
+  market_cap_usd: 1010441926096
+  last_price: 127.36
+  rank: 11
+- ticker: AMD
+  market_cap_usd: 877416487114
+  last_price: 530.14
+  rank: 12
+- ticker: JPM
+  market_cap_usd: 860762723119
+  last_price: 324.13
+  rank: 13
+- ticker: MU
+  market_cap_usd: 797958870825
+  last_price: 705.27
+  rank: 14
+- ticker: V
+  market_cap_usd: 774493612973
+  last_price: 415.1
+  rank: 15
+- ticker: JNJ
+  market_cap_usd: 656521658682
+  last_price: 272.72
+  rank: 16
+- ticker: XOM
+  market_cap_usd: 654919175833
+  last_price: 160.55
+  rank: 17
+- ticker: MA
+  market_cap_usd: 560370954927
+  last_price: 643.23
+  rank: 18
+- ticker: ABBV
+  market_cap_usd: 505467543760
+  last_price: 285.96
+  rank: 19
+- ticker: COST
+  market_cap_usd: 485944504537
+  last_price: 1096.62
+  rank: 20
+- ticker: KO
+  market_cap_usd: 421758508862
+  last_price: 98.04
+  rank: 21
+- ticker: CVX
+  market_cap_usd: 401724118401
+  last_price: 205.88
+  rank: 22
+- ticker: PG
+  market_cap_usd: 394695275860
+  last_price: 170.29
+  rank: 23
+- ticker: CSCO
+  market_cap_usd: 382595727125
+  last_price: 97.18
+  rank: 24
+- ticker: PLTR
+  market_cap_usd: 377495964840
+  last_price: 156.67
+  rank: 25
+- ticker: ORCL
+  market_cap_usd: 355075767456
+  last_price: 113.89
+  rank: 26
+- ticker: MRK
+  market_cap_usd: 339587593522
+  last_price: 137.75
+  rank: 27
+- ticker: GE
+  market_cap_usd: 338929086477
+  last_price: 327.99
+  rank: 28
+- ticker: BAC
+  market_cap_usd: 337420230922
+  last_price: 48.9
+  rank: 29
+- ticker: HD
+  market_cap_usd: 336884876088
+  last_price: 337.67
+  rank: 30
+- ticker: UNH
+  market_cap_usd: 313518306120
+  last_price: 349.9
+  rank: 31
+- ticker: PM
+  market_cap_usd: 300399692718
+  last_price: 192.73
+  rank: 32
+next_largest:
+- ticker: INTC
+  market_cap_usd: 290571040268
+  last_price: 54.67
+- ticker: MS
+  market_cap_usd: 283137587603
+  last_price: 181.15
+- ticker: AMAT
+  market_cap_usd: 279584369481
+  last_price: 352.3
+- ticker: TXN
+  market_cap_usd: 267213846815
+  last_price: 292.43
+- ticker: RTX
+  market_cap_usd: 266541502806
+  last_price: 197.52

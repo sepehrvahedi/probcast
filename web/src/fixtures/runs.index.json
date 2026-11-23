@@ -1,0 +1,233 @@
+{
+  "fixture": true,
+  "items": [
+    {
+      "run_id": "R-DEMO-12",
+      "analyzer": "volatility.garch_t",
+      "name": "GARCH(1,1)-t",
+      "version": "1.2.0+40f06f",
+      "family": "volatility",
+      "author": "kestrel",
+      "slot": 6,
+      "status": "completed",
+      "completed_at": "2026-11-23T20:17:00Z",
+      "grades": {
+        "5": { "grade": "A" },
+        "21": { "grade": "C" },
+        "63": { "grade": "C" },
+        "126": { "grade": "C" },
+        "252": { "grade": "C" }
+      },
+      "natural_horizon": 21
+    },
+    {
+      "run_id": "R-DEMO-06",
+      "analyzer": "valuation.earnings_yield",
+      "name": "Earnings yield vs own history",
+      "version": "1.2.0+4036d5",
+      "family": "valuation",
+      "author": "wren",
+      "slot": 6,
+      "status": "completed",
+      "completed_at": "2026-11-23T14:35:00Z",
+      "grades": {
+        "5": { "grade": "D" },
+        "21": { "grade": "C" },
+        "63": { "grade": "C" },
+        "126": { "grade": "D" },
+        "252": { "grade": "D" }
+      },
+      "natural_horizon": 252
+    },
+    {
+      "run_id": "R-DEMO-11",
+      "analyzer": "volatility.ewma_blend",
+      "name": "EWMA volatility blend",
+      "version": "1.1.0+40d180",
+      "family": "volatility",
+      "author": "kestrel",
+      "slot": 5,
+      "status": "completed",
+      "completed_at": "2026-11-22T19:10:00Z",
+      "grades": {
+        "5": { "grade": "A" },
+        "21": { "grade": "C" },
+        "63": { "grade": "C" },
+        "126": { "grade": "C" },
+        "252": { "grade": "C" }
+      },
+      "natural_horizon": 21
+    },
+    {
+      "run_id": "R-DEMO-05",
+      "analyzer": "technical.rsi_reversal",
+      "name": "RSI reversal",
+      "version": "1.1.0+4017e6",
+      "family": "technical.reversion",
+      "author": "osprey",
+      "slot": 5,
+      "status": "completed",
+      "completed_at": "2026-11-22T13:28:00Z",
+      "grades": {
+        "5": { "grade": "D", "flag": "worse_than_anchor" },
+        "21": { "grade": "D", "flag": "worse_than_anchor" },
+        "63": { "grade": "D" },
+        "126": { "grade": "D" },
+        "252": { "grade": "D" }
+      },
+      "natural_horizon": 21
+    },
+    {
+      "run_id": "R-DEMO-10",
+      "analyzer": "macro.term_spread",
+      "name": "Term-spread tilt",
+      "version": "1.0.0+40b291",
+      "family": "macro.rates",
+      "author": "osprey",
+      "slot": 4,
+      "status": "completed",
+      "completed_at": "2026-11-21T18:03:00Z",
+      "grades": {
+        "5": { "grade": "D" },
+        "21": { "grade": "D" },
+        "63": { "grade": "C" },
+        "126": { "grade": "C" },
+        "252": { "grade": "C" }
+      },
+      "natural_horizon": 126
+    },
+    {
+      "run_id": "R-DEMO-04",
+      "analyzer": "valuation.fed_model_gap",
+      "name": "Fed-model gap",
+      "version": "1.0.0+3ff8f7",
+      "family": "valuation",
+      "author": "heron",
+      "slot": 4,
+      "status": "completed",
+      "completed_at": "2026-11-21T12:21:00Z",
+      "grades": {
+        "5": { "grade": "D" },
+        "21": { "grade": "C" },
+        "63": { "grade": "C" },
+        "126": { "grade": "C" },
+        "252": { "grade": "D" }
+      },
+      "natural_horizon": 252
+    },
+    {
+      "run_id": "R-DEMO-09",
+      "analyzer": "technical.bollinger_reversion",
+      "name": "Bollinger reversion",
+      "version": "1.2.0+4093a2",
+      "family": "technical.reversion",
+      "author": "finch",
+      "slot": 3,
+      "status": "completed",
+      "completed_at": "2026-11-20T17:56:00Z",
+      "grades": {
+        "5": { "grade": "C" },
+        "21": { "grade": "C" },
+        "63": { "grade": "C" },
+        "126": { "grade": "C" },
+        "252": { "grade": "D" }
+      },
+      "natural_horizon": 21
+    },
+    {
+      "run_id": "R-DEMO-03",
+      "analyzer": "technical.momentum_12_1",
+      "name": "Momentum 12-1",
+      "version": "1.2.0+3fda08",
+      "family": "technical.trend",
+      "author": "finch",
+      "slot": 3,
+      "status": "completed",
+      "completed_at": "2026-11-20T11:14:00Z",
+      "grades": {
+        "5": { "grade": "D" },
+        "21": { "grade": "C" },
+        "63": { "grade": "C" },
+        "126": { "grade": "C" },
+        "252": { "grade": "C" }
+      },
+      "natural_horizon": 252
+    },
+    {
+      "run_id": "R-DEMO-08",
+      "analyzer": "technical.ma_cross",
+      "name": "Moving-average cross",
+      "version": "1.1.0+4074b3",
+      "family": "technical.trend",
+      "author": "osprey",
+      "slot": 2,
+      "status": "completed",
+      "completed_at": "2026-11-19T16:49:00Z",
+      "grades": {
+        "5": { "grade": "D" },
+        "21": { "grade": "C" },
+        "63": { "grade": "C" },
+        "126": { "grade": "C" },
+        "252": { "grade": "D" }
+      },
+      "natural_horizon": 63
+    },
+    {
+      "run_id": "R-DEMO-02",
+      "analyzer": "macro.usd_sensitivity",
+      "name": "USD sensitivity",
+      "version": "1.1.0+3fbb19",
+      "family": "macro.fx",
+      "author": "heron",
+      "slot": 2,
+      "status": "completed",
+      "completed_at": "2026-11-19T10:07:00Z",
+      "grades": {
+        "5": { "grade": "C" },
+        "21": { "grade": "C" },
+        "63": { "grade": "B" },
+        "126": { "grade": "C" },
+        "252": { "grade": "C" }
+      },
+      "natural_horizon": 63
+    },
+    {
+      "run_id": "R-DEMO-07",
+      "analyzer": "technical.trend_200d",
+      "name": "200-day trend filter",
+      "version": "1.0.0+4055c4",
+      "family": "technical.trend",
+      "author": "finch",
+      "slot": 1,
+      "status": "completed",
+      "completed_at": "2026-11-18T15:42:00Z",
+      "grades": {
+        "5": { "grade": "C" },
+        "21": { "grade": "C" },
+        "63": { "grade": "C" },
+        "126": { "grade": "C" },
+        "252": { "grade": "C" }
+      },
+      "natural_horizon": 63
+    },
+    {
+      "run_id": "R-DEMO-01",
+      "analyzer": "events.earnings_drift",
+      "name": "Post-earnings drift",
+      "version": "1.0.0+3f9c2a",
+      "family": "events",
+      "author": "wren",
+      "slot": 1,
+      "status": "completed",
+      "completed_at": "2026-11-18T09:00:00Z",
+      "grades": {
+        "5": { "grade": "C" },
+        "21": { "grade": "A" },
+        "63": { "grade": "C" },
+        "126": { "grade": "C" },
+        "252": { "grade": "C" }
+      },
+      "natural_horizon": 21
+    }
+  ]
+}

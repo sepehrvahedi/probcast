@@ -1,0 +1,162 @@
+{
+  "fixture": true,
+  "snapshot": {
+    "id": "r1-dev",
+    "hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+    "created_at": "2026-11-24T21:30:00Z",
+    "asof_close": "2026-11-24T21:00:00Z",
+    "datasets": [
+      { "id": "prices", "ingested_at": "2026-11-24T21:12:00Z", "rows": 143856, "hash": "9c8b7a" },
+      {
+        "id": "corporate_actions",
+        "ingested_at": "2026-11-24T21:12:30Z",
+        "rows": 188,
+        "hash": "1a2b3c"
+      },
+      {
+        "id": "observations",
+        "ingested_at": "2026-11-24T21:14:00Z",
+        "rows": 412337,
+        "hash": "4d5e6f"
+      },
+      {
+        "id": "fundamentals",
+        "ingested_at": "2026-11-24T21:20:00Z",
+        "rows": 18902,
+        "hash": "7a8b9c"
+      },
+      { "id": "events", "ingested_at": "2026-11-24T21:21:00Z", "rows": 32, "hash": "0d1e2f" }
+    ],
+    "rule_count": 14
+  },
+  "holdout": {
+    "state": "sealed",
+    "boundary": "2021-01-01",
+    "basis": "outcome_date",
+    "freeze_at": "2026-11-30T23:59:00Z",
+    "reveal_at": "2026-12-01T12:00:00Z"
+  },
+  "freeze": null,
+  "leak_tested": {
+    "passed": 11,
+    "total": 12,
+    "committee": false,
+    "failing": [{ "analyzer": "technical.ma_cross", "test": "T1", "at": "2026-11-23T16:40:00Z" }]
+  },
+  "freshness": [
+    {
+      "dataset": "prices",
+      "label": "Prices",
+      "last_available_at": "2026-11-24T21:00:00Z",
+      "expected_lag": "1 session",
+      "state": "fresh",
+      "detail": "Daily closes",
+      "provenance": {
+        "kind": "dataset",
+        "id": "prices",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "Synthetic (fixture)",
+        "available_at": "2026-11-24T21:00:00Z"
+      }
+    },
+    {
+      "dataset": "fundamentals",
+      "label": "SEC EDGAR",
+      "last_available_at": "2026-10-31T20:31:00Z",
+      "expected_lag": "≈ 1 quarter",
+      "state": "fresh",
+      "detail": "10-K accepted 31 Oct",
+      "provenance": {
+        "kind": "dataset",
+        "id": "fundamentals",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "Synthetic (fixture)"
+      }
+    },
+    {
+      "dataset": "observations",
+      "label": "FRED",
+      "last_available_at": "2026-11-13T13:30:00Z",
+      "expected_lag": "≈ 1 month",
+      "state": "expected_lag",
+      "detail": "CPI Oct · publication lag",
+      "provenance": {
+        "kind": "dataset",
+        "id": "observations",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "Synthetic (fixture)"
+      }
+    },
+    {
+      "dataset": "events",
+      "label": "Events",
+      "last_available_at": "2026-11-20T21:00:00Z",
+      "expected_lag": "curated",
+      "state": "fresh",
+      "detail": "32 events · 5 earnings",
+      "provenance": {
+        "kind": "dataset",
+        "id": "events",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "Synthetic (fixture)"
+      }
+    }
+  ],
+  "version": "0.1.0",
+  "git_sha": "5e1f0a9c8b7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f",
+  "ticker": {
+    "ticker": "DEMO",
+    "name": "Demo Corp. (synthetic)",
+    "exchange": "XNYS",
+    "fiscal_year_end": "09-30",
+    "splits": [
+      { "ex_date": "1987-06-16", "ratio": "2:1" },
+      { "ex_date": "1994-03-21", "ratio": "3:2" },
+      { "ex_date": "2000-06-21", "ratio": "2:1" },
+      { "ex_date": "2011-02-28", "ratio": "4:1" },
+      { "ex_date": "2019-08-30", "ratio": "2:1" }
+    ],
+    "last_close": {
+      "date": "2026-11-24",
+      "price": 142.37,
+      "change": -0.00926,
+      "provenance": {
+        "kind": "observation",
+        "id": "PX:DEMO:close",
+        "key": "2026-11-24",
+        "snapshot": "r1-dev",
+        "snapshot_hash": "a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9",
+        "source": "Synthetic (fixture)",
+        "available_at": "2026-11-24T21:00:00Z"
+      }
+    }
+  },
+  "tickers": ["DEMO"],
+  "policies": {
+    "horizons": [5, 21, 63, 126, 252],
+    "grid": [
+      0.01, 0.025, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7,
+      0.75, 0.8, 0.85, 0.9, 0.95, 0.975, 0.99
+    ],
+    "anchor": "CAPM (1-year Treasury + β × ERP 5%)",
+    "anchor_weight": 0.25,
+    "families": [
+      "technical.trend",
+      "technical.reversion",
+      "volatility",
+      "macro.rates",
+      "macro.fx",
+      "valuation",
+      "events",
+      "sentiment_alt"
+    ],
+    "trial_budget": 20,
+    "grid_cap": 30,
+    "freeze_at": "2026-11-30T23:59:00Z",
+    "reveal_at": "2026-12-01T12:00:00Z"
+  }
+}

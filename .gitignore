@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+dist/
+build/
+
+# ProbCast state root (data lake, runs, registries) — never committed (ADR-008, ADR-011)
+state/
+data/*
+!data/seed/
+!data/fixtures/
+!data/README.md
+artifacts/
+
+# Secrets
+.env
+.env.*
+!.env.example
+!web/.env.production
+
+# Node / web
+node_modules/
+web/dist/
+web/.vite/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+

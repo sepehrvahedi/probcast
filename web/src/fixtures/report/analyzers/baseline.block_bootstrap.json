@@ -1,0 +1,415 @@
+{
+  "fixture": true,
+  "id": "baseline.block_bootstrap",
+  "name": "Block-bootstrap climatology (re-centred)",
+  "version": "1.0.0+02e6096",
+  "family": "baseline",
+  "author": "probcast",
+  "slot": 0,
+  "builtin": true,
+  "natural_horizon": 252,
+  "leak": {
+    "status": "passed",
+    "tests": {
+      "T1": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T2": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T3": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T5": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      },
+      "T7": {
+        "passed": true,
+        "at": "2026-11-20T14:00:00Z"
+      }
+    }
+  },
+  "in_committee": false,
+  "category": "baseline",
+  "report_section": "future",
+  "horizons": [5, 21, 63, 126, 252],
+  "calibrator": "none",
+  "hypothesis": "The past distribution of h-session returns, re-centred on the anchor, describes the future.",
+  "references": [],
+  "idea_card": null,
+  "manifest": {
+    "expected_direction": null,
+    "course_concepts": ["risk and return"],
+    "informs": ["scale"],
+    "min_history_sessions": 252,
+    "data_dependencies": [],
+    "params": {},
+    "param_grid_declared": {},
+    "manifest_version": "1.0.0",
+    "code_hash": "02e60963e5e42a42bc14e0f574a8cfee0ca465d1645d9a14021caf65f18628c9"
+  },
+  "literature_prior": null,
+  "idea": null,
+  "dependencies": [
+    {
+      "id": "PX:close_base",
+      "name": "Close, base-share units",
+      "class": "exchange_price",
+      "rule": "same_session_close",
+      "strict_rule": "same_session_close",
+      "licence": "L2",
+      "source": "Yahoo Finance via yfinance"
+    }
+  ],
+  "leak_details": {
+    "T1": "passed",
+    "T2": "passed",
+    "T3": "passed",
+    "T5": "passed",
+    "T7": "passed"
+  },
+  "leak_at": "2026-11-20T14:00:00Z",
+  "status": "baseline",
+  "default_run_id": "20261118T154000-9c3f42a6",
+  "anchor_run_id": "20261118T153935-9403903c",
+  "grades": {
+    "5": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": -0.009211686737188085,
+      "ci": {
+        "lo": -0.0227569403163811,
+        "hi": 0.0072343186536625035,
+        "level": 0.9
+      },
+      "n_eff": 104.0,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "baseline",
+          "n": 4
+        },
+        "team": 11
+      },
+      "mde": 0.02796981949383886,
+      "sample": "dev",
+      "dm_p": 0.3606395075790526,
+      "bh_q": 0.4652824025777325,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T154000-9c3f42a6",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.5.dev"
+      },
+      "n": 104,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-11-30"
+      },
+      "cov80": {
+        "est": 0.7403846153846154,
+        "sample": "dev"
+      }
+    },
+    "21": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": -0.011315555350199347,
+      "ci": {
+        "lo": -0.02284789223783342,
+        "hi": 0.003499777774966361,
+        "level": 0.9
+      },
+      "n_eff": 104.0,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "baseline",
+          "n": 4
+        },
+        "team": 11
+      },
+      "mde": 0.0233831568018744,
+      "sample": "dev",
+      "dm_p": 0.18022901270969993,
+      "bh_q": 0.9132951308159148,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T154000-9c3f42a6",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.21.dev"
+      },
+      "n": 104,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-11-30"
+      },
+      "cov80": {
+        "est": 0.7211538461538461,
+        "sample": "dev"
+      }
+    },
+    "63": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": -0.0017524493257079499,
+      "ci": {
+        "lo": -0.010319604209394062,
+        "hi": 0.008931691144398807,
+        "level": 0.9
+      },
+      "n_eff": 34.333333333333336,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "baseline",
+          "n": 4
+        },
+        "team": 11
+      },
+      "mde": 0.017585842959704907,
+      "sample": "dev",
+      "dm_p": 0.7858639520419824,
+      "bh_q": 0.8150334255268028,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T154000-9c3f42a6",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.63.dev"
+      },
+      "n": 103,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-08-31"
+      },
+      "cov80": {
+        "est": 0.7669902912621359,
+        "sample": "dev"
+      }
+    },
+    "126": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.008272240210807857,
+      "ci": {
+        "lo": -0.0013728628720613755,
+        "hi": 0.018424165950864674,
+        "level": 0.9
+      },
+      "n_eff": 17.0,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "baseline",
+          "n": 4
+        },
+        "team": 11
+      },
+      "mde": 0.01707867548272829,
+      "sample": "dev",
+      "dm_p": 0.20215273735396116,
+      "bh_q": 0.6064582120618836,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T154000-9c3f42a6",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.126.dev"
+      },
+      "n": 102,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2015-05-29"
+      },
+      "cov80": {
+        "est": 0.7156862745098039,
+        "sample": "dev"
+      }
+    },
+    "252": {
+      "metric": "crpss",
+      "reference": "capm",
+      "est": 0.015026172482845102,
+      "ci": {
+        "lo": -0.007447596571189474,
+        "hi": 0.03244252954029534,
+        "level": 0.9
+      },
+      "n_eff": 8.333333333333334,
+      "grade": "D",
+      "trials": {
+        "analyzer": 1,
+        "family": {
+          "id": "baseline",
+          "n": 4
+        },
+        "team": 11
+      },
+      "mde": 0.04089681757823,
+      "sample": "dev",
+      "dm_p": 0.36452950019457936,
+      "bh_q": 0.8540394417204408,
+      "provenance": {
+        "kind": "run",
+        "id": "20261118T154000-9c3f42a6",
+        "snapshot": "fixture-7-+0.000",
+        "snapshot_hash": "fixture-v1-7-+0.000",
+        "key": "crpss_capm.252.dev"
+      },
+      "n": 100,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2014-11-28"
+      },
+      "cov80": {
+        "est": 0.71,
+        "sample": "dev"
+      }
+    }
+  },
+  "nutrition": [
+    {
+      "h": 5,
+      "declared": true,
+      "n_eff_max": 104.0,
+      "n_eff": 104.0,
+      "mde": 0.02796981949383886,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 21,
+      "declared": true,
+      "n_eff_max": 104.0,
+      "n_eff": 104.0,
+      "mde": 0.0233831568018744,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 63,
+      "declared": true,
+      "n_eff_max": 34.333333333333336,
+      "n_eff": 34.333333333333336,
+      "mde": 0.017585842959704907,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 126,
+      "declared": true,
+      "n_eff_max": 17.0,
+      "n_eff": 17.0,
+      "mde": 0.01707867548272829,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    },
+    {
+      "h": 252,
+      "declared": true,
+      "n_eff_max": 8.333333333333334,
+      "n_eff": 8.333333333333334,
+      "mde": 0.04089681757823,
+      "warmup_start": "1990-02-28",
+      "sample": "dev"
+    }
+  ],
+  "latest": {
+    "origin": "2026-11-30",
+    "h": 252,
+    "unit": "log_return",
+    "median": -0.032643063230101056,
+    "interval_80": {
+      "lo": -0.5265844973108957,
+      "hi": 0.5533208466307855,
+      "level": 0.8
+    },
+    "p_up": 0.477498482284998,
+    "base_rate": {
+      "p": 0.68,
+      "window": {
+        "from": "1990-02-28",
+        "to": "2014-11-28"
+      },
+      "sample": "dev"
+    },
+    "signal": null,
+    "calibration": {
+      "n_pairs": 10307
+    },
+    "provenance": {
+      "kind": "run",
+      "id": "20261118T154000-9c3f42a6",
+      "snapshot": "fixture-7-+0.000",
+      "snapshot_hash": "fixture-v1-7-+0.000",
+      "key": "forecast.252.latest"
+    }
+  },
+  "trials": {
+    "analyzer": 1,
+    "family": {
+      "id": "baseline",
+      "n": 4
+    },
+    "team": 11
+  },
+  "references_detail": [],
+  "versions": [
+    {
+      "version": "1.0.0+02e6096",
+      "first_seen": "2026-11-18T15:40:00.328928+00:00",
+      "configs": 1,
+      "runs": ["20261118T154000-9c3f42a6"],
+      "current": true
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "20261118T154000-9c3f42a6",
+      "analyzer": "baseline.block_bootstrap",
+      "name": "Block-bootstrap climatology (re-centred)",
+      "version": "1.0.0+02e6096",
+      "family": "baseline",
+      "author": "probcast",
+      "slot": 0,
+      "status": "completed",
+      "completed_at": "2026-11-18T15:40:00.325974Z",
+      "grades": {
+        "5": {
+          "grade": "D"
+        },
+        "21": {
+          "grade": "D"
+        },
+        "63": {
+          "grade": "D"
+        },
+        "126": {
+          "grade": "D"
+        },
+        "252": {
+          "grade": "D"
+        }
+      },
+      "natural_horizon": 252,
+      "scored": true
+    }
+  ],
+  "provenance": {
+    "kind": "dataset",
+    "id": "analyzer:baseline.block_bootstrap",
+    "snapshot": "fixture-7-+0.000",
+    "snapshot_hash": "fixture-v1-7-+0.000"
+  }
+}

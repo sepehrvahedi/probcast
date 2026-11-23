@@ -1,0 +1,10 @@
+# Synthetic fixture ticker (ILLUSTRATIVE). Used by tests, CI and `probcast demo`.
+ticker: DEMO
+synthetic: true
+name: Synthetic Demo Inc.
+exchange: XNYS
+benchmarks:
+  market: "^DEMOTR"
+  nasdaq: "^DEMONDX"
+peers: {}
+implied_vol_series: "FRED:VXDEMOCLS"
